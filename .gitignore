@@ -1,0 +1,16 @@
+# MATLAB autosave files
+*.asv
+*.m~
+*.mlx
+
+# MATLAB compiled/binary files
+*.mex*
+*.slxc
+*.mdl.autosave
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
