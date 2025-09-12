@@ -1,3 +1,7 @@
+# CO2BLOCKSEISM
+
+This folder contains **CO2BLOCKSEISM**, an extension of CO2BLOCK that evaluates limitations on CO<sub>2</sub> storage resources imposed by injection-induced seismicity.  
+
 ## **Code structure**
 The tool comprises a number of scripts and functions as detailed below:
 - "CO2BLOCKSEISM.m": this is the main script, where all input data for the study

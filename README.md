@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="CO2BLOCK Logo" width="200"/>
+</p>
+
 # CO2BLOCK: A tool for estimating storage resource capacity in saline aquifers
 
 CO2BLOCK provides the automatic estimate of the storage capacity of an aquifer, based on the geomechanical limits to pressure build-up. 
