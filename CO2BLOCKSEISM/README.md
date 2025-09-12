@@ -29,9 +29,6 @@ The tool comprises a number of scripts and functions as detailed below:
   plots. The functions, database and instructions for using Crameri's colormaps
   are also provided.     
 
-# CO2BLOCKSEISM
-This folder contains **CO2BLOCKSEISM**, an extension of CO2BLOCK that evaluates limitations on CO<sub>2</sub> storage resources imposed by induced seismicity.
-
 ## **Input**
 Input parameters are introduced to the tool either directly within the script
 "CO2BLOCKSEISM.m" or through the input .xlsx file. The input file involves
