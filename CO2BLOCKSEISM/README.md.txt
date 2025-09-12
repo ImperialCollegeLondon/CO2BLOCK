@@ -1,0 +1,64 @@
+## **Code structure**
+The tool comprises a number of scripts and functions as detailed below:
+- "CO2BLOCKSEISM.m": this is the main script, where all input data for the study
+  are specified. This script calls several functions to perform the required
+  calculations,
+- "read_data.m": this function reads the input parameters from the input Excel
+  file,
+- "hydrogeology.m": this function involves analytical solutions of the pressure
+  response of saline aquifers to multi-site CO<sub>2</sub> injection at
+  time-varying rate,
+- "Geomech_prob.m": this function develops a Monte Carlo-type probabilistic
+  model for evaluating the probability of fault slip under inherent
+  uncertainties of the geomechanical parameters of the subsurface,
+- "Analytical_solution.m" and "FD_Nor_2zones.m": these functions calculate
+  pressure changes in a saline aquifer in response to two phase flow of
+  CO<sub>2</sub> and water around a single injection site based on the
+  analytical solution by Nordbotten et al. (2005),
+- "stress_projection.m": this function projects shear and normal stress
+  components onto the fault planes for different realizations of the Monte Carlo
+  simulation,
+- "eos.m": this function returns brine viscosity and CO<sub>2</sub> density and
+  viscosity using appropriate equations of state,
+- "plot.m": this script visualizes the output data through appropriate plots.
+  Scientific colormaps developed by Fabio Crameri (2018) are used in these
+  plots. The functions, database and instructions for using Crameri's colormaps
+  are also provided.     
+
+# CO2BLOCKSEISM
+This folder contains **CO2BLOCKSEISM**, an extension of CO2BLOCK that evaluates limitations on CO<sub>2</sub> storage resources imposed by induced seismicity.
+
+## **Input**
+Input parameters are introduced to the tool either directly within the script
+"CO2BLOCKSEISM.m" or through the input .xlsx file. The input file involves
+average values of the hydraulic properties of the aquifer required to estimate
+injection-induced pressure changes and the geomechanical properties of the
+seismogenic rock layers needed to estimate the potential for induced seismicity.
+The seismogenic layer can be the storage aquifer or hydraulically connected
+formations overlying or underlying the storage aquifer. Note that the input file
+has a fixed structure and the order of the input variables must not be changed.
+There is a set of strictly required parameters, while there is the possibility
+of using default values for the others, as explained in the example input data
+files. Although default values provide reasonable estimations, we recommend the
+use of precise data which would allow for a more accurate prediction of the
+storage capacity.
+
+Information about the statistical distributions of uncertain geomechanical
+parameters, discretization in time and space, injection schedules and
+distributions of injection sites and faults are specified in the script
+"CO2BLOCKSEISM.m". The script reads data for the distributions of the injection
+sites and faults from separate input .xlsx files. Additional information, e.g.,
+geographical data or induced seismicity records may be added for use in the
+plots.  
+
+## **Output**
+The main outputs of the tool are the spatial and temporal evolution of
+injection-induced pore pressure changes, fault slip probability, possible
+earthquake magnitudes and the maximum CO<sub>2</sub> storage capacity that can
+be safely achieved. The tool saves the plots in the specified directory. 
+
+The results of the tool calculations for the demonstration study at Utsira is
+provided as "Results_Utsira.mat". One may simply load the results and just run 
+the script "plot.m" to reproduce all figures presented in the reference paper 
+mentioned above. Alternatively, the script "CO2BLOCKSEISM.m" with the provided 
+input data can be run to regenerate the results.  
