@@ -1,12 +1,8 @@
-<p align="center">
-  <img src="logo.png" alt="CO2BLOCK Logo" width="200"/>
-</p>
-
 # CO2BLOCK: A tool for estimating storage resource capacity in saline aquifers
 
 CO2BLOCK provides the automatic estimate of the storage capacity of an aquifer, based on the geomechanical limits to pressure build-up. 
 
-Users only need to open and modify the script "CO2BLOCK.m". There is no need to open or modify the other scripts, which is instead not recommended.
+Users only need to open and modify the script "CO2BLOCK.m". There is no need to open or modify the other scripts, and modifying the other scripts ‎not recommended.
 
 Please refer to the user guide for more detailed instructions. 
 If you want to learn more about the theory behind CO2BLOCK, please refer to the following papers:
@@ -22,7 +18,7 @@ CO2BLOCKSEISM extends CO2BLOCK in screening regional storage resources constrain
 To learn more about the theory behind CO2BLOCKSEISM, please refer to the following paper:
 - Kivi, I.R., De Simone, S. and Krevor, S., 2025. A simplified physics model for estimating subsurface CO<sub>2</sub> storage resources constrained ‎by fault slip potential. Journal of Rock Mechanics and Geotechnical Engineering (in press) <https://doi.org/10.1016/j.jrmge.2025.06.031>
 
-Should you have any question/comment/suggestion, please contact Silvia De Simone at silviadesi@gmail.com or Iman R Kivi at i.rahimzadeh-kivi@imperial.ac.uk
+Should you have any question/comment/suggestion, please contact Silvia De Simone at silviadesi@gmail.com, Iman R Kivi at i.rahimzadeh-kivi@imperial.ac.uk, or Sam Krevor at s.krevor@imperial.ac.uk
 
 These tools are free licensed software.
 If you use it for academic purposes, please cite the reference paper De Simone and Krevor (2021) for CO2BLOCK and Kivi et al. (2025) for CO2BLOCKSEISM.

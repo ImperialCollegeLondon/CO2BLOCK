@@ -1,6 +1,6 @@
 # CO2BLOCKSEISM
 
-This folder contains **CO2BLOCKSEISM**, an extension of CO2BLOCK that evaluates limitations on CO<sub>2</sub> storage resources imposed by injection-induced seismicity.  
+This folder contains **CO2BLOCKSEISM**, an extension of CO2BLOCK that evaluates limitations to CO<sub>2</sub> storage resources imposed by injection-induced seismicity.  
 
 ## **Code structure**
 The tool comprises a number of scripts and functions as detailed below:
@@ -42,7 +42,7 @@ There is a set of strictly required parameters, while there is the possibility
 of using default values for the others, as explained in the example input data
 files. Although default values provide reasonable estimations, we recommend the
 use of precise data which would allow for a more accurate prediction of the
-storage capacity.
+storage resource.
 
 Information about the statistical distributions of uncertain geomechanical
 parameters, discretization in time and space, injection schedules and
