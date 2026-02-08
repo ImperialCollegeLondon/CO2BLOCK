@@ -167,7 +167,7 @@ else
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%          Allocation of subsurface resources to growth trajectories
+%% Allocation of subsurface resources to growth trajectories
 years = Growthrate_model(:,1);
 total_rate = Growthrate_model(:,2);
 
