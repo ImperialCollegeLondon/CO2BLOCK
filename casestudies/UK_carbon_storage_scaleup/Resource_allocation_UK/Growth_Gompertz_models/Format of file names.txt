@@ -1,0 +1,18 @@
+Two formats have been used.
+
+Basic format (assigned cumulative storage volume and 2050 rate):
+model type + 
+target cumulative injection volume (Gt) + 
+target injection rate at 2050`+
+duration of the model
+
+example: Gompertz_model_Cum78Gt_75Mty_400y
+
+Peak format (assigned peak rate and 2050 format- cum vol is calculated):
+model type + 
+calculated cumulative injection volume (Gt) +
+target peak injection rate + 
+target injection rate at 2050`+
+duration of the model
+
+example: Growthrate_model_Cum66Gt_peak1100Mty_75Mty_170y
