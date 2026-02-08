@@ -1,6 +1,6 @@
 ﻿# UK Carbon Storage Scale-up
 
-This case study demonstrates the use of **CO2BLOCK** for estimating subsurface CO<sub>2</sub> storage resources in UK offshore storage units and for allocating these resources to national-scale carbon storage scale-up trajectories. The scale-up trajectories are derived from logistic growth and Gompertz models for the UK. The original CO2BLOCK code has been adapted to address this case study.
+This case study demonstrates the use of **CO2BLOCK** for estimating subsurface CO2 storage resources in UK offshore storage units and for allocating these resources to national-scale carbon storage scale-up trajectories. The scale-up trajectories are derived from logistic growth and Gompertz models for the UK. The original CO2BLOCK code has been adapted to address this case study.
 
 ## Resource Estimates
 
@@ -24,8 +24,9 @@ Storage resource estimates are already provided for five scenarios:
 - `Storage_resources_400y_reducedperm10`.  
 These scenarios use reduced permeability values (by factors of 2, 5, and 10) relative to the reference case to account for subsurface uncertainty, assuming 400 years of injection.
 
-Scale-up trajectories for geological carbon storage in the UK are provided in the folder `Growth_Gompertz_models`. Each trajectory describes the temporal evolution of injection rate and cumulative stored CO<sub>2</sub>. Trajectories differ in their growth model (logistic or Gompertz), target cumulative storage volume, 2050 injection rate, and peak injection rate. Details are provided in `Format of file names.txt`.
+Scale-up trajectories for geological carbon storage in the UK are provided in the folder `Growth_Gompertz_models`. Each trajectory describes the temporal evolution of injection rate and cumulative stored CO2. Trajectories differ in their growth model (logistic or Gompertz), target cumulative storage volume, 2050 injection rate, and peak injection rate. Details are provided in `Format of file names.txt`.
 
 The code allocates storage resources to the scale-up trajectories using the algorithm described in Kivi et al. (2026). By default, storage units with the largest estimated capacities are prioritised. Resource allocation figures are plotted by the code.
+
 
 
