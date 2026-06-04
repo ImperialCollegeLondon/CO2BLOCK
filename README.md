@@ -22,3 +22,11 @@ Should you have any question/comment/suggestion, please contact Silvia De Simone
 
 These tools are free licensed software.
 If you use it for academic purposes, please cite the reference paper De Simone and Krevor (2021) for CO2BLOCK and Kivi et al. (2025) for CO2BLOCKSEISM.
+
+## Releases
+
+Major versions of CO2BLOCK are archived using GitHub Releases.
+
+For a detailed description of the capabilities and recent developments of CO2BLOCK, see the documentation within [CO2BLOCK/README.md](CO2BLOCK/README.md).
+
+Users requiring a specific version for reproducibility should download the corresponding GitHub Release.
