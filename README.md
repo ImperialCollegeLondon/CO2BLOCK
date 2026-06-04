@@ -25,8 +25,11 @@ If you use it for academic purposes, please cite the reference paper De Simone a
 
 ## Releases
 
-Major versions of CO2BLOCK are archived using GitHub Releases.
+Major versions of the software modules contained in this repository are archived using GitHub Releases.
 
-For a detailed description of the capabilities and recent developments of CO2BLOCK, see the documentation within [CO2BLOCK/README.md](CO2BLOCK/README.md).
+For detailed descriptions of the capabilities, updates, and version history of each module, see the corresponding documentation:
+
+- [CO2BLOCK](CO2BLOCK/README.md)
+- [CO2BLOCKSEISM](CO2BLOCKSEISM/README.md)
 
 Users requiring a specific version for reproducibility should download the corresponding GitHub Release.
