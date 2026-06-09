@@ -1,17 +1,26 @@
-# CO2BLOCK: A tool for estimates of storage resource capacity in saline aquifers
+# CO2BLOCK v2.0
 
-CO2BLOCK provides the automatic estimate of the storage capacity of an aquifer, based on the geomechanical limits to pressure build-up. 
 
-Users only need to open and modify the script "CO2BLOCK.m". There is no need to open or modify the other scripts, which is instead not recommended.
 
-Please refer to the user guide for more detailed instructions. 
-If you want to learn more about the theory behind CO2BLOCK, please refer to the following papers:
-- De Simone and Krevor (2021) A tool for first order estimates and optimisation of dynamic storage resource capacity in saline aquifers”.  International Journal of Greenhouse Gas Control, 106, 103258. 
-- De Simone S., Jackson S. J. & Krevor S. (2019). The error in using superposition to estimate pressure during multi-site subsurface CO2 storage. Geophysical Research Letters 46: 6525-6533 
+This release introduces major updates to the CO2BLOCK module:
 
-Should you have any question/comment/suggestion, please send an email to Silvia De Simone at silviadesi@gmail.com
 
-CO2BLOCK is a free licence software.
-If you use it for academic purposes, please cite the reference paper:
 
-- De Simone and Krevor (2021) A tool for first order estimates and optimisation of dynamic storage resource capacity in saline aquifers”.  International Journal of Greenhouse Gas Control, 106, 103258. https://doi.org/10.1016/j.ijggc.2021.103258
+\- CO2BLOCK can now perform calculations for multiple study areas simultaneously, including multiple storage units within a single basin or different basins at a regional scale. Input parameters for all cases can be provided within a single Excel input file.
+
+
+
+\- A summary spreadsheet is automatically generated, providing key outputs such as the optimum per-site injection rate, the required number and spacing of injection sites, the regional injection rate, and the estimated storage resource.
+
+
+
+\- Additional operational constraints can now be imposed, including minimum and maximum allowable per-site injection rates to account for potential techno-economic limitations. 
+
+
+
+\- A new analytical solution has been implemented to estimate pressure buildup during multi-site, basin-scale CO2 injection under closed-boundary flow conditions. Further details of the methodology are provided in Kivi et al. (2026).
+
+Kivi, I.R., Gao, X., Krevor, S., (2026). *Geologic carbon storage scaleup in the UK is limited by technoeconomic growth and not geophysical constraints*. (in preparation)
+
+
+
