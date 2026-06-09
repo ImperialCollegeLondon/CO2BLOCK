@@ -18,7 +18,7 @@ This release introduces major updates to the CO2BLOCK module:
 
 
 
-- A new analytical solution has been implemented to estimate pressure buildup during multi-site, basin-scale CO_2 injection under closed-boundary flow conditions. Further details of the methodology are provided in Kivi et al. (2026).
+- A new analytical solution has been implemented to estimate pressure buildup during multi-site, basin-scale CO<sub>2</sub> injection under closed-boundary flow conditions. Further details of the methodology are provided in Kivi et al. (2026).
 
 Kivi, I.R., Gao, X., Krevor, S., (2026). *Geologic carbon storage scaleup in the UK is limited by technoeconomic growth and not geophysical constraints*. (in preparation)
 
