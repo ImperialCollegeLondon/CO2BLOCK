@@ -23,8 +23,9 @@ CO2BLOCK-GROWTH extends CO2BLOCK by coupling techno-economic growth models with 
 - generation of CO<sub>2</sub> storage deployment trajectories using logistic and Gompertz growth models (Python),
 - assessment of reservoir pressurisation and injectivity constraints along the growth trajectories (MATLAB), and
 - allocation of storage resources and identification of feasible storage pathways under coupled techno-economic growth and geophysical constraints (MATLAB).
+
 To learn more about the theory behind CO2BLOCK-GROWTH, please refer to the following paper:
-Kivi, I.R., Gao, X. and Krevor, S., 2026. Coupled geophysical and technoeconomic growth constraints on geological carbon storage scaleup with an application to the UK. (submitted).
+- Kivi, I.R., Gao, X. and Krevor, S., 2026. Coupled geophysical and technoeconomic growth constraints on geological carbon storage scaleup with an application to the UK. (submitted).
 
 Should you have any question/comment/suggestion, please contact Silvia De Simone at silviadesi@gmail.com, Iman R Kivi at iman.rahimzadeh@uib.es, or Sam Krevor at s.krevor@imperial.ac.uk
 These tools are free licensed software.If you use it for academic purposes, please cite the reference paper De Simone and Krevor (2021) for CO2BLOCK, Kivi et al. (2025) for CO2BLOCK-SEISM and Kivi et al. (2026) for CO2BLOCK-GROWTH.
