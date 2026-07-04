@@ -29,7 +29,7 @@ To learn more about the theory behind CO2BLOCK-GROWTH, please refer to the follo
 
 Should you have any question/comment/suggestion, please contact Silvia De Simone at silviadesi@gmail.com, Iman R Kivi at iman.rahimzadeh@uib.es, or Sam Krevor at s.krevor@imperial.ac.uk
 
-These tools are free licensed software. If you use it for academic purposes, please cite the reference paper De Simone and Krevor (2021) for CO2BLOCK, Kivi et al. (2025) for CO2BLOCK-SEISM and Kivi et al. (2026) for CO2BLOCK-GROWTH.
+These tools are free licensed software. If you use it for academic purposes, please cite the reference paper De Simone and Krevor (2021) for CO2BLOCK, Kivi et al. (2025) for CO2BLOCK-SEISM and Kivi et al. (2026) for CO2BLOCK-GROWTH.
 
 ## Releases
 
