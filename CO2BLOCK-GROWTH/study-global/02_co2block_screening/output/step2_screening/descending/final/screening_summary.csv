@@ -1,0 +1,161 @@
+allocation_order,scenario,pathway,country,model,status,basin_match_basis,basin_count,peak_demand_mt_yr,allocated_peak_mt_yr
+descend,growth10,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,1018.2543059017684,1070.2359611847442
+descend,growth10,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,8995.643670420279,8150.319489231681
+descend,growth10,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,1394.7129321496614,1409.8173679127044
+descend,growth10,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,5446.253643540346,5658.850268427382
+descend,growth10,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,1199.6800461631585,1214.675316469144
+descend,growth10,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,7284.418967472434,960.494520097608
+descend,growth10,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,992.0541937835696,1002.4370652357225
+descend,growth10,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,7285.685000535379,2220.734975503366
+descend,growth10,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,579.728916930102,595.2749781720303
+descend,growth10,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,1721.4794586100593,1744.6982986956966
+descend,growth10,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,73.1327657149048,73.75273342387099
+descend,growth10,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,285.2203516579609,291.5581730825693
+descend,growth10,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,241.40441282995388,244.60682891620294
+descend,growth10,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,828.599831400911,830.8147248870364
+descend,growth10,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,42.4574815651362,42.5155897530135
+descend,growth10,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,205.5595022219987,208.5909064145658
+descend,growth10,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,381.8269909357975,384.1019312482123
+descend,growth10,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,1415.2917469673366,1424.3649994014795
+descend,growth10,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,2749.316359847258,2938.311681197277
+descend,growth10,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,9082.716398834757,9130.743528079278
+descend,ipcc_high,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,4339.253848428503,4350.836983609751
+descend,ipcc_high,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,20015.114837514167,10978.564915978799
+descend,ipcc_high,v8_fixedC_deterministic,Brazil,Gompertz,no_growth_path,AssignedCountry == Brazil,10,,0.0
+descend,ipcc_high,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,13447.766567530212,13705.573095194459
+descend,ipcc_high,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,4039.8224412284226,686.7229488224126
+descend,ipcc_high,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,16344.907802581776,1523.5606296637584
+descend,ipcc_high,v8_fixedC_deterministic,China,Gompertz,no_growth_path,AssignedCountry == China,21,,0.0
+descend,ipcc_high,v8_fixedC_deterministic,China,Logistic,no_growth_path,AssignedCountry == China,21,,0.0
+descend,ipcc_high,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,1036.0541865264795,1036.055798116013
+descend,ipcc_high,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,2683.9689129601115,2818.9698825881833
+descend,ipcc_high,v8_fixedC_deterministic,Indonesia,Gompertz,no_growth_path,AssignedCountry == Indonesia,11,,0.0
+descend,ipcc_high,v8_fixedC_deterministic,Indonesia,Logistic,no_growth_path,AssignedCountry == Indonesia,11,,0.0
+descend,ipcc_high,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,520.1797013235507,520.349847562919
+descend,ipcc_high,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,1500.5752644726438,1602.2855408535702
+descend,ipcc_high,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,97.973502722853,102.45052431412074
+descend,ipcc_high,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,385.93607889655453,387.4101235392086
+descend,ipcc_high,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,880.1266063804112,890.0771745518722
+descend,ipcc_high,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,2719.388496093942,2770.856675266527
+descend,ipcc_high,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,7411.68245084547,8128.836988543824
+descend,ipcc_high,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,19013.64086949725,19045.43848832946
+descend,ipcc_low,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,164.67651524350399,179.982
+descend,ipcc_low,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,1353.0015609955658,1368.1649914954305
+descend,ipcc_low,v8_fixedC_deterministic,Brazil,Gompertz,no_growth_path,AssignedCountry == Brazil,10,,0.0
+descend,ipcc_low,v8_fixedC_deterministic,Brazil,Logistic,no_growth_path,AssignedCountry == Brazil,10,,0.0
+descend,ipcc_low,v8_fixedC_deterministic,Canada,Gompertz,no_growth_path,AssignedCountry == Canada,3,,0.0
+descend,ipcc_low,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,9.1633622004821,10.199522767378069
+descend,ipcc_low,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,2510.9354098441404,1953.9955755818237
+descend,ipcc_low,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,11925.147741969613,2635.461361254626
+descend,ipcc_low,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,1066.755284272047,1071.0150494651207
+descend,ipcc_low,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,2739.719675085697,2818.9698825881833
+descend,ipcc_low,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,53.0837334152234,54.50436685054675
+descend,ipcc_low,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,235.6025953244047,239.976
+descend,ipcc_low,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,521.0115646832179,593.439089205026
+descend,ipcc_low,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,1502.5057031349988,1602.2855408535702
+descend,ipcc_low,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,97.49160783775281,97.93683069988899
+descend,ipcc_low,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,384.7801535603611,387.4101235392086
+descend,ipcc_low,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,862.6307701932453,890.0771745518722
+descend,ipcc_low,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,2678.904528162542,2717.572462846453
+descend,ipcc_low,v8_fixedC_deterministic,US,Gompertz,no_growth_path,AssignedCountry in ['USA'],20,,0.0
+descend,ipcc_low,v8_fixedC_deterministic,US,Logistic,no_growth_path,AssignedCountry in ['USA'],20,,0.0
+descend,maximum,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,28973.126757244063,3899.7402664161195
+descend,maximum,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,184016.87372397594,5120.659015138015
+descend,maximum,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,22956.990798928382,16936.284702936468
+descend,maximum,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,110510.05179700433,33343.49651520281
+descend,maximum,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,25774.06543141216,686.7229488224126
+descend,maximum,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,148886.9462853066,874.495804714136
+descend,maximum,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,32216.955122745923,1401.7753019350646
+descend,maximum,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,185409.52537347976,2356.725775610779
+descend,maximum,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,9032.64619827664,5269.843631950155
+descend,maximum,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,34712.48723105997,11953.935705353622
+descend,maximum,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,1207.4520590953268,1207.544797507388
+descend,maximum,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,5804.382499493903,5810.89060510598
+descend,maximum,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,3874.968408708487,4010.729257483875
+descend,maximum,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,16776.02689079481,16785.342317206778
+descend,maximum,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,695.0598785333016,441.30198501648067
+descend,maximum,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,3853.6939437737915,732.448495804341
+descend,maximum,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,6232.31869365677,1077.4478907394835
+descend,maximum,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,28741.119511334047,1973.545941194242
+descend,maximum,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,43758.328263430296,8107.731954429267
+descend,maximum,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,183804.01010877168,15287.607997705769
+descend,minimum,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,240.3545650118125,254.04557371621826
+descend,minimum,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,916.9108327960572,916.9143002919096
+descend,minimum,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,214.8322027700528,223.35789584555914
+descend,minimum,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,518.9119328909509,521.0356483245151
+descend,minimum,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,222.0897432055072,225.2122488603111
+descend,minimum,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,731.3433099339942,733.771635439382
+descend,minimum,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,201.9871242884497,202.12750167338794
+descend,minimum,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,725.8262882980671,729.5176756067091
+descend,minimum,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,65.6810776376648,76.94056004618601
+descend,minimum,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,115.7845900470911,119.988
+descend,minimum,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,11.543560546035799,19.998
+descend,minimum,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,27.669202718872,39.786359013963136
+descend,minimum,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,35.6143904855633,38.930811807787904
+descend,minimum,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,72.5558444103511,75.16773341343766
+descend,minimum,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,6.978174250654599,7.253525165975206
+descend,minimum,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,20.9239760736351,21.673779982365446
+descend,minimum,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,59.0186411869363,59.072316348966574
+descend,minimum,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,132.5289159119423,134.4197068919006
+descend,minimum,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,389.9912891308695,392.62171590792184
+descend,minimum,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,759.784112441692,824.505603406636
+descend,policy,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,3881.83139399659,3886.8943560739335
+descend,policy,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,18362.99397142687,10342.39255420212
+descend,policy,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,3318.005205190447,3379.6620000000003
+descend,policy,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,10768.383677388105,10806.917500973386
+descend,policy,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,1921.948137024076,997.7678111517686
+descend,policy,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,9132.955260380646,909.8219692228519
+descend,policy,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,3419.857529267135,1529.6256206044932
+descend,policy,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,15230.170077729548,3382.5553945083443
+descend,policy,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,922.953578348228,923.0656721475044
+descend,policy,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,2470.4719134440775,2584.0557257058344
+descend,policy,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,176.81929184500189,179.982
+descend,policy,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,571.4419045974967,579.4019067108854
+descend,policy,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,512.6814352730119,520.349847562919
+descend,policy,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,1486.8531553047953,1602.2855408535702
+descend,policy,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,98.63950447756551,102.45052431412074
+descend,policy,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,388.25993797335417,391.1736108345374
+descend,policy,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,769.3028493647477,769.7316276282971
+descend,policy,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,2468.4379242147106,2629.908835012696
+descend,policy,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,4216.548494438683,4234.189087941314
+descend,policy,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,12794.28003335072,12841.576860990222
+descend,reference,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,3848.644091589581,3850.9111672453178
+descend,reference,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,18262.680136274434,10342.39255420212
+descend,reference,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,3271.4181538544894,3309.1546552395425
+descend,reference,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,10673.152471422927,10806.917500973386
+descend,reference,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,3530.277289567356,686.7234658800356
+descend,reference,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,14792.395538597622,1359.9904130470343
+descend,reference,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,4441.453206831984,1410.12958149757
+descend,reference,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,18453.015404033533,3904.3288223168893
+descend,reference,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,1052.5568758211748,1071.0150494651207
+descend,reference,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,2715.9140827808947,2818.9698825881833
+descend,reference,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,173.8127954037983,175.2732986695207
+descend,reference,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,564.7617912016813,570.0941096875843
+descend,reference,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,517.7141563589747,520.349847562919
+descend,reference,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,1496.1870015065667,1602.2855408535702
+descend,reference,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,97.8744572261923,97.93683069988899
+descend,reference,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,385.64796806348477,387.4101235392086
+descend,reference,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,867.9300276963976,890.0771745518722
+descend,reference,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,2692.2721463781327,2717.572462846453
+descend,reference,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,5775.2998562244975,6311.140339647469
+descend,reference,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,16106.223101272974,16167.436142461309
+descend,us1gt,v8_fixedC_deterministic,Australia,Gompertz,ok,AssignedCountry == Australia,9,3930.796020587122,3941.8788645669697
+descend,us1gt,v8_fixedC_deterministic,Australia,Logistic,ok,AssignedCountry == Australia,9,18566.302019660896,10342.39255420212
+descend,us1gt,v8_fixedC_deterministic,Brazil,Gompertz,ok,AssignedCountry == Brazil,10,3278.712798680949,3309.1546552395425
+descend,us1gt,v8_fixedC_deterministic,Brazil,Logistic,ok,AssignedCountry == Brazil,10,10689.377837423304,10806.917500973386
+descend,us1gt,v8_fixedC_deterministic,Canada,Gompertz,ok,AssignedCountry == Canada,3,3531.6385555837664,686.7234658800356
+descend,us1gt,v8_fixedC_deterministic,Canada,Logistic,ok,AssignedCountry == Canada,3,14797.033772654691,1359.9904130470343
+descend,us1gt,v8_fixedC_deterministic,China,Gompertz,ok,AssignedCountry == China,21,4514.398055620451,1416.6518384397436
+descend,us1gt,v8_fixedC_deterministic,China,Logistic,ok,AssignedCountry == China,21,18662.82964307355,3904.3288223168893
+descend,us1gt,v8_fixedC_deterministic,EU,Gompertz,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,1044.3093667645505,1071.0150494651207
+descend,us1gt,v8_fixedC_deterministic,EU,Logistic,ok,RegionGroup in ['Europe'] and AssignedCountry not in ['UK'],28,2700.1428299625136,2818.9698825881833
+descend,us1gt,v8_fixedC_deterministic,Indonesia,Gompertz,ok,AssignedCountry == Indonesia,11,171.16426875619888,175.2732986695207
+descend,us1gt,v8_fixedC_deterministic,Indonesia,Logistic,ok,AssignedCountry == Indonesia,11,558.333234990645,570.0941096875843
+descend,us1gt,v8_fixedC_deterministic,Middle East,Gompertz,ok,RegionGroup in ['Middle East'],13,514.8449316272515,520.349847562919
+descend,us1gt,v8_fixedC_deterministic,Middle East,Logistic,ok,RegionGroup in ['Middle East'],13,1490.9981653339194,1602.2855408535702
+descend,us1gt,v8_fixedC_deterministic,Thailand,Gompertz,ok,AssignedCountry == Thailand,2,97.0804389847065,97.93683069988899
+descend,us1gt,v8_fixedC_deterministic,Thailand,Logistic,ok,AssignedCountry == Thailand,2,383.7349101946213,387.4101235392086
+descend,us1gt,v8_fixedC_deterministic,UK,Gompertz,ok,AssignedCountry == UK,6,875.1871366709721,890.0771745518722
+descend,us1gt,v8_fixedC_deterministic,UK,Logistic,ok,AssignedCountry == UK,6,2709.2755746927464,2717.572462846453
+descend,us1gt,v8_fixedC_deterministic,US,Gompertz,ok,AssignedCountry in ['USA'],20,4216.548494438683,4234.189087941314
+descend,us1gt,v8_fixedC_deterministic,US,Logistic,ok,AssignedCountry in ['USA'],20,12794.28003335072,12841.576860990222

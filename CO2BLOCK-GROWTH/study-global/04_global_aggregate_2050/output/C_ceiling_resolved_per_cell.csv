@@ -1,0 +1,151 @@
+scenario,country,model,failed_Part2,C_scenario_gt,C_recon_min_gt,C_recon_mean_gt,C_cap_final_min,C_cap_final_mean
+growth10,Australia,Gompertz,False,502.4,,,502.4,502.4
+growth10,Australia,Logistic,True,502.4,455.1055392798051,464.8757117741038,455.1055392798051,464.8757117741038
+ipcc_high,Australia,Gompertz,False,502.4,,,502.4,502.4
+ipcc_high,Australia,Logistic,True,502.4,274.9404756265493,280.0894983918215,274.9404756265493,280.0894983918215
+ipcc_low,Australia,Gompertz,False,502.4,,,502.4,502.4
+ipcc_low,Australia,Logistic,False,502.4,,,502.4,502.4
+maximum,Australia,Gompertz,True,5024.0,503.6149240236891,512.4114866449049,503.6149240236891,512.4114866449049
+maximum,Australia,Logistic,True,5024.0,133.64221308728963,136.43286828025794,133.64221308728963,136.43286828025794
+minimum,Australia,Gompertz,False,50.24,,,50.24,50.24
+minimum,Australia,Logistic,False,50.24,,,50.24,50.24
+policy,Australia,Gompertz,False,502.4,,,502.4,502.4
+policy,Australia,Logistic,True,502.4,282.3460522005039,295.3719848584575,282.3460522005039,295.3719848584575
+reference,Australia,Gompertz,False,502.4,,,502.4,502.4
+reference,Australia,Logistic,True,502.4,284.2558600952059,297.36931751592425,284.2558600952059,297.36931751592425
+us1gt,Australia,Gompertz,False,502.4,,,502.4,502.4
+us1gt,Australia,Logistic,True,502.4,279.5837375599152,292.4830970115913,279.5837375599152,292.4830970115913
+growth10,Brazil,Gompertz,False,300.0,,,300.0,300.0
+growth10,Brazil,Logistic,False,300.0,,,300.0,300.0
+ipcc_high,Brazil,Logistic,False,300.0,,,300.0,300.0
+maximum,Brazil,Gompertz,True,3000.0,1961.4005935422645,2029.5016523105955,1961.4005935422645,2029.5016523105955
+maximum,Brazil,Logistic,True,3000.0,902.9864110228922,955.6838311443712,902.9864110228922,955.6838311443712
+minimum,Brazil,Gompertz,False,30.0,,,30.0,30.0
+minimum,Brazil,Logistic,False,30.0,,,30.0,30.0
+policy,Brazil,Gompertz,False,300.0,,,300.0,300.0
+policy,Brazil,Logistic,False,300.0,,,300.0,300.0
+reference,Brazil,Gompertz,False,300.0,,,300.0,300.0
+reference,Brazil,Logistic,False,300.0,,,300.0,300.0
+us1gt,Brazil,Gompertz,False,300.0,,,300.0,300.0
+us1gt,Brazil,Logistic,False,300.0,,,300.0,300.0
+growth10,Canada,Gompertz,False,404.0,,,404.0,404.0
+growth10,Canada,Logistic,True,404.0,52.6488797329934,52.81319677334481,52.6488797329934,52.81319677334481
+ipcc_high,Canada,Gompertz,True,404.0,38.81252010870038,39.499138707311715,38.81252010870038,39.499138707311715
+ipcc_high,Canada,Logistic,True,404.0,32.699410607159194,34.5322431592664,32.699410607159194,34.5322431592664
+ipcc_low,Canada,Logistic,False,404.0,,,404.0,404.0
+maximum,Canada,Gompertz,True,4040.0,49.050285504701286,49.83374804698779,49.050285504701286,49.83374804698779
+maximum,Canada,Logistic,True,4040.0,22.5730394956223,22.66261877238962,22.5730394956223,22.66261877238962
+minimum,Canada,Gompertz,False,40.4,,,40.4,40.4
+minimum,Canada,Logistic,False,40.4,,,40.4,40.4
+policy,Canada,Gompertz,True,404.0,182.91913650125727,183.34542664878472,182.91913650125727,183.34542664878472
+policy,Canada,Logistic,True,404.0,39.846124622641554,40.342696220484186,39.846124622641554,40.342696220484186
+reference,Canada,Gompertz,True,404.0,50.09622393580483,50.891060317494265,50.09622393580483,50.891060317494265
+reference,Canada,Logistic,True,404.0,36.16087229580033,36.38476983361615,36.16087229580033,36.38476983361615
+us1gt,Canada,Gompertz,True,404.0,50.06276576136135,50.85723487396816,50.06276576136135,50.85723487396816
+us1gt,Canada,Logistic,True,404.0,36.14906838650704,36.372900937188845,36.14906838650704,36.372900937188845
+growth10,China,Gompertz,False,403.0,,,403.0,403.0
+growth10,China,Logistic,True,403.0,122.67775940404135,123.46195106485271,122.67775940404135,123.46195106485271
+ipcc_low,China,Gompertz,True,403.0,300.0476408027664,301.17418987685915,300.0476408027664,301.17418987685915
+ipcc_low,China,Logistic,True,403.0,88.72365780414786,90.75863116239263,88.72365780414786,90.75863116239263
+maximum,China,Gompertz,True,4030.0,91.36874836408556,91.90461054253238,91.36874836408556,91.90461054253238
+maximum,China,Logistic,True,4030.0,49.866407876777295,49.87824087347754,49.866407876777295,49.87824087347754
+minimum,China,Gompertz,False,40.3,,,40.3,40.3
+minimum,China,Logistic,False,40.3,,,40.3,40.3
+policy,China,Gompertz,True,403.0,152.19100421667878,153.01029417134794,152.19100421667878,153.01029417134794
+policy,China,Logistic,True,403.0,88.91661564274123,89.03190214868448,88.91661564274123,89.03190214868448
+reference,China,Gompertz,True,403.0,94.98511612324596,95.03909779447686,94.98511612324596,95.03909779447686
+reference,China,Logistic,True,403.0,84.27551601194598,84.79316466941188,84.27551601194598,84.79316466941188
+us1gt,China,Gompertz,True,403.0,92.02169275641047,92.59723760495777,92.02169275641047,92.59723760495777
+us1gt,China,Logistic,True,403.0,83.26838120722681,83.80536622855416,83.26838120722681,83.80536622855416
+growth10,EU,Gompertz,False,94.0,,,94.0,94.0
+growth10,EU,Logistic,False,94.0,,,94.0,94.0
+ipcc_high,EU,Gompertz,False,94.0,,,94.0,94.0
+ipcc_high,EU,Logistic,False,94.0,,,94.0,94.0
+ipcc_low,EU,Gompertz,False,94.0,,,94.0,94.0
+ipcc_low,EU,Logistic,False,94.0,,,94.0,94.0
+maximum,EU,Gompertz,True,940.0,461.33558830423186,470.11990067995134,461.33558830423186,470.11990067995134
+maximum,EU,Logistic,True,940.0,320.87292776354013,321.3584655093067,320.87292776354013,321.3584655093067
+minimum,EU,Gompertz,False,9.4,,,9.4,9.4
+minimum,EU,Logistic,False,9.4,,,9.4,9.4
+policy,EU,Gompertz,False,94.0,,,94.0,94.0
+policy,EU,Logistic,False,94.0,,,94.0,94.0
+reference,EU,Gompertz,False,94.0,,,94.0,94.0
+reference,EU,Logistic,False,94.0,,,94.0,94.0
+us1gt,EU,Gompertz,False,94.0,,,94.0,94.0
+us1gt,EU,Logistic,False,94.0,,,94.0,94.0
+growth10,Indonesia,Gompertz,False,15.9,,,15.9,15.9
+growth10,Indonesia,Logistic,False,15.9,,,15.9,15.9
+ipcc_low,Indonesia,Gompertz,False,15.9,,,15.9,15.9
+ipcc_low,Indonesia,Logistic,False,15.9,,,15.9,15.9
+maximum,Indonesia,Gompertz,False,159.0,,,159.0,159.0
+maximum,Indonesia,Logistic,False,159.0,,,159.0,159.0
+minimum,Indonesia,Gompertz,False,1.59,,,1.59,1.59
+minimum,Indonesia,Logistic,False,1.59,,,1.59,1.59
+policy,Indonesia,Gompertz,False,15.9,,,15.9,15.9
+policy,Indonesia,Logistic,False,15.9,,,15.9,15.9
+reference,Indonesia,Gompertz,False,15.9,,,15.9,15.9
+reference,Indonesia,Logistic,False,15.9,,,15.9,15.9
+us1gt,Indonesia,Gompertz,False,15.9,,,15.9,15.9
+us1gt,Indonesia,Logistic,False,15.9,,,15.9,15.9
+growth10,Middle East,Gompertz,False,45.6,,,45.6,45.6
+growth10,Middle East,Logistic,False,45.6,,,45.6,45.6
+ipcc_high,Middle East,Gompertz,False,45.6,,,45.6,45.6
+ipcc_high,Middle East,Logistic,False,45.6,,,45.6,45.6
+ipcc_low,Middle East,Gompertz,False,45.6,,,45.6,45.6
+ipcc_low,Middle East,Logistic,False,45.6,,,45.6,45.6
+maximum,Middle East,Gompertz,False,456.0,,,456.0,456.0
+maximum,Middle East,Logistic,False,456.0,,,456.0,456.0
+minimum,Middle East,Gompertz,False,4.56,,,4.56,4.56
+minimum,Middle East,Logistic,False,4.56,,,4.56,4.56
+policy,Middle East,Gompertz,False,45.6,,,45.6,45.6
+policy,Middle East,Logistic,False,45.6,,,45.6,45.6
+reference,Middle East,Gompertz,False,45.6,,,45.6,45.6
+reference,Middle East,Logistic,False,45.6,,,45.6,45.6
+us1gt,Middle East,Gompertz,False,45.6,,,45.6,45.6
+us1gt,Middle East,Logistic,False,45.6,,,45.6,45.6
+growth10,Thailand,Gompertz,False,10.5,,,10.5,10.5
+growth10,Thailand,Logistic,False,10.5,,,10.5,10.5
+ipcc_high,Thailand,Gompertz,False,10.5,,,10.5,10.5
+ipcc_high,Thailand,Logistic,False,10.5,,,10.5,10.5
+ipcc_low,Thailand,Gompertz,False,10.5,,,10.5,10.5
+ipcc_low,Thailand,Logistic,False,10.5,,,10.5,10.5
+maximum,Thailand,Gompertz,True,105.0,62.29596694567931,63.821156593920875,62.29596694567931,63.821156593920875
+maximum,Thailand,Logistic,True,105.0,19.082839954821484,19.500340585657312,19.082839954821484,19.500340585657312
+minimum,Thailand,Gompertz,False,1.05,,,1.05,1.05
+minimum,Thailand,Logistic,False,1.05,,,1.05,1.05
+policy,Thailand,Gompertz,False,10.5,,,10.5,10.5
+policy,Thailand,Logistic,False,10.5,,,10.5,10.5
+reference,Thailand,Gompertz,False,10.5,,,10.5,10.5
+reference,Thailand,Logistic,False,10.5,,,10.5,10.5
+us1gt,Thailand,Gompertz,False,10.5,,,10.5,10.5
+us1gt,Thailand,Logistic,False,10.5,,,10.5,10.5
+growth10,UK,Gompertz,False,78.0,,,78.0,78.0
+growth10,UK,Logistic,False,78.0,,,78.0,78.0
+ipcc_high,UK,Gompertz,False,78.0,,,78.0,78.0
+ipcc_high,UK,Logistic,False,78.0,,,78.0,78.0
+ipcc_low,UK,Gompertz,False,78.0,,,78.0,78.0
+ipcc_low,UK,Logistic,False,78.0,,,78.0,78.0
+maximum,UK,Gompertz,True,780.0,89.46466756654,92.84140190336853,89.46466756654,92.84140190336853
+maximum,UK,Logistic,True,780.0,49.85623484327664,51.18635432493239,49.85623484327664,51.18635432493239
+minimum,UK,Gompertz,False,7.8,,,7.8,7.8
+minimum,UK,Logistic,False,7.8,,,7.8,7.8
+policy,UK,Gompertz,False,78.0,,,78.0,78.0
+policy,UK,Logistic,False,78.0,,,78.0,78.0
+reference,UK,Gompertz,False,78.0,,,78.0,78.0
+reference,UK,Logistic,False,78.0,,,78.0,78.0
+us1gt,UK,Gompertz,False,78.0,,,78.0,78.0
+us1gt,UK,Logistic,False,78.0,,,78.0,78.0
+growth10,US,Gompertz,False,506.0,,,506.0,506.0
+growth10,US,Logistic,False,506.0,,,506.0,506.0
+ipcc_high,US,Gompertz,False,506.0,,,506.0,506.0
+ipcc_high,US,Logistic,False,506.0,,,506.0,506.0
+maximum,US,Gompertz,True,5060.0,588.5093601618884,590.6459414049157,588.5093601618884,590.6459414049157
+maximum,US,Logistic,True,5060.0,396.0288516303883,402.12218364211276,396.0288516303883,402.12218364211276
+minimum,US,Gompertz,False,50.6,,,50.6,50.6
+minimum,US,Logistic,False,50.6,,,50.6,50.6
+policy,US,Gompertz,False,506.0,,,506.0,506.0
+policy,US,Logistic,False,506.0,,,506.0,506.0
+reference,US,Gompertz,False,506.0,,,506.0,506.0
+reference,US,Logistic,False,506.0,,,506.0,506.0
+us1gt,US,Gompertz,False,506.0,,,506.0,506.0
+us1gt,US,Logistic,False,506.0,,,506.0,506.0

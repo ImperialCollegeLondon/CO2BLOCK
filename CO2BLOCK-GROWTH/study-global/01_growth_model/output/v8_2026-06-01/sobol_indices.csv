@@ -1,0 +1,605 @@
+Scenario,Country,Model,Type,Output_Y,kind,S_g,S_target,S_g_total,S_target_total,S_gt,feasibility_fraction,n_saltelli_total,n_saltelli_feasible
+reference,UK,Logistic,A,feasibility,feasibility,0.5682340950660844,0.12472446416249149,0.8707721829250176,0.4339567214971033,0.611770345193545,0.30902099609375,16384,5063
+reference,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+reference,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+reference,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+reference,UK,Gompertz,A,feasibility,feasibility,0.36167886828171686,0.18658384358268998,0.8135782530245215,0.6251770343420002,0.8904925755021148,0.27972412109375,16384,4583
+reference,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+reference,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+reference,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+reference,US,Logistic,A,feasibility,feasibility,0.623337990877237,0.11777428347913398,0.8914888090615752,0.38319300814026436,0.5335695428454688,0.36627197265625,16384,6001
+reference,US,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.36627197265625,16384,6001
+reference,US,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.36627197265625,16384,6001
+reference,US,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.36627197265625,16384,6001
+reference,US,Gompertz,A,feasibility,feasibility,0.353752441760605,0.17319563808236202,0.8308149365736347,0.6361394827982697,0.9400063395289373,0.28515625,16384,4672
+reference,US,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28515625,16384,4672
+reference,US,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28515625,16384,4672
+reference,US,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28515625,16384,4672
+reference,EU,Logistic,A,feasibility,feasibility,0.6297893696600135,0.09034283501337335,0.9055592977314536,0.3625262444704426,0.5479533375285093,0.41131591796875,16384,6739
+reference,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+reference,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+reference,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+reference,EU,Gompertz,A,feasibility,feasibility,0.33577828990651326,0.17052795122149692,0.8311746993103732,0.6534917291565058,0.9783601873388689,0.28717041015625,16384,4705
+reference,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+reference,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+reference,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+reference,China,Logistic,A,feasibility,feasibility,0.41496982165924784,0.1828596970254183,0.8234382992962047,0.5802753115845738,0.8058840921961125,0.1912841796875,16384,3134
+reference,China,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+reference,China,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+reference,China,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+reference,China,Gompertz,A,feasibility,feasibility,0.4650671140621271,0.17386602522860317,0.8332950604146594,0.5206599695991164,0.7150218907230457,0.28564453125,16384,4680
+reference,China,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+reference,China,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+reference,China,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+reference,Middle East,Logistic,A,feasibility,feasibility,0.601378577601084,0.10561845986542338,0.8923682119241895,0.39229713664300114,0.5776683111006832,0.34710693359375,16384,5687
+reference,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+reference,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+reference,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+reference,Middle East,Gompertz,A,feasibility,feasibility,0.37547357807907056,0.18634700402713505,0.8131156148764901,0.6264890789159083,0.8777841116861926,0.28338623046875,16384,4643
+reference,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+reference,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+reference,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+reference,Australia,Logistic,A,feasibility,feasibility,0.417783228832965,0.20581308281796945,0.798908171015138,0.5971710665319009,0.7724829258961043,0.2117919921875,16384,3470
+reference,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+reference,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+reference,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+reference,Australia,Gompertz,A,feasibility,feasibility,0.574170625622006,0.10264769482647314,0.9022611649008272,0.4238672747310614,0.6493101191834094,0.38690185546875,16384,6339
+reference,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+reference,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+reference,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+reference,Canada,Logistic,A,feasibility,feasibility,0.4211458509313598,0.2089603346153815,0.8023936785620205,0.5968759516278791,0.7691634446431583,0.21270751953125,16384,3485
+reference,Canada,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+reference,Canada,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+reference,Canada,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+reference,Canada,Gompertz,A,feasibility,feasibility,0.49838074469524857,0.12791427089497526,0.8727332831684191,0.4956331153306436,0.7420713829088388,0.33062744140625,16384,5417
+reference,Canada,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+reference,Canada,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+reference,Canada,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+reference,Indonesia,Logistic,A,feasibility,feasibility,0.5307054382412071,0.14086522199428042,0.8558786276051619,0.4570283911949077,0.641336358564582,0.28411865234375,16384,4655
+reference,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+reference,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+reference,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+reference,Indonesia,Gompertz,A,feasibility,feasibility,0.37902820209351534,0.19495268260628293,0.817081793022645,0.6096172424487643,0.852718150771611,0.27825927734375,16384,4559
+reference,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+reference,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+reference,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+reference,Thailand,Logistic,A,feasibility,feasibility,0.4485331233272652,0.1675054431040228,0.8336826810158491,0.5656321187273743,0.7832762333119354,0.20257568359375,16384,3319
+reference,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+reference,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+reference,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+reference,Thailand,Gompertz,A,feasibility,feasibility,0.49554506590854164,0.15345312355446364,0.8420219058443372,0.49045902934533264,0.6834827457266646,0.30413818359375,16384,4983
+reference,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+reference,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+reference,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+reference,Brazil,Logistic,A,feasibility,feasibility,0.5312958082450033,0.14881847467885215,0.8552287064262135,0.45822317651184796,0.633337600014206,0.27947998046875,16384,4579
+reference,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+reference,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+reference,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+reference,Brazil,Gompertz,A,feasibility,feasibility,0.3697265174558429,0.19736175995682045,0.8165933192152266,0.6161123246773567,0.8656173664799198,0.27581787109375,16384,4519
+reference,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+reference,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+reference,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+minimum,UK,Logistic,A,feasibility,feasibility,0.3656798503220007,0.10118790013076769,0.8801391704235924,0.6145217225719712,1.0277931425427953,0.3175048828125,16384,5202
+minimum,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3175048828125,16384,5202
+minimum,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3175048828125,16384,5202
+minimum,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3175048828125,16384,5202
+minimum,UK,Gompertz,A,feasibility,feasibility,0.15311113779072283,0.07036877521390673,0.9023496158805379,0.8219132643838934,1.5007829672598016,0.21160888671875,16384,3467
+minimum,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21160888671875,16384,3467
+minimum,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21160888671875,16384,3467
+minimum,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21160888671875,16384,3467
+minimum,US,Logistic,A,feasibility,feasibility,0.3092789377558516,0.1348219395248706,0.861608760967196,0.6866205213123496,1.1041284049988234,0.3260498046875,16384,5342
+minimum,US,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3260498046875,16384,5342
+minimum,US,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3260498046875,16384,5342
+minimum,US,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3260498046875,16384,5342
+minimum,US,Gompertz,A,feasibility,feasibility,0.1125558033333964,0.056423312709647004,0.9165889664572432,0.8735818595266981,1.621191709940898,0.16229248046875,16384,2659
+minimum,US,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.16229248046875,16384,2659
+minimum,US,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.16229248046875,16384,2659
+minimum,US,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.16229248046875,16384,2659
+minimum,EU,Logistic,A,feasibility,feasibility,0.23933925563576985,0.16418875530509597,0.8363966866099535,0.7656203383810386,1.198489014050126,0.31915283203125,16384,5229
+minimum,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.31915283203125,16384,5229
+minimum,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.31915283203125,16384,5229
+minimum,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.31915283203125,16384,5229
+minimum,EU,Gompertz,A,feasibility,feasibility,0.04909999045424877,0.04436387887731646,0.9589919686692966,0.9431408617491429,1.8086689610868742,0.1036376953125,16384,1698
+minimum,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.1036376953125,16384,1698
+minimum,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.1036376953125,16384,1698
+minimum,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.1036376953125,16384,1698
+minimum,China,Logistic,A,feasibility,feasibility,0.30353360107208416,0.14896718753638716,0.8373217374367791,0.6687474356993,1.0535683845276076,0.22802734375,16384,3736
+minimum,China,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22802734375,16384,3736
+minimum,China,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22802734375,16384,3736
+minimum,China,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22802734375,16384,3736
+minimum,China,Gompertz,A,feasibility,feasibility,0.3253452425908491,0.08808359017052508,0.9071913419683405,0.679005514826977,1.1727680240339433,0.32647705078125,16384,5349
+minimum,China,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.32647705078125,16384,5349
+minimum,China,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.32647705078125,16384,5349
+minimum,China,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.32647705078125,16384,5349
+minimum,Middle East,Logistic,A,feasibility,feasibility,0.35395343272293955,0.1261506021083484,0.8830560894529218,0.6570814876798761,1.0600335423015097,0.33331298828125,16384,5461
+minimum,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.33331298828125,16384,5461
+minimum,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.33331298828125,16384,5461
+minimum,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.33331298828125,16384,5461
+minimum,Middle East,Gompertz,A,feasibility,feasibility,0.13022536917971833,0.05383953230648597,0.9284057728151562,0.8579861544760816,1.6023270258050335,0.18548583984375,16384,3039
+minimum,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.18548583984375,16384,3039
+minimum,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.18548583984375,16384,3039
+minimum,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.18548583984375,16384,3039
+minimum,Australia,Logistic,A,feasibility,feasibility,0.3081968020432144,0.14562632880266813,0.837457121703041,0.6642620857362161,1.0478960765933745,0.22747802734375,16384,3727
+minimum,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22747802734375,16384,3727
+minimum,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22747802734375,16384,3727
+minimum,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22747802734375,16384,3727
+minimum,Australia,Gompertz,A,feasibility,feasibility,0.3559149582433785,0.08286945248729478,0.9157175377810833,0.6573696576711163,1.1343027847215263,0.3521728515625,16384,5770
+minimum,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3521728515625,16384,5770
+minimum,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3521728515625,16384,5770
+minimum,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3521728515625,16384,5770
+minimum,Canada,Logistic,A,feasibility,feasibility,0.30433867206534826,0.15056452024087075,0.8332896605623714,0.6684326869847784,1.0468191552409307,0.22772216796875,16384,3731
+minimum,Canada,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22772216796875,16384,3731
+minimum,Canada,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22772216796875,16384,3731
+minimum,Canada,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22772216796875,16384,3731
+minimum,Canada,Gompertz,A,feasibility,feasibility,0.2762480633286792,0.10816092847290322,0.8911700594615946,0.7117438468208321,1.2185049144808442,0.28729248046875,16384,4707
+minimum,Canada,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28729248046875,16384,4707
+minimum,Canada,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28729248046875,16384,4707
+minimum,Canada,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28729248046875,16384,4707
+minimum,Indonesia,Logistic,A,feasibility,feasibility,0.47637862980521123,0.08472445802928763,0.9131507222594117,0.5231363475112655,0.8751839819361784,0.332275390625,16384,5444
+minimum,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.332275390625,16384,5444
+minimum,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.332275390625,16384,5444
+minimum,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.332275390625,16384,5444
+minimum,Indonesia,Gompertz,A,feasibility,feasibility,0.2529716484774895,0.09113677224960186,0.917020005650817,0.7441610671766092,1.3170726521003349,0.24114990234375,16384,3951
+minimum,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.24114990234375,16384,3951
+minimum,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.24114990234375,16384,3951
+minimum,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.24114990234375,16384,3951
+minimum,Thailand,Logistic,A,feasibility,feasibility,0.5379957087002641,0.07267008661471823,0.9142410736082921,0.45008791316100527,0.753663191454315,0.16656494140625,16384,2729
+minimum,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.16656494140625,16384,2729
+minimum,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.16656494140625,16384,2729
+minimum,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.16656494140625,16384,2729
+minimum,Thailand,Gompertz,A,feasibility,feasibility,0.5337220845033345,0.10183690183690183,0.8993096993096992,0.46725166725166717,0.73100238022113,0.20513916015625,16384,3361
+minimum,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20513916015625,16384,3361
+minimum,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20513916015625,16384,3361
+minimum,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20513916015625,16384,3361
+minimum,Brazil,Logistic,A,feasibility,feasibility,0.3877288539256868,0.1253566739232995,0.8829643439757634,0.6222075700132439,0.9920863861400212,0.2984619140625,16384,4890
+minimum,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2984619140625,16384,4890
+minimum,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2984619140625,16384,4890
+minimum,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2984619140625,16384,4890
+minimum,Brazil,Gompertz,A,feasibility,feasibility,0.1769473819875478,0.08753021521873555,0.8943403107694374,0.819928950532734,1.4497916640958879,0.2239990234375,16384,3670
+minimum,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+minimum,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+minimum,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+maximum,UK,Logistic,A,feasibility,feasibility,0.41907019348016755,0.2057637830419888,0.8035787367376648,0.5957314132098899,0.7744761734253983,0.21173095703125,16384,3469
+maximum,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21173095703125,16384,3469
+maximum,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21173095703125,16384,3469
+maximum,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21173095703125,16384,3469
+maximum,UK,Gompertz,A,feasibility,feasibility,0.574717792180023,0.10647445084553651,0.8971624254452434,0.43842760430928324,0.6543977867289672,0.37579345703125,16384,6157
+maximum,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.37579345703125,16384,6157
+maximum,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.37579345703125,16384,6157
+maximum,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.37579345703125,16384,6157
+maximum,US,Logistic,A,feasibility,feasibility,0.4208352805146555,0.20979738905559106,0.8031224648277449,0.5954183790964315,0.7679081743539298,0.2127685546875,16384,3486
+maximum,US,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2127685546875,16384,3486
+maximum,US,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2127685546875,16384,3486
+maximum,US,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2127685546875,16384,3486
+maximum,US,Gompertz,A,feasibility,feasibility,0.5008662500269145,0.12751692935426218,0.8725706780354411,0.4933359171457485,0.7375234158000128,0.3306884765625,16384,5418
+maximum,US,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3306884765625,16384,5418
+maximum,US,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3306884765625,16384,5418
+maximum,US,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3306884765625,16384,5418
+maximum,EU,Logistic,A,feasibility,feasibility,0.42259877615787345,0.20829572927451942,0.801232719150194,0.5958442594404975,0.7661824731582985,0.2138671875,16384,3504
+maximum,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2138671875,16384,3504
+maximum,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2138671875,16384,3504
+maximum,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2138671875,16384,3504
+maximum,EU,Gompertz,A,feasibility,feasibility,0.4414342387975202,0.18297647374795817,0.8434808434808436,0.5648945648945651,0.7839646958299304,0.28863525390625,16384,4729
+maximum,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28863525390625,16384,4729
+maximum,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28863525390625,16384,4729
+maximum,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28863525390625,16384,4729
+maximum,China,Logistic,A,feasibility,feasibility,0.4120760425723512,0.18124456589243568,0.8227549372748725,0.5866600422307787,0.8160943710408644,0.18939208984375,16384,3103
+maximum,China,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.18939208984375,16384,3103
+maximum,China,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.18939208984375,16384,3103
+maximum,China,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.18939208984375,16384,3103
+maximum,China,Gompertz,A,feasibility,feasibility,0.6788465509266032,0.07486193003760708,0.929356986254391,0.3220249247619327,0.4976734300521133,0.43731689453125,16384,7165
+maximum,China,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.43731689453125,16384,7165
+maximum,China,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.43731689453125,16384,7165
+maximum,China,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.43731689453125,16384,7165
+maximum,Middle East,Logistic,A,feasibility,feasibility,0.4190226722646244,0.20758357549544112,0.8021697962892628,0.5959602406342288,0.7715237891634259,0.21209716796875,16384,3475
+maximum,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21209716796875,16384,3475
+maximum,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21209716796875,16384,3475
+maximum,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21209716796875,16384,3475
+maximum,Middle East,Gompertz,A,feasibility,feasibility,0.5286670237916768,0.12309482390708097,0.8787453430778378,0.47135147760199614,0.6983349729810763,0.34735107421875,16384,5691
+maximum,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34735107421875,16384,5691
+maximum,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34735107421875,16384,5691
+maximum,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34735107421875,16384,5691
+maximum,Australia,Logistic,A,feasibility,feasibility,0.41716373937151313,0.20466083063516813,0.7989081710151386,0.5964401349939186,0.7735237360023758,0.21185302734375,16384,3471
+maximum,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21185302734375,16384,3471
+maximum,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21185302734375,16384,3471
+maximum,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21185302734375,16384,3471
+maximum,Australia,Gompertz,A,feasibility,feasibility,0.6618271046001712,0.06792915489746604,0.9372700415058086,0.34531001529161376,0.5528237972997851,0.491943359375,16384,8060
+maximum,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.491943359375,16384,8060
+maximum,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.491943359375,16384,8060
+maximum,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.491943359375,16384,8060
+maximum,Canada,Logistic,A,feasibility,feasibility,0.4184051437519216,0.2061611158380941,0.8039182319335906,0.5952509312950902,0.7746029036386652,0.21148681640625,16384,3465
+maximum,Canada,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21148681640625,16384,3465
+maximum,Canada,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21148681640625,16384,3465
+maximum,Canada,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21148681640625,16384,3465
+maximum,Canada,Gompertz,A,feasibility,feasibility,0.6375882764678333,0.07510043093040059,0.9330790577800671,0.36488302101609993,0.585273371397933,0.46234130859375,16384,7575
+maximum,Canada,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.46234130859375,16384,7575
+maximum,Canada,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.46234130859375,16384,7575
+maximum,Canada,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.46234130859375,16384,7575
+maximum,Indonesia,Logistic,A,feasibility,feasibility,0.4230561916712834,0.1962763208137899,0.8047027675588481,0.5969431439345636,0.7823133990083384,0.212158203125,16384,3476
+maximum,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.212158203125,16384,3476
+maximum,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.212158203125,16384,3476
+maximum,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.212158203125,16384,3476
+maximum,Indonesia,Gompertz,A,feasibility,feasibility,0.589424649474461,0.09534519037076924,0.903727637168671,0.4135702746365104,0.6325280719599512,0.3948974609375,16384,6470
+maximum,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3948974609375,16384,6470
+maximum,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3948974609375,16384,6470
+maximum,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3948974609375,16384,6470
+maximum,Thailand,Logistic,A,feasibility,feasibility,0.4481603146414259,0.16695800132030383,0.830998503035769,0.5682171248988852,0.7840973119729246,0.20111083984375,16384,3295
+maximum,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20111083984375,16384,3295
+maximum,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20111083984375,16384,3295
+maximum,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20111083984375,16384,3295
+maximum,Thailand,Gompertz,A,feasibility,feasibility,0.6898828196019243,0.064750430714799,0.9264307378858759,0.3166905712177662,0.4884880587869188,0.4532470703125,16384,7426
+maximum,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.4532470703125,16384,7426
+maximum,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.4532470703125,16384,7426
+maximum,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.4532470703125,16384,7426
+maximum,Brazil,Logistic,A,feasibility,feasibility,0.4203086544007216,0.20665465340711167,0.8047556233190001,0.597171066531901,0.7749633820430678,0.2120361328125,16384,3474
+maximum,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2120361328125,16384,3474
+maximum,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2120361328125,16384,3474
+maximum,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2120361328125,16384,3474
+maximum,Brazil,Gompertz,A,feasibility,feasibility,0.5856216911459423,0.10170455154686861,0.9018780065048103,0.42080831107585714,0.6353600748878566,0.3939208984375,16384,6454
+maximum,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3939208984375,16384,6454
+maximum,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3939208984375,16384,6454
+maximum,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3939208984375,16384,6454
+growth10,UK,Logistic,A,feasibility,feasibility,0.30056064661157533,0.14717987231486998,0.8356273899522234,0.6719836927532463,1.0598705637790244,0.2261962890625,16384,3706
+growth10,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2261962890625,16384,3706
+growth10,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2261962890625,16384,3706
+growth10,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2261962890625,16384,3706
+growth10,UK,Gompertz,A,feasibility,feasibility,0.3335492336804542,0.09070928398163448,0.9078152191741915,0.662563093175869,1.1461197946879718,0.33709716796875,16384,5523
+growth10,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.33709716796875,16384,5523
+growth10,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.33709716796875,16384,5523
+growth10,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.33709716796875,16384,5523
+growth10,US,Logistic,A,feasibility,feasibility,0.30217809354895914,0.15668996099663032,0.8340530540910513,0.6756178714310777,1.0508028709765396,0.2249755859375,16384,3686
+growth10,US,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2249755859375,16384,3686
+growth10,US,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2249755859375,16384,3686
+growth10,US,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2249755859375,16384,3686
+growth10,US,Gompertz,A,feasibility,feasibility,0.2820770240153298,0.10828074121902619,0.8794803237708317,0.7160370777603231,1.205159636296799,0.2845458984375,16384,4662
+growth10,US,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2845458984375,16384,4662
+growth10,US,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2845458984375,16384,4662
+growth10,US,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2845458984375,16384,4662
+growth10,EU,Logistic,A,feasibility,feasibility,0.3422323126939715,0.15814179879125104,0.8450914992386042,0.6548953278217753,0.9996127155751571,0.23681640625,16384,3880
+growth10,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.23681640625,16384,3880
+growth10,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.23681640625,16384,3880
+growth10,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.23681640625,16384,3880
+growth10,EU,Gompertz,A,feasibility,feasibility,0.2349491026738922,0.1256106396063814,0.8812236300496218,0.7601692761432484,1.2808331639125967,0.25018310546875,16384,4099
+growth10,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.25018310546875,16384,4099
+growth10,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.25018310546875,16384,4099
+growth10,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.25018310546875,16384,4099
+growth10,China,Logistic,A,feasibility,feasibility,0.29983370454681924,0.1470977792699104,0.8399032661327743,0.6666120764481421,1.0595838587641868,0.2257080078125,16384,3698
+growth10,China,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2257080078125,16384,3698
+growth10,China,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2257080078125,16384,3698
+growth10,China,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2257080078125,16384,3698
+growth10,China,Gompertz,A,feasibility,feasibility,0.3985678364984259,0.0764194047899376,0.9346999966016861,0.6026031079830586,1.0623158632963812,0.45233154296875,16384,7411
+growth10,China,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.45233154296875,16384,7411
+growth10,China,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.45233154296875,16384,7411
+growth10,China,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.45233154296875,16384,7411
+growth10,Middle East,Logistic,A,feasibility,feasibility,0.304127702823742,0.14456788371531584,0.8387698878807672,0.6682431172868261,1.0583174186285351,0.22760009765625,16384,3729
+growth10,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22760009765625,16384,3729
+growth10,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22760009765625,16384,3729
+growth10,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22760009765625,16384,3729
+growth10,Middle East,Gompertz,A,feasibility,feasibility,0.3050666178244742,0.09945906427812591,0.9057908383751081,0.6885623739556324,1.1898275302281403,0.30560302734375,16384,5007
+growth10,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30560302734375,16384,5007
+growth10,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30560302734375,16384,5007
+growth10,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30560302734375,16384,5007
+growth10,Australia,Logistic,A,feasibility,feasibility,0.30965810619190176,0.15065248588518657,0.8359744035442562,0.6638826016430954,1.0395464131102634,0.22552490234375,16384,3695
+growth10,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22552490234375,16384,3695
+growth10,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22552490234375,16384,3695
+growth10,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22552490234375,16384,3695
+growth10,Australia,Gompertz,A,feasibility,feasibility,0.4014511706168734,0.07621262866748293,0.9341152058619843,0.5980495987110077,1.0545010052886359,0.46563720703125,16384,7629
+growth10,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.46563720703125,16384,7629
+growth10,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.46563720703125,16384,7629
+growth10,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.46563720703125,16384,7629
+growth10,Canada,Logistic,A,feasibility,feasibility,0.304705188645859,0.14540881655676233,0.8412649674456527,0.6690762314187647,1.060227193661796,0.2239990234375,16384,3670
+growth10,Canada,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+growth10,Canada,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+growth10,Canada,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2239990234375,16384,3670
+growth10,Canada,Gompertz,A,feasibility,feasibility,0.38411919956838514,0.08558950903815025,0.9282440373482904,0.6186634522380295,1.0771987809797847,0.43115234375,16384,7064
+growth10,Canada,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.43115234375,16384,7064
+growth10,Canada,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.43115234375,16384,7064
+growth10,Canada,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.43115234375,16384,7064
+growth10,Indonesia,Logistic,A,feasibility,feasibility,0.36196942006060534,0.1528951091300368,0.8476446178212136,0.6268409129414201,0.9596210015719915,0.23846435546875,16384,3907
+growth10,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.23846435546875,16384,3907
+growth10,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.23846435546875,16384,3907
+growth10,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.23846435546875,16384,3907
+growth10,Indonesia,Gompertz,A,feasibility,feasibility,0.41010529489592096,0.058386811510255696,0.9330339563014033,0.5824932034020519,1.0470350532972785,0.372802734375,16384,6108
+growth10,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.372802734375,16384,6108
+growth10,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.372802734375,16384,6108
+growth10,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.372802734375,16384,6108
+growth10,Thailand,Logistic,A,feasibility,feasibility,0.5406496778360952,0.06923127857143721,0.9142745332471188,0.454880912888991,0.7592744897285776,0.16162109375,16384,2648
+growth10,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.16162109375,16384,2648
+growth10,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.16162109375,16384,2648
+growth10,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.16162109375,16384,2648
+growth10,Thailand,Gompertz,A,feasibility,feasibility,0.7814594247039544,0.035324894686690006,0.9654547648967361,0.21038720911317038,0.3590576546192621,0.4075927734375,16384,6678
+growth10,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.4075927734375,16384,6678
+growth10,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.4075927734375,16384,6678
+growth10,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.4075927734375,16384,6678
+growth10,Brazil,Logistic,A,feasibility,feasibility,0.30079616177130036,0.15624138319455785,0.8315408379293195,0.6701447259261606,1.0446480188896219,0.22430419921875,16384,3675
+growth10,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.22430419921875,16384,3675
+growth10,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.22430419921875,16384,3675
+growth10,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.22430419921875,16384,3675
+growth10,Brazil,Gompertz,A,feasibility,feasibility,0.34104301313282764,0.08976932099909712,0.9071957445998605,0.6530314276901881,1.129414838158124,0.3533935546875,16384,5790
+growth10,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.3533935546875,16384,5790
+growth10,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.3533935546875,16384,5790
+growth10,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.3533935546875,16384,5790
+us1gt,UK,Logistic,A,feasibility,feasibility,0.5682340950660844,0.12472446416249149,0.8707721829250176,0.4339567214971033,0.611770345193545,0.30902099609375,16384,5063
+us1gt,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+us1gt,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+us1gt,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+us1gt,UK,Gompertz,A,feasibility,feasibility,0.36167886828171686,0.18658384358268998,0.8135782530245215,0.6251770343420002,0.8904925755021148,0.27972412109375,16384,4583
+us1gt,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+us1gt,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+us1gt,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+us1gt,US,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,US,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,US,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,US,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,US,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,US,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+us1gt,EU,Logistic,A,feasibility,feasibility,0.6297893696600135,0.09034283501337335,0.9055592977314536,0.3625262444704426,0.5479533375285093,0.41131591796875,16384,6739
+us1gt,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+us1gt,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+us1gt,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+us1gt,EU,Gompertz,A,feasibility,feasibility,0.33577828990651326,0.17052795122149692,0.8311746993103732,0.6534917291565058,0.9783601873388689,0.28717041015625,16384,4705
+us1gt,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+us1gt,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+us1gt,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+us1gt,China,Logistic,A,feasibility,feasibility,0.41496982165924784,0.1828596970254183,0.8234382992962047,0.5802753115845738,0.8058840921961125,0.1912841796875,16384,3134
+us1gt,China,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+us1gt,China,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+us1gt,China,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.1912841796875,16384,3134
+us1gt,China,Gompertz,A,feasibility,feasibility,0.4650671140621271,0.17386602522860317,0.8332950604146594,0.5206599695991164,0.7150218907230457,0.28564453125,16384,4680
+us1gt,China,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+us1gt,China,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+us1gt,China,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28564453125,16384,4680
+us1gt,Middle East,Logistic,A,feasibility,feasibility,0.601378577601084,0.10561845986542338,0.8923682119241895,0.39229713664300114,0.5776683111006832,0.34710693359375,16384,5687
+us1gt,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+us1gt,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+us1gt,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+us1gt,Middle East,Gompertz,A,feasibility,feasibility,0.37547357807907056,0.18634700402713505,0.8131156148764901,0.6264890789159083,0.8777841116861926,0.28338623046875,16384,4643
+us1gt,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+us1gt,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+us1gt,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+us1gt,Australia,Logistic,A,feasibility,feasibility,0.417783228832965,0.20581308281796945,0.798908171015138,0.5971710665319009,0.7724829258961043,0.2117919921875,16384,3470
+us1gt,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+us1gt,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+us1gt,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+us1gt,Australia,Gompertz,A,feasibility,feasibility,0.574170625622006,0.10264769482647314,0.9022611649008272,0.4238672747310614,0.6493101191834094,0.38690185546875,16384,6339
+us1gt,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+us1gt,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+us1gt,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+us1gt,Canada,Logistic,A,feasibility,feasibility,0.4211458509313598,0.2089603346153815,0.8023936785620205,0.5968759516278791,0.7691634446431583,0.21270751953125,16384,3485
+us1gt,Canada,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+us1gt,Canada,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+us1gt,Canada,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.21270751953125,16384,3485
+us1gt,Canada,Gompertz,A,feasibility,feasibility,0.49838074469524857,0.12791427089497526,0.8727332831684191,0.4956331153306436,0.7420713829088388,0.33062744140625,16384,5417
+us1gt,Canada,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+us1gt,Canada,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+us1gt,Canada,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.33062744140625,16384,5417
+us1gt,Indonesia,Logistic,A,feasibility,feasibility,0.5307054382412071,0.14086522199428042,0.8558786276051619,0.4570283911949077,0.641336358564582,0.28411865234375,16384,4655
+us1gt,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+us1gt,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+us1gt,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+us1gt,Indonesia,Gompertz,A,feasibility,feasibility,0.37902820209351534,0.19495268260628293,0.817081793022645,0.6096172424487643,0.852718150771611,0.27825927734375,16384,4559
+us1gt,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+us1gt,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+us1gt,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+us1gt,Thailand,Logistic,A,feasibility,feasibility,0.4485331233272652,0.1675054431040228,0.8336826810158491,0.5656321187273743,0.7832762333119354,0.20257568359375,16384,3319
+us1gt,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+us1gt,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+us1gt,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+us1gt,Thailand,Gompertz,A,feasibility,feasibility,0.49554506590854164,0.15345312355446364,0.8420219058443372,0.49045902934533264,0.6834827457266646,0.30413818359375,16384,4983
+us1gt,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+us1gt,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+us1gt,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+us1gt,Brazil,Logistic,A,feasibility,feasibility,0.5312958082450033,0.14881847467885215,0.8552287064262135,0.45822317651184796,0.633337600014206,0.27947998046875,16384,4579
+us1gt,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+us1gt,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+us1gt,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+us1gt,Brazil,Gompertz,A,feasibility,feasibility,0.3697265174558429,0.19736175995682045,0.8165933192152266,0.6161123246773567,0.8656173664799198,0.27581787109375,16384,4519
+us1gt,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+us1gt,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+us1gt,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+policy,UK,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,UK,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,UK,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,UK,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,UK,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,UK,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,US,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,EU,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,China,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Middle East,Logistic,A,feasibility,feasibility,0.601378577601084,0.10561845986542338,0.8923682119241895,0.39229713664300114,0.5776683111006832,0.34710693359375,16384,5687
+policy,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+policy,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+policy,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+policy,Middle East,Gompertz,A,feasibility,feasibility,0.37547357807907056,0.18634700402713505,0.8131156148764901,0.6264890789159083,0.8777841116861926,0.28338623046875,16384,4643
+policy,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+policy,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+policy,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+policy,Australia,Logistic,A,feasibility,feasibility,0.417783228832965,0.20581308281796945,0.798908171015138,0.5971710665319009,0.7724829258961043,0.2117919921875,16384,3470
+policy,Australia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+policy,Australia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+policy,Australia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.2117919921875,16384,3470
+policy,Australia,Gompertz,A,feasibility,feasibility,0.574170625622006,0.10264769482647314,0.9022611649008272,0.4238672747310614,0.6493101191834094,0.38690185546875,16384,6339
+policy,Australia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+policy,Australia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+policy,Australia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.38690185546875,16384,6339
+policy,Canada,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Canada,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Canada,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Canada,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Canada,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Canada,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+policy,Indonesia,Logistic,A,feasibility,feasibility,0.5307054382412071,0.14086522199428042,0.8558786276051619,0.4570283911949077,0.641336358564582,0.28411865234375,16384,4655
+policy,Indonesia,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+policy,Indonesia,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+policy,Indonesia,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28411865234375,16384,4655
+policy,Indonesia,Gompertz,A,feasibility,feasibility,0.37902820209351534,0.19495268260628293,0.817081793022645,0.6096172424487643,0.852718150771611,0.27825927734375,16384,4559
+policy,Indonesia,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+policy,Indonesia,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+policy,Indonesia,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27825927734375,16384,4559
+policy,Thailand,Logistic,A,feasibility,feasibility,0.4485331233272652,0.1675054431040228,0.8336826810158491,0.5656321187273743,0.7832762333119354,0.20257568359375,16384,3319
+policy,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+policy,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+policy,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+policy,Thailand,Gompertz,A,feasibility,feasibility,0.49554506590854164,0.15345312355446364,0.8420219058443372,0.49045902934533264,0.6834827457266646,0.30413818359375,16384,4983
+policy,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+policy,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+policy,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+policy,Brazil,Logistic,A,feasibility,feasibility,0.5312958082450033,0.14881847467885215,0.8552287064262135,0.45822317651184796,0.633337600014206,0.27947998046875,16384,4579
+policy,Brazil,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+policy,Brazil,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+policy,Brazil,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27947998046875,16384,4579
+policy,Brazil,Gompertz,A,feasibility,feasibility,0.3697265174558429,0.19736175995682045,0.8165933192152266,0.6161123246773567,0.8656173664799198,0.27581787109375,16384,4519
+policy,Brazil,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+policy,Brazil,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+policy,Brazil,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27581787109375,16384,4519
+ipcc_low,UK,Logistic,A,feasibility,feasibility,0.5682340950660844,0.12472446416249149,0.8707721829250176,0.4339567214971033,0.611770345193545,0.30902099609375,16384,5063
+ipcc_low,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_low,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_low,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_low,UK,Gompertz,A,feasibility,feasibility,0.36167886828171686,0.18658384358268998,0.8135782530245215,0.6251770343420002,0.8904925755021148,0.27972412109375,16384,4583
+ipcc_low,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_low,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_low,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_low,US,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,US,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,US,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,US,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,US,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,US,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,EU,Logistic,A,feasibility,feasibility,0.6297893696600135,0.09034283501337335,0.9055592977314536,0.3625262444704426,0.5479533375285093,0.41131591796875,16384,6739
+ipcc_low,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_low,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_low,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_low,EU,Gompertz,A,feasibility,feasibility,0.33577828990651326,0.17052795122149692,0.8311746993103732,0.6534917291565058,0.9783601873388689,0.28717041015625,16384,4705
+ipcc_low,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_low,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_low,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_low,China,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,China,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,China,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,China,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,China,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,China,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Middle East,Logistic,A,feasibility,feasibility,0.601378577601084,0.10561845986542338,0.8923682119241895,0.39229713664300114,0.5776683111006832,0.34710693359375,16384,5687
+ipcc_low,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_low,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_low,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_low,Middle East,Gompertz,A,feasibility,feasibility,0.37547357807907056,0.18634700402713505,0.8131156148764901,0.6264890789159083,0.8777841116861926,0.28338623046875,16384,4643
+ipcc_low,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_low,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_low,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_low,Australia,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Australia,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Australia,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Australia,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Australia,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Australia,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Canada,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Indonesia,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Thailand,Logistic,A,feasibility,feasibility,0.4485331233272652,0.1675054431040228,0.8336826810158491,0.5656321187273743,0.7832762333119354,0.20257568359375,16384,3319
+ipcc_low,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_low,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_low,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_low,Thailand,Gompertz,A,feasibility,feasibility,0.49554506590854164,0.15345312355446364,0.8420219058443372,0.49045902934533264,0.6834827457266646,0.30413818359375,16384,4983
+ipcc_low,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_low,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_low,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_low,Brazil,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Brazil,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Brazil,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Brazil,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Brazil,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_low,Brazil,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,UK,Logistic,A,feasibility,feasibility,0.5682340950660844,0.12472446416249149,0.8707721829250176,0.4339567214971033,0.611770345193545,0.30902099609375,16384,5063
+ipcc_high,UK,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_high,UK,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_high,UK,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30902099609375,16384,5063
+ipcc_high,UK,Gompertz,A,feasibility,feasibility,0.36167886828171686,0.18658384358268998,0.8135782530245215,0.6251770343420002,0.8904925755021148,0.27972412109375,16384,4583
+ipcc_high,UK,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_high,UK,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_high,UK,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.27972412109375,16384,4583
+ipcc_high,US,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,US,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,US,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,US,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,US,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,US,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,EU,Logistic,A,feasibility,feasibility,0.6297893696600135,0.09034283501337335,0.9055592977314536,0.3625262444704426,0.5479533375285093,0.41131591796875,16384,6739
+ipcc_high,EU,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_high,EU,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_high,EU,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.41131591796875,16384,6739
+ipcc_high,EU,Gompertz,A,feasibility,feasibility,0.33577828990651326,0.17052795122149692,0.8311746993103732,0.6534917291565058,0.9783601873388689,0.28717041015625,16384,4705
+ipcc_high,EU,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_high,EU,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_high,EU,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28717041015625,16384,4705
+ipcc_high,China,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,China,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,China,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,China,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,China,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,China,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Middle East,Logistic,A,feasibility,feasibility,0.601378577601084,0.10561845986542338,0.8923682119241895,0.39229713664300114,0.5776683111006832,0.34710693359375,16384,5687
+ipcc_high,Middle East,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_high,Middle East,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_high,Middle East,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.34710693359375,16384,5687
+ipcc_high,Middle East,Gompertz,A,feasibility,feasibility,0.37547357807907056,0.18634700402713505,0.8131156148764901,0.6264890789159083,0.8777841116861926,0.28338623046875,16384,4643
+ipcc_high,Middle East,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_high,Middle East,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_high,Middle East,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.28338623046875,16384,4643
+ipcc_high,Australia,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Australia,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Australia,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Australia,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Australia,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Australia,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Canada,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Indonesia,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Thailand,Logistic,A,feasibility,feasibility,0.4485331233272652,0.1675054431040228,0.8336826810158491,0.5656321187273743,0.7832762333119354,0.20257568359375,16384,3319
+ipcc_high,Thailand,Logistic,A,tp,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_high,Thailand,Logistic,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_high,Thailand,Logistic,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.20257568359375,16384,3319
+ipcc_high,Thailand,Gompertz,A,feasibility,feasibility,0.49554506590854164,0.15345312355446364,0.8420219058443372,0.49045902934533264,0.6834827457266646,0.30413818359375,16384,4983
+ipcc_high,Thailand,Gompertz,A,tp,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_high,Thailand,Gompertz,A,rate_2100,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_high,Thailand,Gompertz,A,C_sampled,conditional_skipped_partial_feasibility,,,,,,0.30413818359375,16384,4983
+ipcc_high,Brazil,Logistic,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Brazil,Logistic,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Brazil,Logistic,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Brazil,Gompertz,B_fixed,tp,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Brazil,Gompertz,B_fixed,rate_2100,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0
+ipcc_high,Brazil,Gompertz,B_fixed,C_sampled,conditional_trivial,1.0,0.0,1.0,0.0,0.0,,0,0

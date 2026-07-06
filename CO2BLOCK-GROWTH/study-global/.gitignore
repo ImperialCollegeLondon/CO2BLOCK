@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+
+# Editor / local tooling
+.vscode/
+.idea/
+.claude/
+
+# Temporary
+*.tmp
+*.swp
+01_growth_model/input/IPCC/
+
+# Office / R session leftovers
+~$*.xls*
+*.RData
+*.Rhistory
+.RData
+.Rhistory
+
+# Local scratch workspace (not part of the pipeline)
+/outputs/
+
+# Figure drafts kept local only (v6 is the final set; its manuscript stays local)
+05_paper_plots/v1/
+05_paper_plots/v2/
+05_paper_plots/v3
+05_paper_plots/v4
+05_paper_plots/v5
+05_paper_plots/v6/manuscript
+
+# Large MCMC outputs (re-generatable; >100 MB blocks GitHub push)
+01_growth_model/output/v7_2026-04-22/robustness_sample_paths.csv
+01_growth_model/output/v7_2026-04-22/q25_q75_sample_paths.csv
+01_growth_model/output/v8_2026-06-01/robustness_sample_paths.csv
+01_growth_model/output/v8_2026-06-01/q25_q75_sample_paths.csv

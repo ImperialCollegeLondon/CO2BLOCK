@@ -1,0 +1,22 @@
+Scenario,Country,Model,flag,reason,target_anchor
+ipcc_low,US,Logistic,empty_model_pool,Type B-fixed: Logistic MC pool empty; target unreachable under filter,0.00363542116016
+ipcc_low,US,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,0.00363542116016
+ipcc_low,US,Logistic,infeasible_unreachable_target,no_bracket  f_lo=1.382e-02  f_hi=9.613e+00,0.00363542116016
+ipcc_low,US,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=2.132e-02  f_hi=4.941e+00,0.00363542116016
+ipcc_low,Canada,Logistic,empty_model_pool,Type B-fixed: Logistic MC pool empty; target unreachable under filter,0.0017852857112884
+ipcc_low,Canada,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,0.0017852857112884
+ipcc_low,Canada,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=6.414e-04  f_hi=1.185e+00,0.0017852857112884
+ipcc_low,Brazil,Logistic,empty_model_pool,Type B-fixed: Logistic MC pool empty; target unreachable under filter,0.0014094
+ipcc_low,Brazil,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,0.0014094
+ipcc_low,Brazil,Logistic,infeasible_unreachable_target,no_bracket  f_lo=2.764e-03  f_hi=2.553e+00,0.0014094
+ipcc_low,Brazil,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=5.122e-03  f_hi=1.893e+00,0.0014094
+ipcc_high,China,Logistic,empty_model_pool,Type B-fixed: Logistic MC pool empty; target unreachable under filter,6.57128321180474
+ipcc_high,China,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,6.57128321180474
+ipcc_high,China,Logistic,infeasible_unreachable_target,no_bracket  f_lo=-6.570e+00  f_hi=-5.004e+00,6.57128321180474
+ipcc_high,China,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=-6.570e+00  f_hi=-4.793e+00,6.57128321180474
+ipcc_high,Indonesia,Logistic,empty_model_pool,Type B-fixed: Logistic MC pool empty; target unreachable under filter,3.7238848
+ipcc_high,Indonesia,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,3.7238848
+ipcc_high,Indonesia,Logistic,infeasible_unreachable_target,no_bracket  f_lo=-3.724e+00  f_hi=-3.586e+00,3.7238848
+ipcc_high,Indonesia,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=-3.724e+00  f_hi=-3.622e+00,3.7238848
+ipcc_high,Brazil,Gompertz,empty_model_pool,Type B-fixed: Gompertz MC pool empty; target unreachable under filter,1.95888264991766
+ipcc_high,Brazil,Gompertz,infeasible_unreachable_target,no_bracket  f_lo=-1.952e+00  f_hi=-6.429e-02,1.95888264991766

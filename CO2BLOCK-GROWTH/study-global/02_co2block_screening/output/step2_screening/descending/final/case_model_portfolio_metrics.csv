@@ -1,0 +1,451 @@
+checkpoint,annual_demand_mt_yr,annual_screened_mt_yr,annual_gap_mt_yr,r_annual,cumulative_demand_gt,cumulative_screened_gt,cumulative_gap_gt,r_cumulative,annual_pass,cumulative_pass,overall_pass,first_shortfall_year,years_of_shortfall,max_gap_rate_mt_yr,max_gap_year,total_unmet_volume_gt,active_basins,total_basins,active_basin_fraction,total_wells,n_eff,largest_basin_share,dominant_basin_name,country,scenario,pathway,model,allocation_order
+2050,18.5604,18.5604,0.0,1.0,0.2236,0.2236,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,56,1.0,1.0,Browse,Australia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,181.0679,181.0679,0.0,1.0,4.224,4.224,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,56,1.0,1.0,Browse,Australia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,1018.2543,1018.2543,0.0,1.0,48.5433,48.5433,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,56,1.0,1.0,Browse,Australia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,18.5604,18.5604,0.0,1.0,0.2089,0.2089,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,643.4793,643.4793,0.0,1.0,9.4155,9.4155,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,4792.7858,4792.7858,0.0,1.0,425.2335,415.3692,9.8643,0.9768,True,False,False,2147.0,18,845.3242,2156.0,9.8643,2,9,0.2222,1954,1.62,0.7411,Browse,Australia,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,100.5161,100.5161,0.0,1.0,1.2383,1.2383,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,639.6171,639.6171,0.0,1.0,17.9743,17.9743,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,1394.7129,1394.7129,0.0,1.0,106.7701,106.7701,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,100.5161,100.5161,0.0,1.0,1.1266,1.1266,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,289,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,2769.9897,2769.9897,0.0,1.0,45.9322,45.9322,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,289,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,385.4419,385.4419,0.0,1.0,294.4703,294.4703,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,289,1.0,1.0,Foz do Amazonas,Brazil,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,33.2172,33.2172,0.0,1.0,0.4022,0.4022,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,484,1.0,1.0,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,287.0918,287.0918,0.0,1.0,7.0555,7.0555,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,484,1.0,1.0,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,1199.68,1199.68,0.0,1.0,65.584,65.584,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,884,1.98,0.5439,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,33.2172,33.2172,0.0,1.0,0.3727,0.3727,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,1129.0074,960.4945,168.5129,0.8507,16.778,16.4861,0.2919,0.9826,False,False,False,2098.0,3,168.5129,2100.0,0.2919,3,3,1.0,947,2.0,0.5068,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,1992.1001,960.4945,1031.6055,0.4822,375.0586,92.3652,282.6934,0.2463,False,False,False,2098.0,82,6323.9244,2144.0,282.6934,3,3,1.0,947,2.0,0.5068,Grand Banks,Canada,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,21.4368,21.4368,0.0,1.0,0.258,0.258,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,324,1.0,1.0,Tarim,China,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,200.7288,200.7288,0.0,1.0,4.7726,4.7726,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,324,1.0,1.0,Tarim,China,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,992.0542,992.0542,0.0,1.0,50.1665,50.1665,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,534,1.91,0.6086,Huabei,China,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,21.4368,21.4368,0.0,1.0,0.2401,0.2401,0.0,1.0,True,True,True,,0,0.0,,0.0,1,21,0.0476,256,1.0,1.0,Tarim,China,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,756.3975,756.3975,0.0,1.0,11.0606,11.0606,0.0,1.0,True,True,True,,0,0.0,,0.0,3,21,0.1429,784,2.63,0.4243,Huabei,China,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,2797.6797,2220.735,576.9447,0.7938,360.9715,173.225,187.7465,0.4799,False,False,False,2117.0,63,5064.95,2150.0,187.7465,21,21,1.0,1759,9.29,0.1583,Pearl River Mouth,China,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,125.5123,125.5123,0.0,1.0,1.5981,1.5981,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,493.1173,493.1173,0.0,1.0,17.3492,17.3492,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,450.6232,450.6232,0.0,1.0,59.9383,59.9383,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,125.5123,125.5123,0.0,1.0,1.4148,1.4148,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,1682.2328,1682.2328,0.0,1.0,40.3466,40.3466,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,28.3947,28.3947,0.0,1.0,93.2304,93.2304,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,5.2914,5.2914,0.0,1.0,0.0655,0.0655,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,33.2245,33.2245,0.0,1.0,0.9371,0.9371,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,73.1328,73.1328,0.0,1.0,5.5675,5.5675,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,5.2914,5.2914,0.0,1.0,0.0597,0.0597,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,141.2626,141.2626,0.0,1.0,2.3559,2.3559,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,22.3437,22.3437,0.0,1.0,15.5763,15.5763,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,North Sumatra,Indonesia,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,30.4796,30.4796,0.0,1.0,0.3811,0.3811,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,156.7164,156.7164,0.0,1.0,4.8509,4.8509,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,229.7765,229.7765,0.0,1.0,22.2645,22.2645,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,30.4796,30.4796,0.0,1.0,0.3426,0.3426,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,640.8214,640.8214,0.0,1.0,12.1708,12.1708,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,29.4147,29.4147,0.0,1.0,45.1102,45.1102,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Arabian,Middle East,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,1.4964,1.4964,0.0,1.0,0.0175,0.0175,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,13.1294,13.1294,0.0,1.0,0.3263,0.3263,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,42.4575,42.4575,0.0,1.0,2.646,2.646,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,1.4964,1.4964,0.0,1.0,0.016,0.016,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,63.3101,63.3101,0.0,1.0,0.9105,0.9105,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,17.6069,17.6069,0.0,1.0,10.2751,10.2751,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Pattani,Thailand,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,34.797,34.797,0.0,1.0,0.4313,0.4313,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,203.6984,203.6984,0.0,1.0,5.9416,5.9416,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,379.7654,379.7654,0.0,1.0,31.8088,31.8088,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,34.797,34.797,0.0,1.0,0.3906,0.3906,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,870.9932,870.9932,0.0,1.0,15.1435,15.1435,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,75.9993,75.9993,0.0,1.0,76.8665,76.8665,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,401.3371,401.3371,0.0,1.0,5.0703,5.0703,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,625,1.0,1.0,Permian,US,growth10,v8_fixedC_deterministic,Gompertz,descend
+2100,1915.7225,1915.7225,0.0,1.0,61.2479,61.2479,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,625,1.0,1.0,Permian,US,growth10,v8_fixedC_deterministic,Gompertz,descend
+2179,2543.7741,2543.7741,0.0,1.0,262.6136,262.6136,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,625,1.0,1.0,Permian,US,growth10,v8_fixedC_deterministic,Gompertz,descend
+2050,401.3371,401.3371,0.0,1.0,4.547,4.547,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,930,1.0,1.0,Permian,US,growth10,v8_fixedC_deterministic,Logistic,descend
+2100,7491.2238,7491.2238,0.0,1.0,149.4935,149.4935,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,5026,1.86,0.6367,North Slope,US,growth10,v8_fixedC_deterministic,Logistic,descend
+2179,299.7485,299.7485,0.0,1.0,500.6319,500.6319,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,930,1.0,1.0,Permian,US,growth10,v8_fixedC_deterministic,Logistic,descend
+2050,238.6332,238.6332,0.0,1.0,1.8717,1.8717,0.0,1.0,True,True,True,,0,0.0,,0.0,1,5,0.2,342,1.0,1.0,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,3602.5484,3602.5484,0.0,1.0,89.934,89.934,0.0,1.0,True,True,True,,0,0.0,,0.0,4,5,0.8,1804,2.37,0.5785,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,2446.1429,2446.1429,0.0,1.0,383.817,383.817,0.0,1.0,True,True,True,,0,0.0,,0.0,2,5,0.4,1018,1.34,0.852,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,238.6332,238.6332,0.0,1.0,1.5656,1.5656,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,7394.8841,7394.8841,0.0,1.0,454.2971,340.8153,113.4818,0.7502,True,False,False,2077.0,20,9036.5499,2086.0,113.4818,2,9,0.2222,2652,1.79,0.67,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0309,0.0309,0.0,1.0,502.3427,388.861,113.4818,0.7741,True,False,False,2077.0,20,9036.5499,2086.0,113.4818,1,9,0.1111,930,1.0,1.0,Browse,Australia,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,1958.8826,1958.8826,0.0,1.0,12.0628,12.0628,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1024,1.0,1.0,Foz do Amazonas,Brazil,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,173.5825,173.5825,0.0,1.0,298.8148,298.8148,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1024,1.0,1.0,Foz do Amazonas,Brazil,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0001,0.0001,0.0,1.0,299.7018,299.7018,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1024,1.0,1.0,Foz do Amazonas,Brazil,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,443.9124,443.9124,0.0,1.0,3.5512,3.5512,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,633,1.32,0.8586,Grand Banks,Canada,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,3951.6571,686.7229,3264.9342,0.1738,120.4991,37.4181,83.081,0.3105,False,False,False,2055.0,46,3264.9342,2100.0,83.081,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,1362.0628,686.7229,675.3398,0.5042,350.7132,91.6692,259.044,0.2614,False,False,False,2055.0,125,3353.0995,2107.0,259.044,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,443.9124,443.9124,0.0,1.0,2.8882,2.8882,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,676,1.0,1.0,Grand Banks,Canada,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,2659.4268,1523.5606,1135.8661,0.5729,388.041,74.5528,313.4882,0.1921,False,False,False,2058.0,43,14821.3472,2081.0,313.4882,3,3,1.0,1327,2.0,0.5049,Scotian,Canada,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0081,0.0081,0.0,1.0,403.8995,89.0301,314.8694,0.2204,True,False,False,2058.0,46,14821.3472,2081.0,314.8694,1,3,0.3333,676,1.0,1.0,Grand Banks,Canada,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,424.6346,424.6346,0.0,1.0,4.5839,4.5839,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,964.445,964.445,0.0,1.0,48.3272,48.3272,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,165.5569,165.5569,0.0,1.0,88.004,88.004,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,424.6346,424.6346,0.0,1.0,3.7047,3.7047,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,710.7039,710.7039,0.0,1.0,87.2681,87.2681,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0987,0.0987,0.0,1.0,93.6128,93.6128,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,172.734,172.734,0.0,1.0,1.6875,1.6875,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,491.3395,491.3395,0.0,1.0,22.8235,22.8235,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,80.3041,80.3041,0.0,1.0,42.8804,42.8804,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,172.734,172.734,0.0,1.0,1.3459,1.3459,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,248.0512,248.0512,0.0,1.0,43.6609,43.6609,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0082,0.0082,0.0,1.0,45.5067,45.5067,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,11.0282,11.0282,0.0,1.0,0.0937,0.0937,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,93.5988,93.5988,0.0,1.0,2.8103,2.8103,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,40.0051,40.0051,0.0,1.0,8.7884,8.7884,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,11.0282,11.0282,0.0,1.0,0.0774,0.0774,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,114.7553,114.7553,0.0,1.0,9.7044,9.7044,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0012,0.0012,0.0,1.0,10.4963,10.4963,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,246.2196,246.2196,0.0,1.0,2.2916,2.2916,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,851.1864,851.1864,0.0,1.0,36.6859,36.6859,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,151.2581,151.2581,0.0,1.0,72.8708,72.8708,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,246.2196,246.2196,0.0,1.0,1.8272,1.8272,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1560,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,397.3684,397.3684,0.0,1.0,75.1272,75.1272,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1560,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.007,0.007,0.0,1.0,77.8942,77.8942,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1560,1.0,1.0,Faroe-Shetland,UK,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,3723.8848,3723.8848,0.0,1.0,35.6979,35.6979,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,4962,1.8,0.6659,Permian,US,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2100,5102.813,5102.813,0.0,1.0,352.7029,352.7029,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,4962,2.0,0.514,North Slope,US,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2179,311.3168,311.3168,0.0,1.0,497.074,497.074,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,ipcc_high,v8_fixedC_deterministic,Gompertz,descend
+2050,3723.8848,3723.8848,0.0,1.0,26.7519,26.7519,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2100,743.1484,743.1484,0.0,1.0,500.1162,500.1162,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2179,0.0052,0.0052,0.0,1.0,504.7437,504.7437,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,ipcc_high,v8_fixedC_deterministic,Logistic,descend
+2050,6.2301,6.2301,0.0,1.0,0.0918,0.0918,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,30.3727,30.3727,0.0,1.0,0.8953,0.8953,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,164.6765,164.6765,0.0,1.0,7.6767,7.6767,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,6.2301,6.2301,0.0,1.0,0.0882,0.0882,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,52.6959,52.6959,0.0,1.0,1.2005,1.2005,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,1353.0016,1353.0016,0.0,1.0,34.5285,34.5285,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,72,1.0,1.0,Browse,Australia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,1.7853,1.7853,0.0,1.0,0.0331,0.0331,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Grand Banks,Canada,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,3.3671,3.3671,0.0,1.0,0.1586,0.1586,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Grand Banks,Canada,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,9.1634,9.1634,0.0,1.0,0.6189,0.6189,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Grand Banks,Canada,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,87.9427,87.9427,0.0,1.0,0.8211,0.8211,0.0,1.0,True,True,True,,0,0.0,,0.0,1,21,0.0476,256,1.0,1.0,Tarim,China,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,1280.9547,1280.9547,0.0,1.0,29.1592,29.1592,0.0,1.0,True,True,True,,0,0.0,,0.0,6,21,0.2857,1204,5.32,0.2213,Pearl River Mouth,China,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,2366.7531,1953.9956,412.7576,0.8256,202.3922,177.3339,25.0583,0.8762,False,False,False,2121.0,59,556.9398,2157.0,25.0583,21,21,1.0,1699,9.73,0.145,Pearl River Mouth,China,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,87.9427,87.9427,0.0,1.0,0.7233,0.7233,0.0,1.0,True,True,True,,0,0.0,,0.0,1,21,0.0476,324,1.0,1.0,Tarim,China,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,11519.2933,2635.4614,8883.8319,0.2288,169.9963,78.3612,91.6351,0.461,False,False,False,2080.0,21,8883.8319,2100.0,91.6351,21,21,1.0,2206,9.77,0.1497,Pearl River Mouth,China,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,6.0176,6.0176,0.0,1.0,402.8863,170.7398,232.1465,0.4238,True,False,False,2080.0,47,9289.6864,2103.0,232.1465,1,21,0.0476,324,1.0,1.0,Tarim,China,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,452.5991,452.5991,0.0,1.0,4.8541,4.8541,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,971.4641,971.4641,0.0,1.0,50.3037,50.3037,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,150.5528,150.5528,0.0,1.0,88.6825,88.6825,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,452.5991,452.5991,0.0,1.0,3.899,3.899,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,628.3309,628.3309,0.0,1.0,88.1868,88.1868,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,0.0709,0.0709,0.0,1.0,93.6135,93.6135,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,3.4122,3.4122,0.0,1.0,0.0457,0.0457,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,18.5731,18.5731,0.0,1.0,0.5414,0.5414,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,53.0837,53.0837,0.0,1.0,3.4812,3.4812,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,3.4122,3.4122,0.0,1.0,0.0423,0.0423,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,58.0838,58.0838,0.0,1.0,1.0612,1.0612,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,96.5129,96.5129,0.0,1.0,14.0892,14.0892,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,North Sumatra,Indonesia,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,173.3893,173.3893,0.0,1.0,1.6932,1.6932,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,491.6031,491.6031,0.0,1.0,22.8774,22.8774,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,79.8853,79.8853,0.0,1.0,42.8988,42.8988,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,173.3893,173.3893,0.0,1.0,1.35,1.35,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,246.0525,246.0525,0.0,1.0,43.6787,43.6787,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,0.008,0.008,0.0,1.0,45.5067,45.5067,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,10.8712,10.8712,0.0,1.0,0.0925,0.0925,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,92.8597,92.8597,0.0,1.0,2.7776,2.7776,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,40.4204,40.4204,0.0,1.0,8.759,8.759,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,10.8712,10.8712,0.0,1.0,0.0765,0.0765,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,118.0072,118.0072,0.0,1.0,9.6761,9.6761,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,0.0013,0.0013,0.0,1.0,10.4963,10.4963,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,233.9498,233.9498,0.0,1.0,2.1891,2.1891,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2100,842.1798,842.1798,0.0,1.0,35.495,35.495,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2179,161.2766,161.2766,0.0,1.0,72.4097,72.4097,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Gompertz,descend
+2050,233.9498,233.9498,0.0,1.0,1.7535,1.7535,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2100,443.9903,443.9903,0.0,1.0,74.7373,74.7373,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2179,0.0093,0.0093,0.0,1.0,77.894,77.894,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,ipcc_low,v8_fixedC_deterministic,Logistic,descend
+2050,169.8769,169.8769,0.0,1.0,1.3386,1.3386,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,342,1.0,1.0,Browse,Australia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,6924.648,3899.7403,3024.9077,0.5632,120.5504,102.3146,18.2358,0.8487,False,False,False,2089.0,12,3024.9077,2100.0,18.2358,9,9,1.0,1789,2.9,0.5344,Browse,Australia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,28973.1268,3899.7403,25073.3865,0.1346,1712.2927,410.3941,1301.8986,0.2397,False,False,False,2089.0,91,25073.3865,2179.0,1301.8986,9,9,1.0,1789,2.9,0.5344,Browse,Australia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,169.8769,169.8769,0.0,1.0,1.1892,1.1892,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,625,1.0,1.0,Browse,Australia,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,141545.9926,5120.659,136425.3336,0.0362,1376.5087,174.2048,1202.3039,0.1266,False,False,False,2074.0,27,136425.3336,2100.0,1202.3039,9,9,1.0,2538,2.91,0.5371,Browse,Australia,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,19.703,19.703,0.0,1.0,5023.8177,416.4883,4607.3294,0.0829,True,False,False,2074.0,67,178896.2147,2107.0,4607.3294,1,9,0.1111,625,1.0,1.0,Browse,Australia,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,913.038,913.038,0.0,1.0,7.4596,7.4596,0.0,1.0,True,True,True,,0,0.0,,0.0,1,10,0.1,3540,1.0,1.0,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,15817.0126,15817.0126,0.0,1.0,365.0455,365.0455,0.0,1.0,True,True,True,,0,0.0,,0.0,4,10,0.4,7542,2.02,0.6715,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,17012.4027,16936.2847,76.118,0.9955,1996.5094,1701.8359,294.6735,0.8524,False,False,False,2104.0,76,6020.7061,2136.0,294.6735,10,10,1.0,8071,2.3,0.6271,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,913.038,913.038,0.0,1.0,6.3738,6.3738,0.0,1.0,True,True,True,,0,0.0,,0.0,1,10,0.1,10712,1.0,1.0,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,79091.2249,33343.4965,45747.7284,0.4216,2338.5593,1077.911,1260.6483,0.4609,False,False,False,2076.0,25,77166.5553,2092.0,1260.6483,10,10,1.0,19348,2.51,0.588,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,1.1843,1.1843,0.0,1.0,2999.6894,1584.6138,1415.0757,0.5283,True,False,False,2076.0,33,77166.5553,2092.0,1415.0757,1,10,0.1,10712,1.0,1.0,Foz do Amazonas,Brazil,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,307.0322,307.0322,0.0,1.0,2.4377,2.4377,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,361,1.0,1.0,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,9622.3219,686.7229,8935.599,0.0714,182.3167,35.3237,146.993,0.1937,False,False,False,2058.0,43,8935.599,2100.0,146.993,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,25146.0556,686.7229,24459.3326,0.0273,1838.7484,89.5748,1749.1736,0.0487,False,False,False,2058.0,122,25087.3425,2166.0,1749.1736,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,307.0322,307.0322,0.0,1.0,2.1388,2.1388,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,147563.5678,874.4958,146689.072,0.0059,1897.5138,43.7857,1853.7281,0.0231,False,False,False,2058.0,43,146689.072,2100.0,1853.7281,3,3,1.0,827,1.98,0.5566,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,6.3004,6.3004,0.0,1.0,4039.8591,89.0613,3950.7978,0.022,True,False,False,2058.0,88,148012.4505,2101.0,3950.7978,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,513.7259,513.7259,0.0,1.0,3.531,3.531,0.0,1.0,True,True,True,,0,0.0,,0.0,3,21,0.1429,630,2.35,0.4967,Tarim,China,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,19124.2626,1401.7753,17722.4873,0.0733,377.0207,69.8327,307.188,0.1852,False,False,False,2059.0,42,17722.4873,2100.0,307.188,21,21,1.0,1218,8.68,0.182,Tarim,China,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,24504.3447,1401.7753,23102.5694,0.0572,2633.0851,180.573,2452.5122,0.0686,False,False,False,2059.0,121,30815.1798,2140.0,2452.5122,21,21,1.0,1218,8.68,0.182,Tarim,China,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,513.7259,513.7259,0.0,1.0,2.9895,2.9895,0.0,1.0,True,True,True,,0,0.0,,0.0,2,21,0.0952,648,1.75,0.6872,Tarim,China,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,81452.8766,2356.7258,79096.1508,0.0289,3564.6077,112.2292,3452.3785,0.0315,False,False,False,2059.0,42,183052.7996,2089.0,3452.3785,21,21,1.0,2037,9.11,0.1525,Huabei,China,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.0503,0.0503,0.0,1.0,4029.9361,172.4894,3857.4467,0.0428,True,False,False,2059.0,62,183052.7996,2089.0,3857.4467,1,21,0.0476,324,1.0,1.0,Tarim,China,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,1144.1828,1144.1828,0.0,1.0,9.7548,9.7548,0.0,1.0,True,True,True,,0,0.0,,0.0,2,28,0.0714,482,1.39,0.8331,Aquitaine-Bay of Biscay,EU,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,8805.1825,5269.8436,3535.3389,0.5985,275.1447,220.1936,54.9511,0.8003,False,False,False,2075.0,26,3535.3389,2100.0,54.9511,28,28,1.0,3366,10.08,0.1809,Aquitaine-Bay of Biscay,EU,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,3310.8494,3310.8494,0.0,1.0,803.9773,612.1949,191.7825,0.7615,True,False,False,2075.0,82,3762.8026,2108.0,191.7825,6,28,0.2143,1946,4.69,0.2879,Aquitaine-Bay of Biscay,EU,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,1144.1828,1144.1828,0.0,1.0,8.0117,8.0117,0.0,1.0,True,True,True,,0,0.0,,0.0,1,28,0.0357,650,1.0,1.0,Aquitaine-Bay of Biscay,EU,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,8880.6101,8880.6101,0.0,1.0,879.4604,482.6297,396.8307,0.5488,True,False,False,2068.0,30,22758.5515,2082.0,396.8307,8,28,0.2857,6001,7.04,0.1968,Balearic,EU,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.0868,0.0868,0.0,1.0,939.6198,542.789,396.8307,0.5777,True,False,False,2068.0,30,22758.5515,2082.0,396.8307,1,28,0.0357,650,1.0,1.0,Aquitaine-Bay of Biscay,EU,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,47.8455,47.8455,0.0,1.0,0.393,0.393,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,441,1.0,1.0,North Sumatra,Indonesia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,823.7388,823.7388,0.0,1.0,18.9919,18.9919,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,651,1.64,0.7335,North Sumatra,Indonesia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,905.9359,905.9359,0.0,1.0,104.8912,104.8912,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,651,1.8,0.667,North Sumatra,Indonesia,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,47.8455,47.8455,0.0,1.0,0.3362,0.3362,0.0,1.0,True,True,True,,0,0.0,,0.0,1,4,0.25,900,1.0,1.0,North Sumatra,Indonesia,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,4300.5835,4300.5835,0.0,1.0,122.1019,122.1019,0.0,1.0,True,True,True,,0,0.0,,0.0,3,4,0.75,4407,2.92,0.3901,Bintuni,Indonesia,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.0734,0.0734,0.0,1.0,158.9831,158.9831,0.0,1.0,True,True,True,,0,0.0,,0.0,1,4,0.25,900,1.0,1.0,North Sumatra,Indonesia,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,276.3086,276.3086,0.0,1.0,2.3027,2.3027,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,3307.2783,3307.2783,0.0,1.0,87.1403,87.1403,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,2169.7331,2169.7331,0.0,1.0,349.1726,349.1726,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,276.3086,276.3086,0.0,1.0,1.9338,1.9338,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,3844,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,7733.3013,7733.3013,0.0,1.0,399.1241,399.1241,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,3844,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.0915,0.0915,0.0,1.0,455.907,455.907,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,3844,1.0,1.0,Arabian,Middle East,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,11.0684,11.0684,0.0,1.0,0.0886,0.0886,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,272,1.0,1.0,Pattani,Thailand,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,303.9558,303.9558,0.0,1.0,5.9992,5.9992,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,272,1.0,1.0,Pattani,Thailand,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,655.8815,441.302,214.5795,0.6728,52.628,40.0265,12.6015,0.7606,False,False,False,2114.0,66,253.7579,2159.0,12.6015,2,2,1.0,321,1.27,0.8779,Pattani,Thailand,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,11.0684,11.0684,0.0,1.0,0.0774,0.0774,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,650,1.0,1.0,Pattani,Thailand,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,3844.6278,732.4485,3112.1793,0.1905,57.1836,20.8222,36.3614,0.3641,False,False,False,2080.0,21,3121.2454,2099.0,36.3614,2,2,1.0,699,1.21,0.902,Pattani,Thailand,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.1268,0.1268,0.0,1.0,104.9955,39.8604,65.1351,0.3796,True,False,False,2080.0,40,3121.2454,2099.0,65.1351,1,2,0.5,650,1.0,1.0,Pattani,Thailand,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,317.2825,317.2825,0.0,1.0,2.6113,2.6113,0.0,1.0,True,True,True,,0,0.0,,0.0,1,6,0.1667,462,1.0,1.0,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,4742.3686,1077.4479,3664.9207,0.2272,115.3148,50.6609,64.6539,0.4393,False,False,False,2065.0,36,3664.9207,2100.0,64.6539,6,6,1.0,816,2.65,0.5669,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,4157.5125,1077.4479,3080.0646,0.2592,553.1101,135.7793,417.3308,0.2455,False,False,False,2065.0,115,5154.8708,2130.0,417.3308,6,6,1.0,816,2.65,0.5669,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,317.2825,317.2825,0.0,1.0,2.2158,2.2158,0.0,1.0,True,True,True,,0,0.0,,0.0,1,6,0.1667,961,1.0,1.0,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,17336.6978,1973.5459,15363.1518,0.1138,644.1008,88.305,555.7957,0.1371,False,False,False,2063.0,38,26767.5736,2090.0,555.7957,6,6,1.0,1728,2.79,0.5474,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,0.2289,0.2289,0.0,1.0,779.8932,135.043,644.8502,0.1732,True,False,False,2063.0,55,26767.5736,2090.0,644.8502,1,6,0.1667,961,1.0,1.0,Faroe-Shetland,UK,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,3582.0527,3582.0527,0.0,1.0,30.2379,30.2379,0.0,1.0,True,True,True,,0,0.0,,0.0,3,20,0.15,2949,2.21,0.5104,Permian,US,maximum,v8_fixedC_deterministic,Gompertz,descend
+2100,38617.5919,8107.732,30509.8599,0.2099,1053.4919,414.0985,639.3933,0.3931,False,False,False,2060.0,41,30509.8599,2100.0,639.3933,20,20,1.0,5140,6.61,0.2255,Permian,US,maximum,v8_fixedC_deterministic,Gompertz,descend
+2179,22999.4356,8107.732,14891.7037,0.3525,3960.0593,1054.6093,2905.4499,0.2663,False,False,False,2060.0,120,35650.5963,2120.0,2905.4499,20,20,1.0,5140,6.61,0.2255,Permian,US,maximum,v8_fixedC_deterministic,Gompertz,descend
+2050,3582.0527,3582.0527,0.0,1.0,25.3214,25.3214,0.0,1.0,True,True,True,,0,0.0,,0.0,2,20,0.1,4754,1.33,0.8565,Permian,US,maximum,v8_fixedC_deterministic,Logistic,descend
+2100,79806.0327,15287.608,64518.4247,0.1916,4471.7954,722.1577,3749.6377,0.1615,False,False,False,2061.0,40,168516.4021,2087.0,3749.6377,20,20,1.0,10360,6.97,0.2007,Permian,US,maximum,v8_fixedC_deterministic,Logistic,descend
+2179,1.062,1.062,0.0,1.0,5058.734,1018.8859,4039.848,0.2014,True,False,False,2061.0,52,168516.4021,2087.0,4039.848,1,20,0.05,2862,1.0,1.0,Permian,US,maximum,v8_fixedC_deterministic,Logistic,descend
+2050,19.2819,19.2819,0.0,1.0,0.2376,0.2376,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,118.8798,118.8798,0.0,1.0,3.3916,3.3916,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,240.2043,240.2043,0.0,1.0,19.2034,19.2034,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,19.2819,19.2819,0.0,1.0,0.2156,0.2156,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,49,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,517.0211,517.0211,0.0,1.0,8.7307,8.7307,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,49,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,54.4079,54.4079,0.0,1.0,49.4506,49.4506,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,49,1.0,1.0,Browse,Australia,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,83.6505,83.6505,0.0,1.0,1.1329,1.1329,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,212.4539,212.4539,0.0,1.0,9.2261,9.2261,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,113.2208,113.2208,0.0,1.0,23.1412,23.1412,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,12,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,83.6505,83.6505,0.0,1.0,0.9888,0.9888,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,504.7161,504.7161,0.0,1.0,17.4189,17.4189,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,6.2456,6.2456,0.0,1.0,29.597,29.597,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Foz do Amazonas,Brazil,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,32.9508,32.9508,0.0,1.0,0.415,0.415,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,157.0384,157.0384,0.0,1.0,5.0317,5.0317,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,203.5228,203.5228,0.0,1.0,21.3384,21.3384,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,32.9508,32.9508,0.0,1.0,0.3717,0.3717,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,615.6738,615.6738,0.0,1.0,12.3669,12.3669,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,21.912,21.912,0.0,1.0,40.0008,40.0008,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,484,1.0,1.0,Grand Banks,Canada,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,20.9942,20.9942,0.0,1.0,0.262,0.262,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,90,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,116.1092,116.1092,0.0,1.0,3.4704,3.4704,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,90,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,198.9142,198.9142,0.0,1.0,17.5187,17.5187,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,90,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,20.9942,20.9942,0.0,1.0,0.2368,0.2368,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,420,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,485.1688,485.1688,0.0,1.0,8.7235,8.7235,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,420,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,35.4998,35.4998,0.0,1.0,39.7512,39.7512,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,420,1.0,1.0,Tarim,China,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,44.8648,44.8648,0.0,1.0,0.7273,0.7273,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,64.6084,64.6084,0.0,1.0,3.7369,3.7369,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,27.4457,27.4457,0.0,1.0,7.4293,7.4293,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,44.8648,44.8648,0.0,1.0,0.6445,0.6445,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,6,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,112.1325,112.1325,0.0,1.0,5.1918,5.1918,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,6,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,6.4107,6.4107,0.0,1.0,8.8716,8.8716,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,6,1.0,1.0,Aquitaine-Bay of Biscay,EU,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,4.5905,4.5905,0.0,1.0,0.0621,0.0621,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,11.4542,11.4542,0.0,1.0,0.5025,0.5025,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,5.88,5.88,0.0,1.0,1.2397,1.2397,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,1,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,4.5905,4.5905,0.0,1.0,0.0541,0.0541,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,26.6649,26.6649,0.0,1.0,0.9431,0.9431,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,0.3054,0.3054,0.0,1.0,1.5687,1.5687,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,North Sumatra,Indonesia,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,19.8563,19.8563,0.0,1.0,0.2884,0.2884,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,35.2601,35.2601,0.0,1.0,1.8418,1.8418,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,13.3163,13.3163,0.0,1.0,3.7902,3.7902,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,19.8563,19.8563,0.0,1.0,0.2503,0.2503,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,65.3281,65.3281,0.0,1.0,2.9359,2.9359,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,0.9819,0.9819,0.0,1.0,4.4485,4.4485,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Arabian,Middle East,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,1.5186,1.5186,0.0,1.0,0.0186,0.0186,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,6.1894,6.1894,0.0,1.0,0.2171,0.2171,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,4.9088,4.9088,0.0,1.0,0.7185,0.7185,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,2,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,1.5186,1.5186,0.0,1.0,0.0163,0.0163,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,20.924,20.924,0.0,1.0,0.5352,0.5352,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,0.1515,0.1515,0.0,1.0,1.0443,1.0443,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Pattani,Thailand,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,27.2571,27.2571,0.0,1.0,0.3778,0.3778,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,59.0186,59.0186,0.0,1.0,2.7834,2.7834,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,25.9975,25.9975,0.0,1.0,6.3069,6.3069,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,4,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,27.2571,27.2571,0.0,1.0,0.3281,0.3281,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,123.2465,123.2465,0.0,1.0,4.8838,4.8838,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,1.4281,1.4281,0.0,1.0,7.6699,7.6699,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,Faroe-Shetland,UK,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,233.4221,233.4221,0.0,1.0,3.4925,3.4925,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,20,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Gompertz,descend
+2100,384.0838,384.0838,0.0,1.0,20.8387,20.8387,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,20,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Gompertz,descend
+2179,144.2087,144.2087,0.0,1.0,41.9049,41.9049,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,20,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Gompertz,descend
+2050,233.4221,233.4221,0.0,1.0,3.0433,3.0433,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Logistic,descend
+2100,692.9222,692.9222,0.0,1.0,31.8357,31.8357,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Logistic,descend
+2179,14.1982,14.1982,0.0,1.0,49.0533,49.0533,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,42,1.0,1.0,Permian,US,minimum,v8_fixedC_deterministic,Logistic,descend
+2050,168.5728,168.5728,0.0,1.0,1.3866,1.3866,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,342,1.0,1.0,Browse,Australia,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,2757.4748,2757.4748,0.0,1.0,64.7759,64.7759,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.42,0.82,Browse,Australia,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,2802.4314,2802.4314,0.0,1.0,340.2359,340.2359,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.45,0.8069,Browse,Australia,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,168.5728,168.5728,0.0,1.0,1.183,1.183,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,policy,v8_fixedC_deterministic,Logistic,descend
+2100,12760.8529,10342.3926,2418.4604,0.8105,396.387,290.5264,105.8606,0.7329,False,False,False,2081.0,20,8020.6014,2091.0,105.8606,9,9,1.0,5325,3.39,0.479,Browse,Australia,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.2009,0.2009,0.0,1.0,502.3412,394.7384,107.6029,0.7858,True,False,False,2081.0,22,8020.6014,2091.0,107.6029,1,9,0.1111,930,1.0,1.0,Browse,Australia,policy,v8_fixedC_deterministic,Logistic,descend
+2050,801.5114,801.5114,0.0,1.0,7.2412,7.2412,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,3265.4403,3265.4403,0.0,1.0,131.9254,131.9254,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,645.7645,645.7645,0.0,1.0,277.6954,277.6954,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,801.5114,801.5114,0.0,1.0,5.7903,5.7903,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Logistic,descend
+2100,1564.2041,1564.2041,0.0,1.0,289.1523,289.1523,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.0198,0.0198,0.0,1.0,299.6962,299.6962,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,policy,v8_fixedC_deterministic,Logistic,descend
+2050,60.0,60.0,0.0,1.0,0.6516,0.6516,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,650.5442,650.5442,0.0,1.0,15.3432,15.3432,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,946,1.6,0.7483,Grand Banks,Canada,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,1921.9481,997.7678,924.1803,0.5191,126.5554,91.3855,35.17,0.7221,False,False,False,2117.0,63,924.1803,2179.0,35.17,3,3,1.0,947,2.0,0.5118,Scotian,Canada,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,60.0,60.0,0.0,1.0,0.5908,0.5908,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,361,1.0,1.0,Grand Banks,Canada,policy,v8_fixedC_deterministic,Logistic,descend
+2100,4174.9927,909.822,3265.1707,0.2179,55.1718,28.3208,26.8511,0.5133,False,False,False,2081.0,20,3265.1707,2100.0,26.8511,3,3,1.0,824,2.0,0.5203,Scotian,Canada,policy,v8_fixedC_deterministic,Logistic,descend
+2179,188.4115,188.4115,0.0,1.0,401.8942,91.8085,310.0857,0.2284,True,False,False,2081.0,81,8223.1333,2121.0,310.0857,1,3,0.3333,361,1.0,1.0,Grand Banks,Canada,policy,v8_fixedC_deterministic,Logistic,descend
+2050,216.0,216.0,0.0,1.0,1.7618,1.7618,0.0,1.0,True,True,True,,0,0.0,,0.0,1,21,0.0476,210,1.0,1.0,Tarim,China,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,2859.9685,1529.6256,1330.3429,0.5348,73.3351,57.3933,15.9418,0.7826,False,False,False,2079.0,22,1330.3429,2100.0,15.9418,21,21,1.0,1371,9.05,0.1668,Tarim,China,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,1959.5411,1529.6256,429.9155,0.7806,305.9636,178.2337,127.7299,0.5825,False,False,False,2079.0,101,1890.2319,2124.0,127.7299,21,21,1.0,1371,9.05,0.1668,Tarim,China,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,216.0,216.0,0.0,1.0,1.4794,1.4794,0.0,1.0,True,True,True,,0,0.0,,0.0,1,21,0.0476,420,1.0,1.0,Tarim,China,policy,v8_fixedC_deterministic,Logistic,descend
+2100,6765.4251,3382.5554,3382.8697,0.5,354.9989,130.4555,224.5434,0.3675,False,False,False,2069.0,32,11847.6147,2087.0,224.5434,21,21,1.0,3017,9.76,0.1459,Huabei,China,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.0575,0.0575,0.0,1.0,402.9349,171.3861,231.5488,0.4253,True,False,False,2069.0,37,11847.6147,2087.0,231.5488,1,21,0.0476,420,1.0,1.0,Tarim,China,policy,v8_fixedC_deterministic,Logistic,descend
+2050,330.0,330.0,0.0,1.0,3.6647,3.6647,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,909.7368,909.7368,0.0,1.0,40.6846,40.6846,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,230.8803,230.8803,0.0,1.0,84.629,84.629,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,64,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,330.0,330.0,0.0,1.0,3.03,3.03,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,132,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Logistic,descend
+2100,1095.1839,1095.1839,0.0,1.0,82.2243,82.2243,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,132,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.3543,0.3543,0.0,1.0,93.6087,93.6087,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,132,1.0,1.0,Aquitaine-Bay of Biscay,EU,policy,v8_fixedC_deterministic,Logistic,descend
+2050,43.4938,43.4938,0.0,1.0,0.3934,0.3934,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,173.5763,173.5763,0.0,1.0,7.078,7.078,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,33.5318,33.5318,0.0,1.0,14.7488,14.7488,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,43.4938,43.4938,0.0,1.0,0.3142,0.3142,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Logistic,descend
+2100,80.8284,80.8284,0.0,1.0,15.3396,15.3396,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.001,0.001,0.0,1.0,15.8835,15.8835,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,North Sumatra,Indonesia,policy,v8_fixedC_deterministic,Logistic,descend
+2050,166.7431,166.7431,0.0,1.0,1.6348,1.6348,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,488.6613,488.6613,0.0,1.0,22.3222,22.3222,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,84.2617,84.2617,0.0,1.0,42.7036,42.7036,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,166.7431,166.7431,0.0,1.0,1.3083,1.3083,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Logistic,descend
+2100,267.3121,267.3121,0.0,1.0,43.4868,43.4868,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.0099,0.0099,0.0,1.0,45.5067,45.5067,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,policy,v8_fixedC_deterministic,Logistic,descend
+2050,11.2461,11.2461,0.0,1.0,0.0953,0.0953,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,94.6022,94.6022,0.0,1.0,2.8552,2.8552,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,39.4372,39.4372,0.0,1.0,8.8281,8.8281,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,11.2461,11.2461,0.0,1.0,0.0786,0.0786,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,210,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Logistic,descend
+2100,110.4156,110.4156,0.0,1.0,9.7417,9.7417,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,210,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.0011,0.0011,0.0,1.0,10.4963,10.4963,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,210,1.0,1.0,Pattani,Thailand,policy,v8_fixedC_deterministic,Logistic,descend
+2050,175.0,175.0,0.0,1.0,1.6929,1.6929,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,462,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,769.3028,769.3028,0.0,1.0,28.973,28.973,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,462,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,223.0275,223.0275,0.0,1.0,69.1675,69.1675,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,462,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,175.0,175.0,0.0,1.0,1.3895,1.3895,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,930,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Logistic,descend
+2100,793.8047,793.8047,0.0,1.0,71.4124,71.4124,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,930,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Logistic,descend
+2179,0.043,0.043,0.0,1.0,77.8932,77.8932,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,930,1.0,1.0,Faroe-Shetland,UK,policy,v8_fixedC_deterministic,Logistic,descend
+2050,1000.0,1000.0,0.0,1.0,10.9647,10.9647,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,policy,v8_fixedC_deterministic,Gompertz,descend
+2100,4133.7538,4133.7538,0.0,1.0,151.25,151.25,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,2779,2.0,0.5078,Permian,US,policy,v8_fixedC_deterministic,Gompertz,descend
+2179,1896.3379,1896.3379,0.0,1.0,412.8842,412.8842,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,policy,v8_fixedC_deterministic,Gompertz,descend
+2050,1000.0,1000.0,0.0,1.0,9.3019,9.3019,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,policy,v8_fixedC_deterministic,Logistic,descend
+2100,9282.9739,9282.9739,0.0,1.0,388.9613,388.9613,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,6958,1.96,0.5757,North Slope,US,policy,v8_fixedC_deterministic,Logistic,descend
+2179,5.3863,5.3863,0.0,1.0,504.6612,504.6612,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,policy,v8_fixedC_deterministic,Logistic,descend
+2050,164.2107,164.2107,0.0,1.0,1.3558,1.3558,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,342,1.0,1.0,Browse,Australia,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,2697.0872,2697.0872,0.0,1.0,63.1099,63.1099,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.37,0.8384,Browse,Australia,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,2823.467,2823.467,0.0,1.0,336.6552,336.6552,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.47,0.8009,Browse,Australia,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,164.2107,164.2107,0.0,1.0,1.1584,1.1584,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,reference,v8_fixedC_deterministic,Logistic,descend
+2100,13154.6165,10342.3926,2812.224,0.7862,390.495,287.0967,103.3983,0.7352,False,False,False,2082.0,19,7920.2876,2092.0,103.3983,9,9,1.0,5325,3.39,0.479,Browse,Australia,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.2309,0.2309,0.0,1.0,502.341,396.3743,105.9667,0.7891,True,False,False,2082.0,21,7920.2876,2092.0,105.9667,1,9,0.1111,930,1.0,1.0,Browse,Australia,reference,v8_fixedC_deterministic,Logistic,descend
+2050,772.1141,772.1141,0.0,1.0,7.0036,7.0036,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,3234.4839,3234.4839,0.0,1.0,128.6958,128.6958,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,674.6053,674.6053,0.0,1.0,276.3198,276.3198,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,772.1141,772.1141,0.0,1.0,5.6183,5.6183,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Logistic,descend
+2100,1697.5771,1697.5771,0.0,1.0,288.0816,288.0816,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0242,0.0242,0.0,1.0,299.6959,299.6959,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,reference,v8_fixedC_deterministic,Logistic,descend
+2050,296.0625,296.0625,0.0,1.0,2.4909,2.4909,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,361,1.0,1.0,Grand Banks,Canada,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,3148.0482,686.7235,2461.3247,0.2181,86.5371,34.9026,51.6346,0.4033,False,False,False,2060.0,41,2461.3247,2100.0,51.6346,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,1803.5075,686.7235,1116.7841,0.3808,319.0539,89.1537,229.9002,0.2794,False,False,False,2060.0,120,2843.5538,2119.0,229.9002,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,296.0625,296.0625,0.0,1.0,2.0819,2.0819,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,reference,v8_fixedC_deterministic,Logistic,descend
+2100,6044.8457,1359.9904,4684.8553,0.225,360.2045,63.5766,296.6279,0.1765,False,False,False,2061.0,40,13432.4051,2086.0,296.6279,3,3,1.0,1135,2.0,0.5199,Scotian,Canada,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0729,0.0729,0.0,1.0,403.8983,88.0853,315.813,0.2181,True,False,False,2061.0,51,13432.4051,2086.0,315.813,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,reference,v8_fixedC_deterministic,Logistic,descend
+2050,493.5275,493.5275,0.0,1.0,3.6535,3.6535,0.0,1.0,True,True,True,,0,0.0,,0.0,3,21,0.1429,630,2.33,0.4874,Tarim,China,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,4432.8518,1410.1296,3022.7222,0.3181,141.2774,68.7829,72.4945,0.4869,False,False,False,2062.0,39,3022.7222,2100.0,72.4945,21,21,1.0,1239,8.98,0.1706,Tarim,China,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,1090.0065,1090.0065,0.0,1.0,365.2205,178.4072,186.8133,0.4885,True,False,False,2062.0,108,3031.3236,2102.0,186.8133,7,21,0.3333,999,5.99,0.2207,Tarim,China,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,493.5275,493.5275,0.0,1.0,2.9019,2.9019,0.0,1.0,True,True,True,,0,0.0,,0.0,2,21,0.0952,861,1.0,0.9991,Tarim,China,reference,v8_fixedC_deterministic,Logistic,descend
+2100,1108.7657,1108.7657,0.0,1.0,397.3303,159.8246,237.5057,0.4022,True,False,False,2062.0,31,14548.6866,2077.0,237.5057,3,21,0.1429,1323,2.1,0.5274,Huabei,China,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0006,0.0006,0.0,1.0,402.9363,165.4306,237.5057,0.4106,True,False,False,2062.0,31,14548.6866,2077.0,237.5057,1,21,0.0476,420,1.0,1.0,Tarim,China,reference,v8_fixedC_deterministic,Logistic,descend
+2050,439.5534,439.5534,0.0,1.0,4.7281,4.7281,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,968.615,968.615,0.0,1.0,49.3961,49.3961,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,157.3448,157.3448,0.0,1.0,88.3795,88.3795,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,439.5534,439.5534,0.0,1.0,3.8086,3.8086,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Logistic,descend
+2100,665.2574,665.2574,0.0,1.0,87.781,87.781,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0825,0.0825,0.0,1.0,93.6132,93.6132,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,reference,v8_fixedC_deterministic,Logistic,descend
+2050,41.5725,41.5725,0.0,1.0,0.3778,0.3778,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,171.6489,171.6489,0.0,1.0,6.8702,6.8702,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,35.3697,35.3697,0.0,1.0,14.6618,14.6618,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,41.5725,41.5725,0.0,1.0,0.3029,0.3029,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Logistic,descend
+2100,89.2513,89.2513,0.0,1.0,15.2721,15.2721,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0013,0.0013,0.0,1.0,15.8835,15.8835,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,reference,v8_fixedC_deterministic,Logistic,descend
+2050,170.7307,170.7307,0.0,1.0,1.6699,1.6699,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,490.4983,490.4983,0.0,1.0,22.6576,22.6576,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,81.6013,81.6013,0.0,1.0,42.8229,42.8229,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,170.7307,170.7307,0.0,1.0,1.3334,1.3334,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Logistic,descend
+2100,254.2901,254.2901,0.0,1.0,43.6049,43.6049,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0087,0.0087,0.0,1.0,45.5067,45.5067,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,reference,v8_fixedC_deterministic,Logistic,descend
+2050,10.9965,10.9965,0.0,1.0,0.0935,0.0935,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,93.451,93.451,0.0,1.0,2.8037,2.8037,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,40.0884,40.0884,0.0,1.0,8.7826,8.7826,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,10.9965,10.9965,0.0,1.0,0.0772,0.0772,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Logistic,descend
+2100,115.4018,115.4018,0.0,1.0,9.6988,9.6988,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0012,0.0012,0.0,1.0,10.4963,10.4963,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,reference,v8_fixedC_deterministic,Logistic,descend
+2050,237.5866,237.5866,0.0,1.0,2.2195,2.2195,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,845.0317,845.0317,0.0,1.0,35.8533,35.8533,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,158.221,158.221,0.0,1.0,72.5521,72.5521,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,237.5866,237.5866,0.0,1.0,1.7754,1.7754,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Logistic,descend
+2100,429.4727,429.4727,0.0,1.0,74.8599,74.8599,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.0085,0.0085,0.0,1.0,77.8941,77.8941,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,reference,v8_fixedC_deterministic,Logistic,descend
+2050,2070.1885,2070.1885,0.0,1.0,20.7668,20.7668,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,reference,v8_fixedC_deterministic,Gompertz,descend
+2100,5395.4941,5395.4941,0.0,1.0,259.1113,259.1113,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,4470,1.91,0.6109,North Slope,US,reference,v8_fixedC_deterministic,Gompertz,descend
+2179,861.7191,861.7191,0.0,1.0,476.5978,476.5978,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,reference,v8_fixedC_deterministic,Gompertz,descend
+2050,2070.1885,2070.1885,0.0,1.0,16.5884,16.5884,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,reference,v8_fixedC_deterministic,Logistic,descend
+2100,2912.1682,2912.1682,0.0,1.0,482.1663,482.1663,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,reference,v8_fixedC_deterministic,Logistic,descend
+2179,0.1363,0.1363,0.0,1.0,504.7279,504.7279,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,reference,v8_fixedC_deterministic,Logistic,descend
+2050,175.1829,175.1829,0.0,1.0,1.4331,1.4331,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,342,1.0,1.0,Browse,Australia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,2847.1043,2847.1043,0.0,1.0,67.2779,67.2779,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.49,0.7942,Browse,Australia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,2769.8538,2769.8538,0.0,1.0,345.42,345.42,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,1018,1.43,0.8164,Browse,Australia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,175.1829,175.1829,0.0,1.0,1.2201,1.2201,0.0,1.0,True,True,True,,0,0.0,,0.0,1,9,0.1111,930,1.0,1.0,Browse,Australia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,12166.3328,10342.3926,1823.9402,0.8501,404.6312,295.7262,108.9049,0.7309,False,False,False,2081.0,20,8223.9095,2091.0,108.9049,9,9,1.0,5325,3.39,0.479,Browse,Australia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.1637,0.1637,0.0,1.0,502.3415,392.6629,109.6787,0.7817,True,False,False,2081.0,21,8223.9095,2091.0,109.6787,1,9,0.1111,930,1.0,1.0,Browse,Australia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,776.7511,776.7511,0.0,1.0,7.0411,7.0411,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,3239.6022,3239.6022,0.0,1.0,129.2117,129.2117,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,669.9466,669.9466,0.0,1.0,276.5445,276.5445,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,169,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,776.7511,776.7511,0.0,1.0,5.6455,5.6455,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,1675.5937,1675.5937,0.0,1.0,288.2596,288.2596,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0234,0.0234,0.0,1.0,299.6959,299.6959,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,676,1.0,1.0,Foz do Amazonas,Brazil,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,296.4057,296.4057,0.0,1.0,2.4934,2.4934,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,361,1.0,1.0,Grand Banks,Canada,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,3150.4297,686.7235,2463.7062,0.218,86.6248,34.9102,51.7146,0.403,False,False,False,2060.0,41,2463.7062,2100.0,51.7146,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,1802.3077,686.7235,1115.5842,0.381,319.1587,89.1614,229.9973,0.2794,False,False,False,2060.0,120,2844.9151,2119.0,229.9973,3,3,1.0,634,1.98,0.555,Grand Banks,Canada,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,296.4057,296.4057,0.0,1.0,2.0838,2.0838,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,6032.4894,1359.9904,4672.499,0.2254,360.3239,63.5886,296.7353,0.1765,False,False,False,2061.0,40,13437.0434,2086.0,296.7353,3,3,1.0,1135,2.0,0.5199,Scotian,Canada,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0725,0.0725,0.0,1.0,403.8983,88.0643,315.8339,0.218,True,False,False,2061.0,51,13437.0434,2086.0,315.8339,1,3,0.3333,484,1.0,1.0,Grand Banks,Canada,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,520.4112,520.4112,0.0,1.0,3.8325,3.8325,0.0,1.0,True,True,True,,0,0.0,,0.0,3,21,0.1429,630,2.52,0.4622,Tarim,China,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,4512.737,1416.6518,3096.0851,0.3139,146.419,69.7683,76.6507,0.4765,False,False,False,2061.0,40,3096.0851,2100.0,76.6507,21,21,1.0,1239,9.01,0.1698,Tarim,China,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,1036.8656,1036.8656,0.0,1.0,367.7757,179.2029,188.5729,0.4873,True,False,False,2061.0,107,3097.7462,2101.0,188.5729,6,21,0.2857,974,5.5,0.232,Tarim,China,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,520.4112,520.4112,0.0,1.0,3.0319,3.0319,0.0,1.0,True,True,True,,0,0.0,,0.0,2,21,0.0952,861,1.11,0.9475,Tarim,China,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,971.6645,971.6645,0.0,1.0,398.0957,159.2454,238.8504,0.4,True,False,False,2062.0,31,14758.5008,2077.0,238.8504,2,21,0.0952,861,2.0,0.5075,Tarim,China,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0004,0.0004,0.0,1.0,402.9364,164.086,238.8504,0.4072,True,False,False,2062.0,31,14758.5008,2077.0,238.8504,1,21,0.0476,420,1.0,1.0,Tarim,China,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,431.9813,431.9813,0.0,1.0,4.6549,4.6549,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,966.6245,966.6245,0.0,1.0,48.8577,48.8577,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,161.4517,161.4517,0.0,1.0,88.193,88.193,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,431.9813,431.9813,0.0,1.0,3.756,3.756,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,687.8794,687.8794,0.0,1.0,87.5276,87.5276,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0903,0.0903,0.0,1.0,93.613,93.613,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,144,1.0,1.0,Aquitaine-Bay of Biscay,EU,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,39.9244,39.9244,0.0,1.0,0.3644,0.3644,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,169.769,169.769,0.0,1.0,6.6857,6.6857,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,37.0517,37.0517,0.0,1.0,14.5798,14.5798,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,9,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,39.9244,39.9244,0.0,1.0,0.2932,0.2932,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,97.3948,97.3948,0.0,1.0,15.2051,15.2051,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0016,0.0016,0.0,1.0,15.8835,15.8835,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,121,1.0,1.0,North Sumatra,Indonesia,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,168.4346,168.4346,0.0,1.0,1.6497,1.6497,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,489.4675,489.4675,0.0,1.0,22.4653,22.4653,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,83.1202,83.1202,0.0,1.0,42.755,42.755,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,30,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,168.4346,168.4346,0.0,1.0,1.3189,1.3189,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,261.6878,261.6878,0.0,1.0,43.538,43.538,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0093,0.0093,0.0,1.0,45.5067,45.5067,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,81,1.0,1.0,Arabian,Middle East,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,10.7386,10.7386,0.0,1.0,0.0916,0.0916,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,92.2246,92.2246,0.0,1.0,2.7498,2.7498,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,40.7752,40.7752,0.0,1.0,8.7335,8.7335,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,16,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,10.7386,10.7386,0.0,1.0,0.0758,0.0758,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,120.8386,120.8386,0.0,1.0,9.6511,9.6511,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0014,0.0014,0.0,1.0,10.4963,10.4963,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Pattani,Thailand,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,242.7571,242.7571,0.0,1.0,2.2627,2.2627,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,848.8192,848.8192,0.0,1.0,36.355,36.355,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,154.0029,154.0029,0.0,1.0,72.7461,72.7461,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,272,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,242.7571,242.7571,0.0,1.0,1.8065,1.8065,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,409.8619,409.8619,0.0,1.0,75.0239,75.0239,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,0.0076,0.0076,0.0,1.0,77.8941,77.8941,0.0,1.0,True,True,True,,0,0.0,,0.0,1,1,1.0,961,1.0,1.0,Faroe-Shetland,UK,us1gt,v8_fixedC_deterministic,Logistic,descend
+2050,1000.0,1000.0,0.0,1.0,10.9647,10.9647,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2100,4133.7538,4133.7538,0.0,1.0,151.25,151.25,0.0,1.0,True,True,True,,0,0.0,,0.0,2,2,1.0,2779,2.0,0.5078,Permian,US,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2179,1896.3379,1896.3379,0.0,1.0,412.8842,412.8842,0.0,1.0,True,True,True,,0,0.0,,0.0,1,2,0.5,930,1.0,1.0,Permian,US,us1gt,v8_fixedC_deterministic,Gompertz,descend
+2050,1000.0,1000.0,0.0,1.0,9.3019,9.3019,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,us1gt,v8_fixedC_deterministic,Logistic,descend
+2100,9282.9739,9282.9739,0.0,1.0,388.9613,388.9613,0.0,1.0,True,True,True,,0,0.0,,0.0,2,3,0.6667,6958,1.96,0.5757,North Slope,US,us1gt,v8_fixedC_deterministic,Logistic,descend
+2179,5.3863,5.3863,0.0,1.0,504.6612,504.6612,0.0,1.0,True,True,True,,0,0.0,,0.0,1,3,0.3333,2862,1.0,1.0,Permian,US,us1gt,v8_fixedC_deterministic,Logistic,descend

@@ -1,0 +1,1804 @@
+country,scenario,model,allocation_order,checkpoint,basin,region_no,allocated_rate_mt_yr,max_feasible_rate_mt_yr,utilisation_ratio,delivered_cumulative_gt,share_of_country_annual,share_of_country_cumulative,wells_used,step_rank,assigned_period_yr
+Australia,growth10,Gompertz,descend,2050,Browse,28,18.5604,1716.4606,0.0108,0.223638,1.0,1.0,56,1,150
+Australia,growth10,Gompertz,descend,2100,Browse,28,181.0679,1716.4606,0.1055,4.223966,1.0,1.0,56,1,150
+Australia,growth10,Gompertz,descend,2179,Browse,28,1018.2543,1716.4606,0.5932,48.543345,1.0,1.0,56,1,150
+Australia,growth10,Logistic,descend,2050,Browse,28,18.5604,3551.8152,0.0052,0.208923,1.0,1.0,930,1,70
+Australia,growth10,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Browse,28,643.4793,3551.8152,0.1812,9.415525,1.0,1.0,930,1,70
+Australia,growth10,Logistic,descend,2100,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2100,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2179,Browse,28,3551.8152,3551.8152,1.0,243.525838,0.7411,0.5863,930,1,70
+Australia,growth10,Logistic,descend,2179,North Carnarvon,113,1240.9706,1564.0941,0.7934,76.59381,0.2589,0.1844,1024,2,50
+Australia,growth10,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,42.97288,0.0,0.1035,0,0,0
+Australia,growth10,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,15.1433,0.0,0.0365,0,0,0
+Australia,growth10,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,17.780871,0.0,0.0428,0,0,0
+Australia,growth10,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,12.253751,0.0,0.0295,0,0,0
+Australia,growth10,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,7.083499,0.0,0.0171,0,0,0
+Australia,growth10,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.011529,0.0,0.0,0,0,0
+Australia,growth10,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.003716,0.0,0.0,0,0,0
+Brazil,growth10,Gompertz,descend,2050,Foz do Amazonas,58,100.5161,7824.3101,0.0128,1.238297,1.0,1.0,72,1,150
+Brazil,growth10,Gompertz,descend,2100,Foz do Amazonas,58,639.6171,7824.3101,0.0817,17.97435,1.0,1.0,72,1,150
+Brazil,growth10,Gompertz,descend,2179,Foz do Amazonas,58,1394.7129,7824.3101,0.1783,106.770052,1.0,1.0,72,1,150
+Brazil,growth10,Logistic,descend,2050,Foz do Amazonas,58,100.5161,7824.3101,0.0128,1.126604,1.0,1.0,289,1,150
+Brazil,growth10,Logistic,descend,2100,Foz do Amazonas,58,2769.9897,7824.3101,0.354,45.932198,1.0,1.0,289,1,150
+Brazil,growth10,Logistic,descend,2179,Foz do Amazonas,58,385.4419,7824.3101,0.0493,294.470315,1.0,1.0,289,1,150
+Canada,growth10,Gompertz,descend,2050,Grand Banks,64,33.2172,652.5342,0.0509,0.402161,1.0,1.0,484,1,80
+Canada,growth10,Gompertz,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,growth10,Gompertz,descend,2100,Grand Banks,64,287.0918,652.5342,0.44,7.055456,1.0,1.0,484,1,80
+Canada,growth10,Gompertz,descend,2100,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,growth10,Gompertz,descend,2179,Grand Banks,64,652.5342,652.5342,1.0,52.360762,0.5439,0.7984,484,1,80
+Canada,growth10,Gompertz,descend,2179,Scotian,163,547.1458,769.2225,0.7113,13.223204,0.4561,0.2016,400,2,50
+Canada,growth10,Logistic,descend,2050,Grand Banks,64,33.2172,486.7769,0.0682,0.37271,1.0,1.0,484,1,110
+Canada,growth10,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,growth10,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,growth10,Logistic,descend,2100,Grand Banks,64,486.7769,486.7769,1.0,13.006191,0.5068,0.7889,484,1,110
+Canada,growth10,Logistic,descend,2100,Scotian,163,473.3372,473.3372,1.0,3.478761,0.4928,0.211,462,2,90
+Canada,growth10,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3804,0.3804,1.0,0.001141,0.0004,0.0001,1,3,90
+Canada,growth10,Logistic,descend,2179,Grand Banks,64,486.7769,486.7769,1.0,51.46157,0.5068,0.5572,484,1,110
+Canada,growth10,Logistic,descend,2179,Scotian,163,473.3372,473.3372,1.0,40.872398,0.4928,0.4425,462,2,90
+Canada,growth10,Logistic,descend,2179,Beaufort-Mackenzie,18,0.3804,0.3804,1.0,0.031192,0.0004,0.0003,1,3,90
+China,growth10,Gompertz,descend,2050,Tarim,183,21.4368,388.3277,0.0552,0.25799,1.0,1.0,324,1,90
+China,growth10,Gompertz,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Gompertz,descend,2100,Tarim,183,200.7288,388.3277,0.5169,4.772594,1.0,1.0,324,1,90
+China,growth10,Gompertz,descend,2100,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Gompertz,descend,2179,Tarim,183,388.3277,388.3277,1.0,33.239293,0.3914,0.6626,324,1,90
+China,growth10,Gompertz,descend,2179,Huabei,70,603.7265,727.3181,0.8301,16.92716,0.6086,0.3374,210,2,40
+China,growth10,Logistic,descend,2050,Tarim,183,21.4368,317.8842,0.0674,0.240104,1.0,1.0,256,1,110
+China,growth10,Logistic,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Tarim,183,317.8842,317.8842,1.0,8.48563,0.4203,0.7672,256,1,110
+China,growth10,Logistic,descend,2100,Huabei,70,320.9155,320.9155,1.0,2.36944,0.4243,0.2142,256,2,90
+China,growth10,Logistic,descend,2100,Pearl River Mouth,136,117.5978,351.5492,0.3345,0.20551,0.1555,0.0186,272,3,80
+China,growth10,Logistic,descend,2100,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2100,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,growth10,Logistic,descend,2179,Tarim,183,317.8842,317.8842,1.0,33.598483,0.1431,0.194,256,1,110
+China,growth10,Logistic,descend,2179,Huabei,70,320.9155,320.9155,1.0,27.721764,0.1445,0.16,256,2,90
+China,growth10,Logistic,descend,2179,Pearl River Mouth,136,351.5492,351.5492,1.0,27.61128,0.1583,0.1594,272,3,80
+China,growth10,Logistic,descend,2179,Bohai Bay,24,251.3689,251.3689,1.0,18.536775,0.1132,0.107,210,4,80
+China,growth10,Logistic,descend,2179,Beibuwan,19,181.0166,181.0166,1.0,12.86388,0.0815,0.0743,100,5,80
+China,growth10,Logistic,descend,2179,Ordos,127,183.6446,183.6446,1.0,12.689027,0.0827,0.0733,156,6,70
+China,growth10,Logistic,descend,2179,Subei,177,174.8372,174.8372,1.0,11.783529,0.0787,0.068,110,7,70
+China,growth10,Logistic,descend,2179,Erlian,52,133.5247,133.5247,1.0,8.801949,0.0601,0.0508,121,8,70
+China,growth10,Logistic,descend,2179,Nanxiang,107,105.3935,105.3935,1.0,6.850574,0.0475,0.0395,81,9,70
+China,growth10,Logistic,descend,2179,Songliao,170,94.8414,94.8414,1.0,6.071129,0.0427,0.035,90,10,70
+China,growth10,Logistic,descend,2179,Turpan,192,57.9064,57.9064,1.0,3.681917,0.0261,0.0213,56,11,70
+China,growth10,Logistic,descend,2179,Yilan-Yitong,201,44.2584,44.2584,1.0,2.78828,0.0199,0.0161,42,12,70
+China,growth10,Logistic,descend,2179,Jianghan,76,0.7045,0.7045,1.0,0.044386,0.0003,0.0003,1,13,70
+China,growth10,Logistic,descend,2179,Qaidam,146,0.6217,0.6217,1.0,0.039169,0.0003,0.0002,1,14,70
+China,growth10,Logistic,descend,2179,Bose,26,0.6155,0.6155,1.0,0.038776,0.0003,0.0002,1,15,70
+China,growth10,Logistic,descend,2179,Sanshui,157,0.5584,0.5584,1.0,0.035179,0.0003,0.0002,1,16,70
+China,growth10,Logistic,descend,2179,Jiuquan,77,0.4688,0.4688,1.0,0.029533,0.0002,0.0002,1,17,70
+China,growth10,Logistic,descend,2179,Junggar,78,0.3715,0.3715,1.0,0.023404,0.0002,0.0001,1,18,70
+China,growth10,Logistic,descend,2179,Santanghu,158,0.1075,0.1075,1.0,0.006771,0.0,0.0,1,19,70
+China,growth10,Logistic,descend,2179,Sichuan,166,0.1058,0.1058,1.0,0.006668,0.0,0.0,1,20,70
+China,growth10,Logistic,descend,2179,Hailar-Temtsag,69,0.0407,0.0407,1.0,0.002566,0.0,0.0,1,21,70
+EU,growth10,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,125.5123,908.082,0.1382,1.598065,1.0,1.0,30,1,150
+EU,growth10,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,493.1173,908.082,0.543,17.349159,1.0,1.0,30,1,150
+EU,growth10,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,450.6232,908.082,0.4962,59.938307,1.0,1.0,30,1,150
+EU,growth10,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,125.5123,1768.9711,0.071,1.414785,1.0,1.0,272,1,70
+EU,growth10,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,1682.2328,1768.9711,0.951,40.346628,1.0,1.0,272,1,70
+EU,growth10,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,28.3947,1768.9711,0.0161,93.230361,1.0,1.0,272,1,70
+Indonesia,growth10,Gompertz,descend,2050,North Sumatra,120,5.2914,445.8087,0.0119,0.065546,1.0,1.0,4,1,150
+Indonesia,growth10,Gompertz,descend,2100,North Sumatra,120,33.2245,445.8087,0.0745,0.937131,1.0,1.0,4,1,150
+Indonesia,growth10,Gompertz,descend,2179,North Sumatra,120,73.1328,445.8087,0.164,5.567495,1.0,1.0,4,1,150
+Indonesia,growth10,Logistic,descend,2050,North Sumatra,120,5.2914,445.8087,0.0119,0.059687,1.0,1.0,16,1,150
+Indonesia,growth10,Logistic,descend,2100,North Sumatra,120,141.2626,445.8087,0.3169,2.355945,1.0,1.0,16,1,150
+Indonesia,growth10,Logistic,descend,2179,North Sumatra,120,22.3437,445.8087,0.0501,15.576251,1.0,1.0,16,1,150
+Middle East,growth10,Gompertz,descend,2050,Arabian,9,30.4796,4779.6748,0.0064,0.381121,1.0,1.0,16,1,150
+Middle East,growth10,Gompertz,descend,2100,Arabian,9,156.7164,4779.6748,0.0328,4.850898,1.0,1.0,16,1,150
+Middle East,growth10,Gompertz,descend,2179,Arabian,9,229.7765,4779.6748,0.0481,22.264454,1.0,1.0,16,1,150
+Middle East,growth10,Logistic,descend,2050,Arabian,9,30.4796,4779.6748,0.0064,0.342616,1.0,1.0,42,1,150
+Middle East,growth10,Logistic,descend,2100,Arabian,9,640.8214,4779.6748,0.1341,12.170793,1.0,1.0,42,1,150
+Middle East,growth10,Logistic,descend,2179,Arabian,9,29.4147,4779.6748,0.0062,45.110177,1.0,1.0,42,1,150
+Thailand,growth10,Gompertz,descend,2050,Pattani,135,1.4964,251.2525,0.006,0.017515,1.0,1.0,9,1,150
+Thailand,growth10,Gompertz,descend,2100,Pattani,135,13.1294,251.2525,0.0523,0.326271,1.0,1.0,9,1,150
+Thailand,growth10,Gompertz,descend,2179,Pattani,135,42.4575,251.2525,0.169,2.646,1.0,1.0,9,1,150
+Thailand,growth10,Logistic,descend,2050,Pattani,135,1.4964,251.2525,0.006,0.016049,1.0,1.0,64,1,150
+Thailand,growth10,Logistic,descend,2100,Pattani,135,63.3101,251.2525,0.252,0.910462,1.0,1.0,64,1,150
+Thailand,growth10,Logistic,descend,2179,Pattani,135,17.6069,251.2525,0.0701,10.275063,1.0,1.0,64,1,150
+UK,growth10,Gompertz,descend,2050,Faroe-Shetland,55,34.797,571.9449,0.0608,0.431274,1.0,1.0,42,1,150
+UK,growth10,Gompertz,descend,2100,Faroe-Shetland,55,203.6984,571.9449,0.3562,5.941558,1.0,1.0,42,1,150
+UK,growth10,Gompertz,descend,2179,Faroe-Shetland,55,379.7654,571.9449,0.664,31.80884,1.0,1.0,42,1,150
+UK,growth10,Logistic,descend,2050,Faroe-Shetland,55,34.797,1424.365,0.0244,0.390569,1.0,1.0,961,1,60
+UK,growth10,Logistic,descend,2100,Faroe-Shetland,55,870.9932,1424.365,0.6115,15.143517,1.0,1.0,961,1,60
+UK,growth10,Logistic,descend,2179,Faroe-Shetland,55,75.9993,1424.365,0.0534,76.866525,1.0,1.0,961,1,60
+US,growth10,Gompertz,descend,2050,Permian,138,401.3371,3068.1448,0.1308,5.070336,1.0,1.0,625,1,90
+US,growth10,Gompertz,descend,2100,Permian,138,1915.7225,3068.1448,0.6244,61.247905,1.0,1.0,625,1,90
+US,growth10,Gompertz,descend,2179,Permian,138,2543.7741,3068.1448,0.8291,262.61358,1.0,1.0,625,1,90
+US,growth10,Logistic,descend,2050,Permian,138,401.3371,2721.6701,0.1475,4.546994,1.0,1.0,930,1,100
+US,growth10,Logistic,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,growth10,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,growth10,Logistic,descend,2100,Permian,138,2721.6701,2721.6701,1.0,99.256816,0.3633,0.664,930,1,100
+US,growth10,Logistic,descend,2100,North Slope,119,4769.5537,4873.4146,0.9787,50.236642,0.6367,0.336,4096,2,50
+US,growth10,Logistic,descend,2100,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,growth10,Logistic,descend,2179,Permian,138,299.7485,2721.6701,0.1101,260.69499,1.0,0.5207,930,1,100
+US,growth10,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,216.727517,0.0,0.4329,0,0,0
+US,growth10,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,23.209352,0.0,0.0464,0,0,0
+Australia,ipcc_high,Gompertz,descend,2050,Browse,28,238.6332,2084.1415,0.1145,1.871698,1.0,1.0,342,1,120
+Australia,ipcc_high,Gompertz,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Gompertz,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Gompertz,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Gompertz,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Gompertz,descend,2100,Browse,28,2084.1415,2084.1415,1.0,73.730963,0.5785,0.8198,342,1,120
+Australia,ipcc_high,Gompertz,descend,2100,North Carnarvon,113,868.0415,868.0415,1.0,12.821533,0.241,0.1426,676,2,90
+Australia,ipcc_high,Gompertz,descend,2100,Bonaparte,25,618.7233,618.7233,1.0,3.349861,0.1717,0.0372,462,3,70
+Australia,ipcc_high,Gompertz,descend,2100,Perth,139,31.6422,365.5448,0.0866,0.031642,0.0088,0.0004,324,4,50
+Australia,ipcc_high,Gompertz,descend,2100,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Gompertz,descend,2179,Browse,28,2084.1415,2084.1415,1.0,238.378145,0.852,0.6211,342,1,120
+Australia,ipcc_high,Gompertz,descend,2179,North Carnarvon,113,362.0014,868.0415,0.417,78.157704,0.148,0.2036,676,2,90
+Australia,ipcc_high,Gompertz,descend,2179,Bonaparte,0,0.0,0.0,0.0,40.390137,0.0,0.1052,0,0,0
+Australia,ipcc_high,Gompertz,descend,2179,Perth,0,0.0,0.0,0.0,16.856524,0.0,0.0439,0,0,0
+Australia,ipcc_high,Gompertz,descend,2179,Bass,0,0.0,0.0,0.0,10.034486,0.0,0.0261,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Browse,28,238.6332,4954.2569,0.0482,1.565639,1.0,1.0,930,1,50
+Australia,ipcc_high,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Browse,28,4954.2569,4954.2569,1.0,185.141453,0.67,0.5432,930,1,50
+Australia,ipcc_high,Logistic,descend,2100,North Carnarvon,113,2440.6272,2607.9886,0.9358,75.485044,0.33,0.2215,1722,2,30
+Australia,ipcc_high,Logistic,descend,2100,Bonaparte,0,0.0,0.0,0.0,36.136451,0.0,0.106,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Perth,0,0.0,0.0,0.0,14.435023,0.0,0.0424,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Bass,0,0.0,0.0,0.0,13.581683,0.0,0.0399,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Gippsland,0,0.0,0.0,0.0,11.106675,0.0,0.0326,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Canning,0,0.0,0.0,0.0,4.912141,0.0,0.0144,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Bowen-Surat,0,0.0,0.0,0.0,0.012721,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2100,Adavale,0,0.0,0.0,0.0,0.004103,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Browse,28,0.0309,4954.2569,0.0,230.897013,1.0,0.5938,930,1,50
+Australia,ipcc_high,Logistic,descend,2179,North Carnarvon,0,0.0,0.0,0.0,77.77514,0.0,0.2,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,36.136451,0.0,0.0929,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,14.435023,0.0,0.0371,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,13.581683,0.0,0.0349,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,11.106675,0.0,0.0286,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,4.912141,0.0,0.0126,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.012721,0.0,0.0,0,0,0
+Australia,ipcc_high,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.004103,0.0,0.0,0,0,0
+Brazil,ipcc_high,Logistic,descend,2050,Foz do Amazonas,58,1958.8826,14541.8969,0.1347,12.062789,1.0,1.0,1024,1,80
+Brazil,ipcc_high,Logistic,descend,2100,Foz do Amazonas,58,173.5825,14541.8969,0.0119,298.814771,1.0,1.0,1024,1,80
+Brazil,ipcc_high,Logistic,descend,2179,Foz do Amazonas,58,0.0001,14541.8969,0.0,299.701777,1.0,1.0,1024,1,80
+Canada,ipcc_high,Gompertz,descend,2050,Grand Banks,64,381.1416,381.1416,1.0,3.469661,0.8586,0.977,361,1,140
+Canada,ipcc_high,Gompertz,descend,2050,Scotian,163,62.7708,305.2033,0.2057,0.081579,0.1414,0.023,272,2,130
+Canada,ipcc_high,Gompertz,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,ipcc_high,Gompertz,descend,2100,Grand Banks,64,381.1416,381.1416,1.0,22.526741,0.555,0.602,361,1,140
+Canada,ipcc_high,Gompertz,descend,2100,Scotian,163,305.2033,305.2033,1.0,14.873964,0.4444,0.3975,272,2,130
+Canada,ipcc_high,Gompertz,descend,2100,Beaufort-Mackenzie,18,0.378,0.378,1.0,0.017388,0.0006,0.0005,1,3,130
+Canada,ipcc_high,Gompertz,descend,2179,Grand Banks,64,381.1416,381.1416,1.0,52.636928,0.555,0.5742,361,1,140
+Canada,ipcc_high,Gompertz,descend,2179,Scotian,163,305.2033,305.2033,1.0,38.985027,0.4444,0.4253,272,2,130
+Canada,ipcc_high,Gompertz,descend,2179,Beaufort-Mackenzie,18,0.378,0.378,1.0,0.047251,0.0006,0.0005,1,3,130
+Canada,ipcc_high,Logistic,descend,2050,Grand Banks,64,443.9124,753.9538,0.5888,2.888231,1.0,1.0,676,1,70
+Canada,ipcc_high,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,ipcc_high,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,ipcc_high,Logistic,descend,2100,Grand Banks,64,753.9538,753.9538,1.0,40.170541,0.4949,0.5388,676,1,70
+Canada,ipcc_high,Logistic,descend,2100,Scotian,163,769.2225,769.2225,1.0,34.365732,0.5049,0.461,650,2,50
+Canada,ipcc_high,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3843,0.3843,1.0,0.016524,0.0003,0.0002,1,3,50
+Canada,ipcc_high,Logistic,descend,2179,Grand Banks,64,0.0081,753.9538,0.0,50.672204,1.0,0.5692,676,1,70
+Canada,ipcc_high,Logistic,descend,2179,Scotian,0,0.0,0.0,0.0,38.340214,0.0,0.4306,0,0,0
+Canada,ipcc_high,Logistic,descend,2179,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.017677,0.0,0.0002,0,0,0
+EU,ipcc_high,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,424.6346,1071.015,0.3965,4.583873,1.0,1.0,144,1,120
+EU,ipcc_high,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,964.445,1071.015,0.9005,48.327187,1.0,1.0,144,1,120
+EU,ipcc_high,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,165.5569,1071.015,0.1546,88.004019,1.0,1.0,144,1,120
+EU,ipcc_high,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,424.6346,3076.4136,0.138,3.704727,1.0,1.0,144,1,40
+EU,ipcc_high,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,710.7039,3076.4136,0.231,87.268106,1.0,1.0,144,1,40
+EU,ipcc_high,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.0987,3076.4136,0.0,93.612837,1.0,1.0,144,1,40
+Middle East,ipcc_high,Gompertz,descend,2050,Arabian,9,172.734,4779.6748,0.0361,1.687477,1.0,1.0,30,1,150
+Middle East,ipcc_high,Gompertz,descend,2100,Arabian,9,491.3395,4779.6748,0.1028,22.823515,1.0,1.0,30,1,150
+Middle East,ipcc_high,Gompertz,descend,2179,Arabian,9,80.3041,4779.6748,0.0168,42.880391,1.0,1.0,30,1,150
+Middle East,ipcc_high,Logistic,descend,2050,Arabian,9,172.734,4779.6748,0.0361,1.345936,1.0,1.0,81,1,150
+Middle East,ipcc_high,Logistic,descend,2100,Arabian,9,248.0512,4779.6748,0.0519,43.660857,1.0,1.0,81,1,150
+Middle East,ipcc_high,Logistic,descend,2179,Arabian,9,0.0082,4779.6748,0.0,45.506737,1.0,1.0,81,1,150
+Thailand,ipcc_high,Gompertz,descend,2050,Pattani,135,11.0282,251.2525,0.0439,0.093708,1.0,1.0,16,1,150
+Thailand,ipcc_high,Gompertz,descend,2100,Pattani,135,93.5988,251.2525,0.3725,2.810277,1.0,1.0,16,1,150
+Thailand,ipcc_high,Gompertz,descend,2179,Pattani,135,40.0051,251.2525,0.1592,8.788448,1.0,1.0,16,1,150
+Thailand,ipcc_high,Logistic,descend,2050,Pattani,135,11.0282,387.4101,0.0285,0.077393,1.0,1.0,272,1,100
+Thailand,ipcc_high,Logistic,descend,2100,Pattani,135,114.7553,387.4101,0.2962,9.704436,1.0,1.0,272,1,100
+Thailand,ipcc_high,Logistic,descend,2179,Pattani,135,0.0012,387.4101,0.0,10.496279,1.0,1.0,272,1,100
+UK,ipcc_high,Gompertz,descend,2050,Faroe-Shetland,55,246.2196,963.7489,0.2555,2.291642,1.0,1.0,272,1,90
+UK,ipcc_high,Gompertz,descend,2100,Faroe-Shetland,55,851.1864,963.7489,0.8832,36.685921,1.0,1.0,272,1,90
+UK,ipcc_high,Gompertz,descend,2179,Faroe-Shetland,55,151.2581,963.7489,0.1569,72.87082,1.0,1.0,272,1,90
+UK,ipcc_high,Logistic,descend,2050,Faroe-Shetland,55,246.2196,2770.8567,0.0889,1.827223,1.0,1.0,1560,1,30
+UK,ipcc_high,Logistic,descend,2100,Faroe-Shetland,55,397.3684,2770.8567,0.1434,75.127183,1.0,1.0,1560,1,30
+UK,ipcc_high,Logistic,descend,2179,Faroe-Shetland,55,0.007,2770.8567,0.0,77.894155,1.0,1.0,1560,1,30
+US,ipcc_high,Gompertz,descend,2050,Permian,138,2479.7536,2479.7536,1.0,31.877192,0.6659,0.893,930,1,110
+US,ipcc_high,Gompertz,descend,2050,North Slope,119,1244.1312,5738.7514,0.2168,3.820747,0.3341,0.107,4032,2,40
+US,ipcc_high,Gompertz,descend,2100,Permian,138,2479.7536,2479.7536,1.0,155.86487,0.486,0.4419,930,1,110
+US,ipcc_high,Gompertz,descend,2100,North Slope,119,2623.0595,5738.7514,0.4571,196.838066,0.514,0.5581,4032,2,40
+US,ipcc_high,Gompertz,descend,2179,Permian,138,311.3168,2479.7536,0.1255,272.62504,1.0,0.5485,930,1,110
+US,ipcc_high,Gompertz,descend,2179,North Slope,0,0.0,0.0,0.0,224.448941,0.0,0.4515,0,0,0
+US,ipcc_high,Logistic,descend,2050,Permian,138,3723.8848,5489.5717,0.6784,26.751866,1.0,1.0,2862,1,50
+US,ipcc_high,Logistic,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,ipcc_high,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,ipcc_high,Logistic,descend,2100,Permian,138,743.1484,5489.5717,0.1354,253.370285,1.0,0.5066,2862,1,50
+US,ipcc_high,Logistic,descend,2100,North Slope,0,0.0,0.0,0.0,171.286925,0.0,0.3425,0,0,0
+US,ipcc_high,Logistic,descend,2100,Illinois,0,0.0,0.0,0.0,75.459025,0.0,0.1509,0,0,0
+US,ipcc_high,Logistic,descend,2179,Permian,138,0.0052,5489.5717,0.0,257.997718,1.0,0.5111,2862,1,50
+US,ipcc_high,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,171.286925,0.0,0.3394,0,0,0
+US,ipcc_high,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,75.459025,0.0,0.1495,0,0,0
+Australia,ipcc_low,Gompertz,descend,2050,Browse,28,6.2301,1716.4606,0.0036,0.091843,1.0,1.0,9,1,150
+Australia,ipcc_low,Gompertz,descend,2100,Browse,28,30.3727,1716.4606,0.0177,0.895292,1.0,1.0,9,1,150
+Australia,ipcc_low,Gompertz,descend,2179,Browse,28,164.6765,1716.4606,0.0959,7.676678,1.0,1.0,9,1,150
+Australia,ipcc_low,Logistic,descend,2050,Browse,28,6.2301,1716.4606,0.0036,0.088193,1.0,1.0,72,1,150
+Australia,ipcc_low,Logistic,descend,2100,Browse,28,52.6959,1716.4606,0.0307,1.200493,1.0,1.0,72,1,150
+Australia,ipcc_low,Logistic,descend,2179,Browse,28,1353.0016,1716.4606,0.7883,34.528518,1.0,1.0,72,1,150
+Canada,ipcc_low,Logistic,descend,2050,Grand Banks,64,1.7853,337.8998,0.0053,0.033119,1.0,1.0,2,1,150
+Canada,ipcc_low,Logistic,descend,2100,Grand Banks,64,3.3671,337.8998,0.01,0.158571,1.0,1.0,2,1,150
+Canada,ipcc_low,Logistic,descend,2179,Grand Banks,64,9.1634,337.8998,0.0271,0.618933,1.0,1.0,2,1,150
+China,ipcc_low,Gompertz,descend,2050,Tarim,183,87.9427,273.3669,0.3217,0.821064,1.0,1.0,256,1,130
+China,ipcc_low,Gompertz,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Tarim,183,273.3669,273.3669,1.0,13.000299,0.2134,0.4458,256,1,130
+China,ipcc_low,Gompertz,descend,2100,Huabei,70,267.4486,267.4486,1.0,7.747338,0.2088,0.2657,210,2,110
+China,ipcc_low,Gompertz,descend,2100,Pearl River Mouth,136,283.4175,283.4175,1.0,5.207524,0.2213,0.1786,272,3,100
+China,ipcc_low,Gompertz,descend,2100,Bohai Bay,24,225.2758,225.2758,1.0,2.330202,0.1759,0.0799,210,4,90
+China,ipcc_low,Gompertz,descend,2100,Beibuwan,19,161.4438,161.4438,1.0,0.769576,0.126,0.0264,100,5,90
+China,ipcc_low,Gompertz,descend,2100,Ordos,127,70.0022,163.3672,0.4285,0.104307,0.0546,0.0036,156,6,80
+China,ipcc_low,Gompertz,descend,2100,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2100,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Gompertz,descend,2179,Tarim,183,273.3669,273.3669,1.0,34.596281,0.1399,0.1951,256,1,130
+China,ipcc_low,Gompertz,descend,2179,Huabei,70,267.4486,267.4486,1.0,28.875778,0.1369,0.1628,210,2,110
+China,ipcc_low,Gompertz,descend,2179,Pearl River Mouth,136,283.4175,283.4175,1.0,27.597503,0.145,0.1556,272,3,100
+China,ipcc_low,Gompertz,descend,2179,Bohai Bay,24,225.2758,225.2758,1.0,20.126989,0.1153,0.1135,210,4,90
+China,ipcc_low,Gompertz,descend,2179,Beibuwan,19,161.4438,161.4438,1.0,13.523637,0.0826,0.0763,100,5,90
+China,ipcc_low,Gompertz,descend,2179,Ordos,127,163.3672,163.3672,1.0,12.930739,0.0836,0.0729,156,6,80
+China,ipcc_low,Gompertz,descend,2179,Subei,177,154.055,154.055,1.0,11.513779,0.0788,0.0649,110,7,80
+China,ipcc_low,Gompertz,descend,2179,Erlian,52,110.1429,110.1429,1.0,7.812129,0.0564,0.0441,100,8,80
+China,ipcc_low,Gompertz,descend,2179,Nanxiang,107,105.3935,105.3935,1.0,7.142195,0.0539,0.0403,81,9,70
+China,ipcc_low,Gompertz,descend,2179,Songliao,170,94.8414,94.8414,1.0,6.139783,0.0485,0.0346,90,10,70
+China,ipcc_low,Gompertz,descend,2179,Turpan,192,57.9064,57.9064,1.0,3.609805,0.0296,0.0204,56,11,70
+China,ipcc_low,Gompertz,descend,2179,Yilan-Yitong,201,53.7324,53.7324,1.0,3.25037,0.0275,0.0183,49,12,60
+China,ipcc_low,Gompertz,descend,2179,Jianghan,76,0.7061,0.7061,1.0,0.042367,0.0004,0.0002,1,13,60
+China,ipcc_low,Gompertz,descend,2179,Qaidam,146,0.6236,0.6236,1.0,0.037416,0.0003,0.0002,1,14,60
+China,ipcc_low,Gompertz,descend,2179,Bose,26,0.6166,0.6166,1.0,0.036998,0.0003,0.0002,1,15,60
+China,ipcc_low,Gompertz,descend,2179,Sanshui,157,0.56,0.56,1.0,0.033389,0.0003,0.0002,1,16,60
+China,ipcc_low,Gompertz,descend,2179,Jiuquan,77,0.4703,0.4703,1.0,0.027745,0.0002,0.0002,1,17,60
+China,ipcc_low,Gompertz,descend,2179,Junggar,78,0.3728,0.3728,1.0,0.021993,0.0002,0.0001,1,18,60
+China,ipcc_low,Gompertz,descend,2179,Santanghu,158,0.1078,0.1078,1.0,0.006362,0.0001,0.0,1,19,60
+China,ipcc_low,Gompertz,descend,2179,Sichuan,166,0.1063,0.1063,1.0,0.006273,0.0001,0.0,1,20,60
+China,ipcc_low,Gompertz,descend,2179,Hailar-Temtsag,69,0.0408,0.0408,1.0,0.002409,0.0,0.0,1,21,60
+China,ipcc_low,Logistic,descend,2050,Tarim,183,87.9427,353.0527,0.2491,0.723316,1.0,1.0,324,1,100
+China,ipcc_low,Logistic,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2100,Tarim,183,353.0527,353.0527,1.0,16.589813,0.134,0.2117,324,1,100
+China,ipcc_low,Logistic,descend,2100,Huabei,70,359.3937,359.3937,1.0,12.684653,0.1364,0.1619,324,2,80
+China,ipcc_low,Logistic,descend,2100,Pearl River Mouth,136,394.4575,394.4575,1.0,12.038651,0.1497,0.1536,272,3,70
+China,ipcc_low,Logistic,descend,2100,Bohai Bay,24,283.2092,283.2092,1.0,7.839599,0.1075,0.1,256,4,70
+China,ipcc_low,Logistic,descend,2100,Beibuwan,19,246.2017,246.2017,1.0,6.382579,0.0934,0.0815,196,5,60
+China,ipcc_low,Logistic,descend,2100,Ordos,127,209.1156,209.1156,1.0,5.153533,0.0793,0.0658,156,6,60
+China,ipcc_low,Logistic,descend,2100,Subei,177,206.567,206.567,1.0,4.880036,0.0784,0.0623,182,7,60
+China,ipcc_low,Logistic,descend,2100,Erlian,52,159.253,159.253,1.0,3.650141,0.0604,0.0466,144,8,60
+China,ipcc_low,Logistic,descend,2100,Nanxiang,107,133.4389,133.4389,1.0,2.935657,0.0506,0.0375,81,9,50
+China,ipcc_low,Logistic,descend,2100,Songliao,170,142.6538,142.6538,1.0,3.096044,0.0541,0.0395,132,10,50
+China,ipcc_low,Logistic,descend,2100,Turpan,192,82.9194,82.9194,1.0,1.741306,0.0315,0.0222,81,11,50
+China,ipcc_low,Logistic,descend,2100,Yilan-Yitong,201,61.583,61.583,1.0,1.293242,0.0234,0.0165,49,12,50
+China,ipcc_low,Logistic,descend,2100,Jianghan,76,0.708,0.708,1.0,0.014868,0.0003,0.0002,1,13,50
+China,ipcc_low,Logistic,descend,2100,Qaidam,146,0.6258,0.6258,1.0,0.013143,0.0002,0.0002,1,14,50
+China,ipcc_low,Logistic,descend,2100,Bose,26,0.618,0.618,1.0,0.012978,0.0002,0.0002,1,15,50
+China,ipcc_low,Logistic,descend,2100,Sanshui,157,0.5619,0.5619,1.0,0.011799,0.0002,0.0002,1,16,50
+China,ipcc_low,Logistic,descend,2100,Jiuquan,77,0.472,0.472,1.0,0.009913,0.0002,0.0001,1,17,50
+China,ipcc_low,Logistic,descend,2100,Junggar,78,0.3743,0.3743,1.0,0.00786,0.0001,0.0001,1,18,50
+China,ipcc_low,Logistic,descend,2100,Santanghu,158,0.1082,0.1082,1.0,0.002273,0.0,0.0,1,19,50
+China,ipcc_low,Logistic,descend,2100,Sichuan,166,0.1069,0.1069,1.0,0.002244,0.0,0.0,1,20,50
+China,ipcc_low,Logistic,descend,2100,Hailar-Temtsag,69,0.041,0.041,1.0,0.00086,0.0,0.0,1,21,50
+China,ipcc_low,Logistic,descend,2179,Tarim,183,6.0176,353.0527,0.017,35.071299,1.0,0.2054,324,1,100
+China,ipcc_low,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,27.27521,0.0,0.1597,0,0,0
+China,ipcc_low,Logistic,descend,2179,Pearl River Mouth,0,0.0,0.0,0.0,26.175119,0.0,0.1533,0,0,0
+China,ipcc_low,Logistic,descend,2179,Bohai Bay,0,0.0,0.0,0.0,17.181465,0.0,0.1006,0,0,0
+China,ipcc_low,Logistic,descend,2179,Beibuwan,0,0.0,0.0,0.0,14.095842,0.0,0.0826,0,0,0
+China,ipcc_low,Logistic,descend,2179,Ordos,0,0.0,0.0,0.0,11.420838,0.0,0.0669,0,0,0
+China,ipcc_low,Logistic,descend,2179,Subei,0,0.0,0.0,0.0,10.86097,0.0,0.0636,0,0,0
+China,ipcc_low,Logistic,descend,2179,Erlian,0,0.0,0.0,0.0,8.109225,0.0,0.0475,0,0,0
+China,ipcc_low,Logistic,descend,2179,Nanxiang,0,0.0,0.0,0.0,6.600732,0.0,0.0387,0,0,0
+China,ipcc_low,Logistic,descend,2179,Songliao,0,0.0,0.0,0.0,6.947697,0.0,0.0407,0,0,0
+China,ipcc_low,Logistic,descend,2179,Turpan,0,0.0,0.0,0.0,3.937067,0.0,0.0231,0,0,0
+China,ipcc_low,Logistic,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,2.894399,0.0,0.017,0,0,0
+China,ipcc_low,Logistic,descend,2179,Jianghan,0,0.0,0.0,0.0,0.033276,0.0,0.0002,0,0,0
+China,ipcc_low,Logistic,descend,2179,Qaidam,0,0.0,0.0,0.0,0.029414,0.0,0.0002,0,0,0
+China,ipcc_low,Logistic,descend,2179,Bose,0,0.0,0.0,0.0,0.029045,0.0,0.0002,0,0,0
+China,ipcc_low,Logistic,descend,2179,Sanshui,0,0.0,0.0,0.0,0.026407,0.0,0.0002,0,0,0
+China,ipcc_low,Logistic,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.022186,0.0,0.0001,0,0,0
+China,ipcc_low,Logistic,descend,2179,Junggar,0,0.0,0.0,0.0,0.017591,0.0,0.0001,0,0,0
+China,ipcc_low,Logistic,descend,2179,Santanghu,0,0.0,0.0,0.0,0.005087,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2179,Sichuan,0,0.0,0.0,0.0,0.005023,0.0,0.0,0,0,0
+China,ipcc_low,Logistic,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.001925,0.0,0.0,0,0,0
+EU,ipcc_low,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,452.5991,1071.015,0.4226,4.854127,1.0,1.0,272,1,120
+EU,ipcc_low,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,971.4641,1071.015,0.907,50.303747,1.0,1.0,272,1,120
+EU,ipcc_low,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,150.5528,1071.015,0.1406,88.682542,1.0,1.0,272,1,120
+EU,ipcc_low,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,452.5991,3076.4136,0.1471,3.899039,1.0,1.0,144,1,40
+EU,ipcc_low,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,628.3309,3076.4136,0.2042,88.186786,1.0,1.0,144,1,40
+EU,ipcc_low,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.0709,3076.4136,0.0,93.613543,1.0,1.0,144,1,40
+Indonesia,ipcc_low,Gompertz,descend,2050,North Sumatra,120,3.4122,445.8087,0.0077,0.045666,1.0,1.0,4,1,150
+Indonesia,ipcc_low,Gompertz,descend,2100,North Sumatra,120,18.5731,445.8087,0.0417,0.541414,1.0,1.0,4,1,150
+Indonesia,ipcc_low,Gompertz,descend,2179,North Sumatra,120,53.0837,445.8087,0.1191,3.481245,1.0,1.0,4,1,150
+Indonesia,ipcc_low,Logistic,descend,2050,North Sumatra,120,3.4122,445.8087,0.0077,0.042316,1.0,1.0,12,1,150
+Indonesia,ipcc_low,Logistic,descend,2100,North Sumatra,120,58.0838,445.8087,0.1303,1.061228,1.0,1.0,12,1,150
+Indonesia,ipcc_low,Logistic,descend,2179,North Sumatra,120,96.5129,445.8087,0.2165,14.089226,1.0,1.0,12,1,150
+Middle East,ipcc_low,Gompertz,descend,2050,Arabian,9,173.3893,4779.6748,0.0363,1.693231,1.0,1.0,30,1,150
+Middle East,ipcc_low,Gompertz,descend,2100,Arabian,9,491.6031,4779.6748,0.1029,22.877411,1.0,1.0,30,1,150
+Middle East,ipcc_low,Gompertz,descend,2179,Arabian,9,79.8853,4779.6748,0.0167,42.898843,1.0,1.0,30,1,150
+Middle East,ipcc_low,Logistic,descend,2050,Arabian,9,173.3893,4779.6748,0.0363,1.350045,1.0,1.0,81,1,150
+Middle East,ipcc_low,Logistic,descend,2100,Arabian,9,246.0525,4779.6748,0.0515,43.678696,1.0,1.0,81,1,150
+Middle East,ipcc_low,Logistic,descend,2179,Arabian,9,0.008,4779.6748,0.0,45.506745,1.0,1.0,81,1,150
+Thailand,ipcc_low,Gompertz,descend,2050,Pattani,135,10.8712,251.2525,0.0433,0.092542,1.0,1.0,16,1,150
+Thailand,ipcc_low,Gompertz,descend,2100,Pattani,135,92.8597,251.2525,0.3696,2.777597,1.0,1.0,16,1,150
+Thailand,ipcc_low,Gompertz,descend,2179,Pattani,135,40.4204,251.2525,0.1609,8.758989,1.0,1.0,16,1,150
+Thailand,ipcc_low,Logistic,descend,2050,Pattani,135,10.8712,387.4101,0.0281,0.076506,1.0,1.0,272,1,100
+Thailand,ipcc_low,Logistic,descend,2100,Pattani,135,118.0072,387.4101,0.3046,9.676067,1.0,1.0,272,1,100
+Thailand,ipcc_low,Logistic,descend,2179,Pattani,135,0.0013,387.4101,0.0,10.496278,1.0,1.0,272,1,100
+UK,ipcc_low,Gompertz,descend,2050,Faroe-Shetland,55,233.9498,963.7489,0.2427,2.189131,1.0,1.0,272,1,90
+UK,ipcc_low,Gompertz,descend,2100,Faroe-Shetland,55,842.1798,963.7489,0.8739,35.494968,1.0,1.0,272,1,90
+UK,ipcc_low,Gompertz,descend,2179,Faroe-Shetland,55,161.2766,963.7489,0.1673,72.409676,1.0,1.0,272,1,90
+UK,ipcc_low,Logistic,descend,2050,Faroe-Shetland,55,233.9498,2770.8567,0.0844,1.753478,1.0,1.0,961,1,30
+UK,ipcc_low,Logistic,descend,2100,Faroe-Shetland,55,443.9903,2770.8567,0.1602,74.737251,1.0,1.0,961,1,30
+UK,ipcc_low,Logistic,descend,2179,Faroe-Shetland,55,0.0093,2770.8567,0.0,77.894034,1.0,1.0,961,1,30
+Australia,maximum,Gompertz,descend,2050,Browse,28,169.8769,2084.1415,0.0815,1.338587,1.0,1.0,342,1,120
+Australia,maximum,Gompertz,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Gompertz,descend,2100,Browse,28,2084.1415,2084.1415,1.0,71.595427,0.5344,0.6998,342,1,120
+Australia,maximum,Gompertz,descend,2100,North Carnarvon,113,785.7747,785.7747,1.0,15.578374,0.2015,0.1523,676,2,100
+Australia,maximum,Gompertz,descend,2100,Bonaparte,25,436.0919,436.0919,1.0,7.063749,0.1118,0.069,272,3,100
+Australia,maximum,Gompertz,descend,2100,Perth,139,184.3262,184.3262,1.0,2.693537,0.0473,0.0263,169,4,100
+Australia,maximum,Gompertz,descend,2100,Bass,17,173.1377,173.1377,1.0,2.381365,0.0444,0.0233,156,5,100
+Australia,maximum,Gompertz,descend,2100,Gippsland,63,163.335,163.335,1.0,2.123355,0.0419,0.0208,100,6,100
+Australia,maximum,Gompertz,descend,2100,Canning,31,72.1087,72.1087,1.0,0.868891,0.0185,0.0085,72,7,100
+Australia,maximum,Gompertz,descend,2100,Bowen-Surat,27,0.6232,0.6232,1.0,0.007478,0.0002,0.0001,1,8,100
+Australia,maximum,Gompertz,descend,2100,Adavale,1,0.2015,0.2015,1.0,0.002417,0.0001,0.0,1,9,100
+Australia,maximum,Gompertz,descend,2179,Browse,28,2084.1415,2084.1415,1.0,236.242608,0.5344,0.5756,342,1,120
+Australia,maximum,Gompertz,descend,2179,North Carnarvon,113,785.7747,785.7747,1.0,77.654572,0.2015,0.1892,676,2,100
+Australia,maximum,Gompertz,descend,2179,Bonaparte,25,436.0919,436.0919,1.0,41.515007,0.1118,0.1012,272,3,100
+Australia,maximum,Gompertz,descend,2179,Perth,139,184.3262,184.3262,1.0,17.255309,0.0473,0.042,169,4,100
+Australia,maximum,Gompertz,descend,2179,Bass,17,173.1377,173.1377,1.0,16.059243,0.0444,0.0391,156,5,100
+Australia,maximum,Gompertz,descend,2179,Gippsland,63,163.335,163.335,1.0,15.02682,0.0419,0.0366,100,6,100
+Australia,maximum,Gompertz,descend,2179,Canning,31,72.1087,72.1087,1.0,6.565476,0.0185,0.016,72,7,100
+Australia,maximum,Gompertz,descend,2179,Bowen-Surat,27,0.6232,0.6232,1.0,0.056708,0.0002,0.0001,1,8,100
+Australia,maximum,Gompertz,descend,2179,Adavale,1,0.2015,0.2015,1.0,0.018333,0.0001,0.0,1,9,100
+Australia,maximum,Logistic,descend,2050,Browse,28,169.8769,2750.0874,0.0618,1.189156,1.0,1.0,625,1,90
+Australia,maximum,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,maximum,Logistic,descend,2100,Browse,28,2750.0874,2750.0874,1.0,105.295056,0.5371,0.6044,625,1,90
+Australia,maximum,Logistic,descend,2100,North Carnarvon,113,974.2334,974.2334,1.0,29.560315,0.1903,0.1697,676,2,80
+Australia,maximum,Logistic,descend,2100,Bonaparte,25,544.804,544.804,1.0,15.750116,0.1064,0.0904,462,3,80
+Australia,maximum,Logistic,descend,2100,Perth,139,267.391,267.391,1.0,7.486949,0.0522,0.043,256,4,70
+Australia,maximum,Logistic,descend,2100,Bass,17,257.7343,257.7343,1.0,7.216561,0.0503,0.0414,240,5,70
+Australia,maximum,Logistic,descend,2100,Gippsland,63,222.1122,222.1122,1.0,6.079758,0.0434,0.0349,196,6,70
+Australia,maximum,Logistic,descend,2100,Canning,31,103.4673,103.4673,1.0,2.793616,0.0202,0.016,81,7,70
+Australia,maximum,Logistic,descend,2100,Bowen-Surat,27,0.6269,0.6269,1.0,0.016927,0.0001,0.0001,1,8,70
+Australia,maximum,Logistic,descend,2100,Adavale,1,0.2025,0.2025,1.0,0.005469,0.0,0.0,1,9,70
+Australia,maximum,Logistic,descend,2179,Browse,28,19.703,2750.0874,0.0072,247.057876,1.0,0.5932,625,1,90
+Australia,maximum,Logistic,descend,2179,North Carnarvon,0,0.0,0.0,0.0,72.097222,0.0,0.1731,0,0,0
+Australia,maximum,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,38.717533,0.0,0.093,0,0,0
+Australia,maximum,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,18.58483,0.0,0.0446,0,0,0
+Australia,maximum,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,17.783668,0.0,0.0427,0,0,0
+Australia,maximum,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,15.186357,0.0,0.0365,0,0,0
+Australia,maximum,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,7.005223,0.0,0.0168,0,0,0
+Australia,maximum,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.042004,0.0,0.0001,0,0,0
+Australia,maximum,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.01357,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Foz do Amazonas,58,913.038,10621.1336,0.086,7.459566,1.0,1.0,3540,1,110
+Brazil,maximum,Gompertz,descend,2050,Santos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Barreirinhas-Para-Maranhao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Campos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Solimoes,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Potiguar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Espirito Santo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Sergipe-Alagoas,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Reconcavo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2050,Tucano,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Foz do Amazonas,58,10621.1336,10621.1336,1.0,327.688083,0.6715,0.8977,3540,1,110
+Brazil,maximum,Gompertz,descend,2100,Santos,159,2633.8349,2633.8349,1.0,27.440396,0.1665,0.0752,1640,2,90
+Brazil,maximum,Gompertz,descend,2100,Barreirinhas-Para-Maranhao,16,1921.9099,1921.9099,1.0,9.010551,0.1215,0.0247,1521,3,90
+Brazil,maximum,Gompertz,descend,2100,Campos,30,640.1342,1115.5589,0.5738,0.906455,0.0405,0.0025,841,4,80
+Brazil,maximum,Gompertz,descend,2100,Solimoes,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Potiguar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Espirito Santo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Sergipe-Alagoas,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Reconcavo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2100,Tucano,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Gompertz,descend,2179,Foz do Amazonas,58,10621.1336,10621.1336,1.0,1166.757638,0.6271,0.6856,3540,1,110
+Brazil,maximum,Gompertz,descend,2179,Santos,159,2633.8349,2633.8349,1.0,235.513352,0.1555,0.1384,1640,2,90
+Brazil,maximum,Gompertz,descend,2179,Barreirinhas-Para-Maranhao,16,1921.9099,1921.9099,1.0,160.841434,0.1135,0.0945,1521,3,90
+Brazil,maximum,Gompertz,descend,2179,Campos,30,1115.5589,1115.5589,1.0,88.928135,0.0659,0.0523,841,4,80
+Brazil,maximum,Gompertz,descend,2179,Solimoes,169,297.9305,297.9305,1.0,23.19477,0.0176,0.0136,272,5,80
+Brazil,maximum,Gompertz,descend,2179,Potiguar,143,150.81,150.81,1.0,11.612369,0.0089,0.0068,100,6,80
+Brazil,maximum,Gompertz,descend,2179,Espirito Santo,53,136.6979,136.6979,1.0,10.525735,0.0081,0.0062,100,7,80
+Brazil,maximum,Gompertz,descend,2179,Sergipe-Alagoas,165,37.6053,37.6053,1.0,2.881414,0.0022,0.0017,36,8,80
+Brazil,maximum,Gompertz,descend,2179,Reconcavo,148,20.3218,20.3218,1.0,1.544456,0.0012,0.0009,20,9,80
+Brazil,maximum,Gompertz,descend,2179,Tucano,189,0.482,0.482,1.0,0.036632,0.0,0.0,1,10,80
+Brazil,maximum,Logistic,descend,2050,Foz do Amazonas,58,913.038,19604.6253,0.0466,6.373757,1.0,1.0,10712,1,60
+Brazil,maximum,Logistic,descend,2050,Santos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Barreirinhas-Para-Maranhao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Campos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Solimoes,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Potiguar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Espirito Santo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Sergipe-Alagoas,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Reconcavo,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2050,Tucano,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Brazil,maximum,Logistic,descend,2100,Foz do Amazonas,58,19604.6253,19604.6253,1.0,709.019768,0.588,0.6578,10712,1,60
+Brazil,maximum,Logistic,descend,2100,Santos,159,5924.8897,5924.8897,1.0,166.027042,0.1777,0.154,3249,2,40
+Brazil,maximum,Logistic,descend,2100,Barreirinhas-Para-Maranhao,16,4300.733,4300.733,1.0,113.728665,0.129,0.1055,2916,3,40
+Brazil,maximum,Logistic,descend,2100,Campos,30,2227.8869,2227.8869,1.0,57.001476,0.0668,0.0529,1332,4,40
+Brazil,maximum,Logistic,descend,2100,Solimoes,169,588.6753,588.6753,1.0,14.716883,0.0177,0.0137,484,5,40
+Brazil,maximum,Logistic,descend,2100,Potiguar,143,306.0106,306.0106,1.0,7.650264,0.0092,0.0071,306,6,40
+Brazil,maximum,Logistic,descend,2100,Espirito Santo,53,278.5537,278.5537,1.0,6.963842,0.0084,0.0065,240,7,40
+Brazil,maximum,Logistic,descend,2100,Sergipe-Alagoas,165,74.2546,74.2546,1.0,1.856365,0.0022,0.0017,72,8,40
+Brazil,maximum,Logistic,descend,2100,Reconcavo,148,37.3798,37.3798,1.0,0.934495,0.0011,0.0009,36,9,40
+Brazil,maximum,Logistic,descend,2100,Tucano,189,0.4877,0.4877,1.0,0.012191,0.0,0.0,1,10,40
+Brazil,maximum,Logistic,descend,2179,Foz do Amazonas,58,1.1843,19604.6253,0.0001,1082.273049,1.0,0.683,10712,1,60
+Brazil,maximum,Logistic,descend,2179,Santos,0,0.0,0.0,0.0,230.493054,0.0,0.1455,0,0,0
+Brazil,maximum,Logistic,descend,2179,Barreirinhas-Para-Maranhao,0,0.0,0.0,0.0,153.850461,0.0,0.0971,0,0,0
+Brazil,maximum,Logistic,descend,2179,Campos,0,0.0,0.0,0.0,75.58026,0.0,0.0477,0,0,0
+Brazil,maximum,Logistic,descend,2179,Solimoes,0,0.0,0.0,0.0,19.426285,0.0,0.0123,0,0,0
+Brazil,maximum,Logistic,descend,2179,Potiguar,0,0.0,0.0,0.0,10.098349,0.0,0.0064,0,0,0
+Brazil,maximum,Logistic,descend,2179,Espirito Santo,0,0.0,0.0,0.0,9.192271,0.0,0.0058,0,0,0
+Brazil,maximum,Logistic,descend,2179,Sergipe-Alagoas,0,0.0,0.0,0.0,2.450401,0.0,0.0015,0,0,0
+Brazil,maximum,Logistic,descend,2179,Reconcavo,0,0.0,0.0,0.0,1.233533,0.0,0.0008,0,0,0
+Brazil,maximum,Logistic,descend,2179,Tucano,0,0.0,0.0,0.0,0.016093,0.0,0.0,0,0,0
+Canada,maximum,Gompertz,descend,2050,Grand Banks,64,307.0322,381.1416,0.8056,2.437693,1.0,1.0,361,1,140
+Canada,maximum,Gompertz,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,maximum,Gompertz,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,maximum,Gompertz,descend,2100,Grand Banks,64,381.1416,381.1416,1.0,21.456541,0.555,0.6074,361,1,140
+Canada,maximum,Gompertz,descend,2100,Scotian,163,305.2033,305.2033,1.0,13.850893,0.4444,0.3921,272,2,130
+Canada,maximum,Gompertz,descend,2100,Beaufort-Mackenzie,18,0.378,0.378,1.0,0.016254,0.0006,0.0005,1,3,130
+Canada,maximum,Gompertz,descend,2179,Grand Banks,64,381.1416,381.1416,1.0,51.566728,0.555,0.5757,361,1,140
+Canada,maximum,Gompertz,descend,2179,Scotian,163,305.2033,305.2033,1.0,37.961956,0.4444,0.4238,272,2,130
+Canada,maximum,Gompertz,descend,2179,Beaufort-Mackenzie,18,0.378,0.378,1.0,0.046117,0.0006,0.0005,1,3,130
+Canada,maximum,Logistic,descend,2050,Grand Banks,64,307.0322,486.7769,0.6307,2.138764,1.0,1.0,484,1,110
+Canada,maximum,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,maximum,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,maximum,Logistic,descend,2100,Grand Banks,64,486.7769,486.7769,1.0,26.262929,0.5566,0.5998,484,1,110
+Canada,maximum,Logistic,descend,2100,Scotian,163,387.3385,387.3385,1.0,17.506408,0.4429,0.3998,342,2,100
+Canada,maximum,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3804,0.3804,1.0,0.016357,0.0004,0.0004,1,3,90
+Canada,maximum,Logistic,descend,2179,Grand Banks,64,6.3004,486.7769,0.0129,53.383002,1.0,0.5994,484,1,110
+Canada,maximum,Logistic,descend,2179,Scotian,0,0.0,0.0,0.0,35.644827,0.0,0.4002,0,0,0
+Canada,maximum,Logistic,descend,2179,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.033475,0.0,0.0004,0,0,0
+China,maximum,Gompertz,descend,2050,Tarim,183,255.1524,255.1524,1.0,2.818401,0.4967,0.7982,210,1,140
+China,maximum,Gompertz,descend,2050,Huabei,70,211.9696,211.9696,1.0,0.66604,0.4126,0.1886,210,2,140
+China,maximum,Gompertz,descend,2050,Pearl River Mouth,136,46.604,211.3555,0.2205,0.046604,0.0907,0.0132,210,3,130
+China,maximum,Gompertz,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Gompertz,descend,2100,Tarim,183,255.1524,255.1524,1.0,15.57602,0.182,0.223,210,1,140
+China,maximum,Gompertz,descend,2100,Huabei,70,211.9696,211.9696,1.0,11.264519,0.1512,0.1613,210,2,140
+China,maximum,Gompertz,descend,2100,Pearl River Mouth,136,211.3555,211.3555,1.0,10.508204,0.1508,0.1505,210,3,130
+China,maximum,Gompertz,descend,2100,Bohai Bay,24,156.0208,156.0208,1.0,7.407829,0.1113,0.1061,144,4,130
+China,maximum,Gompertz,descend,2100,Beibuwan,19,113.6397,113.6397,1.0,5.24335,0.0811,0.0751,100,5,130
+China,maximum,Gompertz,descend,2100,Ordos,127,103.6211,103.6211,1.0,4.671893,0.0739,0.0669,100,6,130
+China,maximum,Gompertz,descend,2100,Subei,177,94.3679,94.3679,1.0,4.174314,0.0673,0.0598,25,7,130
+China,maximum,Gompertz,descend,2100,Erlian,52,68.8,68.8,1.0,3.013676,0.0491,0.0432,64,8,130
+China,maximum,Gompertz,descend,2100,Nanxiang,107,75.7352,75.7352,1.0,3.256615,0.054,0.0466,42,9,130
+China,maximum,Gompertz,descend,2100,Songliao,170,50.8235,50.8235,1.0,2.184125,0.0363,0.0313,49,10,130
+China,maximum,Gompertz,descend,2100,Turpan,192,31.3394,31.3394,1.0,1.316257,0.0224,0.0188,30,11,130
+China,maximum,Gompertz,descend,2100,Yilan-Yitong,201,25.3945,25.3945,1.0,1.06657,0.0181,0.0153,25,12,130
+China,maximum,Gompertz,descend,2100,Jianghan,76,0.6983,0.6983,1.0,0.029327,0.0005,0.0004,1,13,130
+China,maximum,Gompertz,descend,2100,Qaidam,146,0.6143,0.6143,1.0,0.025802,0.0004,0.0004,1,14,130
+China,maximum,Gompertz,descend,2100,Bose,26,0.611,0.611,1.0,0.02566,0.0004,0.0004,1,15,130
+China,maximum,Gompertz,descend,2100,Sanshui,157,0.5521,0.5521,1.0,0.02319,0.0004,0.0003,1,16,130
+China,maximum,Gompertz,descend,2100,Jiuquan,77,0.4629,0.4629,1.0,0.019441,0.0003,0.0003,1,17,130
+China,maximum,Gompertz,descend,2100,Junggar,78,0.3665,0.3665,1.0,0.015393,0.0003,0.0002,1,18,130
+China,maximum,Gompertz,descend,2100,Santanghu,158,0.1061,0.1061,1.0,0.004458,0.0001,0.0001,1,19,130
+China,maximum,Gompertz,descend,2100,Sichuan,166,0.104,0.104,1.0,0.004368,0.0001,0.0001,1,20,130
+China,maximum,Gompertz,descend,2100,Hailar-Temtsag,69,0.0403,0.0403,1.0,0.001693,0.0,0.0,1,21,130
+China,maximum,Gompertz,descend,2179,Tarim,183,255.1524,255.1524,1.0,35.733058,0.182,0.1979,210,1,140
+China,maximum,Gompertz,descend,2179,Huabei,70,211.9696,211.9696,1.0,28.010115,0.1512,0.1551,210,2,140
+China,maximum,Gompertz,descend,2179,Pearl River Mouth,136,211.3555,211.3555,1.0,27.205291,0.1508,0.1507,210,3,130
+China,maximum,Gompertz,descend,2179,Bohai Bay,24,156.0208,156.0208,1.0,19.733473,0.1113,0.1093,144,4,130
+China,maximum,Gompertz,descend,2179,Beibuwan,19,113.6397,113.6397,1.0,14.220889,0.0811,0.0788,100,5,130
+China,maximum,Gompertz,descend,2179,Ordos,127,103.6211,103.6211,1.0,12.85796,0.0739,0.0712,100,6,130
+China,maximum,Gompertz,descend,2179,Subei,177,94.3679,94.3679,1.0,11.629379,0.0673,0.0644,25,7,130
+China,maximum,Gompertz,descend,2179,Erlian,52,68.8,68.8,1.0,8.448874,0.0491,0.0468,64,8,130
+China,maximum,Gompertz,descend,2179,Nanxiang,107,75.7352,75.7352,1.0,9.239699,0.054,0.0512,42,9,130
+China,maximum,Gompertz,descend,2179,Songliao,170,50.8235,50.8235,1.0,6.199183,0.0363,0.0343,49,10,130
+China,maximum,Gompertz,descend,2179,Turpan,192,31.3394,31.3394,1.0,3.792073,0.0224,0.021,30,11,130
+China,maximum,Gompertz,descend,2179,Yilan-Yitong,201,25.3945,25.3945,1.0,3.072738,0.0181,0.017,25,12,130
+China,maximum,Gompertz,descend,2179,Jianghan,76,0.6983,0.6983,1.0,0.084491,0.0005,0.0005,1,13,130
+China,maximum,Gompertz,descend,2179,Qaidam,146,0.6143,0.6143,1.0,0.074335,0.0004,0.0004,1,14,130
+China,maximum,Gompertz,descend,2179,Bose,26,0.611,0.611,1.0,0.073927,0.0004,0.0004,1,15,130
+China,maximum,Gompertz,descend,2179,Sanshui,157,0.5521,0.5521,1.0,0.066809,0.0004,0.0004,1,16,130
+China,maximum,Gompertz,descend,2179,Jiuquan,77,0.4629,0.4629,1.0,0.05601,0.0003,0.0003,1,17,130
+China,maximum,Gompertz,descend,2179,Junggar,78,0.3665,0.3665,1.0,0.044346,0.0003,0.0002,1,18,130
+China,maximum,Gompertz,descend,2179,Santanghu,158,0.1061,0.1061,1.0,0.012844,0.0001,0.0001,1,19,130
+China,maximum,Gompertz,descend,2179,Sichuan,166,0.104,0.104,1.0,0.012585,0.0001,0.0001,1,20,130
+China,maximum,Gompertz,descend,2179,Hailar-Temtsag,69,0.0403,0.0403,1.0,0.004879,0.0,0.0,1,21,130
+China,maximum,Logistic,descend,2050,Tarim,183,353.0527,353.0527,1.0,2.752177,0.6872,0.9206,324,1,100
+China,maximum,Logistic,descend,2050,Huabei,70,160.6732,359.3937,0.4471,0.237351,0.3128,0.0794,324,2,80
+China,maximum,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2100,Tarim,183,353.0527,353.0527,1.0,20.404812,0.1498,0.1818,324,1,100
+China,maximum,Logistic,descend,2100,Huabei,70,359.3937,359.3937,1.0,18.112146,0.1525,0.1614,324,2,80
+China,maximum,Logistic,descend,2100,Pearl River Mouth,136,351.5492,351.5492,1.0,16.732512,0.1492,0.1491,272,3,80
+China,maximum,Logistic,descend,2100,Bohai Bay,24,283.2092,283.2092,1.0,12.977531,0.1202,0.1156,256,4,70
+China,maximum,Logistic,descend,2100,Beibuwan,19,211.5205,211.5205,1.0,9.508244,0.0898,0.0847,196,5,70
+China,maximum,Logistic,descend,2100,Ordos,127,183.6446,183.6446,1.0,8.080361,0.0779,0.072,156,6,70
+China,maximum,Logistic,descend,2100,Subei,177,174.8372,174.8372,1.0,7.636113,0.0742,0.068,110,7,70
+China,maximum,Logistic,descend,2100,Erlian,52,133.5247,133.5247,1.0,5.741561,0.0567,0.0512,121,8,70
+China,maximum,Logistic,descend,2100,Nanxiang,107,105.3935,105.3935,1.0,4.531919,0.0447,0.0404,81,9,70
+China,maximum,Logistic,descend,2100,Songliao,170,94.8414,94.8414,1.0,4.062082,0.0402,0.0362,90,10,70
+China,maximum,Logistic,descend,2100,Turpan,192,57.9064,57.9064,1.0,2.43207,0.0246,0.0217,56,11,70
+China,maximum,Logistic,descend,2100,Yilan-Yitong,201,44.2584,44.2584,1.0,1.858853,0.0188,0.0166,42,12,70
+China,maximum,Logistic,descend,2100,Jianghan,76,0.7045,0.7045,1.0,0.02959,0.0003,0.0003,1,13,70
+China,maximum,Logistic,descend,2100,Qaidam,146,0.6217,0.6217,1.0,0.026113,0.0003,0.0002,1,14,70
+China,maximum,Logistic,descend,2100,Bose,26,0.6155,0.6155,1.0,0.025851,0.0003,0.0002,1,15,70
+China,maximum,Logistic,descend,2100,Sanshui,157,0.5584,0.5584,1.0,0.023452,0.0002,0.0002,1,16,70
+China,maximum,Logistic,descend,2100,Jiuquan,77,0.4688,0.4688,1.0,0.019688,0.0002,0.0002,1,17,70
+China,maximum,Logistic,descend,2100,Junggar,78,0.3715,0.3715,1.0,0.015603,0.0002,0.0001,1,18,70
+China,maximum,Logistic,descend,2100,Santanghu,158,0.1075,0.1075,1.0,0.004514,0.0,0.0,1,19,70
+China,maximum,Logistic,descend,2100,Sichuan,166,0.1058,0.1058,1.0,0.004446,0.0,0.0,1,20,70
+China,maximum,Logistic,descend,2100,Hailar-Temtsag,69,0.0407,0.0407,1.0,0.001711,0.0,0.0,1,21,70
+China,maximum,Logistic,descend,2179,Tarim,183,0.0503,353.0527,0.0001,33.078908,1.0,0.1918,324,1,100
+China,maximum,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,28.293604,0.0,0.164,0,0,0
+China,maximum,Logistic,descend,2179,Pearl River Mouth,0,0.0,0.0,0.0,25.701803,0.0,0.149,0,0,0
+China,maximum,Logistic,descend,2179,Bohai Bay,0,0.0,0.0,0.0,19.69823,0.0,0.1142,0,0,0
+China,maximum,Logistic,descend,2179,Beibuwan,0,0.0,0.0,0.0,14.341607,0.0,0.0831,0,0,0
+China,maximum,Logistic,descend,2179,Ordos,0,0.0,0.0,0.0,12.120542,0.0,0.0703,0,0,0
+China,maximum,Logistic,descend,2179,Subei,0,0.0,0.0,0.0,11.400081,0.0,0.0661,0,0,0
+China,maximum,Logistic,descend,2179,Erlian,0,0.0,0.0,0.0,8.545579,0.0,0.0495,0,0,0
+China,maximum,Logistic,descend,2179,Nanxiang,0,0.0,0.0,0.0,6.745181,0.0,0.0391,0,0,0
+China,maximum,Logistic,descend,2179,Songliao,0,0.0,0.0,0.0,6.006783,0.0,0.0348,0,0,0
+China,maximum,Logistic,descend,2179,Turpan,0,0.0,0.0,0.0,3.590199,0.0,0.0208,0,0,0
+China,maximum,Logistic,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,2.744022,0.0,0.0159,0,0,0
+China,maximum,Logistic,descend,2179,Jianghan,0,0.0,0.0,0.0,0.043681,0.0,0.0003,0,0,0
+China,maximum,Logistic,descend,2179,Qaidam,0,0.0,0.0,0.0,0.038548,0.0,0.0002,0,0,0
+China,maximum,Logistic,descend,2179,Bose,0,0.0,0.0,0.0,0.03816,0.0,0.0002,0,0,0
+China,maximum,Logistic,descend,2179,Sanshui,0,0.0,0.0,0.0,0.03462,0.0,0.0002,0,0,0
+China,maximum,Logistic,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.029064,0.0,0.0002,0,0,0
+China,maximum,Logistic,descend,2179,Junggar,0,0.0,0.0,0.0,0.023033,0.0,0.0001,0,0,0
+China,maximum,Logistic,descend,2179,Santanghu,0,0.0,0.0,0.0,0.006664,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2179,Sichuan,0,0.0,0.0,0.0,0.006563,0.0,0.0,0,0,0
+China,maximum,Logistic,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.002525,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,953.2539,953.2539,1.0,9.476985,0.8331,0.9715,272,1,140
+EU,maximum,Gompertz,descend,2050,Trondelag-Halten,188,190.9288,791.8204,0.2411,0.277791,0.1669,0.0285,210,2,130
+EU,maximum,Gompertz,descend,2050,Balearic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,South Adriatic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Northwest German,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Northern Aegean,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,More,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Ionian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Northern North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,West Barents,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Lublin,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Caltanissetta,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,North Adriatic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Po,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Moesian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Norwegian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Pannonian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Dnieper-Donets,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Vienna,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Zala,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Paris,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Crimea-Karkinit,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,North Carpathian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Drava,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Transylvanian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Sava,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Polish,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2050,Baltic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,953.2539,953.2539,1.0,57.139681,0.1809,0.2595,272,1,140
+EU,maximum,Gompertz,descend,2100,Trondelag-Halten,188,791.8204,791.8204,1.0,38.635396,0.1503,0.1755,210,2,130
+EU,maximum,Gompertz,descend,2100,Balearic,13,673.1179,673.1179,1.0,29.162107,0.1277,0.1324,441,3,130
+EU,maximum,Gompertz,descend,2100,South Adriatic,171,455.4036,455.4036,1.0,18.156675,0.0864,0.0825,441,4,120
+EU,maximum,Gompertz,descend,2100,Northwest German,124,366.2086,366.2086,1.0,13.731267,0.0695,0.0624,342,5,120
+EU,maximum,Gompertz,descend,2100,Northern Aegean,122,278.3122,278.3122,1.0,9.925323,0.0528,0.0451,240,6,120
+EU,maximum,Gompertz,descend,2100,More,102,282.66,282.66,1.0,9.706009,0.0536,0.0441,240,7,110
+EU,maximum,Gompertz,descend,2100,Ionian,74,283.2283,283.2283,1.0,9.267643,0.0537,0.0421,225,8,110
+EU,maximum,Gompertz,descend,2100,Northern North Sea,123,284.6623,284.6623,1.0,8.936599,0.054,0.0406,210,9,100
+EU,maximum,Gompertz,descend,2100,West Barents,198,184.9306,184.9306,1.0,5.572521,0.0351,0.0253,90,10,100
+EU,maximum,Gompertz,descend,2100,Lublin,91,175.8436,175.8436,1.0,5.137069,0.0334,0.0233,169,11,100
+EU,maximum,Gompertz,descend,2100,Caltanissetta,29,122.3058,122.3058,1.0,3.484498,0.0232,0.0158,110,12,90
+EU,maximum,Gompertz,descend,2100,North Adriatic,112,85.4935,85.4935,1.0,2.393818,0.0162,0.0109,72,13,90
+EU,maximum,Gompertz,descend,2100,Po,141,77.7605,77.7605,1.0,2.149595,0.0148,0.0098,64,14,90
+EU,maximum,Gompertz,descend,2100,Moesian,100,71.0595,71.0595,1.0,1.918606,0.0135,0.0087,64,15,90
+EU,maximum,Gompertz,descend,2100,Norwegian,125,61.0074,61.0074,1.0,1.647199,0.0116,0.0075,56,16,90
+EU,maximum,Gompertz,descend,2100,Pannonian,131,56.4254,56.4254,1.0,1.50449,0.0107,0.0068,56,17,90
+EU,maximum,Gompertz,descend,2100,Dnieper-Donets,45,39.3779,39.3779,1.0,1.023824,0.0075,0.0046,36,18,90
+EU,maximum,Gompertz,descend,2100,Vienna,194,17.999,17.999,1.0,0.467975,0.0034,0.0021,16,19,90
+EU,maximum,Gompertz,descend,2100,Zala,203,4.2125,4.2125,1.0,0.109526,0.0008,0.0005,4,20,90
+EU,maximum,Gompertz,descend,2100,Paris,134,0.8764,0.8764,1.0,0.022785,0.0002,0.0001,1,21,90
+EU,maximum,Gompertz,descend,2100,Crimea-Karkinit,41,0.7331,0.7331,1.0,0.019059,0.0001,0.0001,1,22,90
+EU,maximum,Gompertz,descend,2100,North Carpathian,114,0.7334,0.7334,1.0,0.019067,0.0001,0.0001,1,23,90
+EU,maximum,Gompertz,descend,2100,Drava,48,0.643,0.643,1.0,0.016718,0.0001,0.0001,1,24,90
+EU,maximum,Gompertz,descend,2100,Transylvanian,187,0.5441,0.5441,1.0,0.014146,0.0001,0.0001,1,25,90
+EU,maximum,Gompertz,descend,2100,Sava,161,0.5034,0.5034,1.0,0.01309,0.0001,0.0001,1,26,90
+EU,maximum,Gompertz,descend,2100,Polish,142,0.4382,0.4382,1.0,0.011393,0.0001,0.0001,1,27,90
+EU,maximum,Gompertz,descend,2100,Baltic,14,0.2891,0.2891,1.0,0.007517,0.0001,0.0,1,28,90
+EU,maximum,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,953.2539,953.2539,1.0,132.446742,0.2879,0.2163,272,1,140
+EU,maximum,Gompertz,descend,2179,Trondelag-Halten,188,791.8204,791.8204,1.0,101.189205,0.2392,0.1653,210,2,130
+EU,maximum,Gompertz,descend,2179,Balearic,13,673.1179,673.1179,1.0,82.338425,0.2033,0.1345,441,3,130
+EU,maximum,Gompertz,descend,2179,South Adriatic,171,455.4036,455.4036,1.0,54.133562,0.1375,0.0884,441,4,120
+EU,maximum,Gompertz,descend,2179,Northwest German,124,366.2086,366.2086,1.0,42.661745,0.1106,0.0697,342,5,120
+EU,maximum,Gompertz,descend,2179,Northern Aegean,122,71.045,278.3122,0.2553,31.51179,0.0215,0.0515,240,6,120
+EU,maximum,Gompertz,descend,2179,More,0,0.0,0.0,0.0,30.592965,0.0,0.05,0,0,0
+EU,maximum,Gompertz,descend,2179,Ionian,0,0.0,0.0,0.0,29.209187,0.0,0.0477,0,0,0
+EU,maximum,Gompertz,descend,2179,Northern North Sea,0,0.0,0.0,0.0,28.027778,0.0,0.0458,0,0,0
+EU,maximum,Gompertz,descend,2179,West Barents,0,0.0,0.0,0.0,17.478707,0.0,0.0286,0,0,0
+EU,maximum,Gompertz,descend,2179,Lublin,0,0.0,0.0,0.0,16.115036,0.0,0.0263,0,0,0
+EU,maximum,Gompertz,descend,2179,Caltanissetta,0,0.0,0.0,0.0,10.912588,0.0,0.0178,0,0,0
+EU,maximum,Gompertz,descend,2179,North Adriatic,0,0.0,0.0,0.0,7.499941,0.0,0.0123,0,0,0
+EU,maximum,Gompertz,descend,2179,Po,0,0.0,0.0,0.0,6.731756,0.0,0.011,0,0,0
+EU,maximum,Gompertz,descend,2179,Moesian,0,0.0,0.0,0.0,6.040057,0.0,0.0099,0,0,0
+EU,maximum,Gompertz,descend,2179,Norwegian,0,0.0,0.0,0.0,5.144324,0.0,0.0084,0,0,0
+EU,maximum,Gompertz,descend,2179,Pannonian,0,0.0,0.0,0.0,4.720369,0.0,0.0077,0,0,0
+EU,maximum,Gompertz,descend,2179,Dnieper-Donets,0,0.0,0.0,0.0,3.228984,0.0,0.0053,0,0,0
+EU,maximum,Gompertz,descend,2179,Vienna,0,0.0,0.0,0.0,1.47592,0.0,0.0024,0,0,0
+EU,maximum,Gompertz,descend,2179,Zala,0,0.0,0.0,0.0,0.345427,0.0,0.0006,0,0,0
+EU,maximum,Gompertz,descend,2179,Paris,0,0.0,0.0,0.0,0.071862,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Crimea-Karkinit,0,0.0,0.0,0.0,0.06011,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,North Carpathian,0,0.0,0.0,0.0,0.060136,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Drava,0,0.0,0.0,0.0,0.052727,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Transylvanian,0,0.0,0.0,0.0,0.044614,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Sava,0,0.0,0.0,0.0,0.041283,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Polish,0,0.0,0.0,0.0,0.035931,0.0,0.0001,0,0,0
+EU,maximum,Gompertz,descend,2179,Baltic,0,0.0,0.0,0.0,0.023707,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,1144.1828,1550.6163,0.7379,8.011694,1.0,1.0,650,1,80
+EU,maximum,Logistic,descend,2050,Trondelag-Halten,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Balearic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,South Adriatic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Northwest German,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Northern Aegean,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,More,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Ionian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Northern North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,West Barents,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Lublin,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Caltanissetta,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,North Adriatic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Po,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Moesian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Norwegian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Pannonian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Dnieper-Donets,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Vienna,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Zala,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Paris,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Crimea-Karkinit,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,North Carpathian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Drava,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Transylvanian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Sava,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Polish,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2050,Baltic,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,1550.6163,1550.6163,1.0,85.293227,0.1746,0.1767,650,1,80
+EU,maximum,Logistic,descend,2100,Trondelag-Halten,188,1499.8232,1499.8232,1.0,68.661212,0.1689,0.1423,625,2,60
+EU,maximum,Logistic,descend,2100,Balearic,13,1747.4124,1747.4124,1.0,73.297391,0.1968,0.1519,1444,3,50
+EU,maximum,Logistic,descend,2100,South Adriatic,171,1066.1154,1066.1154,1.0,42.221673,0.12,0.0875,441,4,50
+EU,maximum,Logistic,descend,2100,Northwest German,124,843.9398,843.9398,1.0,32.432263,0.095,0.0672,625,5,50
+EU,maximum,Logistic,descend,2100,Northern Aegean,122,884.7594,884.7594,1.0,33.139645,0.0996,0.0687,784,6,40
+EU,maximum,Logistic,descend,2100,More,102,767.7407,767.7407,1.0,28.149989,0.0865,0.0583,756,7,40
+EU,maximum,Logistic,descend,2100,Ionian,74,520.203,786.5595,0.6614,28.049785,0.0586,0.0581,676,8,40
+EU,maximum,Logistic,descend,2100,Northern North Sea,0,0.0,0.0,0.0,24.05076,0.0,0.0498,0,0,0
+EU,maximum,Logistic,descend,2100,West Barents,0,0.0,0.0,0.0,16.208168,0.0,0.0336,0,0,0
+EU,maximum,Logistic,descend,2100,Lublin,0,0.0,0.0,0.0,14.071691,0.0,0.0292,0,0,0
+EU,maximum,Logistic,descend,2100,Caltanissetta,0,0.0,0.0,0.0,7.43837,0.0,0.0154,0,0,0
+EU,maximum,Logistic,descend,2100,North Adriatic,0,0.0,0.0,0.0,6.379798,0.0,0.0132,0,0,0
+EU,maximum,Logistic,descend,2100,Po,0,0.0,0.0,0.0,5.714596,0.0,0.0118,0,0,0
+EU,maximum,Logistic,descend,2100,Moesian,0,0.0,0.0,0.0,5.148415,0.0,0.0107,0,0,0
+EU,maximum,Logistic,descend,2100,Norwegian,0,0.0,0.0,0.0,4.544951,0.0,0.0094,0,0,0
+EU,maximum,Logistic,descend,2100,Pannonian,0,0.0,0.0,0.0,3.86302,0.0,0.008,0,0,0
+EU,maximum,Logistic,descend,2100,Dnieper-Donets,0,0.0,0.0,0.0,2.738915,0.0,0.0057,0,0,0
+EU,maximum,Logistic,descend,2100,Vienna,0,0.0,0.0,0.0,0.806857,0.0,0.0017,0,0,0
+EU,maximum,Logistic,descend,2100,Zala,0,0.0,0.0,0.0,0.274073,0.0,0.0006,0,0,0
+EU,maximum,Logistic,descend,2100,Paris,0,0.0,0.0,0.0,0.026664,0.0,0.0001,0,0,0
+EU,maximum,Logistic,descend,2100,Crimea-Karkinit,0,0.0,0.0,0.0,0.022355,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,North Carpathian,0,0.0,0.0,0.0,0.022283,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Drava,0,0.0,0.0,0.0,0.019647,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Transylvanian,0,0.0,0.0,0.0,0.016524,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Sava,0,0.0,0.0,0.0,0.015321,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Polish,0,0.0,0.0,0.0,0.013358,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2100,Baltic,0,0.0,0.0,0.0,0.008777,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.0868,1550.6163,0.0001,114.680524,1.0,0.2113,650,1,80
+EU,maximum,Logistic,descend,2179,Trondelag-Halten,0,0.0,0.0,0.0,82.921447,0.0,0.1528,0,0,0
+EU,maximum,Logistic,descend,2179,Balearic,0,0.0,0.0,0.0,83.124782,0.0,0.1531,0,0,0
+EU,maximum,Logistic,descend,2179,South Adriatic,0,0.0,0.0,0.0,45.854362,0.0,0.0845,0,0,0
+EU,maximum,Logistic,descend,2179,Northwest German,0,0.0,0.0,0.0,34.246814,0.0,0.0631,0,0,0
+EU,maximum,Logistic,descend,2179,Northern Aegean,0,0.0,0.0,0.0,34.162594,0.0,0.0629,0,0,0
+EU,maximum,Logistic,descend,2179,More,0,0.0,0.0,0.0,28.364189,0.0,0.0523,0,0,0
+EU,maximum,Logistic,descend,2179,Ionian,0,0.0,0.0,0.0,28.049785,0.0,0.0517,0,0,0
+EU,maximum,Logistic,descend,2179,Northern North Sea,0,0.0,0.0,0.0,24.05076,0.0,0.0443,0,0,0
+EU,maximum,Logistic,descend,2179,West Barents,0,0.0,0.0,0.0,16.208168,0.0,0.0299,0,0,0
+EU,maximum,Logistic,descend,2179,Lublin,0,0.0,0.0,0.0,14.071691,0.0,0.0259,0,0,0
+EU,maximum,Logistic,descend,2179,Caltanissetta,0,0.0,0.0,0.0,7.43837,0.0,0.0137,0,0,0
+EU,maximum,Logistic,descend,2179,North Adriatic,0,0.0,0.0,0.0,6.379798,0.0,0.0118,0,0,0
+EU,maximum,Logistic,descend,2179,Po,0,0.0,0.0,0.0,5.714596,0.0,0.0105,0,0,0
+EU,maximum,Logistic,descend,2179,Moesian,0,0.0,0.0,0.0,5.148415,0.0,0.0095,0,0,0
+EU,maximum,Logistic,descend,2179,Norwegian,0,0.0,0.0,0.0,4.544951,0.0,0.0084,0,0,0
+EU,maximum,Logistic,descend,2179,Pannonian,0,0.0,0.0,0.0,3.86302,0.0,0.0071,0,0,0
+EU,maximum,Logistic,descend,2179,Dnieper-Donets,0,0.0,0.0,0.0,2.738915,0.0,0.005,0,0,0
+EU,maximum,Logistic,descend,2179,Vienna,0,0.0,0.0,0.0,0.806857,0.0,0.0015,0,0,0
+EU,maximum,Logistic,descend,2179,Zala,0,0.0,0.0,0.0,0.274073,0.0,0.0005,0,0,0
+EU,maximum,Logistic,descend,2179,Paris,0,0.0,0.0,0.0,0.026664,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Crimea-Karkinit,0,0.0,0.0,0.0,0.022355,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,North Carpathian,0,0.0,0.0,0.0,0.022283,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Drava,0,0.0,0.0,0.0,0.019647,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Transylvanian,0,0.0,0.0,0.0,0.016524,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Sava,0,0.0,0.0,0.0,0.015321,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Polish,0,0.0,0.0,0.0,0.013358,0.0,0.0,0,0,0
+EU,maximum,Logistic,descend,2179,Baltic,0,0.0,0.0,0.0,0.008777,0.0,0.0,0,0,0
+Indonesia,maximum,Gompertz,descend,2050,North Sumatra,120,47.8455,604.2472,0.0792,0.393009,1.0,1.0,441,1,110
+Indonesia,maximum,Gompertz,descend,2050,East Java,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Indonesia,maximum,Gompertz,descend,2100,North Sumatra,120,604.2472,604.2472,1.0,17.691119,0.7335,0.9315,441,1,110
+Indonesia,maximum,Gompertz,descend,2100,East Java,50,219.4917,681.9081,0.3219,1.300815,0.2665,0.0685,210,2,90
+Indonesia,maximum,Gompertz,descend,2179,North Sumatra,120,604.2472,604.2472,1.0,65.426645,0.667,0.6238,441,1,110
+Indonesia,maximum,Gompertz,descend,2179,East Java,50,301.6887,681.9081,0.4424,39.464538,0.333,0.3762,210,2,90
+Indonesia,maximum,Logistic,descend,2050,North Sumatra,120,47.8455,1108.2514,0.0432,0.336235,1.0,1.0,900,1,60
+Indonesia,maximum,Logistic,descend,2050,East Java,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Indonesia,maximum,Logistic,descend,2050,Bintuni,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Indonesia,maximum,Logistic,descend,2050,Kutei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Indonesia,maximum,Logistic,descend,2100,North Sumatra,120,1108.2514,1108.2514,1.0,39.348843,0.2577,0.3223,900,1,60
+Indonesia,maximum,Logistic,descend,2100,East Java,50,1514.8031,1514.8031,1.0,36.917544,0.3522,0.3024,1482,2,40
+Indonesia,maximum,Logistic,descend,2100,Bintuni,22,1677.529,2037.8941,0.8232,36.140683,0.3901,0.296,2025,3,20
+Indonesia,maximum,Logistic,descend,2100,Kutei,0,0.0,0.0,0.0,9.694816,0.0,0.0794,0,0,0
+Indonesia,maximum,Logistic,descend,2179,North Sumatra,120,0.0734,1108.2514,0.0001,60.549834,1.0,0.3809,900,1,60
+Indonesia,maximum,Logistic,descend,2179,East Java,0,0.0,0.0,0.0,49.020925,0.0,0.3083,0,0,0
+Indonesia,maximum,Logistic,descend,2179,Bintuni,0,0.0,0.0,0.0,39.71752,0.0,0.2498,0,0,0
+Indonesia,maximum,Logistic,descend,2179,Kutei,0,0.0,0.0,0.0,9.694816,0.0,0.061,0,0,0
+Middle East,maximum,Gompertz,descend,2050,Arabian,9,276.3086,4779.6748,0.0578,2.3027,1.0,1.0,484,1,150
+Middle East,maximum,Gompertz,descend,2100,Arabian,9,3307.2783,4779.6748,0.6919,87.140302,1.0,1.0,484,1,150
+Middle East,maximum,Gompertz,descend,2179,Arabian,9,2169.7331,4779.6748,0.4539,349.172616,1.0,1.0,484,1,150
+Middle East,maximum,Logistic,descend,2050,Arabian,9,276.3086,17834.649,0.0155,1.933807,1.0,1.0,3844,1,40
+Middle East,maximum,Logistic,descend,2100,Arabian,9,7733.3013,17834.649,0.4336,399.12406,1.0,1.0,3844,1,40
+Middle East,maximum,Logistic,descend,2179,Arabian,9,0.0915,17834.649,0.0,455.906963,1.0,1.0,3844,1,40
+Thailand,maximum,Gompertz,descend,2050,Pattani,135,11.0684,387.4101,0.0286,0.088627,1.0,1.0,272,1,100
+Thailand,maximum,Gompertz,descend,2050,Kra-Gulf of Thailand,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Thailand,maximum,Gompertz,descend,2100,Pattani,135,303.9558,387.4101,0.7846,5.999236,1.0,1.0,272,1,100
+Thailand,maximum,Gompertz,descend,2100,Kra-Gulf of Thailand,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Thailand,maximum,Gompertz,descend,2179,Pattani,135,387.4101,387.4101,1.0,36.312583,0.8779,0.9072,272,1,100
+Thailand,maximum,Gompertz,descend,2179,Kra-Gulf of Thailand,80,53.8919,53.8919,1.0,3.713874,0.1221,0.0928,49,2,70
+Thailand,maximum,Logistic,descend,2050,Pattani,135,11.0684,660.6695,0.0168,0.077372,1.0,1.0,650,1,60
+Thailand,maximum,Logistic,descend,2050,Kra-Gulf of Thailand,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Thailand,maximum,Logistic,descend,2100,Pattani,135,660.6695,660.6695,1.0,19.265272,0.902,0.9252,650,1,60
+Thailand,maximum,Logistic,descend,2100,Kra-Gulf of Thailand,80,71.779,71.779,1.0,1.556892,0.098,0.0748,49,2,50
+Thailand,maximum,Logistic,descend,2179,Pattani,135,0.1268,660.6695,0.0002,36.930267,1.0,0.9265,650,1,60
+Thailand,maximum,Logistic,descend,2179,Kra-Gulf of Thailand,0,0.0,0.0,0.0,2.930102,0.0,0.0735,0,0,0
+UK,maximum,Gompertz,descend,2050,Faroe-Shetland,55,317.2825,610.7548,0.5195,2.611318,1.0,1.0,462,1,140
+UK,maximum,Gompertz,descend,2050,Central North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Gompertz,descend,2050,Moray Firth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Gompertz,descend,2050,Wessex,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Gompertz,descend,2050,Southern North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Gompertz,descend,2050,East Midlands,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Gompertz,descend,2100,Faroe-Shetland,55,610.7548,610.7548,1.0,32.191107,0.5669,0.6354,462,1,140
+UK,maximum,Gompertz,descend,2100,Central North Sea,34,199.822,199.822,1.0,8.326081,0.1855,0.1643,144,2,130
+UK,maximum,Gompertz,descend,2100,Moray Firth,101,127.725,127.725,1.0,4.984084,0.1185,0.0984,100,3,120
+UK,maximum,Gompertz,descend,2100,Wessex,197,72.9807,72.9807,1.0,2.739533,0.0677,0.0541,49,4,120
+UK,maximum,Gompertz,descend,2100,Southern North Sea,176,52.4532,52.4532,1.0,1.926489,0.0487,0.038,49,5,120
+UK,maximum,Gompertz,descend,2100,East Midlands,51,13.7121,13.7121,1.0,0.493635,0.0127,0.0097,12,6,120
+UK,maximum,Gompertz,descend,2179,Faroe-Shetland,55,610.7548,610.7548,1.0,80.440738,0.5669,0.5924,462,1,140
+UK,maximum,Gompertz,descend,2179,Central North Sea,34,199.822,199.822,1.0,24.112022,0.1855,0.1776,144,2,130
+UK,maximum,Gompertz,descend,2179,Moray Firth,101,127.725,127.725,1.0,15.074356,0.1185,0.111,100,3,120
+UK,maximum,Gompertz,descend,2179,Wessex,197,72.9807,72.9807,1.0,8.505012,0.0677,0.0626,49,4,120
+UK,maximum,Gompertz,descend,2179,Southern North Sea,176,52.4532,52.4532,1.0,6.070294,0.0487,0.0447,49,5,120
+UK,maximum,Gompertz,descend,2179,East Midlands,51,13.7121,13.7121,1.0,1.576891,0.0127,0.0116,12,6,120
+UK,maximum,Logistic,descend,2050,Faroe-Shetland,55,317.2825,1080.228,0.2937,2.215756,1.0,1.0,961,1,80
+UK,maximum,Logistic,descend,2050,Central North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Logistic,descend,2050,Moray Firth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Logistic,descend,2050,Wessex,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Logistic,descend,2050,Southern North Sea,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Logistic,descend,2050,East Midlands,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+UK,maximum,Logistic,descend,2100,Faroe-Shetland,55,1080.228,1080.228,1.0,52.761397,0.5474,0.5975,961,1,80
+UK,maximum,Logistic,descend,2100,Central North Sea,34,370.5394,370.5394,1.0,15.198439,0.1878,0.1721,324,2,70
+UK,maximum,Logistic,descend,2100,Moray Firth,101,244.0222,244.0222,1.0,9.636007,0.1236,0.1091,196,3,60
+UK,maximum,Logistic,descend,2100,Wessex,197,145.0905,145.0905,1.0,5.629898,0.0735,0.0638,132,4,60
+UK,maximum,Logistic,descend,2100,Southern North Sea,176,106.1001,106.1001,1.0,4.031804,0.0538,0.0457,90,5,60
+UK,maximum,Logistic,descend,2100,East Midlands,51,27.5658,27.5658,1.0,1.0475,0.014,0.0119,25,6,60
+UK,maximum,Logistic,descend,2179,Faroe-Shetland,55,0.2289,1080.228,0.0002,82.814368,1.0,0.6132,961,1,80
+UK,maximum,Logistic,descend,2179,Central North Sea,0,0.0,0.0,0.0,22.572931,0.0,0.1672,0,0,0
+UK,maximum,Logistic,descend,2179,Moray Firth,0,0.0,0.0,0.0,14.121316,0.0,0.1046,0,0,0
+UK,maximum,Logistic,descend,2179,Wessex,0,0.0,0.0,0.0,8.182764,0.0,0.0606,0,0,0
+UK,maximum,Logistic,descend,2179,Southern North Sea,0,0.0,0.0,0.0,5.835505,0.0,0.0432,0,0,0
+UK,maximum,Logistic,descend,2179,East Midlands,0,0.0,0.0,0.0,1.516118,0.0,0.0112,0,0,0
+US,maximum,Gompertz,descend,2050,Permian,138,1828.3413,1828.3413,1.0,24.250934,0.5104,0.802,930,1,150
+US,maximum,Gompertz,descend,2050,North Slope,119,1553.0024,1553.0024,1.0,5.786294,0.4336,0.1914,1089,2,140
+US,maximum,Gompertz,descend,2050,Illinois,71,200.709,1297.1948,0.1547,0.200709,0.056,0.0066,930,3,130
+US,maximum,Gompertz,descend,2050,Anadarko,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Los Angeles,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,San Joaquin,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Fort Worth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Sacramento,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Palo Duro,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Cook Inlet,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,San Juan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Laramie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Powder River,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Black Warrior,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Green River,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Big Horn,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Arkoma,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Denver,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Appalachian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2050,Paradox,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Gompertz,descend,2100,Permian,138,1828.3413,1828.3413,1.0,115.667998,0.2255,0.2793,930,1,150
+US,maximum,Gompertz,descend,2100,North Slope,119,1553.0024,1553.0024,1.0,83.436416,0.1915,0.2015,1089,2,140
+US,maximum,Gompertz,descend,2100,Illinois,71,1297.1948,1297.1948,1.0,63.973459,0.16,0.1545,930,3,130
+US,maximum,Gompertz,descend,2100,Anadarko,6,1109.239,1109.239,1.0,51.420292,0.1368,0.1242,961,4,130
+US,maximum,Gompertz,descend,2100,Los Angeles,89,850.3971,850.3971,1.0,37.735984,0.1049,0.0911,100,5,130
+US,maximum,Gompertz,descend,2100,San Joaquin,154,534.0342,534.0342,1.0,22.955035,0.0659,0.0554,380,6,130
+US,maximum,Gompertz,descend,2100,Fort Worth,57,443.1253,443.1253,1.0,18.611263,0.0547,0.0449,380,7,130
+US,maximum,Gompertz,descend,2100,Sacramento,152,236.7965,236.7965,1.0,9.818417,0.0292,0.0237,156,8,120
+US,maximum,Gompertz,descend,2100,Palo Duro,130,88.0838,88.0838,1.0,3.611437,0.0109,0.0087,81,9,120
+US,maximum,Gompertz,descend,2100,Cook Inlet,39,65.9873,65.9873,1.0,2.705477,0.0081,0.0065,64,10,120
+US,maximum,Gompertz,descend,2100,San Juan,156,35.2356,35.2356,1.0,1.444658,0.0043,0.0035,16,11,120
+US,maximum,Gompertz,descend,2100,Laramie,86,44.7688,44.7688,1.0,1.835523,0.0055,0.0044,30,12,120
+US,maximum,Gompertz,descend,2100,Powder River,144,18.432,18.432,1.0,0.755713,0.0023,0.0018,16,13,120
+US,maximum,Gompertz,descend,2100,Black Warrior,23,0.9987,0.9987,1.0,0.040948,0.0001,0.0001,1,14,120
+US,maximum,Gompertz,descend,2100,Green River,65,0.7177,0.7177,1.0,0.029426,0.0001,0.0001,1,15,120
+US,maximum,Gompertz,descend,2100,Big Horn,21,0.5384,0.5384,1.0,0.022076,0.0001,0.0001,1,16,120
+US,maximum,Gompertz,descend,2100,Arkoma,10,0.537,0.537,1.0,0.022015,0.0001,0.0001,1,17,120
+US,maximum,Gompertz,descend,2100,Denver,43,0.1589,0.1589,1.0,0.006513,0.0,0.0,1,18,120
+US,maximum,Gompertz,descend,2100,Appalachian,7,0.0891,0.0891,1.0,0.003653,0.0,0.0,1,19,120
+US,maximum,Gompertz,descend,2100,Paradox,133,0.054,0.054,1.0,0.002215,0.0,0.0,1,20,120
+US,maximum,Gompertz,descend,2179,Permian,138,1828.3413,1828.3413,1.0,260.106958,0.2255,0.2466,930,1,150
+US,maximum,Gompertz,descend,2179,North Slope,119,1553.0024,1553.0024,1.0,206.123609,0.1915,0.1955,1089,2,140
+US,maximum,Gompertz,descend,2179,Illinois,71,1297.1948,1297.1948,1.0,166.451847,0.16,0.1578,930,3,130
+US,maximum,Gompertz,descend,2179,Anadarko,6,1109.239,1109.239,1.0,139.050175,0.1368,0.1318,961,4,130
+US,maximum,Gompertz,descend,2179,Los Angeles,89,850.3971,850.3971,1.0,104.917354,0.1049,0.0995,100,5,130
+US,maximum,Gompertz,descend,2179,San Joaquin,154,534.0342,534.0342,1.0,65.143736,0.0659,0.0618,380,6,130
+US,maximum,Gompertz,descend,2179,Fort Worth,57,443.1253,443.1253,1.0,53.618164,0.0547,0.0508,380,7,130
+US,maximum,Gompertz,descend,2179,Sacramento,152,236.7965,236.7965,1.0,28.52534,0.0292,0.027,156,8,120
+US,maximum,Gompertz,descend,2179,Palo Duro,130,88.0838,88.0838,1.0,10.57006,0.0109,0.01,81,9,120
+US,maximum,Gompertz,descend,2179,Cook Inlet,39,65.9873,65.9873,1.0,7.918471,0.0081,0.0075,64,10,120
+US,maximum,Gompertz,descend,2179,San Juan,156,35.2356,35.2356,1.0,4.228268,0.0043,0.004,16,11,120
+US,maximum,Gompertz,descend,2179,Laramie,86,44.7688,44.7688,1.0,5.372262,0.0055,0.0051,30,12,120
+US,maximum,Gompertz,descend,2179,Powder River,144,18.432,18.432,1.0,2.211843,0.0023,0.0021,16,13,120
+US,maximum,Gompertz,descend,2179,Black Warrior,23,0.9987,0.9987,1.0,0.119849,0.0001,0.0001,1,14,120
+US,maximum,Gompertz,descend,2179,Green River,65,0.7177,0.7177,1.0,0.086124,0.0001,0.0001,1,15,120
+US,maximum,Gompertz,descend,2179,Big Horn,21,0.5384,0.5384,1.0,0.064613,0.0001,0.0001,1,16,120
+US,maximum,Gompertz,descend,2179,Arkoma,10,0.537,0.537,1.0,0.064434,0.0001,0.0001,1,17,120
+US,maximum,Gompertz,descend,2179,Denver,43,0.1589,0.1589,1.0,0.019063,0.0,0.0,1,18,120
+US,maximum,Gompertz,descend,2179,Appalachian,7,0.0891,0.0891,1.0,0.010692,0.0,0.0,1,19,120
+US,maximum,Gompertz,descend,2179,Paradox,133,0.054,0.054,1.0,0.006483,0.0,0.0,1,20,120
+US,maximum,Logistic,descend,2050,Permian,138,3068.1448,3068.1448,1.0,24.774408,0.8565,0.9784,2862,1,90
+US,maximum,Logistic,descend,2050,North Slope,119,513.9079,2730.9055,0.1882,0.546998,0.1435,0.0216,1892,2,80
+US,maximum,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Anadarko,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Los Angeles,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,San Joaquin,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Fort Worth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Sacramento,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Palo Duro,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Cook Inlet,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,San Juan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Laramie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Powder River,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Black Warrior,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Green River,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Big Horn,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Arkoma,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Denver,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Appalachian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2050,Paradox,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2100,Permian,138,3068.1448,3068.1448,1.0,178.181648,0.2007,0.2467,2862,1,90
+US,maximum,Logistic,descend,2100,North Slope,119,2730.9055,2730.9055,1.0,134.119714,0.1786,0.1857,1892,2,80
+US,maximum,Logistic,descend,2100,Illinois,71,2453.9905,2453.9905,1.0,112.52782,0.1605,0.1558,1560,3,70
+US,maximum,Logistic,descend,2100,Anadarko,6,2384.2094,2384.2094,1.0,104.219708,0.156,0.1443,961,4,60
+US,maximum,Logistic,descend,2100,Los Angeles,89,1541.5847,1541.5847,1.0,65.334921,0.1008,0.0905,380,5,60
+US,maximum,Logistic,descend,2100,San Joaquin,154,1176.1909,1176.1909,1.0,48.96547,0.0769,0.0678,1122,6,60
+US,maximum,Logistic,descend,2100,Fort Worth,57,942.6787,942.6787,1.0,38.649825,0.0617,0.0535,729,7,60
+US,maximum,Logistic,descend,2100,Sacramento,152,483.5102,483.5102,1.0,19.823918,0.0316,0.0275,380,8,60
+US,maximum,Logistic,descend,2100,Palo Duro,130,181.3346,181.3346,1.0,7.332339,0.0119,0.0102,156,9,60
+US,maximum,Logistic,descend,2100,Cook Inlet,39,136.9353,136.9353,1.0,5.477413,0.009,0.0076,132,10,60
+US,maximum,Logistic,descend,2100,San Juan,156,65.5678,65.5678,1.0,2.62271,0.0043,0.0036,64,11,60
+US,maximum,Logistic,descend,2100,Laramie,86,65.7535,65.7535,1.0,2.630142,0.0043,0.0036,64,12,60
+US,maximum,Logistic,descend,2100,Powder River,144,38.4769,38.4769,1.0,1.539074,0.0025,0.0021,36,13,60
+US,maximum,Logistic,descend,2100,Black Warrior,23,16.1886,16.1886,1.0,0.647545,0.0011,0.0009,16,14,60
+US,maximum,Logistic,descend,2100,Green River,65,0.7324,0.7324,1.0,0.029298,0.0,0.0,1,15,60
+US,maximum,Logistic,descend,2100,Big Horn,21,0.5491,0.5491,1.0,0.021964,0.0,0.0,1,16,60
+US,maximum,Logistic,descend,2100,Arkoma,10,0.549,0.549,1.0,0.021958,0.0,0.0,1,17,60
+US,maximum,Logistic,descend,2100,Denver,43,0.1608,0.1608,1.0,0.006433,0.0,0.0,1,18,60
+US,maximum,Logistic,descend,2100,Appalachian,7,0.0904,0.0904,1.0,0.003617,0.0,0.0,1,19,60
+US,maximum,Logistic,descend,2100,Paradox,133,0.0549,0.0549,1.0,0.002194,0.0,0.0,1,20,60
+US,maximum,Logistic,descend,2179,Permian,138,1.062,3068.1448,0.0003,271.956068,1.0,0.2669,2862,1,90
+US,maximum,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,192.035361,0.0,0.1885,0,0,0
+US,maximum,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,156.512257,0.0,0.1536,0,0,0
+US,maximum,Logistic,descend,2179,Anadarko,0,0.0,0.0,0.0,141.903866,0.0,0.1393,0,0,0
+US,maximum,Logistic,descend,2179,Los Angeles,0,0.0,0.0,0.0,87.641729,0.0,0.086,0,0,0
+US,maximum,Logistic,descend,2179,San Joaquin,0,0.0,0.0,0.0,65.153644,0.0,0.0639,0,0,0
+US,maximum,Logistic,descend,2179,Fort Worth,0,0.0,0.0,0.0,50.904647,0.0,0.05,0,0,0
+US,maximum,Logistic,descend,2179,Sacramento,0,0.0,0.0,0.0,26.10955,0.0,0.0256,0,0,0
+US,maximum,Logistic,descend,2179,Palo Duro,0,0.0,0.0,0.0,9.689689,0.0,0.0095,0,0,0
+US,maximum,Logistic,descend,2179,Cook Inlet,0,0.0,0.0,0.0,7.196702,0.0,0.0071,0,0,0
+US,maximum,Logistic,descend,2179,San Juan,0,0.0,0.0,0.0,3.409523,0.0,0.0033,0,0,0
+US,maximum,Logistic,descend,2179,Laramie,0,0.0,0.0,0.0,3.419185,0.0,0.0034,0,0,0
+US,maximum,Logistic,descend,2179,Powder River,0,0.0,0.0,0.0,2.000797,0.0,0.002,0,0,0
+US,maximum,Logistic,descend,2179,Black Warrior,0,0.0,0.0,0.0,0.841809,0.0,0.0008,0,0,0
+US,maximum,Logistic,descend,2179,Green River,0,0.0,0.0,0.0,0.038087,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2179,Big Horn,0,0.0,0.0,0.0,0.028554,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2179,Arkoma,0,0.0,0.0,0.0,0.028546,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2179,Denver,0,0.0,0.0,0.0,0.008363,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2179,Appalachian,0,0.0,0.0,0.0,0.004702,0.0,0.0,0,0,0
+US,maximum,Logistic,descend,2179,Paradox,0,0.0,0.0,0.0,0.002853,0.0,0.0,0,0,0
+Australia,minimum,Gompertz,descend,2050,Browse,28,19.2819,1716.4606,0.0112,0.237565,1.0,1.0,16,1,150
+Australia,minimum,Gompertz,descend,2100,Browse,28,118.8798,1716.4606,0.0693,3.39156,1.0,1.0,16,1,150
+Australia,minimum,Gompertz,descend,2179,Browse,28,240.2043,1716.4606,0.1399,19.203382,1.0,1.0,16,1,150
+Australia,minimum,Logistic,descend,2050,Browse,28,19.2819,1716.4606,0.0112,0.215592,1.0,1.0,49,1,150
+Australia,minimum,Logistic,descend,2100,Browse,28,517.0211,1716.4606,0.3012,8.730718,1.0,1.0,49,1,150
+Australia,minimum,Logistic,descend,2179,Browse,28,54.4079,1716.4606,0.0317,49.450596,1.0,1.0,49,1,150
+Brazil,minimum,Gompertz,descend,2050,Foz do Amazonas,58,83.6505,7824.3101,0.0107,1.132855,1.0,1.0,12,1,150
+Brazil,minimum,Gompertz,descend,2100,Foz do Amazonas,58,212.4539,7824.3101,0.0272,9.226083,1.0,1.0,12,1,150
+Brazil,minimum,Gompertz,descend,2179,Foz do Amazonas,58,113.2208,7824.3101,0.0145,23.141248,1.0,1.0,12,1,150
+Brazil,minimum,Logistic,descend,2050,Foz do Amazonas,58,83.6505,7824.3101,0.0107,0.988797,1.0,1.0,30,1,150
+Brazil,minimum,Logistic,descend,2100,Foz do Amazonas,58,504.7161,7824.3101,0.0645,17.418869,1.0,1.0,30,1,150
+Brazil,minimum,Logistic,descend,2179,Foz do Amazonas,58,6.2456,7824.3101,0.0008,29.596997,1.0,1.0,30,1,150
+Canada,minimum,Gompertz,descend,2050,Grand Banks,64,32.9508,337.8998,0.0975,0.414988,1.0,1.0,42,1,150
+Canada,minimum,Gompertz,descend,2100,Grand Banks,64,157.0384,337.8998,0.4647,5.031731,1.0,1.0,42,1,150
+Canada,minimum,Gompertz,descend,2179,Grand Banks,64,203.5228,337.8998,0.6023,21.338363,1.0,1.0,42,1,150
+Canada,minimum,Logistic,descend,2050,Grand Banks,64,32.9508,753.9538,0.0437,0.37171,1.0,1.0,484,1,70
+Canada,minimum,Logistic,descend,2100,Grand Banks,64,615.6738,753.9538,0.8166,12.366882,1.0,1.0,484,1,70
+Canada,minimum,Logistic,descend,2179,Grand Banks,64,21.912,753.9538,0.0291,40.000792,1.0,1.0,484,1,70
+China,minimum,Gompertz,descend,2050,Tarim,183,20.9942,240.5447,0.0873,0.262009,1.0,1.0,90,1,150
+China,minimum,Gompertz,descend,2100,Tarim,183,116.1092,240.5447,0.4827,3.47037,1.0,1.0,90,1,150
+China,minimum,Gompertz,descend,2179,Tarim,183,198.9142,240.5447,0.8269,17.518739,1.0,1.0,90,1,150
+China,minimum,Logistic,descend,2050,Tarim,183,20.9942,493.0823,0.0426,0.236768,1.0,1.0,420,1,70
+China,minimum,Logistic,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,minimum,Logistic,descend,2100,Tarim,183,485.1688,493.0823,0.984,8.723479,1.0,1.0,420,1,70
+China,minimum,Logistic,descend,2100,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,minimum,Logistic,descend,2179,Tarim,183,35.4998,493.0823,0.072,34.506738,1.0,0.8681,420,1,70
+China,minimum,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,5.244507,0.0,0.1319,0,0,0
+EU,minimum,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,44.8648,908.082,0.0494,0.727305,1.0,1.0,4,1,150
+EU,minimum,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,64.6084,908.082,0.0711,3.736865,1.0,1.0,4,1,150
+EU,minimum,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,27.4457,908.082,0.0302,7.429343,1.0,1.0,4,1,150
+EU,minimum,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,44.8648,908.082,0.0494,0.64452,1.0,1.0,6,1,150
+EU,minimum,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,112.1325,908.082,0.1235,5.191758,1.0,1.0,6,1,150
+EU,minimum,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,6.4107,908.082,0.0071,8.871601,1.0,1.0,6,1,150
+Indonesia,minimum,Gompertz,descend,2050,North Sumatra,120,4.5905,445.8087,0.0103,0.062127,1.0,1.0,1,1,150
+Indonesia,minimum,Gompertz,descend,2100,North Sumatra,120,11.4542,445.8087,0.0257,0.502465,1.0,1.0,1,1,150
+Indonesia,minimum,Gompertz,descend,2179,North Sumatra,120,5.88,445.8087,0.0132,1.239679,1.0,1.0,1,1,150
+Indonesia,minimum,Logistic,descend,2050,North Sumatra,120,4.5905,445.8087,0.0103,0.054141,1.0,1.0,2,1,150
+Indonesia,minimum,Logistic,descend,2100,North Sumatra,120,26.6649,445.8087,0.0598,0.943141,1.0,1.0,2,1,150
+Indonesia,minimum,Logistic,descend,2179,North Sumatra,120,0.3054,445.8087,0.0007,1.568654,1.0,1.0,2,1,150
+Middle East,minimum,Gompertz,descend,2050,Arabian,9,19.8563,4779.6748,0.0042,0.288354,1.0,1.0,2,1,150
+Middle East,minimum,Gompertz,descend,2100,Arabian,9,35.2601,4779.6748,0.0074,1.841766,1.0,1.0,2,1,150
+Middle East,minimum,Gompertz,descend,2179,Arabian,9,13.3163,4779.6748,0.0028,3.79025,1.0,1.0,2,1,150
+Middle East,minimum,Logistic,descend,2050,Arabian,9,19.8563,4779.6748,0.0042,0.250319,1.0,1.0,4,1,150
+Middle East,minimum,Logistic,descend,2100,Arabian,9,65.3281,4779.6748,0.0137,2.935871,1.0,1.0,4,1,150
+Middle East,minimum,Logistic,descend,2179,Arabian,9,0.9819,4779.6748,0.0002,4.448466,1.0,1.0,4,1,150
+Thailand,minimum,Gompertz,descend,2050,Pattani,135,1.5186,251.2525,0.006,0.018623,1.0,1.0,2,1,150
+Thailand,minimum,Gompertz,descend,2100,Pattani,135,6.1894,251.2525,0.0246,0.217133,1.0,1.0,2,1,150
+Thailand,minimum,Gompertz,descend,2179,Pattani,135,4.9088,251.2525,0.0195,0.718532,1.0,1.0,2,1,150
+Thailand,minimum,Logistic,descend,2050,Pattani,135,1.5186,251.2525,0.006,0.016335,1.0,1.0,4,1,150
+Thailand,minimum,Logistic,descend,2100,Pattani,135,20.924,251.2525,0.0833,0.535174,1.0,1.0,4,1,150
+Thailand,minimum,Logistic,descend,2179,Pattani,135,0.1515,251.2525,0.0006,1.044328,1.0,1.0,4,1,150
+UK,minimum,Gompertz,descend,2050,Faroe-Shetland,55,27.2571,571.9449,0.0477,0.377802,1.0,1.0,4,1,150
+UK,minimum,Gompertz,descend,2100,Faroe-Shetland,55,59.0186,571.9449,0.1032,2.783377,1.0,1.0,4,1,150
+UK,minimum,Gompertz,descend,2179,Faroe-Shetland,55,25.9975,571.9449,0.0455,6.306949,1.0,1.0,4,1,150
+UK,minimum,Logistic,descend,2050,Faroe-Shetland,55,27.2571,571.9449,0.0477,0.32812,1.0,1.0,9,1,150
+UK,minimum,Logistic,descend,2100,Faroe-Shetland,55,123.2465,571.9449,0.2155,4.883827,1.0,1.0,9,1,150
+UK,minimum,Logistic,descend,2179,Faroe-Shetland,55,1.4281,571.9449,0.0025,7.669876,1.0,1.0,9,1,150
+US,minimum,Gompertz,descend,2050,Permian,138,233.4221,1828.3413,0.1277,3.492508,1.0,1.0,20,1,150
+US,minimum,Gompertz,descend,2100,Permian,138,384.0838,1828.3413,0.2101,20.838737,1.0,1.0,20,1,150
+US,minimum,Gompertz,descend,2179,Permian,138,144.2087,1828.3413,0.0789,41.904869,1.0,1.0,20,1,150
+US,minimum,Logistic,descend,2050,Permian,138,233.4221,1828.3413,0.1277,3.043322,1.0,1.0,42,1,150
+US,minimum,Logistic,descend,2100,Permian,138,692.9222,1828.3413,0.379,31.835695,1.0,1.0,42,1,150
+US,minimum,Logistic,descend,2179,Permian,138,14.1982,1828.3413,0.0078,49.053339,1.0,1.0,42,1,150
+Australia,policy,Gompertz,descend,2050,Browse,28,168.5728,2261.1901,0.0746,1.386608,1.0,1.0,342,1,110
+Australia,policy,Gompertz,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Gompertz,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Gompertz,descend,2100,Browse,28,2261.1901,2261.1901,1.0,62.606543,0.82,0.9665,342,1,110
+Australia,policy,Gompertz,descend,2100,North Carnarvon,113,496.2847,974.2334,0.5094,2.169391,0.18,0.0335,676,2,80
+Australia,policy,Gompertz,descend,2100,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Gompertz,descend,2179,Browse,28,2261.1901,2261.1901,1.0,241.240562,0.8069,0.709,342,1,110
+Australia,policy,Gompertz,descend,2179,North Carnarvon,113,541.2413,974.2334,0.5556,74.526094,0.1931,0.219,676,2,80
+Australia,policy,Gompertz,descend,2179,Bonaparte,0,0.0,0.0,0.0,24.469275,0.0,0.0719,0,0,0
+Australia,policy,Logistic,descend,2050,Browse,28,168.5728,4954.2569,0.034,1.183035,1.0,1.0,930,1,50
+Australia,policy,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2100,Browse,28,4954.2569,4954.2569,1.0,167.292681,0.479,0.5758,930,1,50
+Australia,policy,Logistic,descend,2100,North Carnarvon,113,1971.8163,1971.8163,1.0,49.21272,0.1907,0.1694,1722,2,40
+Australia,policy,Logistic,descend,2100,Bonaparte,25,1431.4761,1431.4761,1.0,32.542147,0.1384,0.112,961,3,30
+Australia,policy,Logistic,descend,2100,Perth,139,608.6353,608.6353,1.0,13.195482,0.0588,0.0454,576,4,30
+Australia,policy,Logistic,descend,2100,Bass,17,617.3492,617.3492,1.0,12.964334,0.0597,0.0446,552,5,30
+Australia,policy,Logistic,descend,2100,Gippsland,63,512.7339,512.7339,1.0,10.39656,0.0496,0.0358,400,6,30
+Australia,policy,Logistic,descend,2100,Canning,31,245.2836,245.2836,1.0,4.905672,0.0237,0.0169,182,7,30
+Australia,policy,Logistic,descend,2100,Bowen-Surat,27,0.636,0.636,1.0,0.012721,0.0001,0.0,1,8,30
+Australia,policy,Logistic,descend,2100,Adavale,1,0.2052,0.2052,1.0,0.004103,0.0,0.0,1,9,30
+Australia,policy,Logistic,descend,2179,Browse,28,0.2009,4954.2569,0.0,245.35912,1.0,0.6216,930,1,50
+Australia,policy,Logistic,descend,2179,North Carnarvon,0,0.0,0.0,0.0,62.903853,0.0,0.1594,0,0,0
+Australia,policy,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,39.283577,0.0,0.0995,0,0,0
+Australia,policy,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,15.416654,0.0,0.0391,0,0,0
+Australia,policy,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,14.816381,0.0,0.0375,0,0,0
+Australia,policy,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,11.544046,0.0,0.0292,0,0,0
+Australia,policy,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,5.396239,0.0,0.0137,0,0,0
+Australia,policy,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.013993,0.0,0.0,0,0,0
+Australia,policy,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.004513,0.0,0.0,0,0,0
+Brazil,policy,Gompertz,descend,2050,Foz do Amazonas,58,801.5114,7824.3101,0.1024,7.241201,1.0,1.0,169,1,150
+Brazil,policy,Gompertz,descend,2100,Foz do Amazonas,58,3265.4403,7824.3101,0.4173,131.925406,1.0,1.0,169,1,150
+Brazil,policy,Gompertz,descend,2179,Foz do Amazonas,58,645.7645,7824.3101,0.0825,277.695362,1.0,1.0,169,1,150
+Brazil,policy,Logistic,descend,2050,Foz do Amazonas,58,801.5114,11683.1243,0.0686,5.790261,1.0,1.0,676,1,100
+Brazil,policy,Logistic,descend,2100,Foz do Amazonas,58,1564.2041,11683.1243,0.1339,289.152256,1.0,1.0,676,1,100
+Brazil,policy,Logistic,descend,2179,Foz do Amazonas,58,0.0198,11683.1243,0.0,299.696158,1.0,1.0,676,1,100
+Canada,policy,Gompertz,descend,2050,Grand Banks,64,60.0,486.7769,0.1233,0.651551,1.0,1.0,484,1,110
+Canada,policy,Gompertz,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,policy,Gompertz,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,policy,Gompertz,descend,2100,Grand Banks,64,486.7769,486.7769,1.0,14.546051,0.7483,0.948,484,1,110
+Canada,policy,Gompertz,descend,2100,Scotian,163,163.7673,510.6088,0.3207,0.797184,0.2517,0.052,462,2,80
+Canada,policy,Gompertz,descend,2100,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,policy,Gompertz,descend,2179,Grand Banks,64,486.7769,486.7769,1.0,53.00143,0.4879,0.58,484,1,110
+Canada,policy,Gompertz,descend,2179,Scotian,163,510.6088,510.6088,1.0,38.359986,0.5118,0.4198,462,2,80
+Canada,policy,Gompertz,descend,2179,Beaufort-Mackenzie,18,0.382,0.382,1.0,0.024069,0.0004,0.0003,1,3,70
+Canada,policy,Logistic,descend,2050,Grand Banks,64,60.0,436.1044,0.1376,0.590837,1.0,1.0,361,1,120
+Canada,policy,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,policy,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,policy,Logistic,descend,2100,Grand Banks,64,436.1044,436.1044,1.0,17.133925,0.4793,0.605,361,1,120
+Canada,policy,Logistic,descend,2100,Scotian,163,473.3372,473.3372,1.0,11.179229,0.5203,0.3947,462,2,90
+Canada,policy,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3804,0.3804,1.0,0.007608,0.0004,0.0003,1,3,90
+Canada,policy,Logistic,descend,2179,Grand Banks,64,188.4115,436.1044,0.432,50.13208,1.0,0.5461,361,1,120
+Canada,policy,Logistic,descend,2179,Scotian,0,0.0,0.0,0.0,41.645575,0.0,0.4536,0,0,0
+Canada,policy,Logistic,descend,2179,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.030812,0.0,0.0003,0,0,0
+China,policy,Gompertz,descend,2050,Tarim,183,216.0,255.1524,0.8466,1.761838,1.0,1.0,210,1,140
+China,policy,Gompertz,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Gompertz,descend,2100,Tarim,183,255.1524,255.1524,1.0,14.503363,0.1668,0.2527,210,1,140
+China,policy,Gompertz,descend,2100,Huabei,70,227.7138,227.7138,1.0,10.246086,0.1489,0.1785,210,2,130
+China,policy,Gompertz,descend,2100,Pearl River Mouth,136,226.9791,226.9791,1.0,8.837558,0.1484,0.154,210,3,120
+China,policy,Gompertz,descend,2100,Bohai Bay,24,168.2057,168.2057,1.0,5.838788,0.11,0.1017,144,4,120
+China,policy,Gompertz,descend,2100,Beibuwan,19,123.141,123.141,1.0,3.940075,0.0805,0.0687,100,5,120
+China,policy,Gompertz,descend,2100,Ordos,127,120.0345,120.0345,1.0,3.585282,0.0785,0.0625,100,6,110
+China,policy,Gompertz,descend,2100,Subei,177,113.2184,113.2184,1.0,3.159566,0.074,0.0551,110,7,110
+China,policy,Gompertz,descend,2100,Erlian,52,78.9482,78.9482,1.0,2.083071,0.0516,0.0363,72,8,110
+China,policy,Gompertz,descend,2100,Nanxiang,107,82.2214,82.2214,1.0,2.065681,0.0538,0.036,81,9,110
+China,policy,Gompertz,descend,2100,Songliao,170,64.276,64.276,1.0,1.538608,0.042,0.0268,64,10,110
+China,policy,Gompertz,descend,2100,Turpan,192,37.7435,37.7435,1.0,0.8681,0.0247,0.0151,36,11,110
+China,policy,Gompertz,descend,2100,Yilan-Yitong,201,28.4258,28.4258,1.0,0.648664,0.0186,0.0113,25,12,110
+China,policy,Gompertz,descend,2100,Jianghan,76,0.6999,0.6999,1.0,0.015399,0.0005,0.0003,1,13,110
+China,policy,Gompertz,descend,2100,Qaidam,146,0.6163,0.6163,1.0,0.013559,0.0004,0.0002,1,14,110
+China,policy,Gompertz,descend,2100,Bose,26,0.6122,0.6122,1.0,0.013468,0.0004,0.0002,1,15,110
+China,policy,Gompertz,descend,2100,Sanshui,157,0.5538,0.5538,1.0,0.012184,0.0004,0.0002,1,16,110
+China,policy,Gompertz,descend,2100,Jiuquan,77,0.4645,0.4645,1.0,0.010218,0.0003,0.0002,1,17,110
+China,policy,Gompertz,descend,2100,Junggar,78,0.3678,0.3678,1.0,0.008092,0.0002,0.0001,1,18,110
+China,policy,Gompertz,descend,2100,Santanghu,158,0.1065,0.1065,1.0,0.002343,0.0001,0.0,1,19,110
+China,policy,Gompertz,descend,2100,Sichuan,166,0.1045,0.1045,1.0,0.002299,0.0001,0.0,1,20,110
+China,policy,Gompertz,descend,2100,Hailar-Temtsag,69,0.0404,0.0404,1.0,0.000889,0.0,0.0,1,21,110
+China,policy,Gompertz,descend,2179,Tarim,183,255.1524,255.1524,1.0,34.660401,0.1668,0.1945,210,1,140
+China,policy,Gompertz,descend,2179,Huabei,70,227.7138,227.7138,1.0,28.235475,0.1489,0.1584,210,2,130
+China,policy,Gompertz,descend,2179,Pearl River Mouth,136,226.9791,226.9791,1.0,26.768907,0.1484,0.1502,210,3,120
+China,policy,Gompertz,descend,2179,Bohai Bay,24,168.2057,168.2057,1.0,19.127035,0.11,0.1073,144,4,120
+China,policy,Gompertz,descend,2179,Beibuwan,19,123.141,123.141,1.0,13.668213,0.0805,0.0767,100,5,120
+China,policy,Gompertz,descend,2179,Ordos,127,120.0345,120.0345,1.0,13.06801,0.0785,0.0733,100,6,110
+China,policy,Gompertz,descend,2179,Subei,177,113.2184,113.2184,1.0,12.103821,0.074,0.0679,110,7,110
+China,policy,Gompertz,descend,2179,Erlian,52,78.9482,78.9482,1.0,8.319977,0.0516,0.0467,72,8,110
+China,policy,Gompertz,descend,2179,Nanxiang,107,82.2214,82.2214,1.0,8.561169,0.0538,0.048,81,9,110
+China,policy,Gompertz,descend,2179,Songliao,170,64.276,64.276,1.0,6.61641,0.042,0.0371,64,10,110
+China,policy,Gompertz,descend,2179,Turpan,192,37.7435,37.7435,1.0,3.849835,0.0247,0.0216,36,11,110
+China,policy,Gompertz,descend,2179,Yilan-Yitong,201,28.4258,28.4258,1.0,2.894302,0.0186,0.0162,25,12,110
+China,policy,Gompertz,descend,2179,Jianghan,76,0.6999,0.6999,1.0,0.070695,0.0005,0.0004,1,13,110
+China,policy,Gompertz,descend,2179,Qaidam,146,0.6163,0.6163,1.0,0.062248,0.0004,0.0003,1,14,110
+China,policy,Gompertz,descend,2179,Bose,26,0.6122,0.6122,1.0,0.06183,0.0004,0.0003,1,15,110
+China,policy,Gompertz,descend,2179,Sanshui,157,0.5538,0.5538,1.0,0.055935,0.0004,0.0003,1,16,110
+China,policy,Gompertz,descend,2179,Jiuquan,77,0.4645,0.4645,1.0,0.046911,0.0003,0.0003,1,17,110
+China,policy,Gompertz,descend,2179,Junggar,78,0.3678,0.3678,1.0,0.037151,0.0002,0.0002,1,18,110
+China,policy,Gompertz,descend,2179,Santanghu,158,0.1065,0.1065,1.0,0.010757,0.0001,0.0001,1,19,110
+China,policy,Gompertz,descend,2179,Sichuan,166,0.1045,0.1045,1.0,0.010554,0.0001,0.0001,1,20,110
+China,policy,Gompertz,descend,2179,Hailar-Temtsag,69,0.0404,0.0404,1.0,0.004083,0.0,0.0,1,21,110
+China,policy,Logistic,descend,2050,Tarim,183,216.0,434.5538,0.4971,1.479386,1.0,1.0,420,1,80
+China,policy,Logistic,descend,2050,Huabei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2100,Tarim,183,434.5538,434.5538,1.0,22.743197,0.1285,0.1743,420,1,80
+China,policy,Logistic,descend,2100,Huabei,70,493.3952,493.3952,1.0,21.194399,0.1459,0.1625,441,2,60
+China,policy,Logistic,descend,2100,Pearl River Mouth,136,470.198,470.198,1.0,18.424507,0.139,0.1412,462,3,60
+China,policy,Logistic,descend,2100,Bohai Bay,24,410.8011,410.8011,1.0,15.174631,0.1214,0.1163,342,4,50
+China,policy,Logistic,descend,2100,Beibuwan,19,293.7078,293.7078,1.0,10.435331,0.0868,0.08,196,5,50
+China,policy,Logistic,descend,2100,Ordos,127,268.5672,268.5672,1.0,9.289182,0.0794,0.0712,240,6,50
+China,policy,Logistic,descend,2100,Subei,177,250.6566,250.6566,1.0,8.497247,0.0741,0.0651,225,7,50
+China,policy,Logistic,descend,2100,Erlian,52,233.5898,233.5898,1.0,7.708462,0.0691,0.0591,210,8,40
+China,policy,Logistic,descend,2100,Nanxiang,107,162.5972,162.5972,1.0,5.324888,0.0481,0.0408,144,9,40
+China,policy,Logistic,descend,2100,Songliao,170,175.1689,175.1689,1.0,5.605405,0.0518,0.043,156,10,40
+China,policy,Logistic,descend,2100,Turpan,192,108.3023,108.3023,1.0,3.465674,0.032,0.0266,100,11,40
+China,policy,Logistic,descend,2100,Yilan-Yitong,201,77.387,77.387,1.0,2.476384,0.0229,0.019,72,12,40
+China,policy,Logistic,descend,2100,Jianghan,76,0.7103,0.7103,1.0,0.02273,0.0002,0.0002,1,13,40
+China,policy,Logistic,descend,2100,Qaidam,146,0.6286,0.6286,1.0,0.020115,0.0002,0.0002,1,14,40
+China,policy,Logistic,descend,2100,Bose,26,0.6196,0.6196,1.0,0.019829,0.0002,0.0002,1,15,40
+China,policy,Logistic,descend,2100,Sanshui,157,0.5642,0.5642,1.0,0.018054,0.0002,0.0001,1,16,40
+China,policy,Logistic,descend,2100,Jiuquan,77,0.4742,0.4742,1.0,0.015175,0.0001,0.0001,1,17,40
+China,policy,Logistic,descend,2100,Junggar,78,0.3761,0.3761,1.0,0.012037,0.0001,0.0001,1,18,40
+China,policy,Logistic,descend,2100,Santanghu,158,0.1087,0.1087,1.0,0.003479,0.0,0.0,1,19,40
+China,policy,Logistic,descend,2100,Sichuan,166,0.1076,0.1076,1.0,0.003442,0.0,0.0,1,20,40
+China,policy,Logistic,descend,2100,Hailar-Temtsag,69,0.0411,0.0411,1.0,0.001315,0.0,0.0,1,21,40
+China,policy,Logistic,descend,2179,Tarim,183,0.0575,434.5538,0.0001,34.050064,1.0,0.1987,420,1,80
+China,policy,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,29.321555,0.0,0.1711,0,0,0
+China,policy,Logistic,descend,2179,Pearl River Mouth,0,0.0,0.0,0.0,24.419744,0.0,0.1425,0,0,0
+China,policy,Logistic,descend,2179,Bohai Bay,0,0.0,0.0,0.0,19.477957,0.0,0.1136,0,0,0
+China,policy,Logistic,descend,2179,Beibuwan,0,0.0,0.0,0.0,13.107211,0.0,0.0765,0,0,0
+China,policy,Logistic,descend,2179,Ordos,0,0.0,0.0,0.0,11.450955,0.0,0.0668,0,0,0
+China,policy,Logistic,descend,2179,Subei,0,0.0,0.0,0.0,10.313264,0.0,0.0602,0,0,0
+China,policy,Logistic,descend,2179,Erlian,0,0.0,0.0,0.0,9.279827,0.0,0.0541,0,0,0
+China,policy,Logistic,descend,2179,Nanxiang,0,0.0,0.0,0.0,6.300471,0.0,0.0368,0,0,0
+China,policy,Logistic,descend,2179,Songliao,0,0.0,0.0,0.0,6.656418,0.0,0.0388,0,0,0
+China,policy,Logistic,descend,2179,Turpan,0,0.0,0.0,0.0,4.011002,0.0,0.0234,0,0,0
+China,policy,Logistic,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,2.863319,0.0,0.0167,0,0,0
+China,policy,Logistic,descend,2179,Jianghan,0,0.0,0.0,0.0,0.026281,0.0,0.0002,0,0,0
+China,policy,Logistic,descend,2179,Qaidam,0,0.0,0.0,0.0,0.023258,0.0,0.0001,0,0,0
+China,policy,Logistic,descend,2179,Bose,0,0.0,0.0,0.0,0.022927,0.0,0.0001,0,0,0
+China,policy,Logistic,descend,2179,Sanshui,0,0.0,0.0,0.0,0.020875,0.0,0.0001,0,0,0
+China,policy,Logistic,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.017547,0.0,0.0001,0,0,0
+China,policy,Logistic,descend,2179,Junggar,0,0.0,0.0,0.0,0.013917,0.0,0.0001,0,0,0
+China,policy,Logistic,descend,2179,Santanghu,0,0.0,0.0,0.0,0.004023,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2179,Sichuan,0,0.0,0.0,0.0,0.00398,0.0,0.0,0,0,0
+China,policy,Logistic,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.001521,0.0,0.0,0,0,0
+EU,policy,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,330.0,953.2539,0.3462,3.664719,1.0,1.0,64,1,140
+EU,policy,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,909.7368,953.2539,0.9543,40.684588,1.0,1.0,64,1,140
+EU,policy,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,230.8803,953.2539,0.2422,84.628972,1.0,1.0,64,1,140
+EU,policy,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,330.0,3076.4136,0.1073,3.03002,1.0,1.0,132,1,40
+EU,policy,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,1095.1839,3076.4136,0.356,82.224261,1.0,1.0,132,1,40
+EU,policy,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.3543,3076.4136,0.0001,93.608664,1.0,1.0,132,1,40
+Indonesia,policy,Gompertz,descend,2050,North Sumatra,120,43.4938,445.8087,0.0976,0.39338,1.0,1.0,9,1,150
+Indonesia,policy,Gompertz,descend,2100,North Sumatra,120,173.5763,445.8087,0.3894,7.078007,1.0,1.0,9,1,150
+Indonesia,policy,Gompertz,descend,2179,North Sumatra,120,33.5318,445.8087,0.0752,14.748816,1.0,1.0,9,1,150
+Indonesia,policy,Logistic,descend,2050,North Sumatra,120,43.4938,604.2472,0.072,0.314196,1.0,1.0,144,1,110
+Indonesia,policy,Logistic,descend,2100,North Sumatra,120,80.8284,604.2472,0.1338,15.339625,1.0,1.0,144,1,110
+Indonesia,policy,Logistic,descend,2179,North Sumatra,120,0.001,604.2472,0.0,15.883534,1.0,1.0,144,1,110
+Middle East,policy,Gompertz,descend,2050,Arabian,9,166.7431,4779.6748,0.0349,1.634848,1.0,1.0,30,1,150
+Middle East,policy,Gompertz,descend,2100,Arabian,9,488.6613,4779.6748,0.1022,22.322197,1.0,1.0,30,1,150
+Middle East,policy,Gompertz,descend,2179,Arabian,9,84.2617,4779.6748,0.0176,42.703585,1.0,1.0,30,1,150
+Middle East,policy,Logistic,descend,2050,Arabian,9,166.7431,4779.6748,0.0349,1.308257,1.0,1.0,81,1,150
+Middle East,policy,Logistic,descend,2100,Arabian,9,267.3121,4779.6748,0.0559,43.486776,1.0,1.0,81,1,150
+Middle East,policy,Logistic,descend,2179,Arabian,9,0.0099,4779.6748,0.0,45.506661,1.0,1.0,81,1,150
+Thailand,policy,Gompertz,descend,2050,Pattani,135,11.2461,251.2525,0.0448,0.095324,1.0,1.0,16,1,150
+Thailand,policy,Gompertz,descend,2100,Pattani,135,94.6022,251.2525,0.3765,2.855228,1.0,1.0,16,1,150
+Thailand,policy,Gompertz,descend,2179,Pattani,135,39.4372,251.2525,0.157,8.828104,1.0,1.0,16,1,150
+Thailand,policy,Logistic,descend,2050,Pattani,135,11.2461,425.6074,0.0264,0.078622,1.0,1.0,210,1,90
+Thailand,policy,Logistic,descend,2100,Pattani,135,110.4156,425.6074,0.2594,9.741746,1.0,1.0,210,1,90
+Thailand,policy,Logistic,descend,2179,Pattani,135,0.0011,425.6074,0.0,10.496282,1.0,1.0,210,1,90
+UK,policy,Gompertz,descend,2050,Faroe-Shetland,55,175.0,769.7316,0.2274,1.692949,1.0,1.0,462,1,110
+UK,policy,Gompertz,descend,2100,Faroe-Shetland,55,769.3028,769.7316,0.9994,28.972965,1.0,1.0,462,1,110
+UK,policy,Gompertz,descend,2179,Faroe-Shetland,55,223.0275,769.7316,0.2897,69.167456,1.0,1.0,462,1,110
+UK,policy,Logistic,descend,2050,Faroe-Shetland,55,175.0,2770.8567,0.0632,1.389499,1.0,1.0,930,1,30
+UK,policy,Logistic,descend,2100,Faroe-Shetland,55,793.8047,2770.8567,0.2865,71.412437,1.0,1.0,930,1,30
+UK,policy,Logistic,descend,2179,Faroe-Shetland,55,0.043,2770.8567,0.0,77.893191,1.0,1.0,930,1,30
+US,policy,Gompertz,descend,2050,Permian,138,1000.0,2099.2537,0.4764,10.964654,1.0,1.0,930,1,130
+US,policy,Gompertz,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,policy,Gompertz,descend,2100,Permian,138,2099.2537,2099.2537,1.0,107.946938,0.5078,0.7137,930,1,130
+US,policy,Gompertz,descend,2100,North Slope,119,2034.5001,2184.5851,0.9313,43.303051,0.4922,0.2863,1849,2,110
+US,policy,Gompertz,descend,2179,Permian,138,1896.3379,2099.2537,0.9033,273.09573,1.0,0.6614,930,1,130
+US,policy,Gompertz,descend,2179,North Slope,0,0.0,0.0,0.0,139.788494,0.0,0.3386,0,0,0
+US,policy,Logistic,descend,2050,Permian,138,1000.0,3938.8251,0.2539,9.301875,1.0,1.0,2862,1,70
+US,policy,Logistic,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,policy,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,policy,Logistic,descend,2100,Permian,138,3938.8251,3938.8251,1.0,181.505615,0.4243,0.4666,2862,1,70
+US,policy,Logistic,descend,2100,North Slope,119,5344.1489,5738.7514,0.9312,164.556423,0.5757,0.4231,4096,2,40
+US,policy,Logistic,descend,2100,Illinois,0,0.0,0.0,0.0,42.899303,0.0,0.1103,0,0,0
+US,policy,Logistic,descend,2179,Permian,138,5.3863,3938.8251,0.0014,269.666209,1.0,0.5344,2862,1,70
+US,policy,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,192.095734,0.0,0.3806,0,0,0
+US,policy,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,42.899303,0.0,0.085,0,0,0
+Australia,reference,Gompertz,descend,2050,Browse,28,164.2107,2261.1901,0.0726,1.355824,1.0,1.0,342,1,110
+Australia,reference,Gompertz,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Gompertz,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Gompertz,descend,2100,Browse,28,2261.1901,2261.1901,1.0,61.39168,0.8384,0.9728,342,1,110
+Australia,reference,Gompertz,descend,2100,North Carnarvon,113,435.8971,974.2334,0.4474,1.718269,0.1616,0.0272,676,2,80
+Australia,reference,Gompertz,descend,2100,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Gompertz,descend,2179,Browse,28,2261.1901,2261.1901,1.0,240.025699,0.8009,0.713,342,1,110
+Australia,reference,Gompertz,descend,2179,North Carnarvon,113,562.2769,974.2334,0.5771,73.761098,0.1991,0.2191,676,2,80
+Australia,reference,Gompertz,descend,2179,Bonaparte,0,0.0,0.0,0.0,22.868374,0.0,0.0679,0,0,0
+Australia,reference,Logistic,descend,2050,Browse,28,164.2107,4954.2569,0.0331,1.158416,1.0,1.0,930,1,50
+Australia,reference,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2100,Browse,28,4954.2569,4954.2569,1.0,165.769976,0.479,0.5774,930,1,50
+Australia,reference,Logistic,descend,2100,North Carnarvon,113,1971.8163,1971.8163,1.0,48.51755,0.1907,0.169,1722,2,40
+Australia,reference,Logistic,descend,2100,Bonaparte,25,1431.4761,1431.4761,1.0,32.109957,0.1384,0.1118,961,3,30
+Australia,reference,Logistic,descend,2100,Perth,139,608.6353,608.6353,1.0,12.837243,0.0588,0.0447,576,4,30
+Australia,reference,Logistic,descend,2100,Bass,17,617.3492,617.3492,1.0,12.718845,0.0597,0.0443,552,5,30
+Australia,reference,Logistic,descend,2100,Gippsland,63,512.7339,512.7339,1.0,10.254678,0.0496,0.0357,400,6,30
+Australia,reference,Logistic,descend,2100,Canning,31,245.2836,245.2836,1.0,4.872474,0.0237,0.017,182,7,30
+Australia,reference,Logistic,descend,2100,Bowen-Surat,27,0.636,0.636,1.0,0.012085,0.0001,0.0,1,8,30
+Australia,reference,Logistic,descend,2100,Adavale,1,0.2052,0.2052,1.0,0.003898,0.0,0.0,1,9,30
+Australia,reference,Logistic,descend,2179,Browse,28,0.2309,4954.2569,0.0,246.428327,1.0,0.6217,930,1,50
+Australia,reference,Logistic,descend,2179,North Carnarvon,0,0.0,0.0,0.0,63.10688,0.0,0.1592,0,0,0
+Australia,reference,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,39.609297,0.0,0.0999,0,0,0
+Australia,reference,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,15.271784,0.0,0.0385,0,0,0
+Australia,reference,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,14.761519,0.0,0.0372,0,0,0
+Australia,reference,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,11.79288,0.0,0.0298,0,0,0
+Australia,reference,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,5.385984,0.0,0.0136,0,0,0
+Australia,reference,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.013357,0.0,0.0,0,0,0
+Australia,reference,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.004308,0.0,0.0,0,0,0
+Brazil,reference,Gompertz,descend,2050,Foz do Amazonas,58,772.1141,7824.3101,0.0987,7.003573,1.0,1.0,169,1,150
+Brazil,reference,Gompertz,descend,2100,Foz do Amazonas,58,3234.4839,7824.3101,0.4134,128.695791,1.0,1.0,169,1,150
+Brazil,reference,Gompertz,descend,2179,Foz do Amazonas,58,674.6053,7824.3101,0.0862,276.319807,1.0,1.0,169,1,150
+Brazil,reference,Logistic,descend,2050,Foz do Amazonas,58,772.1141,11683.1243,0.0661,5.61829,1.0,1.0,676,1,100
+Brazil,reference,Logistic,descend,2100,Foz do Amazonas,58,1697.5771,11683.1243,0.1453,288.081569,1.0,1.0,676,1,100
+Brazil,reference,Logistic,descend,2179,Foz do Amazonas,58,0.0242,11683.1243,0.0,299.695907,1.0,1.0,676,1,100
+Canada,reference,Gompertz,descend,2050,Grand Banks,64,296.0625,381.1416,0.7768,2.49092,1.0,1.0,361,1,140
+Canada,reference,Gompertz,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,reference,Gompertz,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,reference,Gompertz,descend,2100,Grand Banks,64,381.1416,381.1416,1.0,21.469533,0.555,0.6151,361,1,140
+Canada,reference,Gompertz,descend,2100,Scotian,163,305.2033,305.2033,1.0,13.41751,0.4444,0.3844,272,2,130
+Canada,reference,Gompertz,descend,2100,Beaufort-Mackenzie,18,0.3785,0.3785,1.0,0.01552,0.0006,0.0004,1,3,120
+Canada,reference,Gompertz,descend,2179,Grand Banks,64,381.1416,381.1416,1.0,51.57972,0.555,0.5785,361,1,140
+Canada,reference,Gompertz,descend,2179,Scotian,163,305.2033,305.2033,1.0,37.528573,0.4444,0.4209,272,2,130
+Canada,reference,Gompertz,descend,2179,Beaufort-Mackenzie,18,0.3785,0.3785,1.0,0.045423,0.0006,0.0005,1,3,120
+Canada,reference,Logistic,descend,2050,Grand Banks,64,296.0625,652.5342,0.4537,2.0819,1.0,1.0,484,1,80
+Canada,reference,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,reference,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,reference,Logistic,descend,2100,Grand Banks,64,652.5342,652.5342,1.0,33.77733,0.4798,0.5313,484,1,80
+Canada,reference,Logistic,descend,2100,Scotian,163,707.0731,707.0731,1.0,29.783919,0.5199,0.4685,650,2,60
+Canada,reference,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3831,0.3831,1.0,0.015323,0.0003,0.0002,1,3,60
+Canada,reference,Logistic,descend,2179,Grand Banks,64,0.0729,652.5342,0.0001,48.865509,1.0,0.5548,484,1,80
+Canada,reference,Logistic,descend,2179,Scotian,0,0.0,0.0,0.0,39.200246,0.0,0.445,0,0,0
+Canada,reference,Logistic,descend,2179,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.019536,0.0,0.0002,0,0,0
+China,reference,Gompertz,descend,2050,Tarim,183,240.5447,240.5447,1.0,2.857945,0.4874,0.7822,210,1,150
+China,reference,Gompertz,descend,2050,Huabei,70,211.9696,211.9696,1.0,0.754571,0.4295,0.2065,210,2,140
+China,reference,Gompertz,descend,2050,Pearl River Mouth,136,41.0132,211.3555,0.194,0.041013,0.0831,0.0112,210,3,130
+China,reference,Gompertz,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Gompertz,descend,2100,Tarim,183,240.5447,240.5447,1.0,14.885181,0.1706,0.2164,210,1,150
+China,reference,Gompertz,descend,2100,Huabei,70,211.9696,211.9696,1.0,11.353049,0.1503,0.1651,210,2,140
+China,reference,Gompertz,descend,2100,Pearl River Mouth,136,211.3555,211.3555,1.0,10.44516,0.1499,0.1519,210,3,130
+China,reference,Gompertz,descend,2100,Bohai Bay,24,156.0208,156.0208,1.0,7.27732,0.1106,0.1058,144,4,130
+China,reference,Gompertz,descend,2100,Beibuwan,19,113.6397,113.6397,1.0,5.085629,0.0806,0.0739,100,5,130
+China,reference,Gompertz,descend,2100,Ordos,127,103.6211,103.6211,1.0,4.506289,0.0735,0.0655,100,6,130
+China,reference,Gompertz,descend,2100,Subei,177,94.3679,94.3679,1.0,3.996512,0.0669,0.0581,25,7,130
+China,reference,Gompertz,descend,2100,Erlian,52,73.2147,73.2147,1.0,3.030225,0.0519,0.0441,72,8,120
+China,reference,Gompertz,descend,2100,Nanxiang,107,78.5317,78.5317,1.0,3.189636,0.0557,0.0464,42,9,120
+China,reference,Gompertz,descend,2100,Songliao,170,57.1285,57.1285,1.0,2.285141,0.0405,0.0332,56,10,120
+China,reference,Gompertz,descend,2100,Turpan,192,37.7435,37.7435,1.0,1.481069,0.0268,0.0215,36,11,110
+China,reference,Gompertz,descend,2100,Yilan-Yitong,201,28.4258,28.4258,1.0,1.108606,0.0202,0.0161,25,12,110
+China,reference,Gompertz,descend,2100,Jianghan,76,0.6999,0.6999,1.0,0.027298,0.0005,0.0004,1,13,110
+China,reference,Gompertz,descend,2100,Qaidam,146,0.6163,0.6163,1.0,0.024036,0.0004,0.0003,1,14,110
+China,reference,Gompertz,descend,2100,Bose,26,0.6122,0.6122,1.0,0.023875,0.0004,0.0003,1,15,110
+China,reference,Gompertz,descend,2100,Sanshui,157,0.5538,0.5538,1.0,0.021599,0.0004,0.0003,1,16,110
+China,reference,Gompertz,descend,2100,Jiuquan,77,0.4645,0.4645,1.0,0.018114,0.0003,0.0003,1,17,110
+China,reference,Gompertz,descend,2100,Junggar,78,0.3678,0.3678,1.0,0.014345,0.0003,0.0002,1,18,110
+China,reference,Gompertz,descend,2100,Santanghu,158,0.1065,0.1065,1.0,0.004154,0.0001,0.0001,1,19,110
+China,reference,Gompertz,descend,2100,Sichuan,166,0.1045,0.1045,1.0,0.004075,0.0001,0.0001,1,20,110
+China,reference,Gompertz,descend,2100,Hailar-Temtsag,69,0.0404,0.0404,1.0,0.001577,0.0,0.0,1,21,110
+China,reference,Gompertz,descend,2179,Tarim,183,240.5447,240.5447,1.0,33.888213,0.2207,0.1899,210,1,150
+China,reference,Gompertz,descend,2179,Huabei,70,211.9696,211.9696,1.0,28.098645,0.1945,0.1575,210,2,140
+China,reference,Gompertz,descend,2179,Pearl River Mouth,136,211.3555,211.3555,1.0,27.142247,0.1939,0.1521,210,3,130
+China,reference,Gompertz,descend,2179,Bohai Bay,24,156.0208,156.0208,1.0,19.602963,0.1431,0.1099,144,4,130
+China,reference,Gompertz,descend,2179,Beibuwan,19,113.6397,113.6397,1.0,14.063167,0.1043,0.0788,100,5,130
+China,reference,Gompertz,descend,2179,Ordos,127,103.6211,103.6211,1.0,12.692356,0.0951,0.0711,100,6,130
+China,reference,Gompertz,descend,2179,Subei,177,52.8551,94.3679,0.5601,11.398298,0.0485,0.0639,25,7,130
+China,reference,Gompertz,descend,2179,Erlian,0,0.0,0.0,0.0,8.589868,0.0,0.0481,0,0,0
+China,reference,Gompertz,descend,2179,Nanxiang,0,0.0,0.0,0.0,8.96815,0.0,0.0503,0,0,0
+China,reference,Gompertz,descend,2179,Songliao,0,0.0,0.0,0.0,6.371398,0.0,0.0357,0,0,0
+China,reference,Gompertz,descend,2179,Turpan,0,0.0,0.0,0.0,4.131003,0.0,0.0232,0,0,0
+China,reference,Gompertz,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,3.07579,0.0,0.0172,0,0,0
+China,reference,Gompertz,descend,2179,Jianghan,0,0.0,0.0,0.0,0.075594,0.0,0.0004,0,0,0
+China,reference,Gompertz,descend,2179,Qaidam,0,0.0,0.0,0.0,0.066562,0.0,0.0004,0,0,0
+China,reference,Gompertz,descend,2179,Bose,0,0.0,0.0,0.0,0.066115,0.0,0.0004,0,0,0
+China,reference,Gompertz,descend,2179,Sanshui,0,0.0,0.0,0.0,0.059812,0.0,0.0003,0,0,0
+China,reference,Gompertz,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.050162,0.0,0.0003,0,0,0
+China,reference,Gompertz,descend,2179,Junggar,0,0.0,0.0,0.0,0.039726,0.0,0.0002,0,0,0
+China,reference,Gompertz,descend,2179,Santanghu,0,0.0,0.0,0.0,0.011502,0.0,0.0001,0,0,0
+China,reference,Gompertz,descend,2179,Sichuan,0,0.0,0.0,0.0,0.011286,0.0,0.0001,0,0,0
+China,reference,Gompertz,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.004366,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Tarim,183,493.0823,493.0823,1.0,2.901419,0.9991,0.9998,420,1,70
+China,reference,Logistic,descend,2050,Huabei,70,0.4452,584.7824,0.0008,0.000445,0.0009,0.0002,441,2,50
+China,reference,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2100,Tarim,183,493.0823,493.0823,1.0,27.555534,0.4447,0.1724,420,1,70
+China,reference,Logistic,descend,2100,Huabei,70,584.7824,584.7824,1.0,28.086349,0.5274,0.1757,441,2,50
+China,reference,Logistic,descend,2100,Pearl River Mouth,136,30.901,558.94,0.0553,24.189949,0.0279,0.1514,462,3,50
+China,reference,Logistic,descend,2100,Bohai Bay,0,0.0,0.0,0.0,19.842222,0.0,0.1242,0,0,0
+China,reference,Logistic,descend,2100,Beibuwan,0,0.0,0.0,0.0,13.693248,0.0,0.0857,0,0,0
+China,reference,Logistic,descend,2100,Ordos,0,0.0,0.0,0.0,11.505909,0.0,0.072,0,0,0
+China,reference,Logistic,descend,2100,Subei,0,0.0,0.0,0.0,10.55796,0.0,0.0661,0,0,0
+China,reference,Logistic,descend,2100,Erlian,0,0.0,0.0,0.0,7.708462,0.0,0.0482,0,0,0
+China,reference,Logistic,descend,2100,Nanxiang,0,0.0,0.0,0.0,5.22648,0.0,0.0327,0,0,0
+China,reference,Logistic,descend,2100,Songliao,0,0.0,0.0,0.0,5.589541,0.0,0.035,0,0,0
+China,reference,Logistic,descend,2100,Turpan,0,0.0,0.0,0.0,3.357372,0.0,0.021,0,0,0
+China,reference,Logistic,descend,2100,Yilan-Yitong,0,0.0,0.0,0.0,2.398997,0.0,0.015,0,0,0
+China,reference,Logistic,descend,2100,Jianghan,0,0.0,0.0,0.0,0.022019,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Qaidam,0,0.0,0.0,0.0,0.019486,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Bose,0,0.0,0.0,0.0,0.019209,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Sanshui,0,0.0,0.0,0.0,0.01749,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Jiuquan,0,0.0,0.0,0.0,0.014701,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Junggar,0,0.0,0.0,0.0,0.011661,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2100,Santanghu,0,0.0,0.0,0.0,0.003371,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2100,Sichuan,0,0.0,0.0,0.0,0.003335,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2100,Hailar-Temtsag,0,0.0,0.0,0.0,0.001274,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2179,Tarim,183,0.0006,493.0823,0.0,32.240846,1.0,0.1949,420,1,70
+China,reference,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,29.007067,0.0,0.1753,0,0,0
+China,reference,Logistic,descend,2179,Pearl River Mouth,0,0.0,0.0,0.0,24.189949,0.0,0.1462,0,0,0
+China,reference,Logistic,descend,2179,Bohai Bay,0,0.0,0.0,0.0,19.842222,0.0,0.1199,0,0,0
+China,reference,Logistic,descend,2179,Beibuwan,0,0.0,0.0,0.0,13.693248,0.0,0.0828,0,0,0
+China,reference,Logistic,descend,2179,Ordos,0,0.0,0.0,0.0,11.505909,0.0,0.0696,0,0,0
+China,reference,Logistic,descend,2179,Subei,0,0.0,0.0,0.0,10.55796,0.0,0.0638,0,0,0
+China,reference,Logistic,descend,2179,Erlian,0,0.0,0.0,0.0,7.708462,0.0,0.0466,0,0,0
+China,reference,Logistic,descend,2179,Nanxiang,0,0.0,0.0,0.0,5.22648,0.0,0.0316,0,0,0
+China,reference,Logistic,descend,2179,Songliao,0,0.0,0.0,0.0,5.589541,0.0,0.0338,0,0,0
+China,reference,Logistic,descend,2179,Turpan,0,0.0,0.0,0.0,3.357372,0.0,0.0203,0,0,0
+China,reference,Logistic,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,2.398997,0.0,0.0145,0,0,0
+China,reference,Logistic,descend,2179,Jianghan,0,0.0,0.0,0.0,0.022019,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Qaidam,0,0.0,0.0,0.0,0.019486,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Bose,0,0.0,0.0,0.0,0.019209,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Sanshui,0,0.0,0.0,0.0,0.01749,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.014701,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Junggar,0,0.0,0.0,0.0,0.011661,0.0,0.0001,0,0,0
+China,reference,Logistic,descend,2179,Santanghu,0,0.0,0.0,0.0,0.003371,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2179,Sichuan,0,0.0,0.0,0.0,0.003335,0.0,0.0,0,0,0
+China,reference,Logistic,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.001274,0.0,0.0,0,0,0
+EU,reference,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,439.5534,1071.015,0.4104,4.728096,1.0,1.0,272,1,120
+EU,reference,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,968.615,1071.015,0.9044,49.396055,1.0,1.0,272,1,120
+EU,reference,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,157.3448,1071.015,0.1469,88.379514,1.0,1.0,272,1,120
+EU,reference,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,439.5534,3076.4136,0.1429,3.80864,1.0,1.0,144,1,40
+EU,reference,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,665.2574,3076.4136,0.2162,87.78102,1.0,1.0,144,1,40
+EU,reference,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.0825,3076.4136,0.0,93.613229,1.0,1.0,144,1,40
+Indonesia,reference,Gompertz,descend,2050,North Sumatra,120,41.5725,445.8087,0.0933,0.377816,1.0,1.0,9,1,150
+Indonesia,reference,Gompertz,descend,2100,North Sumatra,120,171.6489,445.8087,0.385,6.870162,1.0,1.0,9,1,150
+Indonesia,reference,Gompertz,descend,2179,North Sumatra,120,35.3697,445.8087,0.0793,14.661836,1.0,1.0,9,1,150
+Indonesia,reference,Logistic,descend,2050,North Sumatra,120,41.5725,604.2472,0.0688,0.302948,1.0,1.0,121,1,110
+Indonesia,reference,Logistic,descend,2100,North Sumatra,120,89.2513,604.2472,0.1477,15.272078,1.0,1.0,121,1,110
+Indonesia,reference,Logistic,descend,2179,North Sumatra,120,0.0013,604.2472,0.0,15.883518,1.0,1.0,121,1,110
+Middle East,reference,Gompertz,descend,2050,Arabian,9,170.7307,4779.6748,0.0357,1.669885,1.0,1.0,30,1,150
+Middle East,reference,Gompertz,descend,2100,Arabian,9,490.4983,4779.6748,0.1026,22.657625,1.0,1.0,30,1,150
+Middle East,reference,Gompertz,descend,2179,Arabian,9,81.6013,4779.6748,0.0171,42.822926,1.0,1.0,30,1,150
+Middle East,reference,Logistic,descend,2050,Arabian,9,170.7307,4779.6748,0.0357,1.333361,1.0,1.0,81,1,150
+Middle East,reference,Logistic,descend,2100,Arabian,9,254.2901,4779.6748,0.0532,43.604902,1.0,1.0,81,1,150
+Middle East,reference,Logistic,descend,2179,Arabian,9,0.0087,4779.6748,0.0,45.506712,1.0,1.0,81,1,150
+Thailand,reference,Gompertz,descend,2050,Pattani,135,10.9965,251.2525,0.0438,0.093473,1.0,1.0,16,1,150
+Thailand,reference,Gompertz,descend,2100,Pattani,135,93.451,251.2525,0.3719,2.803713,1.0,1.0,16,1,150
+Thailand,reference,Gompertz,descend,2179,Pattani,135,40.0884,251.2525,0.1596,8.782575,1.0,1.0,16,1,150
+Thailand,reference,Logistic,descend,2050,Pattani,135,10.9965,387.4101,0.0284,0.077215,1.0,1.0,272,1,100
+Thailand,reference,Logistic,descend,2100,Pattani,135,115.4018,387.4101,0.2979,9.698824,1.0,1.0,272,1,100
+Thailand,reference,Logistic,descend,2179,Pattani,135,0.0012,387.4101,0.0,10.496279,1.0,1.0,272,1,100
+UK,reference,Gompertz,descend,2050,Faroe-Shetland,55,237.5866,963.7489,0.2465,2.219536,1.0,1.0,272,1,90
+UK,reference,Gompertz,descend,2100,Faroe-Shetland,55,845.0317,963.7489,0.8768,35.853328,1.0,1.0,272,1,90
+UK,reference,Gompertz,descend,2179,Faroe-Shetland,55,158.221,963.7489,0.1642,72.552069,1.0,1.0,272,1,90
+UK,reference,Logistic,descend,2050,Faroe-Shetland,55,237.5866,2770.8567,0.0857,1.775399,1.0,1.0,961,1,30
+UK,reference,Logistic,descend,2100,Faroe-Shetland,55,429.4727,2770.8567,0.155,74.859943,1.0,1.0,961,1,30
+UK,reference,Logistic,descend,2179,Faroe-Shetland,55,0.0085,2770.8567,0.0,77.894071,1.0,1.0,961,1,30
+US,reference,Gompertz,descend,2050,Permian,138,2070.1885,2099.2537,0.9862,20.766754,1.0,1.0,930,1,130
+US,reference,Gompertz,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,reference,Gompertz,descend,2100,Permian,138,2099.2537,2099.2537,1.0,125.729438,0.3891,0.4852,930,1,130
+US,reference,Gompertz,descend,2100,North Slope,119,3296.2404,4873.4146,0.6764,133.381908,0.6109,0.5148,3540,2,50
+US,reference,Gompertz,descend,2179,Permian,138,861.7191,2099.2537,0.4105,268.702845,1.0,0.5638,930,1,130
+US,reference,Gompertz,descend,2179,North Slope,0,0.0,0.0,0.0,207.894988,0.0,0.4362,0,0,0
+US,reference,Logistic,descend,2050,Permian,138,2070.1885,4579.1145,0.4521,16.588353,1.0,1.0,2862,1,60
+US,reference,Logistic,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,reference,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,reference,Logistic,descend,2100,Permian,138,2912.1682,4579.1145,0.636,232.661927,1.0,0.4825,2862,1,60
+US,reference,Logistic,descend,2100,North Slope,0,0.0,0.0,0.0,193.892625,0.0,0.4021,0,0,0
+US,reference,Logistic,descend,2100,Illinois,0,0.0,0.0,0.0,55.611709,0.0,0.1153,0,0,0
+US,reference,Logistic,descend,2179,Permian,138,0.1363,4579.1145,0.0,255.223543,1.0,0.5057,2862,1,60
+US,reference,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,193.892625,0.0,0.3842,0,0,0
+US,reference,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,55.611709,0.0,0.1102,0,0,0
+Australia,us1gt,Gompertz,descend,2050,Browse,28,175.1829,2261.1901,0.0775,1.433101,1.0,1.0,342,1,110
+Australia,us1gt,Gompertz,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Gompertz,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Gompertz,descend,2100,Browse,28,2261.1901,2261.1901,1.0,64.359627,0.7942,0.9566,342,1,110
+Australia,us1gt,Gompertz,descend,2100,North Carnarvon,113,585.9142,974.2334,0.6014,2.91823,0.2058,0.0434,676,2,80
+Australia,us1gt,Gompertz,descend,2100,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Gompertz,descend,2179,Browse,28,2261.1901,2261.1901,1.0,242.993646,0.8164,0.7035,342,1,110
+Australia,us1gt,Gompertz,descend,2179,North Carnarvon,113,508.6637,974.2334,0.5221,75.582828,0.1836,0.2188,676,2,80
+Australia,us1gt,Gompertz,descend,2179,Bonaparte,0,0.0,0.0,0.0,26.843491,0.0,0.0777,0,0,0
+Australia,us1gt,Logistic,descend,2050,Browse,28,175.1829,4954.2569,0.0354,1.220135,1.0,1.0,930,1,50
+Australia,us1gt,Logistic,descend,2050,North Carnarvon,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Bonaparte,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Perth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Bass,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Gippsland,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Canning,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Bowen-Surat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2050,Adavale,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2100,Browse,28,4954.2569,4954.2569,1.0,169.370164,0.479,0.5727,930,1,50
+Australia,us1gt,Logistic,descend,2100,North Carnarvon,113,1971.8163,1971.8163,1.0,50.250951,0.1907,0.1699,1722,2,40
+Australia,us1gt,Logistic,descend,2100,Bonaparte,25,1431.4761,1431.4761,1.0,33.482346,0.1384,0.1132,961,3,30
+Australia,us1gt,Logistic,descend,2100,Perth,139,608.6353,608.6353,1.0,13.403279,0.0588,0.0453,576,4,30
+Australia,us1gt,Logistic,descend,2100,Bass,17,617.3492,617.3492,1.0,13.314324,0.0597,0.045,552,5,30
+Australia,us1gt,Logistic,descend,2100,Gippsland,63,512.7339,512.7339,1.0,10.767412,0.0496,0.0364,400,6,30
+Australia,us1gt,Logistic,descend,2100,Canning,31,245.2836,245.2836,1.0,5.120944,0.0237,0.0173,182,7,30
+Australia,us1gt,Logistic,descend,2100,Bowen-Surat,27,0.636,0.636,1.0,0.012721,0.0001,0.0,1,8,30
+Australia,us1gt,Logistic,descend,2100,Adavale,1,0.2052,0.2052,1.0,0.004103,0.0,0.0,1,9,30
+Australia,us1gt,Logistic,descend,2179,Browse,28,0.1637,4954.2569,0.0,243.610112,1.0,0.6204,930,1,50
+Australia,us1gt,Logistic,descend,2179,North Carnarvon,0,0.0,0.0,0.0,62.569257,0.0,0.1593,0,0,0
+Australia,us1gt,Logistic,descend,2179,Bonaparte,0,0.0,0.0,0.0,39.395711,0.0,0.1003,0,0,0
+Australia,us1gt,Logistic,descend,2179,Perth,0,0.0,0.0,0.0,15.229185,0.0,0.0388,0,0,0
+Australia,us1gt,Logistic,descend,2179,Bass,0,0.0,0.0,0.0,14.687787,0.0,0.0374,0,0,0
+Australia,us1gt,Logistic,descend,2179,Gippsland,0,0.0,0.0,0.0,11.786941,0.0,0.03,0,0,0
+Australia,us1gt,Logistic,descend,2179,Canning,0,0.0,0.0,0.0,5.366228,0.0,0.0137,0,0,0
+Australia,us1gt,Logistic,descend,2179,Bowen-Surat,0,0.0,0.0,0.0,0.013357,0.0,0.0,0,0,0
+Australia,us1gt,Logistic,descend,2179,Adavale,0,0.0,0.0,0.0,0.004308,0.0,0.0,0,0,0
+Brazil,us1gt,Gompertz,descend,2050,Foz do Amazonas,58,776.7511,7824.3101,0.0993,7.04108,1.0,1.0,169,1,150
+Brazil,us1gt,Gompertz,descend,2100,Foz do Amazonas,58,3239.6022,7824.3101,0.414,129.211651,1.0,1.0,169,1,150
+Brazil,us1gt,Gompertz,descend,2179,Foz do Amazonas,58,669.9466,7824.3101,0.0856,276.544451,1.0,1.0,169,1,150
+Brazil,us1gt,Logistic,descend,2050,Foz do Amazonas,58,776.7511,11683.1243,0.0665,5.645484,1.0,1.0,676,1,100
+Brazil,us1gt,Logistic,descend,2100,Foz do Amazonas,58,1675.5937,11683.1243,0.1434,288.259637,1.0,1.0,676,1,100
+Brazil,us1gt,Logistic,descend,2179,Foz do Amazonas,58,0.0234,11683.1243,0.0,299.695947,1.0,1.0,676,1,100
+Canada,us1gt,Gompertz,descend,2050,Grand Banks,64,296.4057,381.1416,0.7777,2.493424,1.0,1.0,361,1,140
+Canada,us1gt,Gompertz,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,us1gt,Gompertz,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,us1gt,Gompertz,descend,2100,Grand Banks,64,381.1416,381.1416,1.0,21.472844,0.555,0.6151,361,1,140
+Canada,us1gt,Gompertz,descend,2100,Scotian,163,305.2033,305.2033,1.0,13.421882,0.4444,0.3845,272,2,130
+Canada,us1gt,Gompertz,descend,2100,Beaufort-Mackenzie,18,0.3785,0.3785,1.0,0.01552,0.0006,0.0004,1,3,120
+Canada,us1gt,Gompertz,descend,2179,Grand Banks,64,381.1416,381.1416,1.0,51.583031,0.555,0.5785,361,1,140
+Canada,us1gt,Gompertz,descend,2179,Scotian,163,305.2033,305.2033,1.0,37.532945,0.4444,0.421,272,2,130
+Canada,us1gt,Gompertz,descend,2179,Beaufort-Mackenzie,18,0.3785,0.3785,1.0,0.045423,0.0006,0.0005,1,3,120
+Canada,us1gt,Logistic,descend,2050,Grand Banks,64,296.4057,652.5342,0.4542,2.083838,1.0,1.0,484,1,80
+Canada,us1gt,Logistic,descend,2050,Scotian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,us1gt,Logistic,descend,2050,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+Canada,us1gt,Logistic,descend,2100,Grand Banks,64,652.5342,652.5342,1.0,33.782286,0.4798,0.5313,484,1,80
+Canada,us1gt,Logistic,descend,2100,Scotian,163,707.0731,707.0731,1.0,29.790999,0.5199,0.4685,650,2,60
+Canada,us1gt,Logistic,descend,2100,Beaufort-Mackenzie,18,0.3831,0.3831,1.0,0.015323,0.0003,0.0002,1,3,60
+Canada,us1gt,Logistic,descend,2179,Grand Banks,64,0.0725,652.5342,0.0001,48.853204,1.0,0.5547,484,1,80
+Canada,us1gt,Logistic,descend,2179,Scotian,0,0.0,0.0,0.0,39.191577,0.0,0.445,0,0,0
+Canada,us1gt,Logistic,descend,2179,Beaufort-Mackenzie,0,0.0,0.0,0.0,0.019536,0.0,0.0002,0,0,0
+China,us1gt,Gompertz,descend,2050,Tarim,183,240.5447,240.5447,1.0,2.915629,0.4622,0.7608,210,1,150
+China,us1gt,Gompertz,descend,2050,Huabei,70,211.9696,211.9696,1.0,0.837745,0.4073,0.2186,210,2,140
+China,us1gt,Gompertz,descend,2050,Pearl River Mouth,136,67.897,211.3555,0.3212,0.079176,0.1305,0.0207,210,3,130
+China,us1gt,Gompertz,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Gompertz,descend,2100,Tarim,183,240.5447,240.5447,1.0,14.942865,0.1698,0.2142,210,1,150
+China,us1gt,Gompertz,descend,2100,Huabei,70,211.9696,211.9696,1.0,11.436223,0.1496,0.1639,210,2,140
+China,us1gt,Gompertz,descend,2100,Pearl River Mouth,136,211.3555,211.3555,1.0,10.54739,0.1492,0.1512,210,3,130
+China,us1gt,Gompertz,descend,2100,Bohai Bay,24,156.0208,156.0208,1.0,7.356516,0.1101,0.1054,144,4,130
+China,us1gt,Gompertz,descend,2100,Beibuwan,19,113.6397,113.6397,1.0,5.163093,0.0802,0.074,100,5,130
+China,us1gt,Gompertz,descend,2100,Ordos,127,103.6211,103.6211,1.0,4.577671,0.0731,0.0656,100,6,130
+China,us1gt,Gompertz,descend,2100,Subei,177,100.8902,100.8902,1.0,4.331008,0.0712,0.0621,25,7,120
+China,us1gt,Gompertz,descend,2100,Erlian,52,73.2147,73.2147,1.0,3.075018,0.0517,0.0441,72,8,120
+China,us1gt,Gompertz,descend,2100,Nanxiang,107,78.5317,78.5317,1.0,3.232229,0.0554,0.0463,42,9,120
+China,us1gt,Gompertz,descend,2100,Songliao,170,57.1285,57.1285,1.0,2.31692,0.0403,0.0332,56,10,120
+China,us1gt,Gompertz,descend,2100,Turpan,192,37.7435,37.7435,1.0,1.509739,0.0266,0.0216,36,11,110
+China,us1gt,Gompertz,descend,2100,Yilan-Yitong,201,28.4258,28.4258,1.0,1.137032,0.0201,0.0163,25,12,110
+China,us1gt,Gompertz,descend,2100,Jianghan,76,0.6999,0.6999,1.0,0.027998,0.0005,0.0004,1,13,110
+China,us1gt,Gompertz,descend,2100,Qaidam,146,0.6163,0.6163,1.0,0.024653,0.0004,0.0004,1,14,110
+China,us1gt,Gompertz,descend,2100,Bose,26,0.6122,0.6122,1.0,0.024487,0.0004,0.0004,1,15,110
+China,us1gt,Gompertz,descend,2100,Sanshui,157,0.5538,0.5538,1.0,0.022152,0.0004,0.0003,1,16,110
+China,us1gt,Gompertz,descend,2100,Jiuquan,77,0.4645,0.4645,1.0,0.018578,0.0003,0.0003,1,17,110
+China,us1gt,Gompertz,descend,2100,Junggar,78,0.3678,0.3678,1.0,0.014713,0.0003,0.0002,1,18,110
+China,us1gt,Gompertz,descend,2100,Santanghu,158,0.1065,0.1065,1.0,0.00426,0.0001,0.0001,1,19,110
+China,us1gt,Gompertz,descend,2100,Sichuan,166,0.1045,0.1045,1.0,0.00418,0.0001,0.0001,1,20,110
+China,us1gt,Gompertz,descend,2100,Hailar-Temtsag,69,0.0404,0.0404,1.0,0.001617,0.0,0.0,1,21,110
+China,us1gt,Gompertz,descend,2179,Tarim,183,240.5447,240.5447,1.0,33.945897,0.232,0.1894,210,1,150
+China,us1gt,Gompertz,descend,2179,Huabei,70,211.9696,211.9696,1.0,28.181819,0.2044,0.1573,210,2,140
+China,us1gt,Gompertz,descend,2179,Pearl River Mouth,136,211.3555,211.3555,1.0,27.244478,0.2038,0.152,210,3,130
+China,us1gt,Gompertz,descend,2179,Bohai Bay,24,156.0208,156.0208,1.0,19.68216,0.1505,0.1098,144,4,130
+China,us1gt,Gompertz,descend,2179,Beibuwan,19,113.6397,113.6397,1.0,14.140631,0.1096,0.0789,100,5,130
+China,us1gt,Gompertz,descend,2179,Ordos,127,103.3352,103.6211,0.9972,12.763452,0.0997,0.0712,100,6,130
+China,us1gt,Gompertz,descend,2179,Subei,0,0.0,0.0,0.0,12.073775,0.0,0.0674,0,0,0
+China,us1gt,Gompertz,descend,2179,Erlian,0,0.0,0.0,0.0,8.489914,0.0,0.0474,0,0,0
+China,us1gt,Gompertz,descend,2179,Nanxiang,0,0.0,0.0,0.0,8.862195,0.0,0.0495,0,0,0
+China,us1gt,Gompertz,descend,2179,Songliao,0,0.0,0.0,0.0,6.293491,0.0,0.0351,0,0,0
+China,us1gt,Gompertz,descend,2179,Turpan,0,0.0,0.0,0.0,4.089684,0.0,0.0228,0,0,0
+China,us1gt,Gompertz,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,3.053823,0.0,0.017,0,0,0
+China,us1gt,Gompertz,descend,2179,Jianghan,0,0.0,0.0,0.0,0.074894,0.0,0.0004,0,0,0
+China,us1gt,Gompertz,descend,2179,Qaidam,0,0.0,0.0,0.0,0.065946,0.0,0.0004,0,0,0
+China,us1gt,Gompertz,descend,2179,Bose,0,0.0,0.0,0.0,0.065503,0.0,0.0004,0,0,0
+China,us1gt,Gompertz,descend,2179,Sanshui,0,0.0,0.0,0.0,0.059258,0.0,0.0003,0,0,0
+China,us1gt,Gompertz,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.049697,0.0,0.0003,0,0,0
+China,us1gt,Gompertz,descend,2179,Junggar,0,0.0,0.0,0.0,0.039358,0.0,0.0002,0,0,0
+China,us1gt,Gompertz,descend,2179,Santanghu,0,0.0,0.0,0.0,0.011396,0.0,0.0001,0,0,0
+China,us1gt,Gompertz,descend,2179,Sichuan,0,0.0,0.0,0.0,0.011181,0.0,0.0001,0,0,0
+China,us1gt,Gompertz,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.004326,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Tarim,183,493.0823,493.0823,1.0,3.004522,0.9475,0.991,420,1,70
+China,us1gt,Logistic,descend,2050,Huabei,70,27.3289,584.7824,0.0467,0.027329,0.0525,0.009,441,2,50
+China,us1gt,Logistic,descend,2050,Pearl River Mouth,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Bohai Bay,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Beibuwan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Ordos,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Subei,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Erlian,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Nanxiang,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Songliao,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Turpan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Yilan-Yitong,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Jianghan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Qaidam,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Bose,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Sanshui,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Jiuquan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Junggar,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Santanghu,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Sichuan,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2050,Hailar-Temtsag,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2100,Tarim,183,493.0823,493.0823,1.0,27.658637,0.5075,0.1737,420,1,70
+China,us1gt,Logistic,descend,2100,Huabei,70,478.5822,584.7824,0.8184,28.196459,0.4925,0.1771,441,2,50
+China,us1gt,Logistic,descend,2100,Pearl River Mouth,0,0.0,0.0,0.0,23.984926,0.0,0.1506,0,0,0
+China,us1gt,Logistic,descend,2100,Bohai Bay,0,0.0,0.0,0.0,19.677767,0.0,0.1236,0,0,0
+China,us1gt,Logistic,descend,2100,Beibuwan,0,0.0,0.0,0.0,13.577119,0.0,0.0853,0,0,0
+China,us1gt,Logistic,descend,2100,Ordos,0,0.0,0.0,0.0,11.424897,0.0,0.0717,0,0,0
+China,us1gt,Logistic,descend,2100,Subei,0,0.0,0.0,0.0,10.463929,0.0,0.0657,0,0,0
+China,us1gt,Logistic,descend,2100,Erlian,0,0.0,0.0,0.0,7.650956,0.0,0.048,0,0,0
+China,us1gt,Logistic,descend,2100,Nanxiang,0,0.0,0.0,0.0,5.203111,0.0,0.0327,0,0,0
+China,us1gt,Logistic,descend,2100,Songliao,0,0.0,0.0,0.0,5.538641,0.0,0.0348,0,0,0
+China,us1gt,Logistic,descend,2100,Turpan,0,0.0,0.0,0.0,3.357372,0.0,0.0211,0,0,0
+China,us1gt,Logistic,descend,2100,Yilan-Yitong,0,0.0,0.0,0.0,2.398997,0.0,0.0151,0,0,0
+China,us1gt,Logistic,descend,2100,Jianghan,0,0.0,0.0,0.0,0.022019,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Qaidam,0,0.0,0.0,0.0,0.019486,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Bose,0,0.0,0.0,0.0,0.019209,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Sanshui,0,0.0,0.0,0.0,0.01749,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Jiuquan,0,0.0,0.0,0.0,0.014701,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Junggar,0,0.0,0.0,0.0,0.011661,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2100,Santanghu,0,0.0,0.0,0.0,0.003371,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2100,Sichuan,0,0.0,0.0,0.0,0.003335,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2100,Hailar-Temtsag,0,0.0,0.0,0.0,0.001274,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2179,Tarim,183,0.0004,493.0823,0.0,31.927983,1.0,0.1946,420,1,70
+China,us1gt,Logistic,descend,2179,Huabei,0,0.0,0.0,0.0,28.767779,0.0,0.1753,0,0,0
+China,us1gt,Logistic,descend,2179,Pearl River Mouth,0,0.0,0.0,0.0,23.984926,0.0,0.1462,0,0,0
+China,us1gt,Logistic,descend,2179,Bohai Bay,0,0.0,0.0,0.0,19.677767,0.0,0.1199,0,0,0
+China,us1gt,Logistic,descend,2179,Beibuwan,0,0.0,0.0,0.0,13.577119,0.0,0.0827,0,0,0
+China,us1gt,Logistic,descend,2179,Ordos,0,0.0,0.0,0.0,11.424897,0.0,0.0696,0,0,0
+China,us1gt,Logistic,descend,2179,Subei,0,0.0,0.0,0.0,10.463929,0.0,0.0638,0,0,0
+China,us1gt,Logistic,descend,2179,Erlian,0,0.0,0.0,0.0,7.650956,0.0,0.0466,0,0,0
+China,us1gt,Logistic,descend,2179,Nanxiang,0,0.0,0.0,0.0,5.203111,0.0,0.0317,0,0,0
+China,us1gt,Logistic,descend,2179,Songliao,0,0.0,0.0,0.0,5.538641,0.0,0.0338,0,0,0
+China,us1gt,Logistic,descend,2179,Turpan,0,0.0,0.0,0.0,3.357372,0.0,0.0205,0,0,0
+China,us1gt,Logistic,descend,2179,Yilan-Yitong,0,0.0,0.0,0.0,2.398997,0.0,0.0146,0,0,0
+China,us1gt,Logistic,descend,2179,Jianghan,0,0.0,0.0,0.0,0.022019,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Qaidam,0,0.0,0.0,0.0,0.019486,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Bose,0,0.0,0.0,0.0,0.019209,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Sanshui,0,0.0,0.0,0.0,0.01749,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Jiuquan,0,0.0,0.0,0.0,0.014701,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Junggar,0,0.0,0.0,0.0,0.011661,0.0,0.0001,0,0,0
+China,us1gt,Logistic,descend,2179,Santanghu,0,0.0,0.0,0.0,0.003371,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2179,Sichuan,0,0.0,0.0,0.0,0.003335,0.0,0.0,0,0,0
+China,us1gt,Logistic,descend,2179,Hailar-Temtsag,0,0.0,0.0,0.0,0.001274,0.0,0.0,0,0,0
+EU,us1gt,Gompertz,descend,2050,Aquitaine-Bay of Biscay,8,431.9813,1071.015,0.4033,4.65491,1.0,1.0,272,1,120
+EU,us1gt,Gompertz,descend,2100,Aquitaine-Bay of Biscay,8,966.6245,1071.015,0.9025,48.857743,1.0,1.0,272,1,120
+EU,us1gt,Gompertz,descend,2179,Aquitaine-Bay of Biscay,8,161.4517,1071.015,0.1507,88.192985,1.0,1.0,272,1,120
+EU,us1gt,Logistic,descend,2050,Aquitaine-Bay of Biscay,8,431.9813,3076.4136,0.1404,3.755972,1.0,1.0,144,1,40
+EU,us1gt,Logistic,descend,2100,Aquitaine-Bay of Biscay,8,687.8794,3076.4136,0.2236,87.527602,1.0,1.0,144,1,40
+EU,us1gt,Logistic,descend,2179,Aquitaine-Bay of Biscay,8,0.0903,3076.4136,0.0,93.613035,1.0,1.0,144,1,40
+Indonesia,us1gt,Gompertz,descend,2050,North Sumatra,120,39.9244,445.8087,0.0896,0.36444,1.0,1.0,9,1,150
+Indonesia,us1gt,Gompertz,descend,2100,North Sumatra,120,169.769,445.8087,0.3808,6.685679,1.0,1.0,9,1,150
+Indonesia,us1gt,Gompertz,descend,2179,North Sumatra,120,37.0517,445.8087,0.0831,14.579795,1.0,1.0,9,1,150
+Indonesia,us1gt,Logistic,descend,2050,North Sumatra,120,39.9244,604.2472,0.0661,0.293232,1.0,1.0,121,1,110
+Indonesia,us1gt,Logistic,descend,2100,North Sumatra,120,97.3948,604.2472,0.1612,15.205105,1.0,1.0,121,1,110
+Indonesia,us1gt,Logistic,descend,2179,North Sumatra,120,0.0016,604.2472,0.0,15.883503,1.0,1.0,121,1,110
+Middle East,us1gt,Gompertz,descend,2050,Arabian,9,168.4346,4779.6748,0.0352,1.649714,1.0,1.0,30,1,150
+Middle East,us1gt,Gompertz,descend,2100,Arabian,9,489.4675,4779.6748,0.1024,22.465337,1.0,1.0,30,1,150
+Middle East,us1gt,Gompertz,descend,2179,Arabian,9,83.1202,4779.6748,0.0174,42.755034,1.0,1.0,30,1,150
+Middle East,us1gt,Logistic,descend,2050,Arabian,9,168.4346,4779.6748,0.0352,1.318918,1.0,1.0,81,1,150
+Middle East,us1gt,Logistic,descend,2100,Arabian,9,261.6878,4779.6748,0.0548,43.538018,1.0,1.0,81,1,150
+Middle East,us1gt,Logistic,descend,2179,Arabian,9,0.0093,4779.6748,0.0,45.506683,1.0,1.0,81,1,150
+Thailand,us1gt,Gompertz,descend,2050,Pattani,135,10.7386,251.2525,0.0427,0.091556,1.0,1.0,16,1,150
+Thailand,us1gt,Gompertz,descend,2100,Pattani,135,92.2246,251.2525,0.3671,2.749796,1.0,1.0,16,1,150
+Thailand,us1gt,Gompertz,descend,2179,Pattani,135,40.7752,251.2525,0.1623,8.733502,1.0,1.0,16,1,150
+Thailand,us1gt,Logistic,descend,2050,Pattani,135,10.7386,387.4101,0.0277,0.075754,1.0,1.0,272,1,100
+Thailand,us1gt,Logistic,descend,2100,Pattani,135,120.8386,387.4101,0.3119,9.651074,1.0,1.0,272,1,100
+Thailand,us1gt,Logistic,descend,2179,Pattani,135,0.0014,387.4101,0.0,10.496276,1.0,1.0,272,1,100
+UK,us1gt,Gompertz,descend,2050,Faroe-Shetland,55,242.7571,963.7489,0.2519,2.262732,1.0,1.0,272,1,90
+UK,us1gt,Gompertz,descend,2100,Faroe-Shetland,55,848.8192,963.7489,0.8807,36.354993,1.0,1.0,272,1,90
+UK,us1gt,Gompertz,descend,2179,Faroe-Shetland,55,154.0029,963.7489,0.1598,72.746112,1.0,1.0,272,1,90
+UK,us1gt,Logistic,descend,2050,Faroe-Shetland,55,242.7571,2770.8567,0.0876,1.806473,1.0,1.0,961,1,30
+UK,us1gt,Logistic,descend,2100,Faroe-Shetland,55,409.8619,2770.8567,0.1479,75.023852,1.0,1.0,961,1,30
+UK,us1gt,Logistic,descend,2179,Faroe-Shetland,55,0.0076,2770.8567,0.0,77.894122,1.0,1.0,961,1,30
+US,us1gt,Gompertz,descend,2050,Permian,138,1000.0,2099.2537,0.4764,10.964654,1.0,1.0,930,1,130
+US,us1gt,Gompertz,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,us1gt,Gompertz,descend,2100,Permian,138,2099.2537,2099.2537,1.0,107.946938,0.5078,0.7137,930,1,130
+US,us1gt,Gompertz,descend,2100,North Slope,119,2034.5001,2184.5851,0.9313,43.303051,0.4922,0.2863,1849,2,110
+US,us1gt,Gompertz,descend,2179,Permian,138,1896.3379,2099.2537,0.9033,273.09573,1.0,0.6614,930,1,130
+US,us1gt,Gompertz,descend,2179,North Slope,0,0.0,0.0,0.0,139.788494,0.0,0.3386,0,0,0
+US,us1gt,Logistic,descend,2050,Permian,138,1000.0,3938.8251,0.2539,9.301875,1.0,1.0,2862,1,70
+US,us1gt,Logistic,descend,2050,North Slope,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,us1gt,Logistic,descend,2050,Illinois,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+US,us1gt,Logistic,descend,2100,Permian,138,3938.8251,3938.8251,1.0,181.505615,0.4243,0.4666,2862,1,70
+US,us1gt,Logistic,descend,2100,North Slope,119,5344.1489,5738.7514,0.9312,164.556423,0.5757,0.4231,4096,2,40
+US,us1gt,Logistic,descend,2100,Illinois,0,0.0,0.0,0.0,42.899303,0.0,0.1103,0,0,0
+US,us1gt,Logistic,descend,2179,Permian,138,5.3863,3938.8251,0.0014,269.666209,1.0,0.5344,2862,1,70
+US,us1gt,Logistic,descend,2179,North Slope,0,0.0,0.0,0.0,192.095734,0.0,0.3806,0,0,0
+US,us1gt,Logistic,descend,2179,Illinois,0,0.0,0.0,0.0,42.899303,0.0,0.085,0,0,0

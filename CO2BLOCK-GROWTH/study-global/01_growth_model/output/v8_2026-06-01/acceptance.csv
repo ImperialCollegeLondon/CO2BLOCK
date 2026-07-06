@@ -1,0 +1,161 @@
+Scenario,Country,Model,Type,N_attempted,N_accepted,acceptance_rate,C_scenario,S_0,g_cap
+reference,UK,Logistic,A,10000,1932,0.1932,78.0,0.11352,0.2
+reference,UK,Gompertz,A,10000,2544,0.2544,78.0,0.11352,0.2
+reference,US,Logistic,A,10000,2102,0.2102,506.0,1.35543,0.2
+reference,US,Gompertz,A,10000,2569,0.2569,506.0,1.35543,0.2
+reference,EU,Logistic,A,10000,2122,0.2122,94.0,0.40919,0.2
+reference,EU,Gompertz,A,10000,2667,0.2667,94.0,0.40919,0.2
+reference,China,Logistic,A,10000,1303,0.1303,403.0,0.06987,0.25
+reference,China,Gompertz,A,10000,2574,0.2574,403.0,0.06987,0.25
+reference,Middle East,Logistic,A,10000,1997,0.1997,45.6,0.09961,0.2
+reference,Middle East,Gompertz,A,10000,2558,0.2558,45.6,0.09961,0.2
+reference,Australia,Logistic,A,10000,1398,0.1398,502.4,0.0619,0.2
+reference,Australia,Gompertz,A,10000,2838,0.2838,502.4,0.0619,0.2
+reference,Canada,Logistic,A,10000,1425,0.1425,404.0,0.10907,0.2
+reference,Canada,Gompertz,A,10000,2803,0.2803,404.0,0.10907,0.2
+reference,Indonesia,Logistic,A,10000,1825,0.1825,15.9,0.0177,0.2
+reference,Indonesia,Gompertz,A,10000,2509,0.2509,15.9,0.0177,0.2
+reference,Thailand,Logistic,A,10000,1387,0.1387,10.5,0.004,0.2
+reference,Thailand,Gompertz,A,10000,2563,0.2563,10.5,0.004,0.2
+reference,Brazil,Logistic,A,10000,1859,0.1859,300.0,0.3266,0.2
+reference,Brazil,Gompertz,A,10000,2525,0.2525,300.0,0.3266,0.2
+minimum,UK,Logistic,A,10000,2368,0.2368,7.8,0.11352,0.1
+minimum,UK,Gompertz,A,10000,1811,0.1811,7.8,0.11352,0.1
+minimum,US,Logistic,A,10000,2084,0.2084,50.6,1.35543,0.1
+minimum,US,Gompertz,A,10000,1407,0.1407,50.6,1.35543,0.1
+minimum,EU,Logistic,A,10000,1823,0.1823,9.4,0.40919,0.1
+minimum,EU,Gompertz,A,10000,934,0.0934,9.4,0.40919,0.1
+minimum,China,Logistic,A,10000,1710,0.171,40.3,0.06987,0.1
+minimum,China,Gompertz,A,10000,1438,0.1438,40.3,0.06987,0.1
+minimum,Middle East,Logistic,A,10000,2346,0.2346,4.56,0.09961,0.1
+minimum,Middle East,Gompertz,A,10000,1623,0.1623,4.56,0.09961,0.1
+minimum,Australia,Logistic,A,10000,1762,0.1762,50.24,0.0619,0.1
+minimum,Australia,Gompertz,A,10000,1519,0.1519,50.24,0.0619,0.1
+minimum,Canada,Logistic,A,10000,1716,0.1716,40.4,0.10907,0.1
+minimum,Canada,Gompertz,A,10000,1477,0.1477,40.4,0.10907,0.1
+minimum,Indonesia,Logistic,A,10000,2479,0.2479,1.59,0.0177,0.1
+minimum,Indonesia,Gompertz,A,10000,1971,0.1971,1.59,0.0177,0.1
+minimum,Thailand,Logistic,A,10000,1695,0.1695,1.05,0.004,0.1
+minimum,Thailand,Gompertz,A,10000,1311,0.1311,1.05,0.004,0.1
+minimum,Brazil,Logistic,A,10000,2191,0.2191,30.0,0.3266,0.1
+minimum,Brazil,Gompertz,A,10000,1706,0.1706,30.0,0.3266,0.1
+maximum,UK,Logistic,A,10000,1389,0.1389,780.0,0.11352,0.2
+maximum,UK,Gompertz,A,10000,2823,0.2823,780.0,0.11352,0.2
+maximum,US,Logistic,A,10000,1447,0.1447,5060.0,1.35543,0.2
+maximum,US,Gompertz,A,10000,2800,0.28,5060.0,1.35543,0.2
+maximum,EU,Logistic,A,10000,1427,0.1427,940.0,0.40919,0.2
+maximum,EU,Gompertz,A,10000,2471,0.2471,940.0,0.40919,0.2
+maximum,China,Logistic,A,10000,1210,0.121,4030.0,0.06987,0.25
+maximum,China,Gompertz,A,10000,3102,0.3102,4030.0,0.06987,0.25
+maximum,Middle East,Logistic,A,10000,1396,0.1396,456.0,0.09961,0.2
+maximum,Middle East,Gompertz,A,10000,2806,0.2806,456.0,0.09961,0.2
+maximum,Australia,Logistic,A,10000,1400,0.14,5024.0,0.0619,0.2
+maximum,Australia,Gompertz,A,10000,2884,0.2884,5024.0,0.0619,0.2
+maximum,Canada,Logistic,A,10000,1382,0.1382,4040.0,0.10907,0.2
+maximum,Canada,Gompertz,A,10000,2910,0.291,4040.0,0.10907,0.2
+maximum,Indonesia,Logistic,A,10000,1375,0.1375,159.0,0.0177,0.2
+maximum,Indonesia,Gompertz,A,10000,2828,0.2828,159.0,0.0177,0.2
+maximum,Thailand,Logistic,A,10000,1430,0.143,105.0,0.004,0.2
+maximum,Thailand,Gompertz,A,10000,2957,0.2957,105.0,0.004,0.2
+maximum,Brazil,Logistic,A,10000,1394,0.1394,3000.0,0.3266,0.2
+maximum,Brazil,Gompertz,A,10000,2847,0.2847,3000.0,0.3266,0.2
+growth10,UK,Logistic,A,10000,1742,0.1742,78.0,0.11352,0.1
+growth10,UK,Gompertz,A,10000,1441,0.1441,78.0,0.11352,0.1
+growth10,US,Logistic,A,10000,1742,0.1742,506.0,1.35543,0.1
+growth10,US,Gompertz,A,10000,1472,0.1472,506.0,1.35543,0.1
+growth10,EU,Logistic,A,10000,1867,0.1867,94.0,0.40919,0.1
+growth10,EU,Gompertz,A,10000,1540,0.154,94.0,0.40919,0.1
+growth10,China,Logistic,A,10000,1740,0.174,403.0,0.06987,0.1
+growth10,China,Gompertz,A,10000,1540,0.154,403.0,0.06987,0.1
+growth10,Middle East,Logistic,A,10000,1870,0.187,45.6,0.09961,0.1
+growth10,Middle East,Gompertz,A,10000,1551,0.1551,45.6,0.09961,0.1
+growth10,Australia,Logistic,A,10000,1738,0.1738,502.4,0.0619,0.1
+growth10,Australia,Gompertz,A,10000,1549,0.1549,502.4,0.0619,0.1
+growth10,Canada,Logistic,A,10000,1786,0.1786,404.0,0.10907,0.1
+growth10,Canada,Gompertz,A,10000,1535,0.1535,404.0,0.10907,0.1
+growth10,Indonesia,Logistic,A,10000,1908,0.1908,15.9,0.0177,0.1
+growth10,Indonesia,Gompertz,A,10000,1624,0.1624,15.9,0.0177,0.1
+growth10,Thailand,Logistic,A,10000,1559,0.1559,10.5,0.004,0.1
+growth10,Thailand,Gompertz,A,10000,1255,0.1255,10.5,0.004,0.1
+growth10,Brazil,Logistic,A,10000,1698,0.1698,300.0,0.3266,0.1
+growth10,Brazil,Gompertz,A,10000,1461,0.1461,300.0,0.3266,0.1
+us1gt,UK,Logistic,A,10000,1906,0.1906,78.0,0.11352,0.2
+us1gt,UK,Gompertz,A,10000,2505,0.2505,78.0,0.11352,0.2
+us1gt,US,Logistic,B_fixed,10000,2025,0.2025,506.0,1.35543,0.2
+us1gt,US,Gompertz,B_fixed,10000,5204,0.5204,506.0,1.35543,0.2
+us1gt,EU,Logistic,A,10000,2049,0.2049,94.0,0.40919,0.2
+us1gt,EU,Gompertz,A,10000,2493,0.2493,94.0,0.40919,0.2
+us1gt,China,Logistic,A,10000,1280,0.128,403.0,0.06987,0.25
+us1gt,China,Gompertz,A,10000,2548,0.2548,403.0,0.06987,0.25
+us1gt,Middle East,Logistic,A,10000,2047,0.2047,45.6,0.09961,0.2
+us1gt,Middle East,Gompertz,A,10000,2605,0.2605,45.6,0.09961,0.2
+us1gt,Australia,Logistic,A,10000,1425,0.1425,502.4,0.0619,0.2
+us1gt,Australia,Gompertz,A,10000,2764,0.2764,502.4,0.0619,0.2
+us1gt,Canada,Logistic,A,10000,1378,0.1378,404.0,0.10907,0.2
+us1gt,Canada,Gompertz,A,10000,2670,0.267,404.0,0.10907,0.2
+us1gt,Indonesia,Logistic,A,10000,1863,0.1863,15.9,0.0177,0.2
+us1gt,Indonesia,Gompertz,A,10000,2498,0.2498,15.9,0.0177,0.2
+us1gt,Thailand,Logistic,A,10000,1463,0.1463,10.5,0.004,0.2
+us1gt,Thailand,Gompertz,A,10000,2657,0.2657,10.5,0.004,0.2
+us1gt,Brazil,Logistic,A,10000,1784,0.1784,300.0,0.3266,0.2
+us1gt,Brazil,Gompertz,A,10000,2493,0.2493,300.0,0.3266,0.2
+policy,UK,Logistic,B_fixed,10000,2293,0.2293,78.0,0.11352,0.2
+policy,UK,Gompertz,B_fixed,10000,4120,0.412,78.0,0.11352,0.2
+policy,US,Logistic,B_fixed,10000,1964,0.1964,506.0,1.35543,0.2
+policy,US,Gompertz,B_fixed,10000,5145,0.5145,506.0,1.35543,0.2
+policy,EU,Logistic,B_fixed,10000,2012,0.2012,94.0,0.40919,0.2
+policy,EU,Gompertz,B_fixed,10000,4770,0.477,94.0,0.40919,0.2
+policy,China,Logistic,B_fixed,10000,1973,0.1973,403.0,0.06987,0.25
+policy,China,Gompertz,B_fixed,10000,4468,0.4468,403.0,0.06987,0.25
+policy,Middle East,Logistic,A,10000,2083,0.2083,45.6,0.09961,0.2
+policy,Middle East,Gompertz,A,10000,2597,0.2597,45.6,0.09961,0.2
+policy,Australia,Logistic,A,10000,1394,0.1394,502.4,0.0619,0.2
+policy,Australia,Gompertz,A,10000,2877,0.2877,502.4,0.0619,0.2
+policy,Canada,Logistic,B_fixed,10000,1943,0.1943,404.0,0.10907,0.2
+policy,Canada,Gompertz,B_fixed,10000,4980,0.498,404.0,0.10907,0.2
+policy,Indonesia,Logistic,A,10000,1900,0.19,15.9,0.0177,0.2
+policy,Indonesia,Gompertz,A,10000,2529,0.2529,15.9,0.0177,0.2
+policy,Thailand,Logistic,A,10000,1403,0.1403,10.5,0.004,0.2
+policy,Thailand,Gompertz,A,10000,2633,0.2633,10.5,0.004,0.2
+policy,Brazil,Logistic,A,10000,1781,0.1781,300.0,0.3266,0.2
+policy,Brazil,Gompertz,A,10000,2403,0.2403,300.0,0.3266,0.2
+ipcc_low,UK,Logistic,A,10000,1980,0.198,78.0,0.11352,0.2
+ipcc_low,UK,Gompertz,A,10000,2478,0.2478,78.0,0.11352,0.2
+ipcc_low,US,Logistic,B_fixed,10000,0,0.0,506.0,1.35543,0.2
+ipcc_low,US,Gompertz,B_fixed,10000,0,0.0,506.0,1.35543,0.2
+ipcc_low,EU,Logistic,A,10000,2090,0.209,94.0,0.40919,0.2
+ipcc_low,EU,Gompertz,A,10000,2638,0.2638,94.0,0.40919,0.2
+ipcc_low,China,Logistic,B_fixed,10000,1756,0.1756,403.0,0.06987,0.25
+ipcc_low,China,Gompertz,B_fixed,10000,5425,0.5425,403.0,0.06987,0.25
+ipcc_low,Middle East,Logistic,A,10000,2101,0.2101,45.6,0.09961,0.2
+ipcc_low,Middle East,Gompertz,A,10000,2574,0.2574,45.6,0.09961,0.2
+ipcc_low,Australia,Logistic,B_fixed,10000,963,0.0963,502.4,0.0619,0.2
+ipcc_low,Australia,Gompertz,B_fixed,10000,571,0.0571,502.4,0.0619,0.2
+ipcc_low,Canada,Logistic,B_fixed,10000,0,0.0,404.0,0.10907,0.2
+ipcc_low,Canada,Gompertz,B_fixed,10000,0,0.0,404.0,0.10907,0.2
+ipcc_low,Indonesia,Logistic,B_fixed,10000,1372,0.1372,15.9,0.0177,0.2
+ipcc_low,Indonesia,Gompertz,B_fixed,10000,2141,0.2141,15.9,0.0177,0.2
+ipcc_low,Thailand,Logistic,A,10000,1470,0.147,10.5,0.004,0.2
+ipcc_low,Thailand,Gompertz,A,10000,2637,0.2637,10.5,0.004,0.2
+ipcc_low,Brazil,Logistic,B_fixed,10000,0,0.0,300.0,0.3266,0.2
+ipcc_low,Brazil,Gompertz,B_fixed,10000,0,0.0,300.0,0.3266,0.2
+ipcc_high,UK,Logistic,A,10000,1983,0.1983,78.0,0.11352,0.2
+ipcc_high,UK,Gompertz,A,10000,2581,0.2581,78.0,0.11352,0.2
+ipcc_high,US,Logistic,B_fixed,10000,2365,0.2365,506.0,1.35543,0.2
+ipcc_high,US,Gompertz,B_fixed,10000,1278,0.1278,506.0,1.35543,0.2
+ipcc_high,EU,Logistic,A,10000,2125,0.2125,94.0,0.40919,0.2
+ipcc_high,EU,Gompertz,A,10000,2582,0.2582,94.0,0.40919,0.2
+ipcc_high,China,Logistic,B_fixed,10000,0,0.0,403.0,0.06987,0.25
+ipcc_high,China,Gompertz,B_fixed,10000,0,0.0,403.0,0.06987,0.25
+ipcc_high,Middle East,Logistic,A,10000,2120,0.212,45.6,0.09961,0.2
+ipcc_high,Middle East,Gompertz,A,10000,2585,0.2585,45.6,0.09961,0.2
+ipcc_high,Australia,Logistic,B_fixed,10000,1670,0.167,502.4,0.0619,0.2
+ipcc_high,Australia,Gompertz,B_fixed,10000,2731,0.2731,502.4,0.0619,0.2
+ipcc_high,Canada,Logistic,B_fixed,10000,1648,0.1648,404.0,0.10907,0.2
+ipcc_high,Canada,Gompertz,B_fixed,10000,2687,0.2687,404.0,0.10907,0.2
+ipcc_high,Indonesia,Logistic,B_fixed,10000,0,0.0,15.9,0.0177,0.2
+ipcc_high,Indonesia,Gompertz,B_fixed,10000,0,0.0,15.9,0.0177,0.2
+ipcc_high,Thailand,Logistic,A,10000,1470,0.147,10.5,0.004,0.2
+ipcc_high,Thailand,Gompertz,A,10000,2617,0.2617,10.5,0.004,0.2
+ipcc_high,Brazil,Logistic,B_fixed,10000,699,0.0699,300.0,0.3266,0.2
+ipcc_high,Brazil,Gompertz,B_fixed,10000,0,0.0,300.0,0.3266,0.2

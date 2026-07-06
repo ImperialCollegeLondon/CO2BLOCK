@@ -1,0 +1,60 @@
+name,value,source
+fig1b_pathways,74.0,scalars_central.csv
+fig1b_gompertz_peaks_later,73.0,tp_G > tp_L
+fig1b_median_peak_delay_yr,27.2,median tp_G - tp_L
+fig1c_reference_median_cum2050_gt,46.8,robustness_sample_paths.csv
+fig2b_top10_capacity_share_pct,61.6,basin_period_resource_long.csv
+fig2b_top20_capacity_share_pct,77.7,basin_period_resource_long.csv
+fig2b_top50_capacity_share_pct,95.0,basin_period_resource_long.csv
+fig2_total_capacity_gt_150yr,6415.0,Period_yr==150 sum
+fig2_total_rate_mt_yr_150yr,42770.0,Period_yr==150 sum
+fig2_n_basins,123.0,basin_period_resource_long.csv
+fig3_first_binding_year,2055.0,case_model_shortfall_windows.csv
+fig3_cases_binding_by_2050,0.0,first_shortfall_year <= 2050
+fig3_n_cases,150.0,ascending shortfall table
+fig3_bind_total_Gompertz,16.0,whole_period_pass == False
+fig3_bind_total_Logistic,23.0,whole_period_pass == False
+fig3b_median_shortfall_pct_Gompertz,61.6,"binding cases, demand unmet by 2180"
+fig3b_median_shortfall_pct_Logistic,58.9,"binding cases, demand unmet by 2180"
+fig3d_n_binding_cases,39.0,ascending reconstructions
+fig3d_recon_over_goal_median_pct,20.9,ascending reconstructions
+fig3e_median_retained_pct_Logistic,20.9,ascending reconstructions
+fig3e_median_retained_pct_Gompertz,17.8,ascending reconstructions
+fig4b_minimum_Logistic_med_targeted_gt_yr,0.553069,"CRN bootstrap, seed sha256"
+fig4b_minimum_Logistic_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_minimum_Gompertz_med_targeted_gt_yr,0.506504,"CRN bootstrap, seed sha256"
+fig4b_minimum_Gompertz_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_growth10_Logistic_med_targeted_gt_yr,0.753542,"CRN bootstrap, seed sha256"
+fig4b_growth10_Logistic_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_growth10_Gompertz_med_targeted_gt_yr,0.725992,"CRN bootstrap, seed sha256"
+fig4b_growth10_Gompertz_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_ipcc_low_Logistic_med_targeted_gt_yr,1.211271,"CRN bootstrap, seed sha256"
+fig4b_ipcc_low_Logistic_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_ipcc_low_Gompertz_med_targeted_gt_yr,0.865983,"CRN bootstrap, seed sha256"
+fig4b_ipcc_low_Gompertz_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_policy_Logistic_med_targeted_gt_yr,3.079413,"CRN bootstrap, seed sha256"
+fig4b_policy_Logistic_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_policy_Gompertz_med_targeted_gt_yr,2.782398,"CRN bootstrap, seed sha256"
+fig4b_policy_Gompertz_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_us1gt_Logistic_med_targeted_gt_yr,4.061895,"CRN bootstrap, seed sha256"
+fig4b_us1gt_Logistic_reduction_pct,1.3922,whole-period-feasible vs targeted
+fig4b_us1gt_Gompertz_med_targeted_gt_yr,3.553471,"CRN bootstrap, seed sha256"
+fig4b_us1gt_Gompertz_reduction_pct,13.0841,whole-period-feasible vs targeted
+fig4b_reference_Logistic_med_targeted_gt_yr,5.687874,"CRN bootstrap, seed sha256"
+fig4b_reference_Logistic_reduction_pct,1.4371,whole-period-feasible vs targeted
+fig4b_reference_Gompertz_med_targeted_gt_yr,4.255412,"CRN bootstrap, seed sha256"
+fig4b_reference_Gompertz_reduction_pct,10.8356,whole-period-feasible vs targeted
+fig4b_ipcc_high_Logistic_med_targeted_gt_yr,7.481524,"CRN bootstrap, seed sha256"
+fig4b_ipcc_high_Logistic_reduction_pct,0.0,whole-period-feasible vs targeted
+fig4b_ipcc_high_Gompertz_med_targeted_gt_yr,5.176843,"CRN bootstrap, seed sha256"
+fig4b_ipcc_high_Gompertz_reduction_pct,8.575,whole-period-feasible vs targeted
+fig4b_maximum_Logistic_med_targeted_gt_yr,7.453004,"CRN bootstrap, seed sha256"
+fig4b_maximum_Logistic_reduction_pct,5.7577,whole-period-feasible vs targeted
+fig4b_maximum_Gompertz_med_targeted_gt_yr,8.151875,"CRN bootstrap, seed sha256"
+fig4b_maximum_Gompertz_reduction_pct,37.4576,whole-period-feasible vs targeted
+fig4c_ord_median_max_gt,1.96,"common-set |asc-desc|, median across cases"
+fig4c_ord_case_max_gt,91.0,"common-set |asc-desc|, single-case max"
+fig4c_display_floor_gt,0.5,values below are clipped to the floor for log display
+fig5_recon_over_goal_median_pct,20.8,ascending reconstructions
+fig5_cells,76.0,country x scenario deterministic cells
+fig5_cells_pass,53.0,all models & orderings pass

@@ -1,0 +1,151 @@
+country,scenario,model,allocation_order,whole_period_pass,years_of_shortfall,first_shortfall_year,last_shortfall_year,shortfall_window_yr,max_gap_rate_mt_yr,max_gap_year,total_unmet_volume_gt,cumulative_demand_full_gt,cumulative_screened_full_gt,overall_r_cumulative
+Australia,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,48.5433,48.5433,1.0
+Australia,growth10,Logistic,ascend,False,14,2149.0,2162.0,14,495.5276,2156.0,4.3897,425.2335,420.8438,0.9897
+Brazil,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,106.7701,106.7701,1.0
+Brazil,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,294.4703,294.4703,1.0
+Canada,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,65.584,65.584,1.0
+Canada,growth10,Logistic,ascend,False,82,2098.0,2179.0,82,6329.8448,2144.0,283.1789,375.0586,91.8797,0.245
+China,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,50.1665,50.1665,1.0
+China,growth10,Logistic,ascend,False,63,2117.0,2179.0,63,5036.6085,2150.0,185.961,360.9715,175.0106,0.4848
+EU,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,59.9383,59.9383,1.0
+EU,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,93.2304,93.2304,1.0
+Indonesia,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,5.5675,5.5675,1.0
+Indonesia,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,15.5763,15.5763,1.0
+Middle East,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,22.2645,22.2645,1.0
+Middle East,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,45.1102,45.1102,1.0
+Thailand,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,2.646,2.646,1.0
+Thailand,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,10.2751,10.2751,1.0
+UK,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,31.8088,31.8088,1.0
+UK,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,76.8665,76.8665,1.0
+US,growth10,Gompertz,ascend,True,0,,,0,0.0,,0.0,262.6136,262.6136,1.0
+US,growth10,Logistic,ascend,True,0,,,0,0.0,,0.0,500.6319,500.6319,1.0
+Australia,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,383.817,383.817,1.0
+Australia,ipcc_high,Logistic,ascend,False,20,2077.0,2096.0,20,8626.3998,2086.0,105.2788,502.3427,397.064,0.7904
+Brazil,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,299.7018,299.7018,1.0
+Canada,ipcc_high,Gompertz,ascend,False,125,2055.0,2179.0,125,3337.5355,2107.0,257.0985,350.7132,93.6147,0.2669
+Canada,ipcc_high,Logistic,ascend,False,47,2058.0,2104.0,47,14968.5942,2081.0,321.7162,403.8995,82.1832,0.2035
+EU,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,88.004,88.004,1.0
+EU,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,93.6128,93.6128,1.0
+Middle East,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,42.8804,42.8804,1.0
+Middle East,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,45.5067,45.5067,1.0
+Thailand,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,8.7884,8.7884,1.0
+Thailand,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,10.4963,10.4963,1.0
+UK,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,72.8708,72.8708,1.0
+UK,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,77.8942,77.8942,1.0
+US,ipcc_high,Gompertz,ascend,True,0,,,0,0.0,,0.0,497.074,497.074,1.0
+US,ipcc_high,Logistic,ascend,True,0,,,0,0.0,,0.0,504.7437,504.7437,1.0
+Australia,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,7.6767,7.6767,1.0
+Australia,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,34.5285,34.5285,1.0
+Canada,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,0.6189,0.6189,1.0
+China,ipcc_low,Gompertz,ascend,False,59,2121.0,2179.0,59,544.5223,2157.0,24.3256,202.3922,178.0666,0.8798
+China,ipcc_low,Logistic,ascend,False,46,2081.0,2126.0,46,9169.3734,2103.0,226.5324,402.8863,176.3539,0.4377
+EU,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,88.6825,88.6825,1.0
+EU,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,93.6135,93.6135,1.0
+Indonesia,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,3.4812,3.4812,1.0
+Indonesia,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,14.0892,14.0892,1.0
+Middle East,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,42.8988,42.8988,1.0
+Middle East,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,45.5067,45.5067,1.0
+Thailand,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,8.759,8.759,1.0
+Thailand,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,10.4963,10.4963,1.0
+UK,ipcc_low,Gompertz,ascend,True,0,,,0,0.0,,0.0,72.4097,72.4097,1.0
+UK,ipcc_low,Logistic,ascend,True,0,,,0,0.0,,0.0,77.894,77.894,1.0
+Australia,maximum,Gompertz,ascend,False,91,2089.0,2179.0,91,24957.5899,2179.0,1291.3612,1712.2927,420.9316,0.2458
+Australia,maximum,Logistic,ascend,False,68,2074.0,2141.0,68,179100.6367,2107.0,4621.1987,5023.8177,402.619,0.0801
+Brazil,maximum,Gompertz,ascend,False,79,2101.0,2179.0,79,6954.61,2136.0,367.2758,1996.5094,1629.2336,0.816
+Brazil,maximum,Logistic,ascend,False,31,2077.0,2107.0,31,73288.1114,2092.0,1291.6963,2999.6894,1707.9931,0.5694
+Canada,maximum,Gompertz,ascend,False,121,2059.0,2179.0,121,25071.7785,2166.0,1747.2768,1838.7484,91.4717,0.0497
+Canada,maximum,Logistic,ascend,False,88,2058.0,2145.0,88,148005.8876,2101.0,3950.2203,4039.8591,89.6388,0.0222
+China,maximum,Gompertz,ascend,False,121,2059.0,2179.0,121,30827.3369,2140.0,2453.9832,2633.0851,179.102,0.068
+China,maximum,Logistic,ascend,False,62,2059.0,2120.0,62,183053.8881,2089.0,3857.5142,4029.9361,172.4219,0.0428
+EU,maximum,Gompertz,ascend,False,84,2074.0,2157.0,84,3914.5694,2108.0,204.3788,803.9773,599.5985,0.7458
+EU,maximum,Logistic,ascend,False,30,2068.0,2097.0,30,22722.8261,2082.0,395.7589,939.6198,543.8608,0.5788
+Indonesia,maximum,Gompertz,ascend,True,0,,,0,0.0,,0.0,104.8912,104.8912,1.0
+Indonesia,maximum,Logistic,ascend,True,0,,,0,0.0,,0.0,158.9831,158.9831,1.0
+Middle East,maximum,Gompertz,ascend,True,0,,,0,0.0,,0.0,349.1726,349.1726,1.0
+Middle East,maximum,Logistic,ascend,True,0,,,0,0.0,,0.0,455.907,455.907,1.0
+Thailand,maximum,Gompertz,ascend,False,64,2116.0,2179.0,64,235.1082,2159.0,11.3817,52.628,41.2463,0.7837
+Thailand,maximum,Logistic,ascend,False,41,2079.0,2119.0,41,3151.8935,2099.0,66.3694,104.9955,38.626,0.3679
+UK,maximum,Gompertz,ascend,False,114,2066.0,2179.0,114,5093.4905,2130.0,410.2865,553.1101,142.8236,0.2582
+UK,maximum,Logistic,ascend,False,55,2063.0,2117.0,55,26865.3568,2090.0,650.2283,779.8932,129.6649,0.1663
+US,maximum,Gompertz,ascend,False,120,2060.0,2179.0,120,35608.7033,2120.0,2900.4228,3960.0593,1059.6365,0.2676
+US,maximum,Logistic,ascend,False,54,2060.0,2113.0,54,168957.3734,2087.0,4062.984,5058.734,995.7499,0.1968
+Australia,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,19.2034,19.2034,1.0
+Australia,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,49.4506,49.4506,1.0
+Brazil,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,23.1412,23.1412,1.0
+Brazil,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,29.597,29.597,1.0
+Canada,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,21.3384,21.3384,1.0
+Canada,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,40.0008,40.0008,1.0
+China,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,17.5187,17.5187,1.0
+China,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,39.7512,39.7512,1.0
+EU,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,7.4293,7.4293,1.0
+EU,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,8.8716,8.8716,1.0
+Indonesia,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,1.2397,1.2397,1.0
+Indonesia,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,1.5687,1.5687,1.0
+Middle East,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,3.7902,3.7902,1.0
+Middle East,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,4.4485,4.4485,1.0
+Thailand,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,0.7185,0.7185,1.0
+Thailand,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,1.0443,1.0443,1.0
+UK,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,6.3069,6.3069,1.0
+UK,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,7.6699,7.6699,1.0
+US,minimum,Gompertz,ascend,True,0,,,0,0.0,,0.0,41.9049,41.9049,1.0
+US,minimum,Logistic,ascend,True,0,,,0,0.0,,0.0,49.0533,49.0533,1.0
+Australia,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,340.2359,340.2359,1.0
+Australia,policy,Logistic,ascend,False,20,2082.0,2101.0,20,7068.2615,2091.0,87.8177,502.3412,414.5235,0.8252
+Brazil,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,277.6954,277.6954,1.0
+Brazil,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,299.6962,299.6962,1.0
+Canada,policy,Gompertz,ascend,False,63,2117.0,2179.0,63,920.3086,2179.0,34.926,126.5554,91.6294,0.724
+Canada,policy,Logistic,ascend,False,80,2081.0,2160.0,80,8200.7096,2121.0,308.2817,401.8942,93.6125,0.2329
+China,policy,Gompertz,ascend,False,101,2079.0,2179.0,101,1876.9185,2124.0,126.3852,305.9636,179.5784,0.5869
+China,policy,Logistic,ascend,False,37,2069.0,2105.0,37,11838.9138,2087.0,231.2269,402.9349,171.708,0.4261
+EU,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,84.629,84.629,1.0
+EU,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,93.6087,93.6087,1.0
+Indonesia,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,14.7488,14.7488,1.0
+Indonesia,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,15.8835,15.8835,1.0
+Middle East,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,42.7036,42.7036,1.0
+Middle East,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,45.5067,45.5067,1.0
+Thailand,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,8.8281,8.8281,1.0
+Thailand,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,10.4963,10.4963,1.0
+UK,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,69.1675,69.1675,1.0
+UK,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,77.8932,77.8932,1.0
+US,policy,Gompertz,ascend,True,0,,,0,0.0,,0.0,412.8842,412.8842,1.0
+US,policy,Logistic,ascend,True,0,,,0,0.0,,0.0,504.6612,504.6612,1.0
+Australia,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,336.6552,336.6552,1.0
+Australia,reference,Logistic,ascend,False,20,2082.0,2101.0,20,6967.9477,2092.0,86.1448,502.341,416.1962,0.8285
+Brazil,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,276.3198,276.3198,1.0
+Brazil,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,299.6959,299.6959,1.0
+Canada,reference,Gompertz,ascend,False,119,2061.0,2179.0,119,2827.9903,2119.0,228.0471,319.0539,91.0068,0.2852
+Canada,reference,Logistic,ascend,False,51,2061.0,2111.0,51,13416.0824,2086.0,314.9805,403.8983,88.9177,0.2201
+China,reference,Gompertz,ascend,False,108,2062.0,2169.0,108,3030.1186,2102.0,186.6831,365.2205,178.5374,0.4888
+China,reference,Logistic,ascend,False,31,2062.0,2092.0,31,14501.4165,2077.0,236.0404,402.9363,166.896,0.4142
+EU,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,88.3795,88.3795,1.0
+EU,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,93.6132,93.6132,1.0
+Indonesia,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,14.6618,14.6618,1.0
+Indonesia,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,15.8835,15.8835,1.0
+Middle East,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,42.8229,42.8229,1.0
+Middle East,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,45.5067,45.5067,1.0
+Thailand,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,8.7826,8.7826,1.0
+Thailand,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,10.4963,10.4963,1.0
+UK,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,72.5521,72.5521,1.0
+UK,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,77.8941,77.8941,1.0
+US,reference,Gompertz,ascend,True,0,,,0,0.0,,0.0,476.5978,476.5978,1.0
+US,reference,Logistic,ascend,True,0,,,0,0.0,,0.0,504.7279,504.7279,1.0
+Australia,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,345.42,345.42,1.0
+Australia,us1gt,Logistic,ascend,False,20,2081.0,2100.0,20,7271.5695,2091.0,89.8581,502.3415,412.4834,0.8211
+Brazil,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,276.5445,276.5445,1.0
+Brazil,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,299.6959,299.6959,1.0
+Canada,us1gt,Gompertz,ascend,False,119,2061.0,2179.0,119,2829.3516,2119.0,228.1434,319.1587,91.0153,0.2852
+Canada,us1gt,Logistic,ascend,False,51,2061.0,2111.0,51,13420.7207,2086.0,315.0015,403.8983,88.8968,0.2201
+China,us1gt,Gompertz,ascend,False,107,2061.0,2167.0,107,3110.837,2101.0,189.9736,367.7757,177.8022,0.4835
+China,us1gt,Logistic,ascend,False,30,2062.0,2091.0,30,14708.9086,2077.0,237.3459,402.9364,165.5905,0.411
+EU,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,88.193,88.193,1.0
+EU,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,93.613,93.613,1.0
+Indonesia,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,14.5798,14.5798,1.0
+Indonesia,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,15.8835,15.8835,1.0
+Middle East,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,42.755,42.755,1.0
+Middle East,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,45.5067,45.5067,1.0
+Thailand,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,8.7335,8.7335,1.0
+Thailand,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,10.4963,10.4963,1.0
+UK,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,72.7461,72.7461,1.0
+UK,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,77.8941,77.8941,1.0
+US,us1gt,Gompertz,ascend,True,0,,,0,0.0,,0.0,412.8842,412.8842,1.0
+US,us1gt,Logistic,ascend,True,0,,,0,0.0,,0.0,504.6612,504.6612,1.0

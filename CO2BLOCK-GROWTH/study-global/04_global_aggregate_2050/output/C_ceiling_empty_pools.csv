@@ -1,0 +1,3 @@
+scenario,country,model,ceiling_kind,C_cap_gt,min_C_sampled,min_r2050
+ipcc_high,Canada,Gompertz,min,38.81252010870038,49.90327576677493,0.4439124238134573
+ipcc_high,Canada,Gompertz,mean,39.499138707311715,49.90327576677493,0.4439124238134573
