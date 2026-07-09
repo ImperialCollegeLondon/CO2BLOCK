@@ -100,6 +100,9 @@ function [site_name,d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_ve
                 dist_vec_y = wells_coord_y - wells_coord_y(central_well_y,central_well_x) ;       % distance in y from central well [km]
                 dist_vec   = sqrt(dist_vec_x.^2+dist_vec_y.^2) ;                                  % distance from central well [m]
                 dist_vec(central_well_y,central_well_x) = rw ;                                    % assign wells radius to the central well
+                
+                nbs = arrayfun(@(r) Nordbotten_solution(r,R_influence,psi,rc,gamma), dist_vec,"UniformOutput",true);
+                nbs_inf = arrayfun(@(r) Nordbotten_solution(r,R_influence,psi,inf,gamma), dist_vec,"UniformOutput",true);
 
                 if isfinite(rc) && rc<R_influence
                     % coordinates relative to geometric center of well array
@@ -118,11 +121,9 @@ function [site_name,d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_ve
                     p_sup = p_tank; 
 
                     for i = 1:w
-                        r = dist_vec(i);
     
                         % open-boundary Nordbotten pressure at central well
-                        p_Nord_center = Nordbotten_solution( ...
-                            r, R_influence, psi, inf, gamma) * p_c;   % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
+                        p_Nord_center = nbs_inf(i) * p_c;   % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
     
                         % average open-boundary Nordbotten pressure over equivalent circular domain
                         d_source = well_radial_pos(i);
@@ -143,8 +144,7 @@ function [site_name,d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_ve
                 else
                     p_sup = 0;
                     for i = 1:w
-                        r = dist_vec(i);
-                        Delta_p = Nordbotten_solution(r,R_influence,psi,rc,gamma)*p_c;       % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
+                        Delta_p = nbs(i)*p_c; % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
                         p_sup = p_sup +  Delta_p ;                                 % superposed overpressure [MPa]
                     end
     
