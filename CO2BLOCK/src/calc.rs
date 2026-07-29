@@ -1,4 +1,4 @@
-use std::{collections::HashMap, sync::{LazyLock, RwLock}};
+use std::{collections::HashMap, sync::{LazyLock, OnceLock, RwLock}};
 
 use uom::si::{f64::Ratio, f64::Length};
 
@@ -17,6 +17,29 @@ pub static CALC: LazyLock<Nordbotten> = LazyLock::new(Default::default);
 pub struct Nordbotten
 {
     cache: RwLock<HashMap<NordbottenArgs, Ratio>>
+}
+
+use std::hash::{Hash};
+
+pub struct CachedFunc<I, O, F> {
+    cache: RwLock<HashMap<I, O>>,
+    func: F
+}
+
+impl<I,O,F> CachedFunc<I,O,F> where I: Eq + Hash + Clone, F: Fn(I) -> O, O: Clone {
+
+    pub fn new(func: F) -> Self {
+        CachedFunc { cache: RwLock::new(HashMap::new()), func }
+    }
+
+    pub fn eval(&self, input: I) -> O {
+        if let Some(result) = self.cache.read().unwrap().get(&input) {
+            return result.clone();
+        }
+        let result = (self.func)(input.clone());
+        self.cache.write().unwrap().insert(input, result.clone());
+        result
+    }
 }
 
 impl PartialEq for NordbottenArgs {
