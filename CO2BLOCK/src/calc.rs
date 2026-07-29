@@ -1,9 +1,18 @@
-use std::{collections::HashMap, sync::{LazyLock, OnceLock, RwLock}};
+use std::{
+    collections::HashMap,
+    sync::{LazyLock, RwLock},
+};
 
-use uom::si::{f64::Ratio, f64::Length};
+use uom::si::{f64::Length, f64::Ratio};
 
 #[derive(Clone)]
-pub(crate) struct NordbottenArgs(pub Length, pub Length, pub Length, pub Length, pub Ratio);
+pub(crate) struct NordbottenArgs(
+    pub(crate) Length,
+    pub(crate) Length,
+    pub(crate) Length,
+    pub(crate) Length,
+    pub(crate) Ratio,
+);
 
 impl NordbottenArgs {
     fn get(&self) -> (Length, Length, Length, Length, Ratio) {
@@ -11,44 +20,20 @@ impl NordbottenArgs {
     }
 }
 
-pub static CALC: LazyLock<Nordbotten> = LazyLock::new(Default::default);
+pub(crate) static CALC: LazyLock<Nordbotten> = LazyLock::new(Default::default);
 
 #[derive(Default)]
-pub struct Nordbotten
-{
-    cache: RwLock<HashMap<NordbottenArgs, Ratio>>
-}
-
-use std::hash::{Hash};
-
-pub struct CachedFunc<I, O, F> {
-    cache: RwLock<HashMap<I, O>>,
-    func: F
-}
-
-impl<I,O,F> CachedFunc<I,O,F> where I: Eq + Hash + Clone, F: Fn(I) -> O, O: Clone {
-
-    pub fn new(func: F) -> Self {
-        CachedFunc { cache: RwLock::new(HashMap::new()), func }
-    }
-
-    pub fn eval(&self, input: I) -> O {
-        if let Some(result) = self.cache.read().unwrap().get(&input) {
-            return result.clone();
-        }
-        let result = (self.func)(input.clone());
-        self.cache.write().unwrap().insert(input, result.clone());
-        result
-    }
+pub(crate) struct Nordbotten {
+    cache: RwLock<HashMap<NordbottenArgs, Ratio>>,
 }
 
 impl PartialEq for NordbottenArgs {
     fn eq(&self, other: &Self) -> bool {
-        self.0.value.to_bits() == other.0.value.to_bits() &&
-        self.1.value.to_bits() == other.1.value.to_bits() &&
-        self.2.value.to_bits() == other.2.value.to_bits() &&
-        self.3.value.to_bits() == other.3.value.to_bits() &&
-        self.4.value.to_bits() == other.4.value.to_bits()
+        self.0.value.to_bits() == other.0.value.to_bits()
+            && self.1.value.to_bits() == other.1.value.to_bits()
+            && self.2.value.to_bits() == other.2.value.to_bits()
+            && self.3.value.to_bits() == other.3.value.to_bits()
+            && self.4.value.to_bits() == other.4.value.to_bits()
     }
 }
 impl Eq for NordbottenArgs {}
@@ -76,7 +61,6 @@ impl Nordbotten {
     }
 }
 
-
 #[allow(non_snake_case)]
 fn nordbotten_impl(r: Length, R: Length, psi: Length, R_ext: Length, gamma: Ratio) -> Ratio {
     if r <= psi {
@@ -90,9 +74,6 @@ fn nordbotten_impl(r: Length, R: Length, psi: Length, R_ext: Length, gamma: Rati
     Ratio::new::<uom::si::ratio::ratio>(0.)
 }
 
-
-
-
 #[allow(non_snake_case)]
 fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
     if x >= R_ext {
@@ -103,13 +84,21 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
         return (R / x).ln();
     }
 
-    (R_ext / x).ln() + Ratio::new::<uom::si::ratio::ratio>(2. / 2.25) * (R / R_ext).powi(uom::typenum::P2::new()) - Ratio::new::<uom::si::ratio::ratio>(3. / 4.)
+    (R_ext / x).ln()
+        + Ratio::new::<uom::si::ratio::ratio>(2. / 2.25) * (R / R_ext).powi(uom::typenum::P2::new())
+        - Ratio::new::<uom::si::ratio::ratio>(3. / 4.)
 }
 
 #[test]
 fn test_static() {
     use uom::si::length::meter;
-    let args = NordbottenArgs(Length::new::<meter>(1.), Length::new::<meter>(2.), Length::new::<meter>(3.), Length::new::<meter>(4.), Ratio::new::<uom::si::ratio::ratio>(5.));
+    let args = NordbottenArgs(
+        Length::new::<meter>(1.),
+        Length::new::<meter>(2.),
+        Length::new::<meter>(3.),
+        Length::new::<meter>(4.),
+        Ratio::new::<uom::si::ratio::ratio>(5.),
+    );
     let calc = &*CALC;
     let result = calc.eval(args.clone());
     let result2 = calc.eval(args);
