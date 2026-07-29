@@ -103,7 +103,7 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
         return (R / x).ln();
     }
 
-    (R_ext / x).ln() + Ratio::new::<uom::si::ratio::ratio>(2. / 2.25) * ((R / R_ext).powi(uom::typenum::P2::new()) - Ratio::new::<uom::si::ratio::ratio>(3. / 4.))
+    (R_ext / x).ln() + Ratio::new::<uom::si::ratio::ratio>(2. / 2.25) * (R / R_ext).powi(uom::typenum::P2::new()) - Ratio::new::<uom::si::ratio::ratio>(3. / 4.)
 }
 
 #[test]
