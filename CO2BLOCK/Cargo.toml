@@ -1,0 +1,15 @@
+[package]
+name = "co2block"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dashmap = "6.2.1"
+uom = "0.38.0"
+
+[dependencies.rustmex]
+version = "0.6.4"
+features = ["matlab800"]
+
+[lib]
+crate-type = ["cdylib"]

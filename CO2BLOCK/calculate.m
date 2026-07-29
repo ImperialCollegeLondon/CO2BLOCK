@@ -1,8 +1,8 @@
 function [d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_vec]...
-    = calculate(fpath,fname,site_no,correction,dist_min,dist_max,nr_dist,nr_well_max,rw,time_yr,maxQ,minQ)
+    = calculate(fpath,fname,site_no,correction,dist_min,dist_max,nr_dist,nr_well_max,rw,time_yr,maxQ,~)
 
     %read data
-    [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,gamma,delta, omega] = read_data(fpath,fname,site_no);
+    [~,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,gamma,delta, omega] = read_data(fpath,fname,site_no);
     
     time = time_yr*86400*365 ;                                              %injection time [sec]
     R_influence = sqrt(2.246*perm*time/(visc_w*compr));                     % pressure propagation radius for the time of injection
@@ -81,7 +81,7 @@ function [d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_vec]...
     
                     for jj = 1:length(r_samples)
                         % use open-boundary Nordbotten, so rc = inf
-                        p_samples_unit(jj) = Nordbotten_solution( ...
+                        p_samples_unit(jj) = nordbotten( ...
                             r_samples(jj), R_influence, psi, inf, gamma);
                     end
     
@@ -121,7 +121,7 @@ function [d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_vec]...
                         r = dist_vec(i);
     
                         % open-boundary Nordbotten pressure at central well
-                        p_Nord_center = Nordbotten_solution( ...
+                        p_Nord_center = nordbotten( ...
                             r, R_influence, psi, inf, gamma) * p_c;   % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
     
                         % average open-boundary Nordbotten pressure over equivalent circular domain
@@ -144,7 +144,7 @@ function [d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_vec]...
                     p_sup = 0;
                     for i = 1:w
                         r = dist_vec(i);
-                        Delta_p = Nordbotten_solution(r,R_influence,psi,rc,gamma)*p_c;       % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
+                        Delta_p = nordbotten(r,R_influence,psi,rc,gamma)*p_c;       % overpressure according to Nordbotten and Celia solution for overpressure [MPa]
                         p_sup = p_sup +  Delta_p ;                                 % superposed overpressure [MPa]
                     end
     

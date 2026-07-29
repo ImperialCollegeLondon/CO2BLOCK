@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "CO2BLOCK",
+]
+
+resolver = "2"
