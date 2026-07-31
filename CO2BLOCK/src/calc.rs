@@ -54,12 +54,25 @@ pub struct MegatonsPerYear {
     _value: uom::si::f64::MassRate,
 }
 
+uom::unit! {
+    system: uom::si;
+    quantity: uom::si::mass_rate;
+    @megaton_per_year: {const{prefix!(mega) * 1.0_E3 / 3.1536_E7}}; "Mt/y", "megaton per year", "megatons per year";
+}
+
 impl MegatonsPerYear {
     pub fn new(value: f64) -> Self {
-        let day_to_year = uom::si::f64::Time::new::<year>(1.).get::<day>();
         MegatonsPerYear {
-            _value: uom::si::f64::MassRate::new::<ton_per_day>(value * prefix!(mega) / day_to_year),
+            _value: uom::si::f64::MassRate::new::<megaton_per_year>(value),
         }
+    }
+}
+
+impl std::fmt::Display for MegatonsPerYear {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        self._value
+            .into_format_args(ton_per_day, uom::fmt::DisplayStyle::Abbreviation)
+            .fmt(f)
     }
 }
 
@@ -101,4 +114,26 @@ pub enum Correction {
 pub fn calculate(_args: Args) {
     let _ = nordbotten_impl;
     todo!();
+}
+
+mod tests {
+    use std::fmt::Debug;
+
+    use super::*;
+
+    #[test]
+    fn test_uom_display() {
+        let length = Length::new::<meter>(1.0);
+        println!(
+            "{}",
+            length.into_format_args(meter, uom::fmt::DisplayStyle::Abbreviation)
+        );
+
+        println!(
+            "{}",
+            MegatonsPerYear::new(1.0)
+                ._value
+                .into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
+        );
+    }
 }
