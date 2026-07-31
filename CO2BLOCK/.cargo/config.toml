@@ -1,3 +1,3 @@
 [target.aarch64-apple-darwin.mex800]
-rustc-link-search = ["/Applications/MATLAB_R2025b.app/bin/maca64"]
-rustc-link-lib = ["mx", "mex", "mat"]
+# rustc-link-search = ["/Applications/MATLAB_R2025b.app/bin/maca64"]
+# rustc-link-lib = ["mx", "mex", "mat"]

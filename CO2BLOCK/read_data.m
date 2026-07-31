@@ -1,7 +1,7 @@
 % read paramaters and evaluate maximum sustainable pressure
 function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,...
     gamma,delta, omega] = read_data(path,name,site_no)
- 
+
     % -- default parameters (used in case they are not provided)
     litho_grad = 23 ;                   % lithostatic gradient [MPa/km]
     hydro_grad = 10 ;                   % hydrostatic gradient [MPa/km]
@@ -17,8 +17,8 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     % -- read data
     fullFileName = fullfile(path,name);
 
-    data = readtable(fullFileName,'VariableNamingRule','preserve'); 
-    
+    data = readtable(fullFileName,'VariableNamingRule','preserve');
+
     site_name = char(data{site_no,1});                              % unit name
     domain_type = char(data{site_no,2});                            % domain confinement
     depth = double(data{site_no,3});                                % shallowest depth of reservoir [m]
@@ -30,8 +30,8 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     cr = double(data{site_no,9})/1e6;                               % rock compressibility [1/Pa]
     cw = double(data{site_no,10})/1e6;                              % water compressibility [1/Pa]
     dens_c = double(data{site_no,11})*1e3;                          % Density of CO2 [kg/m^3]
-    visc_c = double(data{site_no,12})/1e3;                          % Viscosity of CO2 [Pa.s] 
-    visc_w = double(data{site_no,13})/1e3;                          % Viscosity of water[Pa.s] 
+    visc_c = double(data{site_no,12})/1e3;                          % Viscosity of CO2 [Pa.s]
+    visc_w = double(data{site_no,13})/1e3;                          % Viscosity of water[Pa.s]
     pres0 = double(data{site_no,14});                               % pressure at the top of the reservoir [MPa]
     pres0_mean = double(data{site_no,15});                          % pressure at the centre of the reservoir [MPa]
     T0_mean = double(data{site_no,16});                             % temperature at the centre of the reservoir [C]
@@ -52,11 +52,11 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
             rc = inf;
         case 'Closed'
             domain_type = 'closed';
-            rc = sqrt(area_res*10^6/pi);    
+            rc = sqrt(area_res*10^6/pi);
         case 'closed'
             domain_type = 'closed';
             rc = sqrt(area_res*10^6/pi);
-    end  
+    end
 
     %%% calculate some parameters if not given
     if pres0 == 0 ||  isnan(pres0)
@@ -74,7 +74,7 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     if s1_tot == 0  ||  isnan(s1_tot)
         s1_tot = litho_grad*depth/1000;
     end
-    
+
     if stress_ratio == 0 ||  isnan(stress_ratio)
         stress_ratio = def_k0 ;
     end
@@ -82,7 +82,7 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     if friction == 0 ||  isnan(friction)
         friction = def_friction_angle ;
     end
-    
+
     if cohesion == 0 ||  isnan(cohesion)
         cohesion = def_cohesion ;
     end
@@ -90,7 +90,7 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     if tens_strength== 0 ||  isnan(tens_strength)
         tens_strength = cohesion/2;
     end
-                
+
     if cr == 0 ||  isnan(cr)
         cr = def_cr/1e6;
     end
@@ -102,7 +102,7 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     if salinity == 0 || isnan(salinity)
         salinity = def_salinity/1e6 ;
     end
-    
+
     if dens_c == 0 ||  isnan(dens_c)
         [~,dens_c,~] = eos(T0_mean, pres0_mean,salinity,0);
     end
@@ -111,13 +111,13 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
         [~,~,visc_c] = eos(T0_mean, pres0_mean,salinity, dens_c);
     end
 
-    if visc_w == 0 || isnan(visc_w) 
-        [visc_w,~,~] = eos(T0_mean, pres0_mean, salinity,0) ; 
+    if visc_w == 0 || isnan(visc_w)
+        [visc_w,~,~] = eos(T0_mean, pres0_mean, salinity,0) ;
     end
 
 
-    %%% calculate some useful parameters 
-    nr_sites = height(data);                                                % number of injection sites in the 
+    %%% calculate some useful parameters
+    nr_sites = height(data);                                                % number of injection sites in the
     s1 = s1_tot - pres0;                                                    % effective maximum principal stress [MPa]
     s3 = stress_ratio*s1 ;                                                  % effective minimum principal stress [MPa]
     theta = (1-sin(deg2rad(friction)))/(1+sin(deg2rad(friction))) ;
@@ -127,7 +127,7 @@ function [site_name,thick,area_res,perm,por,dens_c,visc_c,visc_w,compr,p_lim,rc,
     p_lim = min(p_lim_shear, p_lim_tensile);                                % limit overpressure  [MPa]
 
     gamma = visc_c/(visc_w);                                                %Non-dimensional viscosity ratio[-]
-    delta = (visc_w-visc_c)/visc_w;  
+    delta = (visc_w-visc_c)/visc_w;
     omega = (visc_c+visc_w)/(visc_c-visc_w)*log(sqrt(visc_c/visc_w))-1 ;
     compr = cr+por*cw ;                                                     %total compressibility  [1/Pa]
 end

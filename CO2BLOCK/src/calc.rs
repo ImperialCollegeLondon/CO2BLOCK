@@ -1,5 +1,6 @@
 use std::num::NonZeroU64;
 
+use serde_with::serde_as;
 use uom::si::{
     f64::{Length, Ratio},
     length::meter,
@@ -46,6 +47,8 @@ struct Args {
     well_radius: Len<meter>,
     duration_injection: Time<year>,
     rate_max: MegatonsPerYear,
+    thickness: Len<meter>,
+    area: uom::si::f64::Area,
 }
 
 struct MegatonsPerYear {
