@@ -29,3 +29,35 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
 }
 
 mod cached;
+
+struct Args {
+    correction: Correction,
+    inter_well_dist_min: Len<kilometer>,
+    inter_well_dist_max: Option<Len<kilometer>>,
+}
+
+struct Len<Unit> {
+    value: Length,
+    _unit: std::marker::PhantomData<Unit>,
+}
+impl<Unit: uom::si::length::Unit + uom::Conversion<f64, T = f64>> Len<Unit> {
+    fn new(value: f64) -> Self {
+        Len {
+            value: Length::new::<Unit>(value),
+            _unit: std::marker::PhantomData,
+        }
+    }
+
+    fn get(self) -> Length {
+        self.value
+    }
+}
+
+use uom::si::length::kilometer;
+
+enum Correction {
+    Off,
+    On,
+}
+
+fn calculate(args: Args) {}

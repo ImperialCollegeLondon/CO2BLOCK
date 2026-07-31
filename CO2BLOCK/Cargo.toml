@@ -5,7 +5,10 @@ edition = "2024"
 
 [dependencies]
 dashmap = "6.2.1"
-uom = "0.38.0"
+
+[dependencies.uom]
+version = "0.38.0"
+features = ["f64", "si"]
 
 [dependencies.rustmex]
 version = "0.6.4"
