@@ -1,6 +1,5 @@
 use std::num::NonZeroU64;
 
-use serde_with::serde_as;
 use uom::si::{
     f64::{Length, Ratio},
     length::meter,
@@ -38,77 +37,68 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
 
 mod cached;
 
-struct Args {
-    correction: Correction,
-    inter_well_dist_min: Len<kilometer>,
-    inter_well_dist_max: Option<Len<kilometer>>,
-    num_distances: NonZeroU64,
-    num_wells_max: Option<NonZeroU64>,
-    well_radius: Len<meter>,
-    duration_injection: Time<year>,
-    rate_max: MegatonsPerYear,
-    thickness: Len<meter>,
-    area: uom::si::f64::Area,
+pub struct Args {
+    pub correction: Correction,
+    pub inter_well_dist_min: Len<kilometer>,
+    pub inter_well_dist_max: Option<Len<kilometer>>,
+    pub num_distances: NonZeroU64,
+    pub num_wells_max: Option<NonZeroU64>,
+    pub well_radius: Len<meter>,
+    pub duration_injection: Time<year>,
+    pub rate_max: MegatonsPerYear,
+    pub thickness: Len<meter>,
+    pub area: uom::si::f64::Area,
 }
 
-struct MegatonsPerYear {
-    value: uom::si::f64::MassRate,
+pub struct MegatonsPerYear {
+    _value: uom::si::f64::MassRate,
 }
 
 impl MegatonsPerYear {
-    fn new(value: f64) -> Self {
+    pub fn new(value: f64) -> Self {
         let day_to_year = uom::si::f64::Time::new::<year>(1.).get::<day>();
         MegatonsPerYear {
-            value: uom::si::f64::MassRate::new::<ton_per_day>(value * prefix!(mega) / day_to_year),
+            _value: uom::si::f64::MassRate::new::<ton_per_day>(value * prefix!(mega) / day_to_year),
         }
-    }
-
-    fn get(self) -> uom::si::f64::MassRate {
-        self.value
     }
 }
 
-struct Time<Unit> {
-    value: uom::si::f64::Time,
+pub struct Time<Unit> {
+    _value: uom::si::f64::Time,
     _unit: std::marker::PhantomData<Unit>,
 }
 
 impl<Unit: uom::si::time::Unit + uom::Conversion<f64, T = f64>> Time<Unit> {
-    fn new(value: f64) -> Self {
+    pub fn new(value: f64) -> Self {
         Time {
-            value: uom::si::f64::Time::new::<Unit>(value),
+            _value: uom::si::f64::Time::new::<Unit>(value),
             _unit: std::marker::PhantomData,
         }
     }
-
-    fn get(self) -> uom::si::f64::Time {
-        self.value
-    }
 }
 
-struct Len<Unit> {
-    value: Length,
+pub struct Len<Unit> {
+    _value: Length,
     _unit: std::marker::PhantomData<Unit>,
 }
 
 impl<Unit: uom::si::length::Unit + uom::Conversion<f64, T = f64>> Len<Unit> {
-    fn new(value: f64) -> Self {
+    pub fn new(value: f64) -> Self {
         Len {
-            value: Length::new::<Unit>(value),
+            _value: Length::new::<Unit>(value),
             _unit: std::marker::PhantomData,
         }
-    }
-
-    fn get(self) -> Length {
-        self.value
     }
 }
 
 use uom::si::length::kilometer;
 
-enum Correction {
+pub enum Correction {
     Off,
     On,
 }
 
-fn calculate(args: Args) {}
+pub fn calculate(_args: Args) {
+    let _ = nordbotten_impl;
+    todo!();
+}
