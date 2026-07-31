@@ -14,8 +14,7 @@ pub fn nordbotten(mut lhs: rustmex::LhsAns, _rhs: rustmex::Rhs) -> rustmex::Resu
     let psi = parse_len(_rhs.get(2))?;
     let R_ext = parse_len(_rhs.get(3))?;
     let gamma: uom::si::f64::Ratio = parse_raw(_rhs.get(4))?.into();
-    let args = NordbottenArgs(r, R, psi, R_ext, gamma);
-    let result = crate::calc::CALC.eval(args);
+    let result = nordbotten_impl(r, R, psi, R_ext, gamma);
     *lhs.ans_mut() = Some(result.value.to_matlab());
     Ok(())
 }
