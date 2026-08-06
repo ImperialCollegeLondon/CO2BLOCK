@@ -1,9 +1,11 @@
+#![allow(unused)]
+
 use std::num::NonZeroU64;
 
 use uom::si::{
-    f64::{Length, Ratio},
     length::meter,
     mass_rate::ton_per_day,
+    ratio::ratio,
     time::{day, year},
 };
 
@@ -37,6 +39,8 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
 
 mod cached;
 
+use uom::si::f64::*;
+
 pub struct Args {
     pub correction: Correction,
     pub inter_well_dist_min: Len<kilometer>,
@@ -47,7 +51,28 @@ pub struct Args {
     pub duration_injection: Time<year>,
     pub rate_max: MegatonsPerYear,
     pub thickness: Len<meter>,
-    pub area: uom::si::f64::Area,
+    pub area: Area,         // 10^-15 m2
+    pub permeability: Area, //km2
+    pub porosity: Ratio,
+    pub compress_rock: CompressibilityCoefficient, // 1/Pa (MPa in tables)
+    pub compress_water: CompressibilityCoefficient, // 1/Pa
+    pub stress_ratio: Ratio,
+    pub rock_friction_angle: Angle,      // deg
+    pub rock_tensile_strength: Pressure, // MPa
+    pub rock_cohesion: Pressure,         // MPa
+}
+
+fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
+    v_c / v_w
+}
+
+fn delta(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
+    Ratio::new::<ratio>(1.) - gamma(v_c, v_w)
+}
+
+pub enum DomainType {
+    Open,
+    Closed,
 }
 
 pub struct MegatonsPerYear {
@@ -117,8 +142,6 @@ pub fn calculate(_args: Args) {
 }
 
 mod tests {
-    use std::fmt::Debug;
-
     use super::*;
 
     #[test]
