@@ -1,6 +1,6 @@
 #![allow(unused)]
 
-use std::num::NonZeroU64;
+use std::{num::NonZeroU64, ops::Mul};
 
 use uom::si::{
     length::meter,
@@ -181,16 +181,54 @@ fn calc_args_to_key(
 //     key = "(u64,u64,u64)",
 //     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
 // )]
-pub fn calculate(inter_well_dist: Length, num_x: NonZeroU64, num_y: NonZeroU64) {
-    let _ = inter_well_dist.value.to_bits();
-    // coordinate system at the center of the grid
-    // calculates nordbotten pressures added to the center by all the other wells
-    // subtracts some average value
-    // then accumulates on top of some reservoir pressure
-    // a bit differently for open/closed boundaries
-    // closed boundaries require - correction error
-    // then, the max rate calculates from this pressure
-    // then, input rate upper limit is applied on top of it, too
+pub fn calculate_one(distance: f64) {}
+
+struct NordbottenCoeff {
+    radius_plume: f64,
+    radius_influence: f64,
+    radius_reservoir: f64,
+    gas_to_water_visc: f64,
+    big_influence_term: f64,
+}
+
+impl NordbottenCoeff {
+    fn new(
+        radius_plume: f64,
+        radius_influence: f64,
+        radius_reservoir: f64,
+        gas_to_water_visc: f64,
+    ) -> Self {
+        let big_influence_term = (radius_influence > radius_reservoir)
+            .then(|| (radius_influence / radius_reservoir).powi(2).mul(8. / 9.) - 3. / 4.)
+            .unwrap_or(0.);
+        Self {
+            radius_plume,
+            radius_influence,
+            radius_reservoir,
+            gas_to_water_visc,
+            big_influence_term,
+        }
+    }
+
+    fn calc(&self, distance: f64) -> f64 {
+        let inv_dist_normalized = self.radius_plume / distance.min(self.radius_plume);
+
+        let plume_term = inv_dist_normalized.ln().mul(self.gas_to_water_visc);
+
+        let influence_term = self.fd_nor(distance.max(self.radius_plume));
+
+        plume_term + influence_term
+    }
+
+    fn fd_nor(&self, distance: f64) -> f64 {
+        let limit_dist = self.radius_influence.min(self.radius_reservoir);
+
+        let inv_dist_norm = limit_dist / distance.max(self.radius_reservoir);
+
+        let dist_term = inv_dist_norm.ln();
+
+        dist_term + self.big_influence_term * f64::from(distance < self.big_influence_term)
+    }
 }
 
 mod tests {
