@@ -150,18 +150,28 @@ fn calc_influence_radius(
     visc_w: DynamicViscosity,
     compr_total: CompressibilityCoefficient,
 ) -> Length {
-    (perm * time / (visc_w * compr_total) * P::<2.246>).sqrt()
+    (perm * time / (visc_w * compr_total) * 2.246).sqrt()
 }
 
 fn calc_max_num_wells(area: Area, dist_min: Length) -> uom::si::u32::Ratio {
-    (area / (dist_min * dist_min)).floor().into()
+    let res_float = (area / (dist_min * dist_min));
+    use num_traits::ToPrimitive;
+    let res_raw: u32 = res_float
+        .value
+        .to_u32()
+        .expect("divison + floor result must be valid & round");
+    uom::si::u32::Ratio::new::<ratio>(res_raw)
 }
 
 fn calc_well_dist_max(area: Area) -> Length {
-    (area * P2).sqrt() / P2
+    (area * 2.).sqrt() / 2.
 }
 
-pub fn calculate(args: Args) {}
+pub fn calculate(args: Args) {
+    // arrange wells in a ~square grid, making up to
+    // sqrt(max_num) columns in total
+    // num_x * (num_x +? 1)
+}
 
 mod tests {
     use super::*;
