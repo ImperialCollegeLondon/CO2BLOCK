@@ -4,7 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+cached = "2.0.2"
 csv = "1.4.0"
+# cubecl = { version = "0.10.0", features = ["autotune-checks", "cpu", "cuda", "metal", "webgpu"] }
 dashmap = "6.2.1"
 num-traits = "0.2.19"
 serde = { version = "1.0.229", features = ["derive"] }

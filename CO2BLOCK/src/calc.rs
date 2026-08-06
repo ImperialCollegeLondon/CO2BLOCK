@@ -37,7 +37,7 @@ fn fd_nor(x: Length, R: Length, R_ext: Length) -> Ratio {
         - Ratio::new::<uom::si::ratio::ratio>(3. / 4.)
 }
 
-mod cached;
+mod cached_;
 
 use uom::si::f64::*;
 
@@ -167,10 +167,30 @@ fn calc_well_dist_max(area: Area) -> Length {
     (area * 2.).sqrt() / 2.
 }
 
-pub fn calculate(args: Args) {
-    // arrange wells in a ~square grid, making up to
-    // sqrt(max_num) columns in total
-    // num_x * (num_x +? 1)
+use cached::cached;
+
+fn calc_args_to_key(
+    inter_well_dist: Length,
+    num_x: NonZeroU64,
+    num_y: NonZeroU64,
+) -> (u64, u64, u64) {
+    (inter_well_dist.value.to_bits(), num_x.into(), num_y.into())
+}
+
+// #[cached(
+//     key = "(u64,u64,u64)",
+//     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
+// )]
+pub fn calculate(inter_well_dist: Length, num_x: NonZeroU64, num_y: NonZeroU64) {
+    let _ = inter_well_dist.value.to_bits();
+    // coordinate system at the center of the grid
+    // calculates nordbotten pressures added to the center by all the other wells
+    // subtracts some average value
+    // then accumulates on top of some reservoir pressure
+    // a bit differently for open/closed boundaries
+    // closed boundaries require - correction error
+    // then, the max rate calculates from this pressure
+    // then, input rate upper limit is applied on top of it, too
 }
 
 mod tests {
