@@ -232,7 +232,7 @@ pub fn calculate(nord_coef: &NordbottenCoeff, step: Length, well_radius: Length)
             counts[num_steps_x] += count;
         }
     }
-    todo!()
+    coefs
 }
 
 pub struct NordbottenCoeff {
