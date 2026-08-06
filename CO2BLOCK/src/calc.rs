@@ -2,6 +2,7 @@
 
 use std::{num::NonZeroU64, ops::Mul};
 
+use num_traits::{ToPrimitive, Zero};
 use uom::si::{
     length::meter,
     mass_rate::ton_per_day,
@@ -181,26 +182,80 @@ fn calc_args_to_key(
 //     key = "(u64,u64,u64)",
 //     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
 // )]
-pub fn calculate_one(distance: f64) {}
+pub fn calculate(nord_coef: &NordbottenCoeff, step: Length, well_radius: Length) -> Vec<Ratio> {
+    let max_num_steps = 2_f64
+        .powf(-0.5)
+        .mul(nord_coef.radius_reservoir / step)
+        .floor::<ratio>()
+        .get::<ratio>()
+        .to_usize()
+        .unwrap();
 
-struct NordbottenCoeff {
-    radius_plume: f64,
-    radius_influence: f64,
-    radius_reservoir: f64,
-    gas_to_water_visc: f64,
-    big_influence_term: f64,
+    // let's store partial sums
+    let mut coefs = vec![Ratio::zero(); max_num_steps];
+    let mut counts = vec![0; max_num_steps];
+
+    let c00 = nord_coef.calc(well_radius);
+    coefs[0] += c00;
+    counts[0] += 1;
+
+    for num_steps_x in 1..=max_num_steps {
+        // add all previous to the new sum
+        {
+            let prev = coefs[num_steps_x - 1];
+            coefs[num_steps_x] += prev;
+        }
+        {
+            let prev = counts[num_steps_x - 1];
+            counts[num_steps_x] += prev;
+        }
+        let x2 = num_steps_x * num_steps_x;
+        for num_steps_y in 0..=num_steps_x {
+            let y2 = num_steps_y * num_steps_y;
+            let r2 = (x2 + y2)
+                .to_f64()
+                .expect("sum of integer squares should be representable in f64");
+
+            let dist = step * r2.sqrt();
+
+            let coef = nord_coef.calc(dist);
+
+            // symmetry
+            let count: u64 = match num_steps_y {
+                0 => 4,
+                x if (1..num_steps_x).contains(&x) => 8,
+                x if x == num_steps_x => 4,
+                _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
+            };
+
+            coefs[num_steps_x] += coef * count.to_f64().unwrap();
+            counts[num_steps_x] += count;
+        }
+    }
+    todo!()
+}
+
+pub struct NordbottenCoeff {
+    radius_plume: Length,
+    radius_influence: Length,
+    radius_reservoir: Length,
+    gas_to_water_visc: Ratio,
+    big_influence_term: Ratio,
 }
 
 impl NordbottenCoeff {
     fn new(
-        radius_plume: f64,
-        radius_influence: f64,
-        radius_reservoir: f64,
-        gas_to_water_visc: f64,
+        radius_plume: Length,
+        radius_influence: Length,
+        radius_reservoir: Length,
+        gas_to_water_visc: Ratio,
     ) -> Self {
-        let big_influence_term = (radius_influence > radius_reservoir)
-            .then(|| (radius_influence / radius_reservoir).powi(2).mul(8. / 9.) - 3. / 4.)
-            .unwrap_or(0.);
+        let big_influence_term: Ratio = (radius_influence > radius_reservoir)
+            .then(|| {
+                let coef = radius_influence / radius_reservoir;
+                (coef * coef).mul(8. / 9.) - Ratio::new::<ratio>(3. / 4.)
+            })
+            .unwrap_or_else(Zero::zero);
         Self {
             radius_plume,
             radius_influence,
@@ -210,7 +265,11 @@ impl NordbottenCoeff {
         }
     }
 
-    fn calc(&self, distance: f64) -> f64 {
+    fn radius_reservoir(&self) -> Length {
+        self.radius_reservoir
+    }
+
+    fn calc(&self, distance: Length) -> Ratio {
         let inv_dist_normalized = self.radius_plume / distance.min(self.radius_plume);
 
         let plume_term = inv_dist_normalized.ln().mul(self.gas_to_water_visc);
@@ -220,14 +279,14 @@ impl NordbottenCoeff {
         plume_term + influence_term
     }
 
-    fn fd_nor(&self, distance: f64) -> f64 {
+    fn fd_nor(&self, distance: Length) -> Ratio {
         let limit_dist = self.radius_influence.min(self.radius_reservoir);
 
         let inv_dist_norm = limit_dist / distance.max(self.radius_reservoir);
 
         let dist_term = inv_dist_norm.ln();
 
-        dist_term + self.big_influence_term * f64::from(distance < self.big_influence_term)
+        dist_term + self.big_influence_term * f64::from(distance < self.radius_reservoir)
     }
 }
 
