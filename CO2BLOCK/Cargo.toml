@@ -12,7 +12,7 @@ serde_with = "3.21.0"
 
 [dependencies.uom]
 version = "0.38.0"
-features = ["f64", "si", "serde"]
+features = ["f64", "si", "serde", "u32"]
 
 # [dependencies.rustmex]
 # version = "0.6.4"

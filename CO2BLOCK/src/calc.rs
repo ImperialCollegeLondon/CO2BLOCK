@@ -136,10 +136,32 @@ pub enum Correction {
     On,
 }
 
-pub fn calculate(_args: Args) {
-    let _ = nordbotten_impl;
-    todo!();
+fn calc_total_compress(
+    c_rock: CompressibilityCoefficient,
+    poro: Ratio,
+    c_water: CompressibilityCoefficient,
+) -> CompressibilityCoefficient {
+    c_rock + poro * c_water
 }
+
+fn calc_influence_radius(
+    perm: Area,
+    time: uom::si::f64::Time,
+    visc_w: DynamicViscosity,
+    compr_total: CompressibilityCoefficient,
+) -> Length {
+    (perm * time / (visc_w * compr_total) * P::<2.246>).sqrt()
+}
+
+fn calc_max_num_wells(area: Area, dist_min: Length) -> uom::si::u32::Ratio {
+    (area / (dist_min * dist_min)).floor().into()
+}
+
+fn calc_well_dist_max(area: Area) -> Length {
+    (area * P2).sqrt() / P2
+}
+
+pub fn calculate(args: Args) {}
 
 mod tests {
     use super::*;
