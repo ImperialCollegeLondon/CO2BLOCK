@@ -2,13 +2,17 @@ use std::num::NonZeroU64;
 use uom::si::f64::*;
 
 pub struct Args {
-    pub hyper_params: HyperParams,
-    pub injection_params: InjectionParams,
-    pub domain_params: DomainParams,
-    pub rock_params: RockParams,
-    pub water_params: WaterParams,
-    pub gas_params: GasParams,
+    pub reservoir: ReservoirParams,
+    pub injection: InjectionParams,
     pub well_placement: WellPlaceParams,
+    pub correction: Correction,
+}
+
+pub struct ReservoirParams {
+    pub domain: DomainParams,
+    pub rock: RockParams,
+    pub water: WaterParams,
+    pub gas: GasParams,
 }
 
 pub struct WaterParams {
@@ -48,11 +52,6 @@ pub enum Correction {
     On,
 }
 
-pub struct HyperParams {
-    pub correction: Correction,
-    pub num_distance_samples: u64,
-}
-
 pub struct InjectionParams {
     pub well_radius: Length,
     pub duration_injection: Time,
@@ -60,6 +59,7 @@ pub struct InjectionParams {
 }
 
 pub struct WellPlaceParams {
+    pub num_distance_samples: u64,
     pub inter_well_dist_min: Length,
     pub inter_well_dist_max: Option<Length>,
     pub num_wells_max: Option<NonZeroU64>,

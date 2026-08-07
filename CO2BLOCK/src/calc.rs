@@ -1,5 +1,6 @@
 // #![allow(unused)]
 mod args;
+mod eos;
 
 use self::args::*;
 use ::std::{
@@ -7,11 +8,36 @@ use ::std::{
     num::NonZeroU64,
     ops::{Div, Mul, Sub},
 };
-use num_traits::{ToPrimitive, Zero};
+use num_traits::{MulAdd, ToPrimitive, Zero};
 use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
 use uom::si::{Dimension, Quantity, Units, f64::*, ratio::ratio};
 
-fn co2block(args: Args) {}
+pub fn co2block_with_placement(
+    step: Length,
+    num_steps: usize,
+    reservoir: ReservoirParams,
+    injection: InjectionParams,
+    correction: Correction,
+) {
+    let reservoir_radius: Length;
+    let quess_rate: VolumeRate =
+        reservoir.rock.permeability * reservoir_radius / injection.duration_injection;
+    let num_wells = num_steps.mul_add(2, 1).pow(2);
+    let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
+        well_inj_rate: (),
+        inj_time: injection.duration_injection,
+        porosity: reservoir.rock.porosity,
+        thickness: reservoir.domain.thickness,
+        visc_wat: reservoir.water.visc,
+        visc_gas: reservoir.gas.visc,
+        compr_rock: reservoir.rock.compress_rock,
+        compr_wat: reservoir.water.compress,
+        permeability: reservoir.rock.permeability,
+        area: reservoir.domain.area,
+    });
+
+    let (counts, coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
+}
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
     v_c / v_w
@@ -51,12 +77,64 @@ fn calc_well_dist_max(area: Area) -> Length {
     (area * 2.).sqrt() / 2.
 }
 
-fn calc_args_to_key(
-    inter_well_dist: Length,
-    num_x: NonZeroU64,
-    num_y: NonZeroU64,
-) -> (u64, u64, u64) {
-    (inter_well_dist.value.to_bits(), num_x.into(), num_y.into())
+fn simulate_placement(
+    step: Length,
+    num_steps: usize,
+    well_radius: Length,
+    nord_coef: &NordbottenCoeff,
+) -> (Vec<u64>, Vec<Ratio>) {
+    let max_num_steps = 2_f64
+        .powf(-0.5)
+        .mul(nord_coef.radius_reservoir / step)
+        .floor::<ratio>()
+        .get::<ratio>()
+        .to_usize()
+        .unwrap();
+
+    let num_steps = num_steps.min(max_num_steps);
+
+    // let's store partial sums
+    let mut coefs = vec![Ratio::zero(); max_num_steps];
+    let mut counts = vec![0u64; max_num_steps];
+
+    let c00 = nord_coef.calc(well_radius);
+    coefs[0] += c00;
+    counts[0] += 1;
+
+    for num_steps_x in 1..=max_num_steps {
+        // add all previous to the new sum
+        {
+            let prev = coefs[num_steps_x - 1];
+            coefs[num_steps_x] += prev;
+        }
+        {
+            let prev = counts[num_steps_x - 1];
+            counts[num_steps_x] += prev;
+        }
+        let x2 = num_steps_x * num_steps_x;
+        for num_steps_y in 0..=num_steps_x {
+            let y2 = num_steps_y * num_steps_y;
+            let r2 = (x2 + y2)
+                .to_f64()
+                .expect("sum of integer squares should be representable in f64");
+
+            let dist = step * r2.sqrt();
+
+            let coef = nord_coef.calc(dist);
+
+            // symmetry
+            let count: u64 = match num_steps_y {
+                0 => 4,
+                x if (1..num_steps_x).contains(&x) => 8,
+                x if x == num_steps_x => 4,
+                _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
+            };
+
+            coefs[num_steps_x] += coef * count.to_f64().unwrap();
+            counts[num_steps_x] += count;
+        }
+    }
+    (counts, coefs)
 }
 
 // #[cached(
@@ -72,6 +150,7 @@ pub fn calculate(
     res_thickness: Length,
     permeability: Area,
     gas_density: MassDensity,
+    num_steps: usize,
 ) {
     let (counts, coefs) = {
         let max_num_steps = 2_f64
@@ -81,6 +160,8 @@ pub fn calculate(
             .get::<ratio>()
             .to_usize()
             .unwrap();
+
+        let num_steps = num_steps.min(max_num_steps);
 
         // let's store partial sums
         let mut coefs = vec![Ratio::zero(); max_num_steps];
@@ -192,6 +273,48 @@ pub struct NordbottenCoeff {
     radius_reservoir: Length,
     gas_to_water_visc: Ratio,
     big_influence_term: Ratio,
+}
+
+pub struct NordbottenArgs {
+    well_inj_rate: VolumeRate,
+    inj_time: Time,
+    porosity: Ratio,
+    thickness: Length,
+    visc_wat: DynamicViscosity,
+    visc_gas: DynamicViscosity,
+    compr_rock: CompressibilityCoefficient,
+    compr_wat: CompressibilityCoefficient,
+    permeability: Area,
+    area: Area,
+}
+
+impl NordbottenCoeff {
+    fn from_args(args: NordbottenArgs) -> Self {
+        let radius_plume = {
+            let avg_plume_ext = calc_avg_plume_ext(
+                args.well_inj_rate,
+                args.inj_time,
+                args.porosity,
+                args.thickness,
+            );
+
+            calc_equiv_plume_ext(avg_plume_ext, args.visc_wat, args.visc_gas)
+        };
+
+        let radius_influence = {
+            let compr_total = args.compr_rock + args.porosity * args.compr_wat;
+            calc_influence_radius(args.permeability, args.inj_time, args.visc_wat, compr_total)
+        };
+
+        let radius_reservoir = (args.area / PI).sqrt();
+
+        Self::new(
+            radius_plume,
+            radius_influence,
+            radius_reservoir,
+            args.visc_gas / args.visc_wat,
+        )
+    }
 }
 
 impl NordbottenCoeff {
