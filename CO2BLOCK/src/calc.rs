@@ -1,11 +1,10 @@
-// #![allow(unused)]
+#![allow(unused)]
 mod args;
 mod eos;
 
 use self::args::*;
 use ::std::{
     f64::consts::{FRAC_PI_4, PI, TAU},
-    num::NonZeroU64,
     ops::{Div, Mul, Sub},
 };
 use num_traits::{MulAdd, ToPrimitive, Zero};
@@ -19,15 +18,15 @@ pub fn co2block_with_placement(
     injection: InjectionParams,
     correction: Correction,
 ) {
-    let guess_well_rate = {
+    let guess_total_rate = {
         let num_wells = num_steps.mul_add(2, 1).pow(2);
         let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
         let guess_total_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
-        guess_total_mass_rate / reservoir.gas.density / num_wells.to_f64().unwrap()
+        guess_total_mass_rate / reservoir.gas.density
     };
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
-        well_inj_rate: guess_well_rate,
+        total_inj_rate: guess_total_rate,
         inj_time: injection.duration_injection,
         porosity: reservoir.rock.porosity,
         thickness: reservoir.domain.thickness,
@@ -41,12 +40,13 @@ pub fn co2block_with_placement(
 
     let (counts, coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
 
-    let char_pressure = guess_well_rate * reservoir.water.visc
+    let char_pressure_total = guess_total_rate * reservoir.water.visc
         / (reservoir.domain.thickness * reservoir.rock.permeability * TAU);
 
-    // calculate correction
-
-    // calculate
+    // calculate (only end case for now)
+    // 1. correction
+    // 2. b_term
+    // 3. adjusted rate
 }
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
@@ -209,7 +209,7 @@ fn calc_b_term(
     res_thickness: Length,
     permeability: Area,
 ) {
-    let ans = visc_w
+    let _ = visc_w
         .sub(visc_g)
         .div(TAU * 2. * permeability * res_thickness)
         .mul(num_wells.to_f64().unwrap() / 4. + 1.);
