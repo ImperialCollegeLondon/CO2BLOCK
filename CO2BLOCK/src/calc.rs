@@ -1,13 +1,16 @@
 #![allow(unused)]
 
 use std::{
+    any::type_name_of_val,
     num::NonZeroU64,
-    ops::{Div, Mul},
+    ops::{Div, Mul, Neg, Sub},
 };
 
 use num_traits::{ToPrimitive, Zero};
 use uom::si::{
+    Dimension, Quantity, SI,
     length::meter,
+    luminance::lambert,
     mass_rate::ton_per_day,
     ratio::ratio,
     time::{day, year},
@@ -270,6 +273,45 @@ fn calc_correction(
         .div(4.)
 }
 
+/*
+let ans: Quantity<
+    dyn Dimension<
+        L = NInt<UInt<UInt<UInt<UTerm, B1>, B0>, B0>>,
+        M = PInt<UInt<UTerm, B1>>,
+        T = NInt<UInt<UTerm, B1>>,
+        I = Z0,
+        Th = Z0,
+        N = Z0,
+        J = Z0,
+        Kind = dyn Kind + 'static
+    >,
+    dyn Units<
+        f64,
+        length = meter,
+        mass = kilogram,
+        time = second,
+        electric_current = ampere,
+        thermodynamic_temperature = kelvin,
+        amount_of_substance = mole,
+        luminous_intensity = candela
+    >,
+    f64
+>
+*/
+
+fn calc_b_term(
+    visc_w: DynamicViscosity,
+    visc_g: DynamicViscosity,
+    num_wells: u64,
+    res_thickness: Length,
+    permeability: Area,
+) {
+    let ans = visc_w
+        .sub(visc_g)
+        .div(std::f64::consts::TAU * 2. * permeability * res_thickness)
+        .mul(num_wells.to_f64().unwrap() / 4. + 1.);
+}
+
 pub struct NordbottenCoeff {
     radius_plume: Length,
     radius_influence: Length,
@@ -325,7 +367,76 @@ impl NordbottenCoeff {
     }
 }
 
-use peroxide::special::function::lambert_wm1;
+use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
+
+fn calc_limit_rate(
+    limit_pressure: Pressure,
+    over_pressure: Pressure,
+    guess_rate: VolumeRate,
+    visc_w: DynamicViscosity,
+    visc_g: DynamicViscosity,
+    permeability: Area,
+    res_thickness: Length,
+    num_wells: u64,
+    dens_g: MassDensity,
+) -> MassRate {
+    let b_term = (visc_w - visc_g) / (permeability * res_thickness)
+        * (num_wells.to_f64().unwrap() / 4. + 1.)
+        / (std::f64::consts::TAU * 2.);
+    let exp_arg = -over_pressure / (guess_rate * b_term);
+    let exp_mult = -limit_pressure / (guess_rate * b_term);
+    let w: Ratio = exp_mult * exp_arg.exp();
+    let lambert_sol = lambert_wm1(w.value, LambertWAccuracyMode::Precise);
+    let limit_rate: VolumeRate = limit_pressure / b_term / lambert_sol;
+    limit_rate * dens_g
+}
+
+fn update_rate(
+    max_rate: MassRate,
+    limit_rate: MassRate,
+    dens_g: MassDensity,
+    step: Length,
+    poro: Ratio,
+    res_thickness: Length,
+    inj_time: uom::si::f64::Time,
+    is_central_well: bool,
+) -> MassRate {
+    let central_well_mult: f64 = if is_central_well { f64::INFINITY } else { 1. };
+    let limit_rate_threshold: MassRate =
+        central_well_mult * dens_g * step.powi(uom::typenum::P2::new()) * poro * res_thickness
+            / inj_time
+            * std::f64::consts::FRAC_PI_4;
+
+    limit_rate.min(max_rate).min(limit_rate_threshold)
+}
+
+struct HashedF64 {
+    val: f64,
+}
+
+impl std::hash::Hash for HashedF64 {
+    fn hash<H: std::hash::Hasher>(&self, state: &mut H) {
+        self.val.to_bits().hash(state);
+    }
+}
+
+impl From<f64> for HashedF64 {
+    fn from(val: f64) -> Self {
+        Self { val }
+    }
+}
+
+impl From<HashedF64> for f64 {
+    fn from(value: HashedF64) -> Self {
+        value.val
+    }
+}
+
+impl<D: Dimension, U: uom::si::Units<f64>> From<Quantity<D, U, f64>> for HashedF64 {
+    fn from(val: Quantity<D, U, V>) -> Self {
+        val.value.into()
+    }
+}
 
 mod tests {
     use super::*;
