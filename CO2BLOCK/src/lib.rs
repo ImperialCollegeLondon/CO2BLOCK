@@ -5,5 +5,6 @@ extern crate uom;
 
 mod calc;
 mod mex;
+
+// TODO: move MEX bindings to a separate crate
 // pub use mex::nordbotten;
-pub use calc::calculate;

@@ -1,22 +1,18 @@
-#![allow(unused)]
+// #![allow(unused)]
 
-use cached::cached;
 use num_traits::{ToPrimitive, Zero};
 use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
 use std::{
-    any::type_name_of_val,
     f64::consts::PI,
     num::NonZeroU64,
-    ops::{Div, Mul, Neg, Sub},
+    ops::{Div, Mul, Sub},
 };
-use uom::si::f64::*;
-use uom::si::length::kilometer;
-use uom::si::{
-    Dimension, Quantity, length::meter, mass_rate::ton_per_day, ratio::ratio, time::year,
-};
+use uom::si::{Dimension, Quantity, Units, f64::*, ratio::ratio};
 
 mod args;
 use args::*;
+
+fn co2block(args: Args) {}
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
     v_c / v_w
@@ -24,15 +20,6 @@ fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
 
 fn delta(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
     Ratio::new::<ratio>(1.) - gamma(v_c, v_w)
-}
-
-impl<Unit: uom::si::length::Unit + uom::Conversion<f64, T = f64>> Len<Unit> {
-    pub fn new(value: f64) -> Self {
-        Len {
-            _value: Length::new::<Unit>(value),
-            _unit: std::marker::PhantomData,
-        }
-    }
 }
 
 fn calc_total_compress(
@@ -343,28 +330,20 @@ impl From<HashedF64> for f64 {
     }
 }
 
-impl<D: Dimension, U: uom::si::Units<f64>> From<Quantity<D, U, f64>> for HashedF64 {
+impl<D: Dimension, U: Units<f64>> From<Quantity<D, U, f64>> for HashedF64 {
     fn from(val: Quantity<D, U, V>) -> Self {
         val.value.into()
     }
 }
 
 mod tests {
-    use super::*;
-
     #[test]
     fn test_uom_display() {
+        use uom::si::{f64::Length, length::meter};
         let length = Length::new::<meter>(1.0);
         println!(
             "{}",
             length.into_format_args(meter, uom::fmt::DisplayStyle::Abbreviation)
-        );
-
-        println!(
-            "{}",
-            MegatonsPerYear::new(1.0)
-                ._value
-                .into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
         );
     }
 }
