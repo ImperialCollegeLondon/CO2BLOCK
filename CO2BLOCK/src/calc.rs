@@ -1,11 +1,11 @@
-#![allow(unused)]
+// #![allow(unused)]
 mod args;
 mod eos;
 
 use self::args::*;
 use ::std::{
     f64::consts::{FRAC_PI_4, PI, TAU},
-    ops::{Div, Mul, Sub},
+    ops::{Div, Mul},
 };
 use num_traits::{MulAdd, ToPrimitive, Zero};
 use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
@@ -19,7 +19,6 @@ pub fn co2block_with_placement(
     correction: Correction,
 ) {
     let guess_total_rate = {
-        let num_wells = num_steps.mul_add(2, 1).pow(2);
         let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
         let guess_total_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
         guess_total_mass_rate / reservoir.gas.density
@@ -38,15 +37,71 @@ pub fn co2block_with_placement(
         area: reservoir.domain.area,
     });
 
-    let (counts, coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
+    let (_counts, _coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
 
-    let char_pressure_total = guess_total_rate * reservoir.water.visc
+    let _char_pressure_total = guess_total_rate * reservoir.water.visc
         / (reservoir.domain.thickness * reservoir.rock.permeability * TAU);
+
+    let num_wells = num_steps.mul_add(2, 1).pow(2);
 
     // calculate (only end case for now)
     // 1. correction
-    // 2. b_term
-    // 3. adjusted rate
+    if let Correction::On = correction {
+        calc_correction(
+            reservoir.water.visc,
+            reservoir.gas.visc,
+            num_wells as u64,
+            calc_influence_radius(
+                reservoir.rock.permeability,
+                injection.duration_injection,
+                reservoir.water.visc,
+                calc_total_compress(
+                    reservoir.rock.compress_rock,
+                    reservoir.rock.porosity,
+                    reservoir.water.compress,
+                ),
+            ),
+            calc_plume_ext(
+                guess_total_rate,
+                injection.duration_injection,
+                reservoir.rock.porosity,
+                reservoir.domain.thickness,
+            ) * (num_wells as f64).sqrt(),
+            step,
+        );
+    }
+
+    // total overpressure
+    let over_pressure = todo!();
+
+    // 3. limit rate
+
+    let limit_rate = {
+        let limit_pressure = todo!();
+        calc_limit_rate(
+            limit_pressure,
+            over_pressure,
+            guess_total_rate / (num_wells as f64),
+            reservoir.water.visc,
+            reservoir.gas.visc,
+            reservoir.rock.permeability,
+            reservoir.domain.thickness,
+            num_wells as u64,
+            reservoir.gas.density,
+        )
+    };
+
+    // 4. adjusted rate
+    update_rate(
+        injection.rate_max,
+        limit_rate,
+        reservoir.gas.density,
+        step,
+        reservoir.rock.porosity,
+        reservoir.domain.thickness,
+        injection.duration_injection,
+        false,
+    );
 }
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
@@ -74,8 +129,8 @@ fn calc_influence_radius(
     (perm * time / (visc_w * compr_total) * 2.246).sqrt()
 }
 
-fn calc_max_num_wells(area: Area, dist_min: Length) -> uom::si::u32::Ratio {
-    let res_float = (area / (dist_min * dist_min));
+fn _calc_max_num_wells(area: Area, dist_min: Length) -> uom::si::u32::Ratio {
+    let res_float = area / (dist_min * dist_min);
     let res_raw: u32 = res_float
         .value
         .to_u32()
@@ -83,7 +138,7 @@ fn calc_max_num_wells(area: Area, dist_min: Length) -> uom::si::u32::Ratio {
     uom::si::u32::Ratio::new::<ratio>(res_raw)
 }
 
-fn calc_well_dist_max(area: Area) -> Length {
+fn _calc_well_dist_max(area: Area) -> Length {
     (area * 2.).sqrt() / 2.
 }
 
@@ -202,19 +257,6 @@ let ans: Quantity<
 >
 */
 
-fn calc_b_term(
-    visc_w: DynamicViscosity,
-    visc_g: DynamicViscosity,
-    num_wells: u64,
-    res_thickness: Length,
-    permeability: Area,
-) {
-    let _ = visc_w
-        .sub(visc_g)
-        .div(TAU * 2. * permeability * res_thickness)
-        .mul(num_wells.to_f64().unwrap() / 4. + 1.);
-}
-
 fn reservoir_radius(area: Area) -> Length {
     (area / PI).sqrt()
 }
@@ -288,10 +330,6 @@ impl NordbottenCoeff {
             gas_to_water_visc,
             big_influence_term,
         }
-    }
-
-    fn radius_reservoir(&self) -> Length {
-        self.radius_reservoir
     }
 
     fn calc(&self, distance: Length, num_wells: u64) -> Ratio {

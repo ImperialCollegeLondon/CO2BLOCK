@@ -3,8 +3,7 @@
 #[macro_use]
 extern crate uom;
 
-mod calc;
-mod mex;
+pub mod calc;
 
 // TODO: move MEX bindings to a separate crate
-// pub use mex::nordbotten;
+mod mex;

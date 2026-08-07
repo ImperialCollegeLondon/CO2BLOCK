@@ -1,10 +1,10 @@
 use std::num::NonZeroU64;
 use uom::si::f64::*;
 
-pub struct Args {
+pub struct _Args {
     pub reservoir: ReservoirParams,
     pub injection: InjectionParams,
-    pub well_placement: WellPlaceParams,
+    well_placement: _WellPlaceParams,
     pub correction: Correction,
 }
 
@@ -58,7 +58,7 @@ pub struct InjectionParams {
     pub rate_max: MassRate,
 }
 
-pub struct WellPlaceParams {
+struct _WellPlaceParams {
     pub num_distance_samples: u64,
     pub inter_well_dist_min: Length,
     pub inter_well_dist_max: Option<Length>,
@@ -68,5 +68,5 @@ pub struct WellPlaceParams {
 uom::unit! {
     system: uom::si;
     quantity: uom::si::mass_rate;
-    @megaton_per_year: {const{prefix!(mega) * 1.0_E3 / 3.1536_E7}}; "Mt/y", "megaton per year", "megatons per year";
+    @megaton_per_year: prefix!(mega) * 1.0_E3 / 3.1536_E7; "Mt/y", "megaton per year", "megatons per year";
 }
