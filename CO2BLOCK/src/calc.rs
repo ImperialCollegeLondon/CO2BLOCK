@@ -1,6 +1,9 @@
 #![allow(unused)]
 
-use std::{num::NonZeroU64, ops::Mul};
+use std::{
+    num::NonZeroU64,
+    ops::{Div, Mul},
+};
 
 use num_traits::{ToPrimitive, Zero};
 use uom::si::{
@@ -182,57 +185,89 @@ fn calc_args_to_key(
 //     key = "(u64,u64,u64)",
 //     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
 // )]
-pub fn calculate(nord_coef: &NordbottenCoeff, step: Length, well_radius: Length) -> Vec<Ratio> {
-    let max_num_steps = 2_f64
-        .powf(-0.5)
-        .mul(nord_coef.radius_reservoir / step)
-        .floor::<ratio>()
-        .get::<ratio>()
-        .to_usize()
-        .unwrap();
+pub fn calculate(
+    nord_coef: &NordbottenCoeff,
+    step: Length,
+    well_radius: Length,
+    mass_rate: MassRate,
+    visc_w: DynamicViscosity,
+    res_thickness: Length,
+    permeability: Area,
+    gas_density: MassDensity,
+) {
+    let (counts, coefs) = {
+        let max_num_steps = 2_f64
+            .powf(-0.5)
+            .mul(nord_coef.radius_reservoir / step)
+            .floor::<ratio>()
+            .get::<ratio>()
+            .to_usize()
+            .unwrap();
 
-    // let's store partial sums
-    let mut coefs = vec![Ratio::zero(); max_num_steps];
-    let mut counts = vec![0; max_num_steps];
+        // let's store partial sums
+        let mut coefs = vec![Ratio::zero(); max_num_steps];
+        let mut counts = vec![0u64; max_num_steps];
 
-    let c00 = nord_coef.calc(well_radius);
-    coefs[0] += c00;
-    counts[0] += 1;
+        let c00 = nord_coef.calc(well_radius);
+        coefs[0] += c00;
+        counts[0] += 1;
 
-    for num_steps_x in 1..=max_num_steps {
-        // add all previous to the new sum
-        {
-            let prev = coefs[num_steps_x - 1];
-            coefs[num_steps_x] += prev;
+        for num_steps_x in 1..=max_num_steps {
+            // add all previous to the new sum
+            {
+                let prev = coefs[num_steps_x - 1];
+                coefs[num_steps_x] += prev;
+            }
+            {
+                let prev = counts[num_steps_x - 1];
+                counts[num_steps_x] += prev;
+            }
+            let x2 = num_steps_x * num_steps_x;
+            for num_steps_y in 0..=num_steps_x {
+                let y2 = num_steps_y * num_steps_y;
+                let r2 = (x2 + y2)
+                    .to_f64()
+                    .expect("sum of integer squares should be representable in f64");
+
+                let dist = step * r2.sqrt();
+
+                let coef = nord_coef.calc(dist);
+
+                // symmetry
+                let count: u64 = match num_steps_y {
+                    0 => 4,
+                    x if (1..num_steps_x).contains(&x) => 8,
+                    x if x == num_steps_x => 4,
+                    _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
+                };
+
+                coefs[num_steps_x] += coef * count.to_f64().unwrap();
+                counts[num_steps_x] += count;
+            }
         }
-        {
-            let prev = counts[num_steps_x - 1];
-            counts[num_steps_x] += prev;
-        }
-        let x2 = num_steps_x * num_steps_x;
-        for num_steps_y in 0..=num_steps_x {
-            let y2 = num_steps_y * num_steps_y;
-            let r2 = (x2 + y2)
-                .to_f64()
-                .expect("sum of integer squares should be representable in f64");
+        (counts, coefs)
+    };
 
-            let dist = step * r2.sqrt();
+    let volume_rate: VolumeRate = mass_rate / gas_density;
+    let char_pressure =
+        volume_rate * visc_w / (res_thickness * permeability * std::f64::consts::TAU);
+}
 
-            let coef = nord_coef.calc(dist);
-
-            // symmetry
-            let count: u64 = match num_steps_y {
-                0 => 4,
-                x if (1..num_steps_x).contains(&x) => 8,
-                x if x == num_steps_x => 4,
-                _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
-            };
-
-            coefs[num_steps_x] += coef * count.to_f64().unwrap();
-            counts[num_steps_x] += count;
-        }
-    }
-    coefs
+fn calc_correction(
+    visc_w: DynamicViscosity,
+    visc_g: DynamicViscosity,
+    num_wells: u64,
+    radius_influence: Length,
+    avg_plume_ext: Length,
+    grid_step: Length,
+) -> Ratio {
+    radius_influence
+        .mul(avg_plume_ext)
+        .div(grid_step.powi(uom::typenum::P2::new()))
+        .ln()
+        .mul(delta(visc_g, visc_w))
+        .mul(num_wells.to_f64().expect("should be representable in f64"))
+        .div(4.)
 }
 
 pub struct NordbottenCoeff {
@@ -289,6 +324,8 @@ impl NordbottenCoeff {
         dist_term + self.big_influence_term * f64::from(distance < self.radius_reservoir)
     }
 }
+
+use peroxide::special::function::lambert_wm1;
 
 mod tests {
     use super::*;
