@@ -1,16 +1,15 @@
 // #![allow(unused)]
+mod args;
 
-use num_traits::{ToPrimitive, Zero};
-use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
-use std::{
-    f64::consts::PI,
+use self::args::*;
+use ::std::{
+    f64::consts::{FRAC_PI_4, PI, TAU},
     num::NonZeroU64,
     ops::{Div, Mul, Sub},
 };
+use num_traits::{ToPrimitive, Zero};
+use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
 use uom::si::{Dimension, Quantity, Units, f64::*, ratio::ratio};
-
-mod args;
-use args::*;
 
 fn co2block(args: Args) {}
 
@@ -128,8 +127,7 @@ pub fn calculate(
     };
 
     let volume_rate: VolumeRate = mass_rate / gas_density;
-    let char_pressure =
-        volume_rate * visc_w / (res_thickness * permeability * std::f64::consts::TAU);
+    let char_pressure = volume_rate * visc_w / (res_thickness * permeability * TAU);
 }
 
 fn calc_correction(
@@ -184,7 +182,7 @@ fn calc_b_term(
 ) {
     let ans = visc_w
         .sub(visc_g)
-        .div(std::f64::consts::TAU * 2. * permeability * res_thickness)
+        .div(TAU * 2. * permeability * res_thickness)
         .mul(num_wells.to_f64().unwrap() / 4. + 1.);
 }
 
@@ -256,7 +254,7 @@ fn calc_limit_rate(
 ) -> MassRate {
     let b_term = (visc_w - visc_g) / (permeability * res_thickness)
         * (num_wells.to_f64().unwrap() / 4. + 1.)
-        / (std::f64::consts::TAU * 2.);
+        / (TAU * 2.);
     let exp_arg = -over_pressure / (guess_rate * b_term);
     let exp_mult = -limit_pressure / (guess_rate * b_term);
     let w: Ratio = exp_mult * exp_arg.exp();
@@ -279,7 +277,7 @@ fn update_rate(
     let limit_rate_threshold: MassRate =
         central_well_mult * dens_g * step.powi(uom::typenum::P2::new()) * poro * res_thickness
             / inj_time
-            * std::f64::consts::FRAC_PI_4;
+            * FRAC_PI_4;
 
     limit_rate.min(max_rate).min(limit_rate_threshold)
 }
