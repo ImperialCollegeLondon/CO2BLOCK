@@ -8,6 +8,7 @@ pub struct Args {
     pub rock_params: RockParams,
     pub water_params: WaterParams,
     pub gas_params: GasParams,
+    pub well_placement: WellPlaceParams,
 }
 
 pub struct WaterParams {
@@ -27,8 +28,8 @@ pub struct RockParams {
     pub compress_rock: CompressibilityCoefficient,
     pub cohesion: Pressure,
     pub stress_ratio: Ratio,
-    pub friction_angle: Angle,      // deg
-    pub tensile_strength: Pressure, // MPa
+    pub friction_angle: Angle,
+    pub tensile_strength: Pressure,
 }
 
 pub struct DomainParams {
@@ -53,12 +54,15 @@ pub struct HyperParams {
 }
 
 pub struct InjectionParams {
-    pub inter_well_dist_min: Length,
-    pub inter_well_dist_max: Option<Length>,
-    pub num_wells_max: Option<NonZeroU64>,
     pub well_radius: Length,
     pub duration_injection: Time,
     pub rate_max: MassRate,
+}
+
+pub struct WellPlaceParams {
+    pub inter_well_dist_min: Length,
+    pub inter_well_dist_max: Option<Length>,
+    pub num_wells_max: Option<NonZeroU64>,
 }
 
 uom::unit! {
