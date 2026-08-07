@@ -87,40 +87,54 @@ fn calc_well_dist_max(area: Area) -> Length {
     (area * 2.).sqrt() / 2.
 }
 
+// #[cached(
+//     key = "(u64,u64,u64)",
+//     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
+// )]
 fn simulate_placement(
     step: Length,
     num_steps: usize,
     well_radius: Length,
     nord_coef: &NordbottenCoeff,
 ) -> (Vec<u64>, Vec<Ratio>) {
-    let max_num_steps = 2_f64
-        .powf(-0.5)
-        .mul(nord_coef.radius_reservoir / step)
-        .floor::<ratio>()
-        .get::<ratio>()
-        .to_usize()
-        .unwrap();
+    let num_steps = {
+        let max_num_steps = 2_f64
+            .powf(-0.5)
+            .mul(nord_coef.radius_reservoir / step)
+            .floor::<ratio>()
+            .get::<ratio>()
+            .to_usize()
+            .unwrap();
+        num_steps.min(max_num_steps)
+    };
 
-    let num_steps = num_steps.min(max_num_steps);
+    // compute all counts first
+    let (counts, total_counts) = {
+        let mut counts = vec![0u64; num_steps];
+        let mut total_counts = vec![0u64; num_steps];
+        counts[0] = 1;
+        total_counts[0] = 1;
+        for num_steps_x in 1..=num_steps {
+            for num_steps_y in 0..=num_steps_x {
+                let count: u64 = match num_steps_y {
+                    0 => 4,
+                    x if (1..num_steps_x).contains(&x) => 8,
+                    x if x == num_steps_x => 4,
+                    _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
+                };
+                counts[num_steps_x] += count;
+            }
+            total_counts[num_steps_x] += total_counts[num_steps_x - 1] + counts[num_steps_x];
+        }
+        (counts, total_counts)
+    };
 
-    // let's store partial sums
-    let mut coefs = vec![Ratio::zero(); max_num_steps];
-    let mut counts = vec![0u64; max_num_steps];
+    let mut coefs = vec![Ratio::zero(); num_steps];
 
-    let c00 = nord_coef.calc(well_radius);
+    let c00 = nord_coef.calc(well_radius, total_counts[0]);
     coefs[0] += c00;
-    counts[0] += 1;
 
-    for num_steps_x in 1..=max_num_steps {
-        // add all previous to the new sum
-        {
-            let prev = coefs[num_steps_x - 1];
-            coefs[num_steps_x] += prev;
-        }
-        {
-            let prev = counts[num_steps_x - 1];
-            counts[num_steps_x] += prev;
-        }
+    for num_steps_x in 1..=num_steps {
         let x2 = num_steps_x * num_steps_x;
         for num_steps_y in 0..=num_steps_x {
             let y2 = num_steps_y * num_steps_y;
@@ -130,9 +144,8 @@ fn simulate_placement(
 
             let dist = step * r2.sqrt();
 
-            let coef = nord_coef.calc(dist);
+            let coef = nord_coef.calc(dist, total_counts[num_steps_x]);
 
-            // symmetry
             let count: u64 = match num_steps_y {
                 0 => 4,
                 x if (1..num_steps_x).contains(&x) => 8,
@@ -141,84 +154,9 @@ fn simulate_placement(
             };
 
             coefs[num_steps_x] += coef * count.to_f64().unwrap();
-            counts[num_steps_x] += count;
         }
     }
     (counts, coefs)
-}
-
-// #[cached(
-//     key = "(u64,u64,u64)",
-//     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
-// )]
-pub fn calculate(
-    nord_coef: &NordbottenCoeff,
-    step: Length,
-    well_radius: Length,
-    mass_rate: MassRate,
-    visc_w: DynamicViscosity,
-    res_thickness: Length,
-    permeability: Area,
-    gas_density: MassDensity,
-    num_steps: usize,
-) {
-    let (counts, coefs) = {
-        let max_num_steps = 2_f64
-            .powf(-0.5)
-            .mul(nord_coef.radius_reservoir / step)
-            .floor::<ratio>()
-            .get::<ratio>()
-            .to_usize()
-            .unwrap();
-
-        let num_steps = num_steps.min(max_num_steps);
-
-        // let's store partial sums
-        let mut coefs = vec![Ratio::zero(); max_num_steps];
-        let mut counts = vec![0u64; max_num_steps];
-
-        let c00 = nord_coef.calc(well_radius);
-        coefs[0] += c00;
-        counts[0] += 1;
-
-        for num_steps_x in 1..=max_num_steps {
-            // add all previous to the new sum
-            {
-                let prev = coefs[num_steps_x - 1];
-                coefs[num_steps_x] += prev;
-            }
-            {
-                let prev = counts[num_steps_x - 1];
-                counts[num_steps_x] += prev;
-            }
-            let x2 = num_steps_x * num_steps_x;
-            for num_steps_y in 0..=num_steps_x {
-                let y2 = num_steps_y * num_steps_y;
-                let r2 = (x2 + y2)
-                    .to_f64()
-                    .expect("sum of integer squares should be representable in f64");
-
-                let dist = step * r2.sqrt();
-
-                let coef = nord_coef.calc(dist);
-
-                // symmetry
-                let count: u64 = match num_steps_y {
-                    0 => 4,
-                    x if (1..num_steps_x).contains(&x) => 8,
-                    x if x == num_steps_x => 4,
-                    _ => unreachable!("0 <= num_steps_y <= num_steps_x"),
-                };
-
-                coefs[num_steps_x] += coef * count.to_f64().unwrap();
-                counts[num_steps_x] += count;
-            }
-        }
-        (counts, coefs)
-    };
-
-    let volume_rate: VolumeRate = mass_rate / gas_density;
-    let char_pressure = volume_rate * visc_w / (res_thickness * permeability * TAU);
 }
 
 fn calc_correction(
@@ -290,7 +228,7 @@ pub struct NordbottenCoeff {
 }
 
 pub struct NordbottenArgs {
-    well_inj_rate: VolumeRate,
+    total_inj_rate: VolumeRate,
     inj_time: Time,
     porosity: Ratio,
     thickness: Length,
@@ -306,8 +244,8 @@ impl NordbottenCoeff {
     fn from_args(args: NordbottenArgs) -> Self {
         // FIXME: make the radius adapt to the number of wells
         let radius_plume = {
-            let avg_plume_ext = calc_avg_plume_ext(
-                args.well_inj_rate,
+            let avg_plume_ext = calc_plume_ext(
+                args.total_inj_rate,
                 args.inj_time,
                 args.porosity,
                 args.thickness,
@@ -420,13 +358,13 @@ fn update_rate(
     limit_rate.min(max_rate).min(limit_rate_threshold)
 }
 
-fn calc_avg_plume_ext(
-    well_inj_rate: VolumeRate,
+fn calc_plume_ext(
+    total_inj_rate: VolumeRate,
     inj_time: uom::si::f64::Time,
     poro: Ratio,
     res_thickness: Length,
 ) -> Length {
-    well_inj_rate
+    total_inj_rate
         .mul(inj_time)
         .div(poro * res_thickness * PI)
         .sqrt()
@@ -437,11 +375,11 @@ fn calc_omega(visc_w: DynamicViscosity, visc_g: DynamicViscosity) -> Ratio {
 }
 
 fn calc_equiv_plume_ext(
-    avg_plume_ext: Length,
+    plume_ext: Length,
     visc_w: DynamicViscosity,
     visc_g: DynamicViscosity,
 ) -> Length {
-    calc_omega(visc_w, visc_g).exp() * avg_plume_ext
+    calc_omega(visc_w, visc_g).exp() * plume_ext
 }
 
 struct HashedF64 {
