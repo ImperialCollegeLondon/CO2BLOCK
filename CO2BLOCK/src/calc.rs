@@ -10,7 +10,7 @@ use ::std::{
 };
 use num_traits::{MulAdd, ToPrimitive, Zero};
 use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
-use uom::si::{Dimension, Quantity, Units, f64::*, ratio::ratio};
+use uom::si::{Dimension, Quantity, Units, area::square_meter, f64::*, ratio::ratio};
 
 pub fn co2block_with_placement(
     step: Length,
@@ -19,12 +19,15 @@ pub fn co2block_with_placement(
     injection: InjectionParams,
     correction: Correction,
 ) {
-    let reservoir_radius: Length;
-    let quess_rate: VolumeRate =
-        reservoir.rock.permeability * reservoir_radius / injection.duration_injection;
-    let num_wells = num_steps.mul_add(2, 1).pow(2);
+    let guess_well_rate = {
+        let num_wells = num_steps.mul_add(2, 1).pow(2);
+        let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
+        let guess_total_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
+        guess_total_mass_rate / reservoir.gas.density / num_wells.to_f64().unwrap()
+    };
+
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
-        well_inj_rate: (),
+        well_inj_rate: guess_well_rate,
         inj_time: injection.duration_injection,
         porosity: reservoir.rock.porosity,
         thickness: reservoir.domain.thickness,
@@ -37,6 +40,13 @@ pub fn co2block_with_placement(
     });
 
     let (counts, coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
+
+    let char_pressure = guess_well_rate * reservoir.water.visc
+        / (reservoir.domain.thickness * reservoir.rock.permeability * TAU);
+
+    // calculate correction
+
+    // calculate
 }
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
@@ -267,6 +277,10 @@ fn calc_b_term(
         .mul(num_wells.to_f64().unwrap() / 4. + 1.);
 }
 
+fn reservoir_radius(area: Area) -> Length {
+    (area / PI).sqrt()
+}
+
 pub struct NordbottenCoeff {
     radius_plume: Length,
     radius_influence: Length,
@@ -290,6 +304,7 @@ pub struct NordbottenArgs {
 
 impl NordbottenCoeff {
     fn from_args(args: NordbottenArgs) -> Self {
+        // FIXME: make the radius adapt to the number of wells
         let radius_plume = {
             let avg_plume_ext = calc_avg_plume_ext(
                 args.well_inj_rate,
@@ -306,12 +321,10 @@ impl NordbottenCoeff {
             calc_influence_radius(args.permeability, args.inj_time, args.visc_wat, compr_total)
         };
 
-        let radius_reservoir = (args.area / PI).sqrt();
-
         Self::new(
             radius_plume,
             radius_influence,
-            radius_reservoir,
+            reservoir_radius(args.area),
             args.visc_gas / args.visc_wat,
         )
     }
@@ -343,8 +356,10 @@ impl NordbottenCoeff {
         self.radius_reservoir
     }
 
-    fn calc(&self, distance: Length) -> Ratio {
-        let inv_dist_normalized = self.radius_plume / distance.min(self.radius_plume);
+    fn calc(&self, distance: Length, num_wells: u64) -> Ratio {
+        let num_wells = num_wells.to_f64().unwrap();
+        let inv_dist_normalized =
+            self.radius_plume * num_wells.sqrt() / distance.min(self.radius_plume);
 
         let plume_term = inv_dist_normalized.ln().mul(self.gas_to_water_visc);
 
