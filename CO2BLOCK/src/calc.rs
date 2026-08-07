@@ -44,8 +44,6 @@ pub fn co2block_with_placement(
 
     let num_wells = num_steps.mul_add(2, 1).pow(2);
 
-    // calculate (only end case for now)
-    // 1. correction
     if let Correction::On = correction {
         calc_correction(
             reservoir.water.visc,
@@ -71,13 +69,9 @@ pub fn co2block_with_placement(
         );
     }
 
-    // total overpressure
-    let over_pressure = todo!();
-
-    // 3. limit rate
-
     let limit_rate = {
-        let limit_pressure = todo!();
+        let limit_pressure = { todo!() };
+        let over_pressure = { todo!() };
         calc_limit_rate(
             limit_pressure,
             over_pressure,
@@ -91,7 +85,6 @@ pub fn co2block_with_placement(
         )
     };
 
-    // 4. adjusted rate
     update_rate(
         injection.rate_max,
         limit_rate,
