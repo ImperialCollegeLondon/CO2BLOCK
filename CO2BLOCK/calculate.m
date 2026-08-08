@@ -64,6 +64,7 @@ function [d_list,well_list,d_max,Q_M_each,V_M,Table_Q,Table_V,p_sup_vec]...
             p_c = (Q0*visc_w)/(2*pi*thick*perm)/1e6;                       % characteristic pressure  [MPa]
             d_min_p(w_id) = 2*csi/1000 ;                                   % minimum interwell distance for each well number case [km]
 
+            // BUG: potential mix-up between `is finite` and `infinite`
             if isfinite(rc)
                 % lookup table for average open-boundary Nordbotten pressure
                 % built once per well-number scenario, reused for all distances
