@@ -80,6 +80,6 @@ pub mod md {
     uom::unit! {
         system: uom::si;
         quantity: uom::si::area;
-        @milli_darcy: prefix!(milli) * 9.86923 * 10e-13; "mD", "milli Darcy", "milli Darcies";
+        @milli_darcy: prefix!(milli) * 9.86923 * 10e-13; "mD", "millidarcy", "millidarcies";
     }
 }
