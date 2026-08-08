@@ -18,7 +18,7 @@ pub fn co2block_with_placement(
     reservoir: ReservoirParams,
     injection: InjectionParams,
     correction: Correction,
-) {
+) -> MassRate {
     let num_wells = num_steps.mul_add(2, 1).pow(2);
     // WARNING: pay attention to where it's used
     let _guess_well_rate = {
@@ -104,7 +104,7 @@ pub fn co2block_with_placement(
         )
     };
 
-    update_rate(
+    let updated: MassRate = update_rate(
         injection.max_well_rate,
         limit_rate,
         reservoir.gas.density,
@@ -114,6 +114,8 @@ pub fn co2block_with_placement(
         injection.duration,
         false,
     );
+
+    updated
 }
 
 fn calc_theta(friction: Angle) -> Ratio {
