@@ -9,6 +9,7 @@ use ::std::{
 };
 use num_traits::{MulAdd, ToPrimitive, Zero};
 use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
+use std::ops::Sub;
 use uom::si::{Dimension, Quantity, Units, area::square_meter, f64::*, ratio::ratio};
 
 pub fn co2block_with_placement(
@@ -18,10 +19,12 @@ pub fn co2block_with_placement(
     injection: InjectionParams,
     correction: Correction,
 ) {
+    let num_wells = num_steps.mul_add(2, 1).pow(2);
     // WARNING: pay attention to where it's used
     let _guess_well_rate = {
-        // FIXME: should now make a good guess for any number of wells
-        let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
+        // WARNING: may not be a good guess
+        let guess_well_rate_raw =
+            reservoir.rock.permeability.get::<square_meter>() * 1e-13 / num_wells.to_f64().unwrap();
         let guess_well_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
         guess_well_mass_rate / reservoir.gas.density
     };
@@ -41,14 +44,12 @@ pub fn co2block_with_placement(
         area: reservoir.domain.area,
     });
 
-    let (_counts, _coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
+    let (_counts, coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
 
-    let _char_pressure_total = guess_well_rate * reservoir.water.visc
+    let char_pressure = guess_well_rate * reservoir.water.visc
         / (reservoir.domain.thickness * reservoir.rock.permeability * TAU);
 
-    let num_wells = num_steps.mul_add(2, 1).pow(2);
-
-    if let Correction::On = correction {
+    let correction_term = if let Correction::On = correction {
         calc_correction(
             reservoir.water.visc,
             reservoir.gas.visc,
@@ -70,8 +71,16 @@ pub fn co2block_with_placement(
                 reservoir.domain.thickness,
             ),
             step,
-        );
-    }
+        )
+    } else {
+        Zero::zero()
+    };
+
+    // all coefficients.sub(correction).mul(char_pressure)
+    let over_pressure: Pressure = {
+        let all_coefs: Ratio = coefs.into_iter().sum();
+        all_coefs.sub(correction_term).mul(char_pressure)
+    };
 
     let limit_rate = {
         let limit_pressure = calc_limit_pressure(
@@ -82,11 +91,10 @@ pub fn co2block_with_placement(
             reservoir.rock.cohesion,
             reservoir.rock.tensile_strength,
         );
-        let over_pressure = { todo!() };
         calc_limit_rate(
             limit_pressure,
             over_pressure,
-            guess_well_rate / (num_wells as f64),
+            guess_well_rate,
             reservoir.water.visc,
             reservoir.gas.visc,
             reservoir.rock.permeability,
