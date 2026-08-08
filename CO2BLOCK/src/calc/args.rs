@@ -60,7 +60,7 @@ pub struct InjectionParams {
     pub max_well_rate: MassRate,
 }
 
-struct WellPlaceParams {
+pub struct WellPlaceParams {
     pub num_distance_samples: u64,
     pub inter_well_dist_min: Length,
     pub inter_well_dist_max: Option<Length>,
