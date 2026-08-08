@@ -8,6 +8,7 @@ pub struct Args {
     pub correction: Correction,
 }
 
+// TODO: implement partial defaults
 pub struct ReservoirParams {
     pub domain: DomainParams,
     pub rock: RockParams,
