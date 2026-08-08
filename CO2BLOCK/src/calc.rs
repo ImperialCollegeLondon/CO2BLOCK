@@ -18,15 +18,17 @@ pub fn co2block_with_placement(
     injection: InjectionParams,
     correction: Correction,
 ) {
-    let guess_total_rate = {
+    // WARNING: pay attention to where it's used
+    let guess_well_rate = {
+        // FIXME: should now make a good guess for any number of wells
         let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
-        let guess_total_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
-        guess_total_mass_rate / reservoir.gas.density
+        let guess_well_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
+        guess_well_mass_rate / reservoir.gas.density
     };
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
-        total_inj_rate: guess_total_rate,
-        inj_time: injection.duration_injection,
+        well_inj_rate: guess_well_rate,
+        inj_time: injection.duration,
         porosity: reservoir.rock.porosity,
         thickness: reservoir.domain.thickness,
         visc_wat: reservoir.water.visc,
@@ -39,7 +41,7 @@ pub fn co2block_with_placement(
 
     let (_counts, _coefs) = simulate_placement(step, num_steps, injection.well_radius, &nord_coef);
 
-    let _char_pressure_total = guess_total_rate * reservoir.water.visc
+    let _char_pressure_total = guess_well_rate * reservoir.water.visc
         / (reservoir.domain.thickness * reservoir.rock.permeability * TAU);
 
     let num_wells = num_steps.mul_add(2, 1).pow(2);
@@ -51,7 +53,7 @@ pub fn co2block_with_placement(
             num_wells as u64,
             calc_influence_radius(
                 reservoir.rock.permeability,
-                injection.duration_injection,
+                injection.duration,
                 reservoir.water.visc,
                 calc_total_compress(
                     reservoir.rock.compress_rock,
@@ -60,11 +62,11 @@ pub fn co2block_with_placement(
                 ),
             ),
             calc_plume_ext(
-                guess_total_rate,
-                injection.duration_injection,
+                guess_well_rate,
+                injection.duration,
                 reservoir.rock.porosity,
                 reservoir.domain.thickness,
-            ) * (num_wells as f64).sqrt(),
+            ),
             step,
         );
     }
@@ -75,7 +77,7 @@ pub fn co2block_with_placement(
         calc_limit_rate(
             limit_pressure,
             over_pressure,
-            guess_total_rate / (num_wells as f64),
+            guess_well_rate / (num_wells as f64),
             reservoir.water.visc,
             reservoir.gas.visc,
             reservoir.rock.permeability,
@@ -86,13 +88,13 @@ pub fn co2block_with_placement(
     };
 
     update_rate(
-        injection.rate_max,
+        injection.max_well_rate,
         limit_rate,
         reservoir.gas.density,
         step,
         reservoir.rock.porosity,
         reservoir.domain.thickness,
-        injection.duration_injection,
+        injection.duration,
         false,
     );
 }
@@ -263,7 +265,7 @@ pub struct NordbottenCoeff {
 }
 
 pub struct NordbottenArgs {
-    total_inj_rate: VolumeRate,
+    well_inj_rate: VolumeRate,
     inj_time: Time,
     porosity: Ratio,
     thickness: Length,
@@ -280,7 +282,7 @@ impl NordbottenCoeff {
         // FIXME: make the radius adapt to the number of wells
         let radius_plume = {
             let avg_plume_ext = calc_plume_ext(
-                args.total_inj_rate,
+                args.well_inj_rate,
                 args.inj_time,
                 args.porosity,
                 args.thickness,
@@ -325,10 +327,8 @@ impl NordbottenCoeff {
         }
     }
 
-    fn calc(&self, distance: Length, num_wells: u64) -> Ratio {
-        let num_wells = num_wells.to_f64().unwrap();
-        let inv_dist_normalized =
-            self.radius_plume * num_wells.sqrt() / distance.min(self.radius_plume);
+    fn calc(&self, distance: Length) -> Ratio {
+        let inv_dist_normalized = self.radius_plume / distance.min(self.radius_plume);
 
         let plume_term = inv_dist_normalized.ln().mul(self.gas_to_water_visc);
 
@@ -389,13 +389,14 @@ fn update_rate(
     limit_rate.min(max_rate).min(limit_rate_threshold)
 }
 
+// FIXME:
 fn calc_plume_ext(
-    total_inj_rate: VolumeRate,
+    well_inj_rate: VolumeRate,
     inj_time: uom::si::f64::Time,
     poro: Ratio,
     res_thickness: Length,
 ) -> Length {
-    total_inj_rate
+    well_inj_rate
         .mul(inj_time)
         .div(poro * res_thickness * PI)
         .sqrt()

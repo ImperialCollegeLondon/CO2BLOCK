@@ -54,8 +54,8 @@ pub enum Correction {
 
 pub struct InjectionParams {
     pub well_radius: Length,
-    pub duration_injection: Time,
-    pub rate_max: MassRate,
+    pub duration: Time,
+    pub max_well_rate: MassRate,
 }
 
 struct _WellPlaceParams {
