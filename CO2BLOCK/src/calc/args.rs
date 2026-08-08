@@ -34,6 +34,8 @@ pub struct RockParams {
     pub stress_ratio: Ratio,
     pub friction_angle: Angle,
     pub tensile_strength: Pressure,
+    pub max_principal_stress: Pressure,
+    pub top_pressure: Pressure,
 }
 
 pub struct DomainParams {

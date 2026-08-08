@@ -19,12 +19,14 @@ pub fn co2block_with_placement(
     correction: Correction,
 ) {
     // WARNING: pay attention to where it's used
-    let guess_well_rate = {
+    let _guess_well_rate = {
         // FIXME: should now make a good guess for any number of wells
         let guess_well_rate_raw = reservoir.rock.permeability.get::<square_meter>() * 1e-13;
         let guess_well_mass_rate = MassRate::new::<megaton_per_year>(guess_well_rate_raw);
         guess_well_mass_rate / reservoir.gas.density
     };
+
+    let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 2.;
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
         well_inj_rate: guess_well_rate,
@@ -72,7 +74,14 @@ pub fn co2block_with_placement(
     }
 
     let limit_rate = {
-        let limit_pressure = { todo!() };
+        let limit_pressure = calc_limit_pressure(
+            reservoir.rock.max_principal_stress,
+            reservoir.rock.top_pressure,
+            reservoir.rock.friction_angle,
+            reservoir.rock.stress_ratio,
+            reservoir.rock.cohesion,
+            reservoir.rock.tensile_strength,
+        );
         let over_pressure = { todo!() };
         calc_limit_rate(
             limit_pressure,
@@ -97,6 +106,53 @@ pub fn co2block_with_placement(
         injection.duration,
         false,
     );
+}
+
+fn calc_theta(friction: Angle) -> Ratio {
+    let fsin: Ratio = friction.sin();
+    let one = Ratio::new::<ratio>(1.);
+    (one - fsin) / (one + fsin)
+}
+
+fn calc_limit_pressure_shear(
+    max_principal_stress: Pressure,
+    top_pressure: Pressure,
+    friction_angle: Angle,
+    stress_ratio: Ratio,
+    cohesion: Pressure,
+) -> Pressure {
+    let max_eff_princ_stress = max_principal_stress - top_pressure; //effective maximum principal stress [MPa]
+
+    let theta = calc_theta(friction_angle);
+    let one = Ratio::new::<ratio>(1.);
+    let (fsin, fcos) = friction_angle.sin_cos();
+
+    (stress_ratio - theta) / (one - theta) * max_eff_princ_stress + cohesion * fcos / fsin
+}
+
+fn calc_limit_pressure(
+    max_principal_stress: Pressure,
+    top_pressure: Pressure,
+    friction_angle: Angle,
+    stress_ratio: Ratio,
+    cohesion: Pressure,
+    tensile_strength: Pressure,
+) -> Pressure {
+    let shear_pres = calc_limit_pressure_shear(
+        max_principal_stress,
+        top_pressure,
+        friction_angle,
+        stress_ratio,
+        cohesion,
+    );
+
+    let max_eff_princ_stress = max_principal_stress - top_pressure; //effective maximum principal stress [MPa]
+
+    let s3 = stress_ratio * max_eff_princ_stress;
+
+    let limit_pres_tensile = s3 + tensile_strength;
+
+    shear_pres.min(limit_pres_tensile)
 }
 
 fn gamma(v_c: DynamicViscosity, v_w: DynamicViscosity) -> Ratio {
@@ -159,11 +215,9 @@ fn simulate_placement(
     };
 
     // compute all counts first
-    let (counts, total_counts) = {
+    let counts = {
         let mut counts = vec![0u64; num_steps];
-        let mut total_counts = vec![0u64; num_steps];
         counts[0] = 1;
-        total_counts[0] = 1;
         for num_steps_x in 1..=num_steps {
             for num_steps_y in 0..=num_steps_x {
                 let count: u64 = match num_steps_y {
@@ -174,14 +228,13 @@ fn simulate_placement(
                 };
                 counts[num_steps_x] += count;
             }
-            total_counts[num_steps_x] += total_counts[num_steps_x - 1] + counts[num_steps_x];
         }
-        (counts, total_counts)
+        counts
     };
 
     let mut coefs = vec![Ratio::zero(); num_steps];
 
-    let c00 = nord_coef.calc(well_radius, total_counts[0]);
+    let c00 = nord_coef.calc(well_radius);
     coefs[0] += c00;
 
     for num_steps_x in 1..=num_steps {
@@ -194,7 +247,7 @@ fn simulate_placement(
 
             let dist = step * r2.sqrt();
 
-            let coef = nord_coef.calc(dist, total_counts[num_steps_x]);
+            let coef = nord_coef.calc(dist);
 
             let count: u64 = match num_steps_y {
                 0 => 4,
@@ -389,7 +442,6 @@ fn update_rate(
     limit_rate.min(max_rate).min(limit_rate_threshold)
 }
 
-// FIXME:
 fn calc_plume_ext(
     well_inj_rate: VolumeRate,
     inj_time: uom::si::f64::Time,
