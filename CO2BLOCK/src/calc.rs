@@ -2,7 +2,7 @@
 mod args;
 mod eos;
 
-use self::args::*;
+pub use self::args::*;
 use ::std::{
     f64::consts::{FRAC_PI_4, PI, TAU},
     ops::{Div, Mul},
