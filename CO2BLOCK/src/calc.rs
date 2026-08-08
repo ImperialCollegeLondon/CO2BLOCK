@@ -12,6 +12,7 @@ use peroxide::{fuga::LambertWAccuracyMode, special::function::lambert_wm1};
 use std::ops::Sub;
 use uom::si::{Dimension, Quantity, Units, area::square_meter, f64::*, ratio::ratio};
 
+// TODO: turn into a class with the fixed part computed in a constructor
 pub fn co2block_with_placement(
     step: Length,
     num_steps: usize,
