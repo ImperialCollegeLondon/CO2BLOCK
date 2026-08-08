@@ -30,7 +30,8 @@ pub fn co2block_with_placement(
         guess_well_mass_rate / reservoir.gas.density
     };
 
-    let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 2.;
+    // NOTE: my new guess
+    let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 10.;
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
         well_inj_rate: guess_well_rate,
