@@ -31,6 +31,7 @@ pub fn co2block_with_placement(
     };
 
     // NOTE: my new guess
+    // WARNING: doen't this method require fixed-point iterations?
     let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 10.;
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
