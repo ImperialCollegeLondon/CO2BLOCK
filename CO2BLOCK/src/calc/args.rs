@@ -16,6 +16,7 @@ use crate::calc::{
     eos::{self, gas_density, gas_viscosity},
 };
 
+// TODO implement serde and clap for hyper-parameters
 pub struct Args {
     pub reservoir: ReservoirParams,
     pub injection: InjectionParams,
@@ -29,7 +30,6 @@ pub enum Boundary {
     Open,
 }
 
-// TODO: implement partial defaults
 pub struct ReservoirParams {
     pub domain: DomainParams,
     pub rock: RockParams,
@@ -121,6 +121,8 @@ mod default_props {
     }
 }
 
+// TODO: implement serde from formatted strings
+// TODO: implement serde-csv
 pub struct InputReservoirParams {
     pub shallowest_depth: Length,
     pub mean_depth: Length,
@@ -198,7 +200,7 @@ impl From<InputReservoirParams> for ReservoirParams {
         let gas_density = gas_density(pressure, temperature);
         let gas = GasParams {
             density: gas_density,
-            visc: gas_viscosity(pressure, temperature, gas_density),
+            visc: gas_viscosity(temperature, gas_density),
         };
 
         ReservoirParams {

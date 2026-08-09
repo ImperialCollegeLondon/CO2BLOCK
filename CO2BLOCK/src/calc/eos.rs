@@ -86,7 +86,6 @@ pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) ->
 }
 
 pub fn gas_viscosity(
-    pressure: Pressure,
     temperature: ThermodynamicTemperature,
     gas_density: MassDensity,
 ) -> DynamicViscosity {
