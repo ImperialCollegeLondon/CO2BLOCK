@@ -38,11 +38,11 @@ function [brineviscosity, co2density, co2viscosity] = eos(T,p,salinity,co2dens) 
     a31 = -0.774229021 ;
     a40 = -0.0639070755 ;
     a41 = 0.142507049 ;
-    Tr = T/304;                                    % reduced temperature
-    dens_r = co2dens/468  ;                     % reduced density
-    mu_0 = Tr^0.5* (27.2246461 - 16.6346068 /Tr + 4.66920556/(Tr^2))*1e-6 ; %[Pa s]
-    co2viscosity = double(mu_0*exp(a10*dens_r + a11*dens_r/Tr + a20*dens_r^2 + a21*dens_r^2/Tr + ...
-                a30*dens_r^3 + a31*dens_r^3/Tr  +  a40*dens_r^4 + a41*dens_r^4/Tr ));   %[Pa s]
+    temp_normalized = T/304;                                    % reduced temperature
+    reference_density = co2dens/468  ;                     % reduced density
+    mu_0 = temp_normalized^0.5* (27.2246461 - 16.6346068 /temp_normalized + 4.66920556/(temp_normalized^2))*1e-6 ; %[Pa s]
+    co2viscosity = double(mu_0*exp(a10*reference_density + a11*reference_density/temp_normalized + a20*reference_density^2 + a21*reference_density^2/temp_normalized + ...
+                a30*reference_density^3 + a31*reference_density^3/temp_normalized  +  a40*reference_density^4 + a41*reference_density^4/temp_normalized ));   %[Pa s]
 
 end
 
@@ -52,6 +52,7 @@ end
 use uom::{
     si::{
         amount_of_substance::{self, mole},
+        dynamic_viscosity::pascal_second,
         f64::{Length, *},
         length::meter,
         mass::kilogram,
@@ -59,7 +60,6 @@ use uom::{
         molar_volume::cubic_meter_per_mole,
         pressure::pascal,
         ratio::ratio,
-        temperature_interval::terakelvin,
         thermodynamic_temperature::{degree_celsius, kelvin},
     },
     typenum::*,
@@ -159,17 +159,38 @@ impl ThermodynmacState {
 
             let unit = Ratio::new::<ratio>(1.);
 
-            let reference_viscosity: Ratio = temp_normalized.sqrt()
+            let mu0: Ratio = temp_normalized.sqrt()
                 * (27.2246461 * unit - 16.6346068 / temp_normalized
                     + 4.66920556 / (temp_normalized.powi(P2::new())))
                 * 1e-6;
-            todo!()
+            let mu0 = DynamicViscosity::new::<pascal_second>(mu0.get::<ratio>());
+
+            let exponent: Ratio = {
+                let a10 = 0.248566120 * unit;
+                let a11 = 0.004894942 * unit;
+                let a20 = -0.373300660 * unit;
+                let a21 = 1.22753488 * unit;
+                let a30 = 0.363854523 * unit;
+                let a31 = -0.774229021 * unit;
+                let a40 = -0.0639070755 * unit;
+                let a41 = 0.142507049 * unit;
+
+                a10 * dens_normalized
+                    + a11 * dens_normalized / temp_normalized
+                    + a20 * dens_normalized.powi(P2::new())
+                    + a21 * dens_normalized.powi(P2::new()) / temp_normalized
+                    + a30 * dens_normalized.powi(P3::new())
+                    + a31 * dens_normalized.powi(P3::new()) / temp_normalized
+                    + a40 * dens_normalized.powi(P4::new())
+                    + a41 * dens_normalized.powi(P4::new()) / temp_normalized
+            };
+            mu0 * exponent.exp()
         };
 
         ThermodynmacState {
             brine_viscosity,
             gas_density,
-            gas_viscosity: (),
+            gas_viscosity,
         }
     }
 }
