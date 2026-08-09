@@ -128,7 +128,7 @@ mod default_props {
 // #[serde_with::serde_as]
 #[derive(Default, Deserialize, Serialize)]
 pub struct InputReservoirParams {
-    #[serde(with = "Meters")]
+    #[serde(with = "Meters", rename = "depth — shallowest")]
     pub shallowest_depth: Length,
     #[serde(with = "Meters")]
     pub mean_depth: Length,
