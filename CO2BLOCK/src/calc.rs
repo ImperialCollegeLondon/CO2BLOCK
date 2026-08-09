@@ -213,6 +213,7 @@ fn _calc_well_dist_max(area: Area) -> Length {
 //     key = "(u64,u64,u64)",
 //     convert = r#"{ calc_args_to_key(inter_well_dist, num_x, num_y) }"#
 // )]
+// TODO: parallelize
 fn simulate_placement(
     step: Length,
     num_steps: usize,
