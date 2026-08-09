@@ -83,41 +83,41 @@ pub struct WellPlaceParams {
     pub num_wells_max: Option<NonZeroU64>,
 }
 
-mod default_props {
+pub mod default_props {
     use super::*;
-    pub(crate) fn litho_grad() -> PressureGradient {
+    pub fn litho_grad() -> PressureGradient {
         Pressure::new::<megapascal>(23.) / Length::new::<kilometer>(1.)
     }
 
-    pub(crate) fn hydro_grad() -> PressureGradient {
+    pub fn hydro_grad() -> PressureGradient {
         Pressure::new::<megapascal>(10.) / Length::new::<kilometer>(1.)
     }
 
-    pub(crate) fn temperature_grad() -> TemperatureGradient {
+    pub fn temperature_grad() -> TemperatureGradient {
         TemperatureGradient::new::<kelvin_per_kilometer>(33.)
     }
 
-    pub(crate) fn stress_ratio() -> Ratio {
+    pub fn stress_ratio() -> Ratio {
         Ratio::new::<ratio>(0.7)
     }
 
-    pub(crate) fn rock_friction_angle() -> Angle {
+    pub fn rock_friction_angle() -> Angle {
         Angle::new::<degree>(30.)
     }
 
-    pub(crate) fn rock_cohesion() -> Pressure {
+    pub fn rock_cohesion() -> Pressure {
         Zero::zero()
     }
 
-    pub(crate) fn rock_compressibility() -> CompressibilityCoefficient {
+    pub fn rock_compressibility() -> CompressibilityCoefficient {
         CompressibilityCoefficient::new::<per_megapascal>(5e-4)
     }
 
-    pub(crate) fn water_compressibility() -> CompressibilityCoefficient {
+    pub fn water_compressibility() -> CompressibilityCoefficient {
         CompressibilityCoefficient::new::<per_megapascal>(3e-4)
     }
 
-    pub(crate) fn salinity() -> Ratio {
+    pub fn salinity() -> Ratio {
         Ratio::new::<part_per_million>(18e4)
     }
 }
@@ -146,7 +146,7 @@ pub struct InputReservoirParams {
     // #[serde(with = "Poro")]
     pub porosity: Ratio,
 
-    // #[serde_with(as = "Option<PerMPa>")]
+    #[serde_as(as = "Option<PerMPa>")]
     pub rock_compress: Option<CompressibilityCoefficient>,
 
     pub water_compress: Option<CompressibilityCoefficient>,
@@ -286,10 +286,7 @@ serde_with::serde_conv!(
 );
 
 pub fn display_poro(poro: Ratio) -> String {
-    let fmt_args = Ratio::format_args(
-        uom::si::ratio::percent,
-        uom::fmt::DisplayStyle::Abbreviation,
-    );
+    let fmt_args = Ratio::format_args(uom::si::ratio::ratio, uom::fmt::DisplayStyle::Abbreviation);
     format!("{}", fmt_args.with(poro))
 }
 

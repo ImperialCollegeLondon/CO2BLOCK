@@ -1,7 +1,8 @@
 use co2block::calc::InputReservoirParams;
 
 fn main() {
-    let data = InputReservoirParams::default();
+    let mut data = InputReservoirParams::default();
+    data.rock_compress = Some(co2block::calc::default_props::rock_compressibility());
     let json = serde_json::to_string_pretty(&data).unwrap();
     println!("{json}");
     {
