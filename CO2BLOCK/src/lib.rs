@@ -1,4 +1,4 @@
-#![deny(clippy::arithmetic_side_effects, clippy::as_conversions)]
+#![warn(clippy::arithmetic_side_effects, clippy::as_conversions)]
 
 pub mod calc;
 

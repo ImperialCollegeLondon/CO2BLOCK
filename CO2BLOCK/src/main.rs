@@ -1,4 +1,3 @@
-use std::str::FromStr;
 
 use co2block::calc::{InjectionParams, InputReservoirParams, ReservoirParams, megaton_per_year};
 use uom::si::{
@@ -10,7 +9,6 @@ use uom::si::{
 fn main() -> anyhow::Result<()> {
     let input: InputReservoirParams = csv::Reader::from_path("input-template.csv")?
         .deserialize()
-        .into_iter()
         .next()
         .ok_or(anyhow::anyhow!("Empty input"))??;
     let reservoir: ReservoirParams = input.into();
@@ -35,7 +33,6 @@ fn main() -> anyhow::Result<()> {
         "{}",
         well_rate
             .into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
-            .to_string()
     );
 
     Ok(())

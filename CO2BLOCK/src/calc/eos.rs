@@ -70,10 +70,10 @@ pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) ->
 
     let root: f64 = match roots {
         roots::Roots::No(_) => panic!(),
-        roots::Roots::One(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
-        roots::Roots::Two(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
-        roots::Roots::Three(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
-        roots::Roots::Four(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
+        roots::Roots::One(roots) => roots.into_iter().find(|el| el >= &0.).unwrap(),
+        roots::Roots::Two(roots) => roots.into_iter().find(|el| el >= &0.).unwrap(),
+        roots::Roots::Three(roots) => roots.into_iter().find(|el| el >= &0.).unwrap(),
+        roots::Roots::Four(roots) => roots.into_iter().find(|el| el >= &0.).unwrap(),
     };
 
     let root = MolarVolume::new::<cubic_meter_per_mole>(root);

@@ -381,12 +381,10 @@ impl NordbottenCoeff {
         radius_reservoir: Length,
         gas_to_water_visc: Ratio,
     ) -> Self {
-        let big_influence_term: Ratio = (radius_influence > radius_reservoir)
-            .then(|| {
+        let big_influence_term: Ratio = if radius_influence > radius_reservoir { {
                 let coef = radius_influence / radius_reservoir;
                 (coef * coef).mul(8. / 9.) - Ratio::new::<ratio>(3. / 4.)
-            })
-            .unwrap_or_else(Zero::zero);
+            } } else { Zero::zero() };
         Self {
             radius_plume,
             radius_influence,
