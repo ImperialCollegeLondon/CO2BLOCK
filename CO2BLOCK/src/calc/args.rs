@@ -5,7 +5,7 @@ use uom::si::{
     compressibility_coefficient::per_megapascal,
     f64::*,
     length::kilometer,
-    pressure::{megapascal, pascal},
+    pressure::megapascal,
     ratio::{part_per_million, ratio},
     temperature_gradient::kelvin_per_kilometer,
     thermodynamic_temperature::degree_celsius,
@@ -21,6 +21,12 @@ pub struct Args {
     pub injection: InjectionParams,
     pub well_placement: WellPlaceParams,
     pub correction: Correction,
+    pub boundary: Boundary,
+}
+
+pub enum Boundary {
+    Closed,
+    Open,
 }
 
 // TODO: implement partial defaults
