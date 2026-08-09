@@ -1,10 +1,11 @@
 use num_traits::Zero;
-use std::num::NonZeroU64;
+use serde::{Deserialize, Serialize};
+use std::{num::NonZeroU64, str::FromStr};
 use uom::si::{
     angle::degree,
     compressibility_coefficient::per_megapascal,
     f64::*,
-    length::kilometer,
+    length::{kilometer, meter},
     pressure::megapascal,
     ratio::{part_per_million, ratio},
     temperature_gradient::kelvin_per_kilometer,
@@ -123,7 +124,11 @@ mod default_props {
 
 // TODO: implement serde from formatted strings
 // TODO: implement serde-csv
+
+// #[serde_with::serde_as]
+#[derive(Default, Deserialize, Serialize)]
 pub struct InputReservoirParams {
+    #[serde(with = "Meters")]
     pub shallowest_depth: Length,
     pub mean_depth: Length,
     pub thickness: Length,
@@ -210,4 +215,16 @@ impl From<InputReservoirParams> for ReservoirParams {
             gas,
         }
     }
+}
+
+serde_with::serde_conv!(
+    Meters,
+    Length,
+    |value: &Length| { display_meters(value.clone()) },
+    |value: String| -> Result<Length, _> { Length::from_str(&value) }
+);
+
+fn display_meters(len: Length) -> String {
+    let fmt_args = Length::format_args(meter, uom::fmt::DisplayStyle::Abbreviation);
+    format!("{}", fmt_args.with(len))
 }

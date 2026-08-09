@@ -517,7 +517,9 @@ mod tests {
         let length = Length::new::<meter>(1.0);
         println!(
             "{}",
-            length.into_format_args(meter, uom::fmt::DisplayStyle::Abbreviation)
+            length
+                .into_format_args(meter, uom::fmt::DisplayStyle::Abbreviation)
+                .to_string()
         );
     }
 }
