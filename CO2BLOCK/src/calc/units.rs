@@ -2,8 +2,8 @@ use uom::{
     Kind,
     si::{
         Dimension, Quantity, Units, amount_of_substance::mole, electric_current::ampere,
-        length::meter, luminous_intensity::candela, mass::kilogram, temperature_interval::kelvin,
-        time::second,
+        length::meter, luminous_intensity::candela, mass::kilogram,
+        thermodynamic_temperature::kelvin, time::second,
     },
     typenum::*,
 };
