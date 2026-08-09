@@ -48,3 +48,53 @@ end
 
 ```
 "#]
+
+use uom::si::{f64::*, ratio::ratio, thermodynamic_temperature::degree_celsius};
+
+struct ThermodynmacState {
+    brine_viscosity: DynamicViscosity,
+    reduced_gas_density: MassDensity,
+    gas_viscosity: DynamicViscosity,
+}
+
+impl ThermodynmacState {
+    fn from_eos(
+        pressure: Pressure,
+        temperature: ThermodynamicTemperature,
+        salinity: Ratio,
+        gas_density: MassDensity,
+    ) -> ThermodynmacState {
+        let salinity_raw = salinity.get::<ratio>();
+        let temperature_raw = temperature.get::<degree_celsius>();
+        let brine_visc_raw = 1e-3
+            * (0.1
+                + 0.333 * salinity_raw
+                + (1.65 + 91.9 * salinity_raw.powi(3))
+                    * (-(0.42 * (salinity_raw.powf(0.8) - 0.17).powi(2) + 0.045)
+                        * temperature_raw.powf(0.8))
+                    .exp());
+
+        let brine_viscosity =
+            DynamicViscosity::new::<uom::si::dynamic_viscosity::pascal_second>(brine_visc_raw);
+
+        let R = 8.314472; // J / (mol * K)
+        let c2 = (R * T / p);
+        let c1;
+        let c0;
+
+        // let roots = roots::find_roots_cubic_normalized(c2 / c3, c1 / c3, c0 / c3);
+        // match roots {
+        //     roots::Roots::No(_) => todo!(),
+        //     roots::Roots::One(_) => todo!(),
+        //     roots::Roots::Two(_) => todo!(),
+        //     roots::Roots::Three(_) => todo!(),
+        //     roots::Roots::Four(_) => todo!(),
+        // }
+
+        ThermodynmacState {
+            brine_viscosity,
+            reduced_gas_density: (),
+            gas_viscosity: (),
+        }
+    }
+}
