@@ -1,2 +1,2 @@
 shallowest_depth,mean_depth,thickness,area,permeability,porosity,rock_compress,water_compress,pressure_top,pressure_center,co2_density,co2_viscosity,water_viscosity,salinity,temperature_center,total_max_princ_stress,princ_stress_ratio,rock_friction_angle,rock_cohesion,rock_tensile_strength
-0 m,0 m,0 m,0 km²,0 mD,0.0,0.0005 MPa⁻¹,,10 bar,,1 kg/m³,,,,,,,,,
+0 m,0 m,0 m,0 km²,0 mD,0.0,0.0005 MPa⁻¹,,10 bar,,1 kg/m³,0.1 Pa · s,,,,,,,,

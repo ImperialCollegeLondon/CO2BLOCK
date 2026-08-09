@@ -161,8 +161,13 @@ pub struct InputReservoirParams {
     #[serde_as(as = "Option<Density>")]
     pub co2_density: Option<MassDensity>,
 
+    #[serde_as(as = "Option<PaS>")]
     pub co2_viscosity: Option<DynamicViscosity>,
+
+    #[serde_as(as = "Option<PaS>")]
     pub water_viscosity: Option<DynamicViscosity>,
+
+    #[serde_as(as = "PPM")]
     pub salinity: Option<Ratio>,
     pub temperature_center: Option<ThermodynamicTemperature>,
     pub total_max_princ_stress: Option<Pressure>,
@@ -237,6 +242,21 @@ impl From<InputReservoirParams> for ReservoirParams {
         }
     }
 }
+
+pub fn display_pas(visc: DynamicViscosity) -> String {
+    let fmt_args = DynamicViscosity::format_args(
+        uom::si::dynamic_viscosity::pascal_second,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(visc))
+}
+
+serde_with::serde_conv!(
+    PaS,
+    DynamicViscosity,
+    |value: &DynamicViscosity| { display_pas(value.clone()) },
+    |value: String| -> Result<DynamicViscosity, _> { DynamicViscosity::from_str(&value) }
+);
 
 serde_with::serde_conv!(
     Meters,
@@ -331,4 +351,19 @@ serde_with::serde_conv!(
     MassDensity,
     |value: &MassDensity| { display_dens(value.clone()) },
     |value: String| -> Result<MassDensity, _> { MassDensity::from_str(&value) }
+);
+
+pub fn display_pas(visc: DynamicViscosity) -> String {
+    let fmt_args = DynamicViscosity::format_args(
+        uom::si::dynamic_viscosity::pascal_second,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(visc))
+}
+
+serde_with::serde_conv!(
+    PaS,
+    DynamicViscosity,
+    |value: &DynamicViscosity| { display_pas(value.clone()) },
+    |value: String| -> Result<DynamicViscosity, _> { DynamicViscosity::from_str(&value) }
 );
