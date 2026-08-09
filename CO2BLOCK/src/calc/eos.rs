@@ -29,7 +29,7 @@ pub fn brine_viscosity(temperature: ThermodynamicTemperature, salinity: Ratio) -
 
 pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) -> MassDensity {
     let one_kelvin = ThermodynamicTemperature::new::<kelvin>(1.);
-    let one_kelvin_dimless = one_kelvin / one_kelvin;
+    let one_kelvin_dimless = Ratio::new::<ratio>(1.);
     let gas_constant = Energy::new::<uom::si::energy::joule>(8.314472)
         / one_kelvin_dimless
         / AmountOfSubstance::new::<amount_of_substance::mole>(1.);

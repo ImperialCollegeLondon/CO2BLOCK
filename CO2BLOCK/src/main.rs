@@ -1,4 +1,3 @@
-
 use co2block::calc::{InjectionParams, InputReservoirParams, ReservoirParams, megaton_per_year};
 use uom::si::{
     f64::{Length, MassRate, Time},
@@ -31,8 +30,7 @@ fn main() -> anyhow::Result<()> {
     );
     println!(
         "{}",
-        well_rate
-            .into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
+        well_rate.into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
     );
 
     Ok(())

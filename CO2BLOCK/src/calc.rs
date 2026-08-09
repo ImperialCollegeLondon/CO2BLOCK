@@ -59,7 +59,7 @@ pub fn co2block_with_placement(
         calc_correction(
             reservoir.water.visc,
             reservoir.gas.visc,
-            num_wells as u64,
+            num_wells.to_u64().expect("integer"),
             calc_influence_radius(
                 reservoir.rock.permeability,
                 injection.duration,
@@ -105,7 +105,7 @@ pub fn co2block_with_placement(
             reservoir.gas.visc,
             reservoir.rock.permeability,
             reservoir.domain.thickness,
-            num_wells as u64,
+            num_wells.to_u64().expect("usize fits"),
             reservoir.gas.density,
         )
     };
@@ -381,10 +381,14 @@ impl NordbottenCoeff {
         radius_reservoir: Length,
         gas_to_water_visc: Ratio,
     ) -> Self {
-        let big_influence_term: Ratio = if radius_influence > radius_reservoir { {
+        let big_influence_term: Ratio = if radius_influence > radius_reservoir {
+            {
                 let coef = radius_influence / radius_reservoir;
                 (coef * coef).mul(8. / 9.) - Ratio::new::<ratio>(3. / 4.)
-            } } else { Zero::zero() };
+            }
+        } else {
+            Zero::zero()
+        };
         Self {
             radius_plume,
             radius_influence,
@@ -505,19 +509,5 @@ impl From<HashedF64> for f64 {
 impl<D: Dimension, U: Units<f64>> From<Quantity<D, U, f64>> for HashedF64 {
     fn from(val: Quantity<D, U, V>) -> Self {
         val.value.into()
-    }
-}
-
-mod tests {
-    #[test]
-    fn test_uom_display() {
-        use uom::si::{f64::Length, length::meter};
-        let length = Length::new::<meter>(1.0);
-        println!(
-            "{}",
-            length
-                .into_format_args(meter, uom::fmt::DisplayStyle::Abbreviation)
-                .to_string()
-        );
     }
 }
