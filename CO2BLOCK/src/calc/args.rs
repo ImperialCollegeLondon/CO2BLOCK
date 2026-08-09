@@ -167,7 +167,7 @@ pub struct InputReservoirParams {
     #[serde_as(as = "Option<PaS>")]
     pub water_viscosity: Option<DynamicViscosity>,
 
-    #[serde_as(as = "PPM")]
+    #[serde_as(as = "Option<PPM>")]
     pub salinity: Option<Ratio>,
     pub temperature_center: Option<ThermodynamicTemperature>,
     pub total_max_princ_stress: Option<Pressure>,
@@ -243,19 +243,19 @@ impl From<InputReservoirParams> for ReservoirParams {
     }
 }
 
-pub fn display_pas(visc: DynamicViscosity) -> String {
-    let fmt_args = DynamicViscosity::format_args(
-        uom::si::dynamic_viscosity::pascal_second,
+pub fn display_ppm(ppm: Ratio) -> String {
+    let fmt_args = Ratio::format_args(
+        uom::si::ratio::part_per_million,
         uom::fmt::DisplayStyle::Abbreviation,
     );
-    format!("{}", fmt_args.with(visc))
+    format!("{}", fmt_args.with(ppm))
 }
 
 serde_with::serde_conv!(
-    PaS,
-    DynamicViscosity,
-    |value: &DynamicViscosity| { display_pas(value.clone()) },
-    |value: String| -> Result<DynamicViscosity, _> { DynamicViscosity::from_str(&value) }
+    PPM,
+    Ratio,
+    |value: &Ratio| { display_ppm(value.clone()) },
+    |value: String| -> Result<Ratio, _> { Ratio::from_str(&value) }
 );
 
 serde_with::serde_conv!(
