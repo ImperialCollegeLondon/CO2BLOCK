@@ -169,13 +169,68 @@ pub struct InputReservoirParams {
 
     #[serde_as(as = "Option<PPM>")]
     pub salinity: Option<Ratio>,
+
+    #[serde_as(as = "Option<Celsius>")]
     pub temperature_center: Option<ThermodynamicTemperature>,
+
+    #[serde_as(as = "Option<MPa>")]
     pub total_max_princ_stress: Option<Pressure>,
+
     pub princ_stress_ratio: Option<Ratio>,
+
+    #[serde_as(as = "Option<Degree>")]
     pub rock_friction_angle: Option<Angle>,
+
+    #[serde_as(as = "Option<MPa>")]
     pub rock_cohesion: Option<Pressure>,
+
+    #[serde_as(as = "Option<MPa>")]
     pub rock_tensile_strength: Option<Pressure>,
 }
+
+pub fn display_mpa(pres: Pressure) -> String {
+    let fmt_args = Pressure::format_args(
+        uom::si::pressure::megapascal,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(pres))
+}
+
+serde_with::serde_conv!(
+    MPa,
+    Pressure,
+    |value: &Pressure| { display_mpa(value.clone()) },
+    |value: String| -> Result<Pressure, _> { Pressure::from_str(&value) }
+);
+
+pub fn display_deg(angle: Angle) -> String {
+    let fmt_args = Angle::format_args(uom::si::angle::degree, uom::fmt::DisplayStyle::Abbreviation);
+    format!("{}", fmt_args.with(angle))
+}
+
+serde_with::serde_conv!(
+    Degree,
+    Angle,
+    |value: &Angle| { display_deg(value.clone()) },
+    |value: String| -> Result<Angle, _> { Angle::from_str(&value) }
+);
+
+pub fn display_celsius(temp: ThermodynamicTemperature) -> String {
+    let fmt_args = ThermodynamicTemperature::format_args(
+        uom::si::thermodynamic_temperature::degree_celsius,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(temp))
+}
+
+serde_with::serde_conv!(
+    Celsius,
+    ThermodynamicTemperature,
+    |value: &ThermodynamicTemperature| { display_celsius(value.clone()) },
+    |value: String| -> Result<ThermodynamicTemperature, _> {
+        ThermodynamicTemperature::from_str(&value)
+    }
+);
 
 impl From<InputReservoirParams> for ReservoirParams {
     fn from(input: InputReservoirParams) -> Self {
