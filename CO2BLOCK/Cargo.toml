@@ -3,13 +3,12 @@ name = "co2block"
 version = "0.1.0"
 edition = "2024"
 
+# TODO: keep only the features you use (--no-defaults + explicit list)
 [dependencies]
 # cached = "2.0.2"
 # # cubecl = { version = "0.10.0", features = ["autotune-checks", "cpu", "cuda", "metal", "webgpu"] }
-# dashmap = "6.2.1"
 num-traits = "0.2.19"
 peroxide = { version = "0.43.1", features = ["O3-accelerate"] }
-# polycool = "0.4.0"
 roots = "0.0.8"
 # rayon = "1.12.0"
 csv = "1.4.0"
