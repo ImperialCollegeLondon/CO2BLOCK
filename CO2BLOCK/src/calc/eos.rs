@@ -49,7 +49,17 @@ end
 ```
 "#]
 
-use uom::si::{f64::*, ratio::ratio, thermodynamic_temperature::degree_celsius};
+use uom::{
+    si::{
+        amount_of_substance,
+        f64::*,
+        molar_volume::cubic_meter_per_mole,
+        pressure::pascal,
+        ratio::ratio,
+        thermodynamic_temperature::{degree_celsius, kelvin},
+    },
+    typenum::*,
+};
 
 struct ThermodynmacState {
     brine_viscosity: DynamicViscosity,
@@ -77,10 +87,23 @@ impl ThermodynmacState {
         let brine_viscosity =
             DynamicViscosity::new::<uom::si::dynamic_viscosity::pascal_second>(brine_visc_raw);
 
-        let R = 8.314472; // J / (mol * K)
-        let c2 = (R * T / p);
+        let gas_constant = 8.314472; // J / (mol * K)
+        let gas_constant = Energy::new::<uom::si::energy::joule>(8.314472)
+            / ThermodynamicTemperature::new::<kelvin>(1.)
+            / AmountOfSubstance::new::<amount_of_substance::mole>(1.);
+
+        let c3 = MolarVolume::new::<cubic_meter_per_mole>(1.).powi(P3::new());
+        let c2: MolarVolume = gas_constant * temperature / pressure;
         let c1;
-        let c0;
+
+        let a0 = Pressure::new::<pascal>(7.54); // constant [Pa m6 K^0.5 mol^-2]
+        let a1 = -4.13 * 10 ^ -3; // constant [Pa m6 K^0.5 mol^-2]
+        let a = a0 + a1 * temperature;
+        let c0 = a * b / pressure / temperature.sqrt();
+
+        let molar_volume = MolarVolume::new::<cubic_meter_per_mole>(1.);
+
+        let resid = molar_volume.powi(P3::new()) + molar_volume.powi(P2::new()) * c2;
 
         // let roots = roots::find_roots_cubic_normalized(c2 / c3, c1 / c3, c0 / c3);
         // match roots {

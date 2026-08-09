@@ -19,7 +19,7 @@ roots = "0.0.8"
 
 [dependencies.uom]
 version = "0.38.0"
-features = ["f64", "si", "serde", "u32"]
+features = ["f64", "si", "serde", "u32", "rational64"]
 
 # [dependencies.rustmex]
 # version = "0.6.4"
