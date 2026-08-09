@@ -51,11 +51,13 @@ end
 
 use uom::{
     si::{
-        amount_of_substance,
-        f64::*,
+        amount_of_substance::{self, mole},
+        f64::{Length, *},
+        length::meter,
         molar_volume::cubic_meter_per_mole,
         pressure::pascal,
         ratio::ratio,
+        temperature_interval::terakelvin,
         thermodynamic_temperature::{degree_celsius, kelvin},
     },
     typenum::*,
@@ -94,25 +96,54 @@ impl ThermodynmacState {
 
         let c3 = MolarVolume::new::<cubic_meter_per_mole>(1.).powi(P3::new());
         let c2: MolarVolume = gas_constant * temperature / pressure;
-        let c1;
 
-        let a0 = Pressure::new::<pascal>(7.54); // constant [Pa m6 K^0.5 mol^-2]
-        let a1 = -4.13 * 10 ^ -3; // constant [Pa m6 K^0.5 mol^-2]
-        let a = a0 + a1 * temperature;
-        let c0 = a * b / pressure / temperature.sqrt();
+        let one_kelvin = ThermodynamicTemperature::new::<kelvin>(1.);
+        let one_kelvin_dimless = one_kelvin / one_kelvin;
+        let temp_dimless: Ratio = temperature / one_kelvin;
 
-        let molar_volume = MolarVolume::new::<cubic_meter_per_mole>(1.);
+        // BUG
+        let a0 = Pressure::new::<pascal>(7.54)
+            * Length::new::<meter>(1.).powi(P6::new())
+            * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
+            * one_kelvin_dimless.sqrt();
 
-        let resid = molar_volume.powi(P3::new()) + molar_volume.powi(P2::new()) * c2;
+        let a1 = Pressure::new::<pascal>(-4.13e-3)
+            * Length::new::<meter>(1.).powi(P6::new())
+            * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
+            / one_kelvin_dimless.sqrt();
 
-        // let roots = roots::find_roots_cubic_normalized(c2 / c3, c1 / c3, c0 / c3);
-        // match roots {
-        //     roots::Roots::No(_) => todo!(),
-        //     roots::Roots::One(_) => todo!(),
-        //     roots::Roots::Two(_) => todo!(),
-        //     roots::Roots::Three(_) => todo!(),
-        //     roots::Roots::Four(_) => todo!(),
-        // }
+        let a = a0 / temp_dimless.sqrt() + a1 * temp_dimless.sqrt();
+        let b = MolarVolume::new::<cubic_meter_per_mole>(2.7e-5);
+
+        let c0 /* : MolarVolume^3 */ = b * a / pressure;
+
+        let c1 = c2 * b + b.powi(P2::new()) - a / pressure;
+
+        let unit_molar_volume = MolarVolume::new::<cubic_meter_per_mole>(1.);
+
+        // type check
+        let _resid = unit_molar_volume.powi(P3::new())
+            + unit_molar_volume.powi(P2::new()) * c2
+            + unit_molar_volume * c1
+            + c0;
+
+        let c2: Ratio = c2 / unit_molar_volume;
+        let c1: Ratio = c1 * unit_molar_volume.powi(N2::new());
+        let c0: Ratio = c0 * unit_molar_volume.powi(N3::new());
+
+        let roots = roots::find_roots_cubic_normalized(
+            c2.get::<ratio>(),
+            c1.get::<ratio>(),
+            c0.get::<ratio>(),
+        );
+
+        let root = match roots {
+            roots::Roots::No(_) => panic!(),
+            roots::Roots::One(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
+            roots::Roots::Two(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
+            roots::Roots::Three(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
+            roots::Roots::Four(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
+        };
 
         ThermodynmacState {
             brine_viscosity,
