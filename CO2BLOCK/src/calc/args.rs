@@ -126,7 +126,7 @@ mod default_props {
 // TODO: implement serde-csv
 
 // #[serde_with::serde_as]
-#[derive(Default, Deserialize, Serialize)]
+#[derive(Default, Debug, Deserialize, Serialize)]
 pub struct InputReservoirParams {
     #[serde(with = "Meters", rename = "depth — shallowest")]
     pub shallowest_depth: Length,
