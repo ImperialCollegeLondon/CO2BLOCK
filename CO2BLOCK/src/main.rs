@@ -1,7 +1,5 @@
 use co2block::calc::InputReservoirParams;
 
-use co2block::calc::milli_darcy;
-
 fn main() {
     let data = InputReservoirParams::default();
     let json = serde_json::to_string_pretty(&data).unwrap();

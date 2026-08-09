@@ -41,11 +41,39 @@ pub mod mass_rate {
     }
 }
 
-pub use permeability::milli_darcy;
-pub mod permeability {
-    uom::unit! {
-        system: uom::si;
-        quantity: uom::si::area;
-        @milli_darcy: prefix!(milli) * 9.86923 * 10e-13; "mD", "millidarcy", "millidarcies";
+pub mod permeability_system {
+    #[macro_use]
+    pub mod permeability_quantity {
+        uom::quantity! {
+            quantity: Permeability; "permeability";
+            dimension: Q<P1>;
+            units {
+                @square_meter: 1.0_E0; "m^2", "square meter", "square meters";
+                @milli_darcy: prefix!(milli) * 9.86923_E-13; "mD", "millidarcy", "millidarcies";
+            }
+        }
     }
+
+    uom::system! {
+        quantities: Q {
+            permeability_quantity: square_meter, P;
+        }
+        units: U {
+            mod permeability_quantity::Permeability,
+        }
+    }
+
+    pub mod f64 {
+        mod permeability {
+            pub use super::super::*;
+        }
+
+        Q!(self::permeability, f64);
+    }
+
+    pub use f64::Permeability;
+    pub use permeability_quantity::milli_darcy;
+    pub use permeability_quantity::square_meter as permeability_square_meter;
 }
+
+pub use permeability_system::{Permeability, milli_darcy, permeability_square_meter};

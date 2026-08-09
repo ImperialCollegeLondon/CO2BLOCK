@@ -12,9 +12,9 @@ use uom::si::{
 };
 
 use crate::calc::{
-    PressureGradient,
+    Permeability, PressureGradient,
     eos::{self, gas_density, gas_viscosity},
-    milli_darcy,
+    milli_darcy, permeability_square_meter,
 };
 
 // TODO implement serde and clap for hyper-parameters
@@ -141,7 +141,7 @@ pub struct InputReservoirParams {
     pub area: Area,
 
     #[serde(with = "MilliDarcy")]
-    pub permeability: Area,
+    pub permeability: Permeability,
 
     // #[serde(with = "Poro")]
     pub porosity: Ratio,
@@ -257,16 +257,16 @@ pub fn display_sq_km(area: Area) -> String {
     format!("{}", fmt_args.with(area))
 }
 
-pub fn display_mdarcy(perm: Area) -> String {
-    let fmt_args = Area::format_args(milli_darcy, uom::fmt::DisplayStyle::Abbreviation);
+pub fn display_mdarcy(perm: Permeability) -> String {
+    let fmt_args = Permeability::format_args(milli_darcy, uom::fmt::DisplayStyle::Abbreviation);
     format!("{}", fmt_args.with(perm))
 }
 
 serde_with::serde_conv!(
     MilliDarcy,
-    Area,
-    |value: &Area| { display_mdarcy(value.clone()) },
-    |value: String| -> Result<Area, _> { Area::from_str(&value) }
+    Permeability,
+    |value: &Permeability| { display_mdarcy(value.clone()) },
+    |value: String| -> Result<Permeability, _> { Permeability::from_str(&value) }
 );
 
 pub fn display_per_mpa(comp: CompressibilityCoefficient) -> String {
