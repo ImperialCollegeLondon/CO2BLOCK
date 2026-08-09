@@ -1,7 +1,7 @@
 // #![allow(unused)]
 mod args;
-mod eos;
-mod units;
+pub mod eos;
+pub mod units;
 
 pub use units::*;
 

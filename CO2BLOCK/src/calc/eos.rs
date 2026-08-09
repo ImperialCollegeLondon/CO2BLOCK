@@ -14,7 +14,7 @@ use uom::{
     typenum::*,
 };
 
-fn brine_viscosity(temperature: ThermodynamicTemperature, salinity: Ratio) -> DynamicViscosity {
+pub fn brine_viscosity(temperature: ThermodynamicTemperature, salinity: Ratio) -> DynamicViscosity {
     let salinity_raw = salinity.get::<ratio>();
     let temperature_raw = temperature.get::<degree_celsius>();
     let brine_visc_raw = 1e-3
@@ -28,7 +28,7 @@ fn brine_viscosity(temperature: ThermodynamicTemperature, salinity: Ratio) -> Dy
     DynamicViscosity::new::<uom::si::dynamic_viscosity::pascal_second>(brine_visc_raw)
 }
 
-fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) -> MassDensity {
+pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) -> MassDensity {
     let gas_constant = Energy::new::<uom::si::energy::joule>(8.314472)
         / ThermodynamicTemperature::new::<kelvin>(1.)
         / AmountOfSubstance::new::<amount_of_substance::mole>(1.);
@@ -85,7 +85,7 @@ fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) -> Mas
     Mass::new::<kilogram>(0.044) / root / AmountOfSubstance::new::<mole>(1.)
 }
 
-fn gas_viscosity(
+pub fn gas_viscosity(
     pressure: Pressure,
     temperature: ThermodynamicTemperature,
     gas_density: MassDensity,

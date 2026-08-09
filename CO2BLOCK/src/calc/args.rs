@@ -116,3 +116,27 @@ pub trait DefaultProps {
         Ratio::new::<part_per_million>(18e4)
     }
 }
+
+struct InputReservoirProps {
+    shallowest_depth: Length,
+    mean_depth : Length,
+    thickness : Length,
+    area: Area,
+    permeability: Area,
+    porosity: Ratio,
+    rock_compress: CompressibilityCoefficient,
+    water_compress: CompressibilityCoefficient,
+    co2_density : MassDensity,
+    co2_viscosity: DynamicViscosity,
+    water_viscosity: DynamicViscosity,
+    pressure_top: Pressure,
+    pres0 = double(data{site_no,14});                               % pressure at the top of the reservoir [MPa]
+    pres0_mean = double(data{site_no,15});                          % pressure at the centre of the reservoir [MPa]
+    T0_mean = double(data{site_no,16});                             % temperature at the centre of the reservoir [C]
+    salinity = double(data{site_no,17})/1e6;                        % aquifer salinity [ppm/1e6]
+    s1_tot = double(data{site_no,18});                              % total maximum principal stress at the reservoir [MPa]
+    stress_ratio = double(data{site_no,19});                        % ratio of principal effective stresses (s3/s1) [-]
+    friction = double(data{site_no,20});                            % rock friction angle  [deg]
+    cohesion = double(data{site_no,21});                            % rock cohesion coefficient [MPa]
+    tens_strength = double(data{site_no,22});                       % rock tensile strength [MPa]
+}
