@@ -1,5 +1,4 @@
 use num_traits::Zero;
-use serde::{Deserialize, Serialize};
 use std::{num::NonZeroU64, str::FromStr};
 use uom::si::{
     angle::degree,
@@ -15,6 +14,7 @@ use uom::si::{
 use crate::calc::{
     PressureGradient,
     eos::{self, gas_density, gas_viscosity},
+    milli_darcy,
 };
 
 // TODO implement serde and clap for hyper-parameters
@@ -124,19 +124,31 @@ mod default_props {
 
 // TODO: implement serde from formatted strings
 // TODO: implement serde-csv
-
-// #[serde_with::serde_as]
-#[derive(Default, Debug, Deserialize, Serialize)]
+#[serde_with::serde_as]
+#[derive(Default, Debug, ::serde::Deserialize, ::serde::Serialize)]
+#[serde(rename_all = "lowercase")]
 pub struct InputReservoirParams {
-    #[serde(with = "Meters", rename = "depth — shallowest")]
+    #[serde(with = "Meters")]
     pub shallowest_depth: Length,
+
     #[serde(with = "Meters")]
     pub mean_depth: Length,
+
+    #[serde(with = "Meters")]
     pub thickness: Length,
+
+    #[serde(with = "SqrKiloMeters")]
     pub area: Area,
+
+    #[serde(with = "MilliDarcy")]
     pub permeability: Area,
+
+    // #[serde(with = "Poro")]
     pub porosity: Ratio,
+
+    // #[serde_with(as = "Option<PerMPa>")]
     pub rock_compress: Option<CompressibilityCoefficient>,
+
     pub water_compress: Option<CompressibilityCoefficient>,
     pub pressure_top: Option<Pressure>,
     pub pressure_center: Option<Pressure>,
@@ -225,7 +237,66 @@ serde_with::serde_conv!(
     |value: String| -> Result<Length, _> { Length::from_str(&value) }
 );
 
-fn display_meters(len: Length) -> String {
+serde_with::serde_conv!(
+    SqrKiloMeters,
+    Area,
+    |value: &Area| { display_sq_km(value.clone()) },
+    |value: String| -> Result<Area, _> { Area::from_str(&value) }
+);
+
+pub fn display_meters(len: Length) -> String {
     let fmt_args = Length::format_args(meter, uom::fmt::DisplayStyle::Abbreviation);
     format!("{}", fmt_args.with(len))
 }
+
+pub fn display_sq_km(area: Area) -> String {
+    let fmt_args = Area::format_args(
+        uom::si::area::square_kilometer,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(area))
+}
+
+pub fn display_mdarcy(perm: Area) -> String {
+    let fmt_args = Area::format_args(milli_darcy, uom::fmt::DisplayStyle::Abbreviation);
+    format!("{}", fmt_args.with(perm))
+}
+
+serde_with::serde_conv!(
+    MilliDarcy,
+    Area,
+    |value: &Area| { display_mdarcy(value.clone()) },
+    |value: String| -> Result<Area, _> { Area::from_str(&value) }
+);
+
+pub fn display_per_mpa(comp: CompressibilityCoefficient) -> String {
+    let fmt_args = CompressibilityCoefficient::format_args(
+        uom::si::compressibility_coefficient::per_megapascal,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(comp))
+}
+
+serde_with::serde_conv!(
+    PerMPa,
+    CompressibilityCoefficient,
+    |value: &CompressibilityCoefficient| { display_per_mpa(value.clone()) },
+    |value: String| -> Result<CompressibilityCoefficient, _> {
+        CompressibilityCoefficient::from_str(&value)
+    }
+);
+
+pub fn display_poro(poro: Ratio) -> String {
+    let fmt_args = Ratio::format_args(
+        uom::si::ratio::percent,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(poro))
+}
+
+serde_with::serde_conv!(
+    Poro,
+    Ratio,
+    |value: &Ratio| { display_poro(value.clone()) },
+    |value: String| -> Result<Ratio, _> { Ratio::from_str(&value) }
+);

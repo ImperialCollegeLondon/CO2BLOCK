@@ -42,7 +42,6 @@ pub mod mass_rate {
 }
 
 pub use permeability::milli_darcy;
-
 pub mod permeability {
     uom::unit! {
         system: uom::si;
