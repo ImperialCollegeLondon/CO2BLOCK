@@ -15,5 +15,6 @@ fn main() -> anyhow::Result<()> {
         .next()
         .ok_or(anyhow::anyhow!("Empty input"))??;
     let input_res: ReservoirParams = input.into();
+    println!("{input_res:#?}");
     Ok(())
 }

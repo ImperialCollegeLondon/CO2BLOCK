@@ -31,6 +31,8 @@ pub enum Boundary {
     Open,
 }
 
+// TODO: add rule-of-thumb derives
+#[derive(Debug)]
 pub struct ReservoirParams {
     pub domain: DomainParams,
     pub rock: RockParams,
@@ -38,16 +40,19 @@ pub struct ReservoirParams {
     pub gas: GasParams,
 }
 
+#[derive(Debug)]
 pub struct WaterParams {
     pub compress: CompressibilityCoefficient,
     pub visc: DynamicViscosity,
 }
 
+#[derive(Debug)]
 pub struct GasParams {
     pub density: MassDensity,
     pub visc: DynamicViscosity,
 }
 
+#[derive(Debug)]
 pub struct RockParams {
     pub porosity: Ratio,
     pub permeability: Area,
@@ -60,6 +65,7 @@ pub struct RockParams {
     pub top_pressure: Pressure,
 }
 
+#[derive(Debug)]
 pub struct DomainParams {
     pub thickness: Length,
     pub area: Area,
