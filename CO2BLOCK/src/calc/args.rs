@@ -149,10 +149,18 @@ pub struct InputReservoirParams {
     #[serde_as(as = "Option<PerMPa>")]
     pub rock_compress: Option<CompressibilityCoefficient>,
 
+    #[serde_as(as = "Option<PerMPa>")]
     pub water_compress: Option<CompressibilityCoefficient>,
+
+    #[serde_as(as = "Option<Bar>")]
     pub pressure_top: Option<Pressure>,
+
+    #[serde_as(as = "Option<Bar>")]
     pub pressure_center: Option<Pressure>,
+
+    #[serde_as(as = "Option<Density>")]
     pub co2_density: Option<MassDensity>,
+
     pub co2_viscosity: Option<DynamicViscosity>,
     pub water_viscosity: Option<DynamicViscosity>,
     pub salinity: Option<Ratio>,
@@ -295,4 +303,32 @@ serde_with::serde_conv!(
     Ratio,
     |value: &Ratio| { display_poro(value.clone()) },
     |value: String| -> Result<Ratio, _> { Ratio::from_str(&value) }
+);
+
+pub fn display_bar(pres: Pressure) -> String {
+    let fmt_args =
+        Pressure::format_args(uom::si::pressure::bar, uom::fmt::DisplayStyle::Abbreviation);
+    format!("{}", fmt_args.with(pres))
+}
+
+serde_with::serde_conv!(
+    Bar,
+    Pressure,
+    |value: &Pressure| { display_bar(value.clone()) },
+    |value: String| -> Result<Pressure, _> { Pressure::from_str(&value) }
+);
+
+pub fn display_dens(dens: MassDensity) -> String {
+    let fmt_args = MassDensity::format_args(
+        uom::si::mass_density::kilogram_per_cubic_meter,
+        uom::fmt::DisplayStyle::Abbreviation,
+    );
+    format!("{}", fmt_args.with(dens))
+}
+
+serde_with::serde_conv!(
+    Density,
+    MassDensity,
+    |value: &MassDensity| { display_dens(value.clone()) },
+    |value: String| -> Result<MassDensity, _> { MassDensity::from_str(&value) }
 );
