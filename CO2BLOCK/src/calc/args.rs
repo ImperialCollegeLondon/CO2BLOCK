@@ -130,6 +130,7 @@ mod default_props {
 pub struct InputReservoirParams {
     #[serde(with = "Meters")]
     pub shallowest_depth: Length,
+    #[serde(with = "Meters")]
     pub mean_depth: Length,
     pub thickness: Length,
     pub area: Area,
