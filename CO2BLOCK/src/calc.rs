@@ -233,7 +233,7 @@ fn simulate_placement(
 
     // compute all counts first
     let counts = {
-        let mut counts = vec![0u64; num_steps];
+        let mut counts = vec![0u64; num_steps + 1];
         counts[0] = 1;
         for num_steps_x in 1..=num_steps {
             for num_steps_y in 0..=num_steps_x {
@@ -249,7 +249,7 @@ fn simulate_placement(
         counts
     };
 
-    let mut coefs = vec![Ratio::zero(); num_steps];
+    let mut coefs = vec![Ratio::zero(); num_steps + 1];
 
     let c00 = nord_coef.calc(well_radius);
     coefs[0] += c00;
@@ -435,7 +435,7 @@ fn calc_limit_rate(
     let exp_mult = -limit_pressure / (guess_rate * b_term);
     let w: Ratio = exp_mult * exp_arg.exp();
     let lambert_sol = lambert_wm1(w.value, LambertWAccuracyMode::Precise);
-    let limit_rate: VolumeRate = limit_pressure / b_term / lambert_sol;
+    let limit_rate: VolumeRate = -limit_pressure / b_term / lambert_sol;
     limit_rate * dens_g
 }
 

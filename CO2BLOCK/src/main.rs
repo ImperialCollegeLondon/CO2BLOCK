@@ -24,12 +24,17 @@ fn main() -> anyhow::Result<()> {
         max_well_rate: MassRate::new::<megaton_per_year>(20.),
     };
 
-    co2block::calc::co2block_with_placement(
+    let rate = co2block::calc::co2block_with_placement(
         step,
         1,
         reservoir,
         injection,
         co2block::calc::Correction::Off,
+    );
+    println!(
+        "{}",
+        rate.into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
+            .to_string()
     );
 
     Ok(())
