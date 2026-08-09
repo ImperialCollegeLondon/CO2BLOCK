@@ -1,3 +1,4 @@
+use std::{marker::PhantomData, str::FromStr};
 use uom::{
     Kind,
     si::{
@@ -43,10 +44,21 @@ pub mod mass_rate {
 
 pub mod permeability_system {
     #[macro_use]
+    mod length {
+        uom::quantity! {
+            quantity: Length; "length";
+            dimension: Q<P1>;
+            units {
+                @meter: 1.0_E0; "m", "meter", "meters";
+            }
+        }
+    }
+
+    #[macro_use]
     pub mod permeability_quantity {
         uom::quantity! {
             quantity: Permeability; "permeability";
-            dimension: Q<P1>;
+            dimension: Q<P2>;
             units {
                 @square_meter: 1.0_E0; "m^2", "square meter", "square meters";
                 @milli_darcy: prefix!(milli) * 9.86923_E-13; "mD", "millidarcy", "millidarcies";
@@ -56,9 +68,10 @@ pub mod permeability_system {
 
     uom::system! {
         quantities: Q {
-            permeability_quantity: square_meter, P;
+            length: meter, L;
         }
         units: U {
+            mod length::Length,
             mod permeability_quantity::Permeability,
         }
     }
@@ -71,9 +84,44 @@ pub mod permeability_system {
         Q!(self::permeability, f64);
     }
 
-    pub use f64::Permeability;
+    pub use f64::Permeability as PermeabilityQuantity;
     pub use permeability_quantity::milli_darcy;
     pub use permeability_quantity::square_meter as permeability_square_meter;
 }
 
-pub use permeability_system::{Permeability, milli_darcy, permeability_square_meter};
+pub type Permeability = uom::si::f64::Area;
+
+pub use permeability_system::{PermeabilityQuantity, milli_darcy, permeability_square_meter};
+
+impl From<PermeabilityQuantity> for Permeability {
+    fn from(value: PermeabilityQuantity) -> Self {
+        Self {
+            dimension: PhantomData,
+            units: PhantomData,
+            value: value.value,
+        }
+    }
+}
+
+impl From<Permeability> for PermeabilityQuantity {
+    fn from(value: Permeability) -> Self {
+        Self {
+            dimension: PhantomData,
+            units: PhantomData,
+            value: value.value,
+        }
+    }
+}
+
+pub fn parse_permeability(
+    value: &str,
+) -> Result<Permeability, <PermeabilityQuantity as FromStr>::Err> {
+    PermeabilityQuantity::from_str(value).map(Into::into)
+}
+
+pub fn format_permeability_mdarcy(value: Permeability) -> String {
+    let permeability: PermeabilityQuantity = value.into();
+    let fmt_args =
+        PermeabilityQuantity::format_args(milli_darcy, uom::fmt::DisplayStyle::Abbreviation);
+    format!("{}", fmt_args.with(permeability))
+}

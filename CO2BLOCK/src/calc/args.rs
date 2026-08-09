@@ -14,7 +14,7 @@ use uom::si::{
 use crate::calc::{
     Permeability, PressureGradient,
     eos::{self, gas_density, gas_viscosity},
-    milli_darcy, permeability_square_meter,
+    format_permeability_mdarcy, parse_permeability,
 };
 
 // TODO implement serde and clap for hyper-parameters
@@ -258,15 +258,14 @@ pub fn display_sq_km(area: Area) -> String {
 }
 
 pub fn display_mdarcy(perm: Permeability) -> String {
-    let fmt_args = Permeability::format_args(milli_darcy, uom::fmt::DisplayStyle::Abbreviation);
-    format!("{}", fmt_args.with(perm))
+    format_permeability_mdarcy(perm)
 }
 
 serde_with::serde_conv!(
     MilliDarcy,
     Permeability,
     |value: &Permeability| { display_mdarcy(value.clone()) },
-    |value: String| -> Result<Permeability, _> { Permeability::from_str(&value) }
+    |value: String| -> Result<Permeability, _> { parse_permeability(&value) }
 );
 
 pub fn display_per_mpa(comp: CompressibilityCoefficient) -> String {
