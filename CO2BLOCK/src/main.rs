@@ -24,7 +24,7 @@ fn main() -> anyhow::Result<()> {
         max_well_rate: MassRate::new::<megaton_per_year>(20.),
     };
 
-    let rate = co2block::calc::co2block_with_placement(
+    let well_rate = co2block::calc::co2block_with_placement(
         step,
         1,
         reservoir,
@@ -33,7 +33,8 @@ fn main() -> anyhow::Result<()> {
     );
     println!(
         "{}",
-        rate.into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
+        well_rate
+            .into_format_args(megaton_per_year, uom::fmt::DisplayStyle::Abbreviation)
             .to_string()
     );
 
