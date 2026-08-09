@@ -67,19 +67,3 @@ pub struct WellPlaceParams {
     pub inter_well_dist_max: Option<Length>,
     pub num_wells_max: Option<NonZeroU64>,
 }
-
-uom::unit! {
-    system: uom::si;
-    quantity: uom::si::mass_rate;
-    @megaton_per_year: prefix!(mega) * 1.0_E3 / 3.1536_E7; "Mt/y", "megaton per year", "megatons per year";
-}
-
-pub use md::milli_darcy;
-
-pub mod md {
-    uom::unit! {
-        system: uom::si;
-        quantity: uom::si::area;
-        @milli_darcy: prefix!(milli) * 9.86923 * 10e-13; "mD", "millidarcy", "millidarcies";
-    }
-}
