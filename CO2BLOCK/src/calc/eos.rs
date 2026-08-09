@@ -54,6 +54,8 @@ use uom::{
         amount_of_substance::{self, mole},
         f64::{Length, *},
         length::meter,
+        mass::kilogram,
+        mass_density::kilogram_per_cubic_meter,
         molar_volume::cubic_meter_per_mole,
         pressure::pascal,
         ratio::ratio,
@@ -65,7 +67,7 @@ use uom::{
 
 struct ThermodynmacState {
     brine_viscosity: DynamicViscosity,
-    reduced_gas_density: MassDensity,
+    gas_density: MassDensity,
     gas_viscosity: DynamicViscosity,
 }
 
@@ -74,7 +76,6 @@ impl ThermodynmacState {
         pressure: Pressure,
         temperature: ThermodynamicTemperature,
         salinity: Ratio,
-        gas_density: MassDensity,
     ) -> ThermodynmacState {
         let salinity_raw = salinity.get::<ratio>();
         let temperature_raw = temperature.get::<degree_celsius>();
@@ -137,7 +138,7 @@ impl ThermodynmacState {
             c0.get::<ratio>(),
         );
 
-        let root = match roots {
+        let root: f64 = match roots {
             roots::Roots::No(_) => panic!(),
             roots::Roots::One(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
             roots::Roots::Two(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
@@ -145,9 +146,29 @@ impl ThermodynmacState {
             roots::Roots::Four(roots) => roots.into_iter().filter(|el| el >= &0.).next().unwrap(),
         };
 
+        let root = MolarVolume::new::<cubic_meter_per_mole>(root);
+        let gas_density = Mass::new::<kilogram>(0.044) / root / AmountOfSubstance::new::<mole>(1.);
+
+        let gas_viscosity: DynamicViscosity = {
+            let reference_temperature = ThermodynamicTemperature::new::<kelvin>(304.);
+
+            let reference_density = MassDensity::new::<kilogram_per_cubic_meter>(468.);
+
+            let temp_normalized = temperature / reference_temperature;
+            let dens_normalized = gas_density / reference_density;
+
+            let unit = Ratio::new::<ratio>(1.);
+
+            let reference_viscosity: Ratio = temp_normalized.sqrt()
+                * (27.2246461 * unit - 16.6346068 / temp_normalized
+                    + 4.66920556 / (temp_normalized.powi(P2::new())))
+                * 1e-6;
+            todo!()
+        };
+
         ThermodynmacState {
             brine_viscosity,
-            reduced_gas_density: (),
+            gas_density,
             gas_viscosity: (),
         }
     }
