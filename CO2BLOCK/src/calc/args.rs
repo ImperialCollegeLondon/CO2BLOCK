@@ -122,8 +122,6 @@ pub mod default_props {
     }
 }
 
-// TODO: implement serde from formatted strings
-// TODO: implement serde-csv
 #[serde_with::serde_as]
 #[derive(Default, Debug, ::serde::Deserialize, ::serde::Serialize)]
 #[serde(rename_all = "lowercase")]

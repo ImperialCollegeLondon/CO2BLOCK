@@ -349,7 +349,6 @@ pub struct NordbottenArgs {
 
 impl NordbottenCoeff {
     fn from_args(args: NordbottenArgs) -> Self {
-        // FIXME: make the radius adapt to the number of wells
         let radius_plume = {
             let avg_plume_ext = calc_plume_ext(
                 args.well_inj_rate,

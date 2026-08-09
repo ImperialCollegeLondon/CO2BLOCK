@@ -39,12 +39,12 @@ pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) ->
     let one_kelvin_dimless = one_kelvin / one_kelvin;
     let temp_dimless: Ratio = temperature / one_kelvin;
 
-    // BUG
     let a0 = Pressure::new::<pascal>(7.54)
         * Length::new::<meter>(1.).powi(P6::new())
         * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
         * one_kelvin_dimless.sqrt();
 
+    // NOTE: original comment shows wrong temperature dimension
     let a1 = Pressure::new::<pascal>(-4.13e-3)
         * Length::new::<meter>(1.).powi(P6::new())
         * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
