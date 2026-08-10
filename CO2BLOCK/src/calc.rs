@@ -25,7 +25,7 @@ pub fn co2block_with_placement(
 ) -> MassRate {
     let num_wells = num_steps.mul_add(2, 1).pow(2);
     // WARNING: pay attention to where it's used
-    let _guess_well_rate = {
+    let guess_well_rate = {
         // WARNING: may not be a good guess
         let guess_well_rate_raw =
             reservoir.rock.permeability.get::<square_meter>() * 1e-13 / num_wells.to_f64().unwrap();
@@ -35,7 +35,7 @@ pub fn co2block_with_placement(
 
     // NOTE: my new guess
     // WARNING: doen't this method require fixed-point iterations?
-    let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 10.;
+    // let guess_well_rate = injection.max_well_rate / reservoir.gas.density / 10.;
 
     let nord_coef = NordbottenCoeff::from_args(NordbottenArgs {
         well_inj_rate: guess_well_rate,

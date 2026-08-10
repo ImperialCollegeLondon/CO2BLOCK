@@ -1,12 +1,13 @@
 use uom::{
     si::{
-        amount_of_substance::{self, mole},
+        amount_of_substance::mole,
         dynamic_viscosity::pascal_second,
-        f64::*,
+        f64::{Length, *},
+        length::meter,
         mass::kilogram,
         mass_density::kilogram_per_cubic_meter,
         molar_volume::cubic_meter_per_mole,
-        pressure::bar,
+        pressure::{bar, pascal},
         ratio::ratio,
         thermodynamic_temperature::{degree_celsius, kelvin},
     },
@@ -32,26 +33,32 @@ pub fn gas_density(pressure: Pressure, temperature: ThermodynamicTemperature) ->
     let one_kelvin_dimless = Ratio::new::<ratio>(1.);
     let gas_constant = Energy::new::<uom::si::energy::joule>(8.314472)
         / one_kelvin_dimless
-        / AmountOfSubstance::new::<amount_of_substance::mole>(1.);
+        / AmountOfSubstance::new::<mole>(1.);
 
-    let p_c = Pressure::new::<bar>(73.773);
-    let t_c = ThermodynamicTemperature::new::<kelvin>(304.128);
+    let a0 = 7.54
+        * Pressure::new::<pascal>(1.)
+        * Length::new::<meter>(1.).powi(P6::new())
+        * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
+        * one_kelvin_dimless.sqrt();
 
-    let t_c_dimless = t_c / one_kelvin;
-
-    let a =
-        0.42748 * gas_constant.powi(P2::new()) * t_c_dimless.powi(P2::new()) * t_c_dimless.sqrt()
-            / p_c;
-
-    let b: MolarVolume = 0.08664 * gas_constant * t_c_dimless / p_c;
+    let a1 = -4.13e-3
+        * Pressure::new::<pascal>(1.)
+        * Length::new::<meter>(1.).powi(P6::new())
+        * AmountOfSubstance::new::<mole>(1.).powi(N2::new())
+        / one_kelvin_dimless.sqrt();
 
     let temp_dimless: Ratio = temperature / one_kelvin;
 
+    let a = a0 + a1 * temp_dimless;
+
+    let b: MolarVolume = 2.78e-5 * MolarVolume::new::<cubic_meter_per_mole>(1.);
+
     let c2: MolarVolume = -gas_constant * temp_dimless / pressure;
 
-    let c0 = -b * a / pressure / temp_dimless.sqrt();
+    let c0 = -a * b / (pressure * temp_dimless.sqrt());
 
-    let c1 = b.powi(P2::new()) - b * c2 - a / pressure / temp_dimless.sqrt();
+    let c1 =
+        -(gas_constant * temp_dimless * b / pressure - a / pressure / temp_dimless.sqrt() + b * b);
 
     let unit_molar_volume = MolarVolume::new::<cubic_meter_per_mole>(1.);
 

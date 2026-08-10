@@ -24,18 +24,18 @@ fname = 'example_data.xlsx';            % name of the input data file
 
 outputDir = 'output';               % name of the folder to save the outputs
 
-plot_regions = [1 2];              % Enter basin numbers for injectivity plots, e.g. [1 5 12 22]
+plot_regions = [];              % Enter basin numbers for injectivity plots, e.g. [1 5 12 22]
 
 %-- setting parameters
 correction = 'off' ;                % set on/off if you want to apply correction for superposition (correction is applied only under open flow boundary conditions)
 dist_min = 2 ;                      % minimum distance between injection sites [km]
-dist_max = 'auto';                  % maximum distance between injection sites [km]. Set a number or 'auto' if you prefer automatic calculation
-nr_dist = 200 ;                     % number of inter-site distances to explore
-nr_well_max = 'auto';               % maximum number of wells. Set a number or 'auto' if you prefer automatic calculation
+dist_max = 2;                  % maximum distance between injection sites [km]. Set a number or 'auto' if you prefer automatic calculation
+nr_dist = 1 ;                     % number of inter-site distances to explore
+nr_well_max = 9;               % maximum number of wells. Set a number or 'auto' if you prefer automatic calculation
 rw = 0.2 ;                          % well radius [m]
-time_yr = 100 ;                     % duration of injection [years]
-maxQ = 20 ;                         % maximum sustainable injection rate per well because of technological limitations [Mton/year]
-minQ = 1;                           % minimum injection rate per site [Mt/y]
+time_yr = 100;                     % duration of injection [years]
+maxQ = 20;                         % maximum sustainable injection rate per well because of technological limitations [Mton/year]
+minQ = 0;                           % minimum injection rate per site [Mt/y]
                                     % assign 0 to exclude min rate constraints
 
 %--------------------------------------------------------------------------
