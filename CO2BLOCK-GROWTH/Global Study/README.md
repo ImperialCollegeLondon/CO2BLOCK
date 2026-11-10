@@ -26,11 +26,12 @@ Other package versions may change the last digits of the results or the figure r
 ## Inputs
 
 - `scenario_inputs.xlsx`: initial storage, storage resources and prescribed targets by jurisdiction
-- `co2block_basin_resources_{closed,open}.csv`: CO2BLOCK basin injection rates and resources for injection periods of 10 to 150 years
-- `co2block_well_configurations_{closed,open}.csv.gz`: CO2BLOCK well arrays used to refine the last allocated basin
-- `basin_properties_{closed,open}.xlsx`: basin properties used as CO2BLOCK input
+- `co2block_basin_resources_{closed,open}.csv`: CO2BLOCK output summaries of basin injection rates and resources for injection periods of 10 to 150 years
+- `co2block_well_configurations_{closed,open}.csv`: alternative CO2BLOCK well arrays used to refine the last allocated basin
+- `basin_properties_{closed,open}.xlsx`: geological and physical inputs to CO2BLOCK; also used to check basin order and boundary conditions
 - `ar6_*`: IPCC AR6 scenario CCS rates
-- `basin_map/`: global sedimentary basin map and Natural Earth country outlines
+- `basin_map/global_sedimentary_basins.shp`: basin polygons, with `Basin Name` retained in the `.dbf` for matching to the model inputs; keep the `.dbf`, `.shx` and `.prj` files together
+- `basin_map/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp`: Natural Earth country outlines, with the accompanying shapefile components and source documentation
 
 ## Scope
 
